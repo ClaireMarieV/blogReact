@@ -25,11 +25,12 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+    <link rel="stylesheet" href="https://use.typekit.net/auf8jri.css"></link>
+      <Header/>
       <div
         style={{
           margin: `0 auto`,
-          maxWidth: 960,
+          maxWidth: 1400,
           padding: `0 1.0875rem 1.45rem`,
         }}
       >

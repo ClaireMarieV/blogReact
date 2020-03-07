@@ -1,0 +1,21 @@
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.grid > .grid-full{
+    grid-column: 1/5;
+}
+.grid > .grid-full > .article-splash-title {
+    height: 8em;
+    width: 45em;
+    position: relative;
+    top: -14em;
+    left: 1rem;
+}
+.grid > .grid-full:nth-last-child(2) > .article-splash-title {
+        height: 8em;
+        width: 45em;
+        position: relative;
+        top: -35em;
+        left: 9rem;
+}

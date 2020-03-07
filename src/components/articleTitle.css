@@ -1,0 +1,29 @@
+.article-title h4 {
+    color: whitesmoke;
+    font-family: shabby-chic, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.5em;
+    margin: 0;
+}
+.article-title h3 {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 1.8em;
+    letter-spacing: -0.03rem;
+    font-family: conceal, sans-serif;
+    font-weight: 500;
+    font-style: bold;
+}
+
+.article-title h5 {
+    color: whitesmoke;
+    font-family:  kumlien-pro, serif;
+    font-weight: 500;
+    font-style: normal;
+    margin: 0;
+}
+
+.article-title > * {
+    text-align: center;
+}
