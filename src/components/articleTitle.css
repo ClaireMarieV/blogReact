@@ -1,26 +1,27 @@
 .article-title h4 {
     color: whitesmoke;
-    font-family: shabby-chic, sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 1.5em;
-    margin: 0;
+    font-family: astoria-sans-condensed, sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    margin-top: 1.3em;
+    margin-bottom: 0.5em;
 }
 .article-title h3 {
     color: whitesmoke;
     text-align: center;
-    letter-spacing: -0.03rem;
-    font-family: conceal, sans-serif;
-    font-weight: 400;
-    font-style: bold;
+    letter-spacing: -0.03rem;  
+    font-family: garamond-fb-display, serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.3em;
+    margin-bottom: 0.5em;
 }
 
 .article-title h5 {
     color: whitesmoke;
-    font-family:  kumlien-pro, serif;
-    font-weight: 500;
-    font-style: normal;
-    margin: 0;
+    font-family: astoria-sans-condensed, sans-serif;
+    font-weight: 100;
+    font-size: 15px;
 }
 
 .article-title > * {

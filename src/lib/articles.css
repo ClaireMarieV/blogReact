@@ -1,0 +1,8 @@
+.grid > .articles > .row-index:first-child{
+    grid-column: 2/5;
+}
+.grid> .articles > .row-index:first-child > img {
+    width: 100%;
+    object-fit: scale-down;
+    
+}
