@@ -2,31 +2,37 @@
     display: flex;
 }
 
-.article-splash img {
-    width: 100%;
-    object-fit: cover;
-}
+
+.grid
 .row-index {
+    margin-right: 1em;
+}
+.grid > .row-index > img {
+    width: 80%;
+    object-fit: cover;
+   
 }
 .row-index > .article-splash-title {    
     background-color: black;
     z-index: 1;
-    max-width: 15rem;
     position: relative;
-    top: -5rem;
+    top: 22.2em;
+    right: 13.85rem;
+    max-height: 8em;
 } 
 .row-index > .article-title h4 {
     color: whitesmoke;
     font-family: shabby-chic, sans-serif;
     font-weight: 300;
     font-style: normal;
+    font-size: smaller;
 }
 .row-index > .article-title h3 {
     color: whitesmoke;
     text-align: center;
     letter-spacing: -0.03rem;
     font-family: conceal, sans-serif;
-    font-weight: 300;
+    font-weight: 200;
     font-style: bold;
 }
 .row-index > .article-title h5 {

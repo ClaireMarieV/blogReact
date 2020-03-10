@@ -38,10 +38,14 @@ const IndexPage = () => (
 
       <ArticleSplash className='row-index'
         category='style'
-        title='ENTRE OMBRE ET LUMIERE'
+        title='BOHEME'
         date='06.04.2019'
         picture={insta} />
-
+      <ArticleSplash className='row-index'
+        category='style'
+        title='DU DENIM'
+        date='06.04.2019'
+        picture={denim} />
 
       <ArticleSplash className='grid-full'
         category='style'
@@ -49,11 +53,6 @@ const IndexPage = () => (
         date='06.04.2019'
         picture={tie} />
 
-      <ArticleSplash className='row-index'
-        category='style'
-        title='DU DENIM'
-        date='06.04.2019'
-        picture={denim} />
       <ArticleSplash className='row-index'
         category='life'
         title='UNE NOUVELLE ARRIVÉE'
