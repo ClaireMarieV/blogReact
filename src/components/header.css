@@ -19,20 +19,26 @@ nav > ul > li > a {
     color: black;
     text-decoration: none;
     text-transform: uppercase;
-    font-family: astoria-sans-condensed, sans-serif;
+    /*font-family: astoria-sans-condensed, sans-serif;
     font-weight: 700;
+    font-style: thin;*/
+    font-family: arboria, sans-serif;
+    font-weight: 500;
     font-style: normal;
     letter-spacing: 0.25em;
-    font-size: 1em;
+    font-size: 0.8em;
 }
 nav > h2 {
     color: black;
     text-align: center;
-    font-family:freight-sans, serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 1.6em;
-    letter-spacing: 0.2em;
+    /*font-family: arboria, sans-serif;
+    font-weight: 200;  
+    font-style: italic;*/
+    font-family: astoria-sans-condensed, sans-serif;
+    font-weight: 700;
+    font-style: thin;
+    margin-top: 0.5em;
+    letter-spacing: 0.5em;
 }
 nav > h2 > a {
     text-decoration: none;

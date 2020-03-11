@@ -7,6 +7,7 @@ import grue from '../images/art/grue.jpg'
 import venus from '../images/art/venus.jpg'
 import energie from '../images/art/energie.jpg'
 
+
 export default {
     art: [
         {

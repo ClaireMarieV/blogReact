@@ -1,24 +1,25 @@
 .article-title h4 {
-    color: whitesmoke;
+    /*color: whitesmoke;*/
     font-family: astoria-sans-condensed, sans-serif;
     font-weight: 100;
     font-size: 20px;
-    margin-top: 1.3em;
     margin-bottom: 0.5em;
 }
 .article-title h3 {
-    color: whitesmoke;
+    /*color: whitesmoke;*/
     text-align: center;
     letter-spacing: -0.03rem;  
-    font-family: garamond-fb-display, serif;
-    font-weight: 300;
-    font-style: normal;
+    font-family: freight-big-pro, serif;
+    font-weight: 500;
+    font-style: italic;
     font-size: 1.3em;
     margin-bottom: 0.5em;
 }
-
+.article-title h3:hover {
+    color: #BA1833;
+}
 .article-title h5 {
-    color: whitesmoke;
+    /*color: whitesmoke;*/
     font-family: astoria-sans-condensed, sans-serif;
     font-weight: 100;
     font-size: 15px;

@@ -6,14 +6,14 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 import ArticleSplash from "../components/articleSplash"
 import Grid from "../components/grid"
-import articles from '../lib/articleArt'
+import articles from '../lib/articleShoes'
 
 const StylePage = () => (
     <Layout>
       <SEO title="Home" />
       <Grid>
-        {articles.art.map(article =><ArticleSplash className="article-group" category={article.category} title={article.title} date={article.date} picture={article.picture}/>
-        )} 
+        {articles.shoes.map(article =><ArticleSplash className="article-group" category={article.category} title={article.title} date={article.date} picture={article.picture}/>
+        )}
       </Grid>
     </Layout>
   )

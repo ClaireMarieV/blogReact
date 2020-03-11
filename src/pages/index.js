@@ -6,13 +6,13 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 import ArticleSplash from "../components/articleSplash"
 import Grid from "../components/grid"
-import gianvito from '../images/style/gianvito.png'
+import gianvito from '../images/shoes/gianvito.png'
 import tie from '../images/style/tie.jpg'
 import denim from '../images/style/denim1.jpg'
 import ariane from '../images/ariane12.png'
 import insta from '../images/style/photoInsta.jpg'
-import studio from '../images/style/Studio_2.jpg'
-import boh from '../images/style/sandaleBoh.jpg'
+import studio from '../images/shoes/Studio_2.jpg'
+import boh from '../images/shoes/sandaleBoh.jpg'
 
 
 const IndexPage = () => (

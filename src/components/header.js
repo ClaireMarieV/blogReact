@@ -7,6 +7,7 @@ const Header = () => (
     <nav>
       <ul>
         <li><Link to="/art">ART</Link></li>
+        <li><Link to="/shoes">SHOES</Link></li>
         <li><Link to="/style">STYLE</Link></li>
         <li><Link to="/life">LIFE</Link></li>
       </ul>
