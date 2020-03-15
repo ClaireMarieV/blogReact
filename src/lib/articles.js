@@ -24,6 +24,12 @@ export default {
         },
         {
           category: 'STYLE',
+          title: 'DU DENIM',
+          date: '06.04.2019',
+          picture: denim
+        },
+        {
+          category: 'STYLE',
           title: 'ENTRE OMBRE ET LUMIÈRE',
           date: '06.04.2019',
           picture: tie

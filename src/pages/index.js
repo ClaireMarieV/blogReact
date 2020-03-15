@@ -6,6 +6,7 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 import ArticleSplash from "../components/articleSplash"
 import Grid from "../components/grid"
+import LinkInstagram from "../components/linkInstagram"
 import gianvito from '../images/shoes/gianvito.png'
 import tie from '../images/style/tie.jpg'
 import denim from '../images/style/denim1.jpg'
@@ -13,7 +14,7 @@ import ariane from '../images/ariane12.png'
 import insta from '../images/style/photoInsta.jpg'
 import studio from '../images/shoes/Studio_2.jpg'
 import boh from '../images/shoes/sandaleBoh.jpg'
-
+import doc from "../images/shoes/doc.jpg"
 
 const IndexPage = () => (
   <Layout>
@@ -41,11 +42,10 @@ const IndexPage = () => (
         title='BOHEME'
         date='06.04.2019'
         picture={insta} />
-      <ArticleSplash className='row-index'
-        category='STYLE'
-        title='DU DENIM'
-        date='06.04.2019'
-        picture={denim} />
+      <LinkInstagram className='link-instagram'
+        picture={doc}
+        title='VERT CLAIRE'
+        text=' Vous pouvez me suivre > '/>
 
       <ArticleSplash className='grid-full'
         category='STYLE'
@@ -57,7 +57,8 @@ const IndexPage = () => (
         category='LIFE'
         title='UNE NOUVELLE ARRIVÉE'
         date='06.04.2019'
-        picture={boh} />
+        picture={boh}
+         />
       <ArticleSplash className='row-index'
         category='SHOES'
         title='UN BASIQUE'

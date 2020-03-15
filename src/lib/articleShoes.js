@@ -25,6 +25,12 @@ export default {
           },
           {
             category: 'SHOES',
+            title: 'UN BASIQUE',
+            date: '06.04.2019',
+            picture: boh
+          },
+          {
+            category: 'SHOES',
             title: 'DU ROUGE, DU ROUGE, DU ROUGE',
             date: '06.04.2019',
             picture: gianvito
