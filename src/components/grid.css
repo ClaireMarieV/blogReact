@@ -1,23 +1,37 @@
-.grid{
+/* Grille basique à 4 colonnes */
+.grid {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    max-width: 100%;
+    grid-gap: 1rem;
+    width: 100%;
 }
-.grid > .grid-full{
+
+/* Classe .grid-full permettant à un élément de la grille de prendre toute la largeur */
+.grid > .grid-full {
     grid-column: 1/5;
     max-width: 100%;
 }
-.grid > .grid-full:last-child {
-    max-width: 75%;
+
+.grid > * {
+    overflow: hidden;
 }
-.grid > .grid-full > .article-splash-img {
-width: 100%;
-object-fit: cover; 
+
+@media (max-width: 860px) {
+    .grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .grid > .grid-full {
+        grid-column: 1/3;
+    }
 }
-.grid > .grid-full > .article-splash-title {
-    position: relative;
-    left: -50em;
-}
-.grid > .grid-full > .article-splash-title > .article-title {
-    width: 1000px;
+
+@media (max-width: 400px) {
+    .grid {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .grid > .grid-full {
+        grid-column: 1/2;
+    }
 }

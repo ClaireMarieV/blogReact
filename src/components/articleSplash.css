@@ -1,88 +1,13 @@
-.article-splash{
+.article-splash {
     display: flex;
-    margin-right: 1em;
-    max-width: 75%;
-}
-.grid > .row-index > img {
-    object-fit: fill;
+    flex-direction: column;
 }
 
-.grid > .link-instagram {
-    border: double black;
-    height: 29.8em;
-    padding: 1em;
+.article-splash .article-splash-title {
+    margin-top: 1rem;
 }
 
-.grid > .article-splash > .article-splash-title {    
-    z-index: 1;
-    position: relative;
-    top: 23em;
-    right: 14em;
-    color: whitesmoke;
-} 
-
-.grid > .article-group {
-    display: flex;  
+.article-splash > img {
+    height: 20rem;
+    object-fit: cover;
 }
- .grid >.article-group > img {
-    object-fit: fill;
-    width: 95%;
- }
- .grid >.article-group:nth-child(5) {
-    grid-column : 1/5;
- }
-.grid > .out-article > .article-splash-title,
-.grid > .out-article > .article-splash-title{
-    z-index: 1;
-    position: relative;
-    top: 18em;
-    right: 14em;
-    color: black;
-    max-height: 6em;
- }
- .grid >.article-group > .article-splash-title {
-    color: whitesmoke;
-    z-index: 1;
-    position: relative;
-    top: 22em;
-    right: 14em;
-    color: white; 
-}
-.grid > #article-shoes > .article-splash-title {
-    top: 17em;
-}
-/*.article-splash:first-child > .article-splash-title > .article-title h3 {
-    display: inline;
-    padding-left: 2em;
-}
-.article-splash:first-child > .article-splash-title > .article-title h4,
-.article-splash:first-child > .article-splash-title > .article-title h5 {
-    margin: auto;  
-    padding-bottom: 0.5em; 
-    padding-top: 0.5em;
- } */
-/*.grid > .article-splash > .article-title h4 {
-    color: #28282b;
-    font-family: shabby-chic, serif;
-    font-weight: 400;
-    font-style: normal;
-    margin-top: 0.5em;
-    margin-bottom: 0;
-}
-.grid > .article-splash > .article-title h3 {
-    color: black;
-    text-align: center
-    letter-spacing: -0.03rem;
-    font-family: freight-text-pro, serif;
-    font-weight: 300;
-    font-style: normal;
-    margin-bottom: 1em;
-    margin-top: 1em;
-}
-.grid > .article-splash > .article-title h5 {
-    color: #28282b;
-    font-family: garamond-fb-display, serif;
-    font-weight: 400;
-    font-style: normal;
-    margin-top: 0.5em;
-}*/

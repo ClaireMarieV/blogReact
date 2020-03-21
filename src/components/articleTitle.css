@@ -1,12 +1,15 @@
+.article-title {
+    text-align: center;
+}
+
 .article-title h4 {
-    /*color: whitesmoke;*/
     font-family: astoria-sans-condensed, sans-serif;
     font-weight: 100;
-    font-size: 20px;
+    font-size: 1.1rem;
     margin-bottom: 0.5em;
 }
+
 .article-title h3 {
-    /*color: whitesmoke;*/
     text-align: center;
     letter-spacing: -0.03rem;  
     font-family: freight-big-pro, serif;
@@ -15,19 +18,14 @@
     font-size: 1.3em;
     margin-bottom: 0.5em;
 }
+
 .article-title h3:hover {
     color: #BA1833;
 }
+
 .article-title h5 {
-    /*color: whitesmoke;*/
     font-family: astoria-sans-condensed, sans-serif;
+    margin-bottom: 0;
     font-weight: 100;
-    font-size: 15px;
+    font-size: 0.8rem;
 }
-
-.article-title {
-    text-align: center;
-    width: 250px;
-    height: auto;
-}
-
