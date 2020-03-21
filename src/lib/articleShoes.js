@@ -2,6 +2,7 @@ import gianvito from '../images/shoes/gianvito.png'
 import studio from '../images/shoes/Studio_2.jpg'
 import doc from '../images/shoes/doc.jpg'
 import boh from '../images/shoes/sandaleBoh.jpg'
+import insta from '../images/style/photoInsta.jpg'
 
 export default {
     shoes: [
@@ -27,7 +28,7 @@ export default {
             category: 'SHOES',
             title: 'UN BASIQUE',
             date: '06.04.2019',
-            picture: boh
+            picture: insta
           },
           {
             category: 'SHOES',

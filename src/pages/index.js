@@ -20,12 +20,11 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <Grid>
-      <ArticleSplash className='grid-full'
-        category='SHOES'
-        title='LES CHAUSSURES DU MOIS : DU ROUGE, DU ROUGE, DU ROUGE'
+    <ArticleSplash className='grid-full'
+        category='STYLE'
+        title='ENTRE OMBRE ET LUMIÈRE'
         date='06.04.2019'
-        picture={gianvito} />
-
+        picture={tie} />
       <ArticleSplash className='row-index'
         category='STYLE'
         title='DU DENIM'
@@ -46,20 +45,20 @@ const IndexPage = () => (
         picture={doc}
         title='VERT CLAIRE'
         text=' Vous pouvez me suivre > '/>
-
       <ArticleSplash className='grid-full'
-        category='STYLE'
-        title='ENTRE OMBRE ET LUMIÈRE'
+        category='SHOES'
+        title='LES CHAUSSURES DU MOIS : DU ROUGE, DU ROUGE, DU ROUGE'
         date='06.04.2019'
-        picture={tie} />
+        picture={gianvito} />
+      
 
-      <ArticleSplash className='row-index'
+      <ArticleSplash className='out-article'
         category='LIFE'
         title='UNE NOUVELLE ARRIVÉE'
         date='06.04.2019'
         picture={boh}
          />
-      <ArticleSplash className='row-index'
+      <ArticleSplash className='out-article'
         category='SHOES'
         title='UN BASIQUE'
         date='06.04.2019'

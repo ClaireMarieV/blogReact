@@ -1,19 +1,23 @@
 .grid{
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
+    max-width: 100%;
 }
 .grid > .grid-full{
     grid-column: 1/5;
     max-width: 100%;
+}
+.grid > .grid-full:last-child {
+    max-width: 75%;
 }
 .grid > .grid-full > .article-splash-img {
 width: 100%;
 object-fit: cover; 
 }
 .grid > .grid-full > .article-splash-title {
-   display: flex;
-}
-.grid > .grid-full:last-child > .article-splash-title {
     position: relative;
-    right: 35em;
+    left: -50em;
+}
+.grid > .grid-full > .article-splash-title > .article-title {
+    width: 1000px;
 }

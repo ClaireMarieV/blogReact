@@ -12,7 +12,7 @@ const StylePage = () => (
     <Layout>
       <SEO title="Home" />
       <Grid>
-        {articles.shoes.map(article =><ArticleSplash className="article-group" category={article.category} title={article.title} date={article.date} picture={article.picture}/>
+        {articles.shoes.map(article =><ArticleSplash className="article-group" id="article-shoes" category={article.category} title={article.title} date={article.date} picture={article.picture}/>
         )}
       </Grid>
     </Layout>
