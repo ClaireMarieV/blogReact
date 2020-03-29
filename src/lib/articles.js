@@ -1,9 +1,17 @@
 import tie from '../images/style/tie.jpg'
 import denim from '../images/style/denim1.jpg'
 import insta from '../images/style/photoInsta.jpg'
+import acid from '../images/style/acid.jpg'
+
 
 export default {
     style: [
+      {
+        category: 'STYLE',
+        title: 'ACID',
+        date: '22.03.20120',
+        picture: acid
+      },
         {
           category: 'STYLE',
           title: 'DU DENIM',

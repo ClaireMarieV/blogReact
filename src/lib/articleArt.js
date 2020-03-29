@@ -6,30 +6,30 @@ import envoleGrue from '../images/art/envoleGrue.jpg'
 import grue from '../images/art/grue.jpg'
 import venus from '../images/art/venus.jpg'
 import energie from '../images/art/energie.jpg'
-
+import reverie from '../images/art/reverie.jpg'
 
 export default {
     art: [
         {
-            category: 'shoes',
+            category: 'art',
             title: 'LES CHAUSSURES DU MOIS : DU ROUGE, DU ROUGE, DU ROUGE',
             date: '06.04.2019',
             picture: envoleGrue
         },
         {
-          category: 'style',
+          category: 'art',
           title: 'DU DENIM',
           date: '06.04.2019',
           picture: envoleGris
         },
         {
-          category: 'style',
+          category: 'art',
           title: 'BOHEME',
           date: '06.04.2019',
           picture: liberte
         },
         {
-          category: 'style',
+          category: 'art',
           title: 'DU DENIM',
           date: '06.04.2019',
           picture: racine
@@ -41,22 +41,28 @@ export default {
           picture: cercleVie
         },
         {
-          category: 'life',
-          title: 'UNE NOUVELLE ARRIVÉE',
-          date: '06.04.2019',
+          category: 'art',
+          title: 'ARCHANGE FLORAL',
+          date: '01.03.2020',
           picture: venus
         },
         {
-          category: 'shoes',
+          category: 'art',
           title: 'UN BASIQUE',
           date: '06.04.2019',
           picture: grue
         },
         {
-            category: 'shoes',
+            category: 'art',
             title: 'UN BASIQUE',
             date: '06.04.2019',
             picture: energie
+          },
+          {
+            category: 'art',
+            title: 'CO VIDE 1',
+            date: '29.03.2020',
+            picture: reverie
           }
     ]
 }
