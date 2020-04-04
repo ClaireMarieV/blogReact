@@ -20,7 +20,7 @@ export default {
           },
           {
             category: 'SHOES',
-            title: 'UN BASIQUE',
+            title: 'SANDALES BOHEME',
             date: '06.04.2019',
             picture: boh
           },

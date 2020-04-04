@@ -7,6 +7,8 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 import ArticleSplash from "../components/articleSplash"
 import Grid from "../components/grid"
+import Aside from "../components/aside"
+import Timeline from "../components/timeline"
 import LinkInstagram from "../components/linkInstagram"
 import gianvito from '../images/shoes/gianvito.png'
 import tie from '../images/style/tie.jpg'
@@ -19,9 +21,9 @@ import doc from "../images/shoes/doc.jpg"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
-    <Grid>
-    <ArticleSplash className='grid-full'
+    <SEO title="Home" /> 
+      <Grid>
+      <ArticleSplash className='grid-full'
         category='STYLE'
         title='ENTRE OMBRE ET LUMIÈRE'
         date='06.04.2019'
@@ -36,36 +38,62 @@ const IndexPage = () => (
         title='UNE NOUVELLE ARRIVÉE'
         date='06.04.2019'
         picture={ariane} />
-
       <ArticleSplash className='row-index'
         category='STYLE'
         title='BOHEME'
         date='06.04.2019'
         picture={insta} />
-      <LinkInstagram className='link-instagram'
-        picture={doc}
-        title='VERT CLAIRE'
-        text=' Vous pouvez me suivre > '/>
+        <ArticleSplash className='row-index'
+        category='STYLE'
+        title='BOHEME'
+        date='06.04.2019'
+        picture={insta} />
       <ArticleSplash className='grid-full'
         category='SHOES'
         title='LES CHAUSSURES DU MOIS : DU ROUGE, DU ROUGE, DU ROUGE'
         date='06.04.2019'
         picture={gianvito} />
       
-
-      <ArticleSplash className='out-article'
-        category='LIFE'
-        title='UNE NOUVELLE ARRIVÉE'
+      <ArticleSplash className = 'row-index'
+        category='SHOES'
+        title='SANDALES BOHEME'
         date='06.04.2019'
         picture={boh}
-         />
-      <ArticleSplash className='out-article'
+        />
+      <ArticleSplash className = 'row-index'
         category='SHOES'
         title='UN BASIQUE'
         date='06.04.2019'
         picture={studio} />
-
     </Grid>
+     <Aside>
+        <Timeline
+            text= 'TIMELINE'
+            category= 'STYLE'
+            title= 'ACID'
+            date= '12.12.12'/>
+        <Timeline
+            category= 'SHOES'
+            title= 'DU ROUGE, DU ROUGE, DU ROUGE'
+            date= '12.12.12'/>
+        <Timeline 
+            category= 'STYLE'
+            title= 'ACID'
+            date= '12.12.12'/>
+        <Timeline
+            category= 'STYLE'
+            title= 'ACID'
+            date= '12.12.12'/>
+        <Timeline
+            category= 'STYLE'
+            title= 'ACID'
+            date= '12.12.12'/>
+
+        <LinkInstagram
+          picture={doc}
+          title='VERT CLAIRE'
+          text=' Vous pouvez me suivre > ' />
+      </Aside>
   </Layout>
 )
 

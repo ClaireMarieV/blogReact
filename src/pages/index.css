@@ -1,18 +1,12 @@
 .grid-full > .article-splash-title{ 
     color: whitesmoke;
-    position: relative;
-    top: -7em;
+    position: absolute;
 }
 .grid-full > .article-splash-title:hover > .article-title > h3{ 
 color: whitesmoke;
 }
 .grid-full:nth-child(0n+1) > .article-splash-title{
-    position: relative;
-    top: -20em;
-    right: 10em;
-}
+    position: absolute;
+    left: 8em;
+   }
 
-.grid > .link-instagram {
-    border-style: double;
-    padding: 1em;
-}

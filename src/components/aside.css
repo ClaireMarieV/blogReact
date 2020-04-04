@@ -1,0 +1,7 @@
+.aside {
+    max-width: 15rem;
+    margin-left: 1em;
+    border-left: double;
+    border-top: double;
+    padding-left: 1em;
+}
