@@ -8,5 +8,6 @@ color: whitesmoke;
 .grid-full:nth-child(0n+1) > .article-splash-title{
     position: absolute;
     left: 8em;
+    padding: 1em;
    }
 

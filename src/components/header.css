@@ -44,8 +44,12 @@ nav > h2 > a {
     text-decoration: none;
     color: black;
 }
-@media( max-width: 770px) {
-    nav > ul {
-        
+@media( max-width: 1076px) {
+    nav {
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: none;
+    }
+    nav > h2 {
+        margin-left: 0.5em;
     }
 }
