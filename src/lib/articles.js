@@ -2,6 +2,7 @@ import tie from '../images/style/tie.jpg'
 import denim from '../images/style/denim1.jpg'
 import insta from '../images/style/photoInsta.jpg'
 import acid from '../images/style/acid.jpg'
+import aquarelle from '../images/style/aquarelle.jpg'
 
 
 export default {
@@ -38,9 +39,29 @@ export default {
         },
         {
           category: 'STYLE',
+          title: 'UNE AQUARELLE DE FLEURS',
+          date: '09.04.2020',
+          picture: aquarelle
+        },
+        {
+          category: 'STYLE',
           title: 'ENTRE OMBRE ET LUMIÈRE',
           date: '06.04.2019',
           picture: tie
-        }
+        },
+     
+        {
+          category: 'STYLE',
+          title: 'UNE AQUARELLE DE FLEURS',
+          date: '09.04.2020',
+          picture: aquarelle
+        },
+        {
+          category: 'STYLE',
+          title: 'UNE AQUARELLE DE FLEURS',
+          date: '09.04.2020',
+          picture: aquarelle
+        },
+      
     ]
 }
