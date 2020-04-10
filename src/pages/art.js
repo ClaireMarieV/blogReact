@@ -10,6 +10,7 @@ import Aside from "../components/aside"
 import Timeline from "../components/timeline"
 import LinkInstagram from "../components/linkInstagram"
 import doc from "../images/shoes/doc.jpg"
+import "./art.css"
 
 import articles from '../lib/articleArt'
 
@@ -17,7 +18,7 @@ const StylePage = () => (
     <Layout>
       <SEO title="Home" />
       <Grid>
-        {articles.art.map(article =><ArticleSplash className="article-group" category={article.category} title={article.title} date={article.date} picture={article.picture}/>
+        {articles.art.map(article =><ArticleSplash className="article-art" category={article.category} title={article.title} date={article.date} picture={article.picture}/>
         )} 
       </Grid>
       <Aside>

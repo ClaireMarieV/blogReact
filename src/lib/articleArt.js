@@ -29,22 +29,10 @@ export default {
           picture: racine
         },
         {
-          category: 'style',
+          category: 'art',
           title: 'NATURE HUMANISÉE',
           date: '06.04.2019',
           picture: cercleVie
-        },
-        {
-          category: 'art',
-          title: 'ARCHANGE FLORAL',
-          date: '01.03.2020',
-          picture: venus
-        },
-        {
-          category: 'art',
-          title: 'CO VIDE 1',
-          date: '29.03.2020',
-          picture: reverie
         },
         {
           category: 'art',
@@ -54,9 +42,9 @@ export default {
         },
         {
           category: 'art',
-          title: 'UN BASIQUE',
-          date: '06.04.2019',
-          picture: grue
+          title: 'ARCHANGE FLORAL',
+          date: '01.03.2020',
+          picture: venus
         },
         {
           category: 'art',
@@ -64,6 +52,17 @@ export default {
           date: '06.04.2019',
           picture: energie
         },
-        
+        {
+          category: 'art',
+          title: 'UN BASIQUE',
+          date: '06.04.2019',
+          picture: grue
+        },
+        {
+          category: 'art',
+          title: 'CO VIDE 1',
+          date: '29.03.2020',
+          picture: reverie
+        },
     ]
 }
