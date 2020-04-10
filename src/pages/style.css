@@ -1,3 +1,7 @@
-.article-group:nth-child(0n+6) {
+.article-group:nth-child(0n+6),
+.article-group:nth-child(0n+16){
     grid-column: 2/5;
+}
+.article-group:nth-child(0n+11){
+    grid-column: 1/4;
 }

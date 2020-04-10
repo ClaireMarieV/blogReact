@@ -25,7 +25,17 @@ summary {
 }
 main{
   display: flex;
+
 }
+header:first-of-type {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  margin-top: 0;
+  background-color: white;
+}
+
 audio,
 canvas,
 progress,

@@ -11,32 +11,26 @@ import reverie from '../images/art/reverie.jpg'
 export default {
     art: [
         {
-            category: 'art',
-            title: 'LES CHAUSSURES DU MOIS : DU ROUGE, DU ROUGE, DU ROUGE',
-            date: '06.04.2019',
-            picture: envoleGrue
-        },
-        {
           category: 'art',
-          title: 'DU DENIM',
+          title: 'RENAISSANCE DU PHOENIX',
           date: '06.04.2019',
-          picture: envoleGris
+          picture: envoleGrue
         },
         {
           category: 'art',
-          title: 'BOHEME',
+          title: 'PHOENIX',
           date: '06.04.2019',
           picture: liberte
         },
         {
           category: 'art',
-          title: 'DU DENIM',
+          title: '',
           date: '06.04.2019',
           picture: racine
         },
         {
           category: 'style',
-          title: 'ENTRE OMBRE ET LUMIÈRE',
+          title: 'NATURE HUMANISÉE',
           date: '06.04.2019',
           picture: cercleVie
         },
@@ -48,21 +42,28 @@ export default {
         },
         {
           category: 'art',
+          title: 'CO VIDE 1',
+          date: '29.03.2020',
+          picture: reverie
+        },
+        {
+          category: 'art',
+          title: 'DU DENIM',
+          date: '06.04.2019',
+          picture: envoleGris
+        },
+        {
+          category: 'art',
           title: 'UN BASIQUE',
           date: '06.04.2019',
           picture: grue
         },
         {
-            category: 'art',
-            title: 'UN BASIQUE',
-            date: '06.04.2019',
-            picture: energie
-          },
-          {
-            category: 'art',
-            title: 'CO VIDE 1',
-            date: '29.03.2020',
-            picture: reverie
-          }
+          category: 'art',
+          title: 'UN BASIQUE',
+          date: '06.04.2019',
+          picture: energie
+        },
+        
     ]
 }

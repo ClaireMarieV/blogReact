@@ -24,9 +24,10 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
+    <div className='layout'>
     <link rel="stylesheet" href="https://use.typekit.net/auf8jri.css"></link>
       <Header/>
+      <Header></Header>
       <div
         style={{
           margin: `0 auto`,
@@ -36,7 +37,7 @@ const Layout = ({ children }) => {
       >
         <main>{children}</main>
       </div>
-    </>
+    </div>
   )
 }
 
