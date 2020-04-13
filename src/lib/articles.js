@@ -4,14 +4,21 @@ import insta from '../images/style/photoInsta.jpg'
 import acid from '../images/style/acid.jpg'
 import aquarelle from '../images/style/aquarelle.jpg'
 import kooples from '../images/style/tKooples.png'
+import kimono from '../images/style/kimono1.jpg'
 
 
 export default {
     style: [
       {
         category: 'STYLE',
+        title: 'DOUCEUR ET BIENVEILLANCE',
+        date: '13.04.2020',
+        picture: kimono
+      },
+      {
+        category: 'STYLE',
         title: 'ACID',
-        date: '22.03.20120',
+        date: '22.03.2020',
         picture: acid
       },
         {
@@ -34,21 +41,15 @@ export default {
         },
         {
           category: 'STYLE',
+          title: 'UNE AQUARELLE DE FLEURS',
+          date: '09.04.2020',
+          picture: aquarelle
+        },
+        {
+          category: 'STYLE',
           title: 'DU DENIM',
           date: '06.04.2019',
           picture: denim
-        },
-        {
-          category: 'STYLE',
-          title: 'UNE AQUARELLE DE FLEURS',
-          date: '09.04.2020',
-          picture: aquarelle
-        },
-        {
-          category: 'STYLE',
-          title: 'UNE AQUARELLE DE FLEURS',
-          date: '09.04.2020',
-          picture: aquarelle
         },
         {
           category: 'STYLE',
@@ -73,6 +74,12 @@ export default {
           title: 'ENTRE OMBRE ET LUMIÈRE',
           date: '06.04.2019',
           picture: tie
+        },
+        {
+          category: 'STYLE',
+          title: 'UNE AQUARELLE DE FLEURS',
+          date: '09.04.2020',
+          picture: aquarelle
         },
         {
           category: 'STYLE',

@@ -7,6 +7,7 @@ import grue from '../images/art/grue.jpg'
 import venus from '../images/art/venus.jpg'
 import energie from '../images/art/energie.jpg'
 import reverie from '../images/art/reverie.jpg'
+import cri from '../images/art/cri.jpg'
 
 export default {
     art: [
@@ -18,13 +19,13 @@ export default {
         },
         {
           category: 'art',
-          title: 'PHOENIX',
+          title: "L'ENVOLE DU PHOENIX",
           date: '06.04.2019',
           picture: liberte
         },
         {
           category: 'art',
-          title: '',
+          title: 'RACINE',
           date: '06.04.2019',
           picture: racine
         },
@@ -36,7 +37,7 @@ export default {
         },
         {
           category: 'art',
-          title: 'DU DENIM',
+          title: 'RENAISSANCE DU PHOENIX 2',
           date: '06.04.2019',
           picture: envoleGris
         },
@@ -48,15 +49,15 @@ export default {
         },
         {
           category: 'art',
-          title: 'UN BASIQUE',
+          title: 'ESSENCE',
           date: '06.04.2019',
           picture: energie
         },
         {
           category: 'art',
-          title: 'UN BASIQUE',
+          title: 'CRI DE LA TERRE',
           date: '06.04.2019',
-          picture: grue
+          picture: cri
         },
         {
           category: 'art',
@@ -64,5 +65,12 @@ export default {
           date: '29.03.2020',
           picture: reverie
         },
+        {
+          category: 'art',
+          title: 'GRUE',
+          date: '29.03.2020',
+          picture: grue
+        },
+        
     ]
 }

@@ -18,6 +18,8 @@ import insta from '../images/style/photoInsta.jpg'
 import studio from '../images/shoes/Studio_2.jpg'
 import boh from '../images/shoes/sandaleBoh.jpg'
 import doc from "../images/shoes/doc.jpg"
+import acid from "../images/style/acid.jpg"
+import kimono from "../images/style/kimono2.jpg"
 
 const IndexPage = () => (
   <Layout>
@@ -25,14 +27,19 @@ const IndexPage = () => (
       <Grid>
       <ArticleSplash className='grid-full'
         category='STYLE'
-        title='ENTRE OMBRE ET LUMIÈRE'
+        title="L'ACCEPTATION PAR LA DOUCEUR"
         date='06.04.2019'
-        picture={tie} />
+        picture={kimono}/>
+         <ArticleSplash className = 'row-index'
+        category='SHOES'
+        title='UN BASIQUE'
+        date='06.04.2019'
+        picture={studio} />
       <ArticleSplash className='row-index'
         category='STYLE'
-        title='DU DENIM'
-        date='06.04.2019'
-        picture={denim} />
+        title= 'ACID'
+        date='22.03.20120'
+        picture={acid} />
       <ArticleSplash className='row-index'
         category='LIFE'
         title='UNE NOUVELLE ARRIVÉE'
@@ -43,28 +50,22 @@ const IndexPage = () => (
         title='BOHEME'
         date='06.04.2019'
         picture={insta} />
-        <ArticleSplash className='row-index'
-        category='STYLE'
-        title='BOHEME'
-        date='06.04.2019'
-        picture={insta} />
       <ArticleSplash className='grid-full'
         category='SHOES'
         title='LES CHAUSSURES DU MOIS : DU ROUGE, DU ROUGE, DU ROUGE'
         date='06.04.2019'
         picture={gianvito} />
-      
       <ArticleSplash className = 'row-index'
         category='SHOES'
         title='SANDALES BOHEME'
         date='06.04.2019'
         picture={boh}
         />
-      <ArticleSplash className = 'row-index'
-        category='SHOES'
-        title='UN BASIQUE'
+         <ArticleSplash className='row-index'
+        category='STYLE'
+        title='DENIM'
         date='06.04.2019'
-        picture={studio} />
+        picture={denim} />
     </Grid>
      <Aside>
         <Timeline
