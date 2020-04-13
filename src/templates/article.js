@@ -17,23 +17,25 @@ const Article = ({data}) => {
 export default Article
 
 export const pageQuery = graphql`
-  query ($id: String) {
+  query ($id: String, $picture: String) {
     allArticle(filter: {id: {eq: $id}}) {
       edges {
         node {
           title
           category
           date
-          picture
         }
       }
     }
-    allFile(filter: {relativePath: {eq: "style/kimono1.jpg"}}) {
+    allFile(filter: {relativePath: {eq: $picture}}) {
       edges {
         node {
           childImageSharp {
             fixed(width: 400, height: 400) {
               ...GatsbyImageSharpFixed
+            }
+            fluid(maxWidth: 400, maxHeight: 400) {
+              ...GatsbyImageSharpFluid
             }
           }   
         }
