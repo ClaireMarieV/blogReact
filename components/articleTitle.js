@@ -17,6 +17,7 @@ const ArticleTitle = ({category, title, date}) => (
                 font-weight: 100;
                 font-size: 1.1rem;
                 margin-bottom: 0.5em;
+                margin-top: 0.5rem;
             }
 
             .article-title h3 {
@@ -38,6 +39,9 @@ const ArticleTitle = ({category, title, date}) => (
                 margin-bottom: 0;
                 font-weight: 100;
                 font-size: 0.8rem;
+            }
+            .article-title a {
+                text-decoration: none;
             }
         `}
     </style>

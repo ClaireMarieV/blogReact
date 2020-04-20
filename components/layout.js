@@ -32,6 +32,17 @@ const Layout = ({ children }) => (
           margin-top: 0;
           background-color: white;
         }
+        img {
+          overflow: hidden;
+        }
+        a {
+          text-decoration: none;
+          color: #3a3938
+        }
+        h3, h4 {
+          margin-top: 0.5rem;
+          margin-bottom: 0.5rem;
+        }
       `}
         </style>
       <style jsx>{`

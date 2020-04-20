@@ -46,11 +46,11 @@ const StylePage = () => (
           text=' Vous pouvez me suivre > ' />
       </Aside>
       <style jsx>{`
-        .article-art:nth-child(9) {
+        a:nth-child(0n+9) {
           grid-column: 3/5;
           grid-row: 2/4;
       }
-      .article-art:nth-child(9) > img {
+      a:nth-child(9) > img {
           height: 100%;
           width: 100%;
       }

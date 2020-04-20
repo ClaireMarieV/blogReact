@@ -3,7 +3,7 @@ export default {
   style:[
     {
       category: 'STYLE',
-      title: 'DOUCEUR ET BIENVEILLANCE',
+      title: "L'ACCEPTATION PAR LA DOUCEUR",
       date: '13.04.2020',
       picture: '/images/style/kimono1.jpg',
     },

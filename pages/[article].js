@@ -20,6 +20,7 @@ const ArticlePage = () => {
             <SEO title="Home" />
             
             <style jsx>{`
+              
             `}</style>
         </Layout>
     )

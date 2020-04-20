@@ -3,7 +3,7 @@ import React from "react"
 const Grid = ({children}) => (
     <div className = 'grid'>
         {children}
-        <style jsx>{`
+        <style jsx global>{`
             /* Grille basique à 4 colonnes */
             .grid {
                 display: grid;
@@ -12,11 +12,6 @@ const Grid = ({children}) => (
                 width: calc(85% - 1.875rem);}
 
             /* Classe .grid-full permettant à un élément de la grille de prendre toute la largeur */
-            .grid > .grid-full {
-                grid-column: 1/5;
-                max-width: 100%;
-            }
-
             .grid > * {
                 overflow: hidden;
             }

@@ -9,11 +9,11 @@ const Timeline = ({text, category, title, date, picture, className, id}) => (
             <h5>{date}</h5>
         </div>
         <style jsx>{`
+            .timeline {
+                text-align: center;
+            }
             .timeline > h4, h5 {
                 margin: 0;
-            }
-            .timeline > .title {
-                text-align: center;
             }
             .timeline >.title > h4 {
                 margin: 0;

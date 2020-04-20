@@ -33,6 +33,11 @@ const LinkInstagram = ({title, text, picture, className}) => (
                 font-size: 1.3rem;
                 margin-bottom: 0.5em;
             }
+
+            .link-instagram img {
+                max-width: 12rem;
+                padding-left: 1rem;
+            }
         `}</style>
     </div>
   )

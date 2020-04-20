@@ -17,7 +17,7 @@ const IndexPage = () => (
         title="L'ACCEPTATION PAR LA DOUCEUR"
         date='06.04.2019'
         picture="/images/style/kimono2.jpg"/>
-         <ArticleSplash className = 'row-index'
+      <ArticleSplash className = 'row-index'
         category='SHOES'
         title='UN BASIQUE'
         date='06.04.2019'
@@ -83,7 +83,17 @@ const IndexPage = () => (
           text=' Vous pouvez me suivre > ' />
       </Aside>
       
-      <style jsx>{`
+      <style jsx global>{`
+      .grid > a:nth-child(0n+1){
+                grid-column: 1/5;
+                max-width: 100%;
+            }
+            .grid > a:nth-child(0n+6){
+                grid-column: 1/4;
+            }
+            .grid > a:nth-child(0n+12){
+                grid-column: 1/4;
+            }
         .grid-full > .article-splash-title{ 
           color: whitesmoke;
           position: absolute;

@@ -46,12 +46,15 @@ const StylePage = () => (
           title='VERT CLAIRE'
           text=' Vous pouvez me suivre > ' />
       </Aside>
-      <style jsx>{`
-        .article-group:nth-child(0n+6),
-        .article-group:nth-child(0n+16){
-            grid-column: 2/5;
+
+      <style jsx global>{`
+        .grid > a:nth-child(0n+1){
+            grid-column: 1/4;
         }
-        .article-group:nth-child(0n+11){
+        .grid > a:nth-child(0n+11){
+            grid-column: 1/5;
+        }
+        .grid > a:nth-child(0n+16){
             grid-column: 1/4;
         }
     `}</style>
