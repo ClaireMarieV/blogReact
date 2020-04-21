@@ -14,12 +14,6 @@ export default {
         },
         {
           category: 'art',
-          title: 'RACINE',
-          date: '06.04.2019',
-          picture: '/images/art/racine.jpg'
-        },
-        {
-          category: 'art',
           title: 'NATURE HUMANISÉE',
           date: '06.04.2019',
           picture: '/images/art/cercleVie.jpg'
@@ -29,12 +23,6 @@ export default {
           title: 'RENAISSANCE DU PHOENIX 2',
           date: '06.04.2019',
           picture: '/images/art/envoleGris.jpg'
-        },
-        {
-          category: 'art',
-          title: 'ARCHANGE FLORAL',
-          date: '01.03.2020',
-          picture: '/images/art/venus.jpg'
         },
         {
           category: 'art',
@@ -50,6 +38,18 @@ export default {
         },
         {
           category: 'art',
+          title: 'RACINE',
+          date: '06.04.2019',
+          picture: '/images/art/racine.jpg'
+        },
+        {
+          category: 'art',
+          title: 'ARCHANGE FLORAL',
+          date: '01.03.2020',
+          picture: '/images/art/venus.jpg'
+        },
+        {
+          category: 'art',
           title: 'CO VIDE 1',
           date: '29.03.2020',
           picture: '/images/art/reverie.jpg'
@@ -59,7 +59,6 @@ export default {
           title: 'GRUE',
           date: '29.03.2020',
           picture: '/images/art/grue.jpg'
-        },
-        
+        },        
     ]
 }

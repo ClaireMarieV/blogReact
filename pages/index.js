@@ -84,16 +84,16 @@ const IndexPage = () => (
       </Aside>
       
       <style jsx global>{`
-      .grid > a:nth-child(0n+1){
-                grid-column: 1/5;
-                max-width: 100%;
-            }
-            .grid > a:nth-child(0n+6){
-                grid-column: 1/4;
-            }
-            .grid > a:nth-child(0n+12){
-                grid-column: 1/4;
-            }
+        .grid > a:nth-child(0n+1){
+          grid-column: 1/5;
+          max-width: 100%;
+        }
+        .grid > a:nth-child(0n+6){
+          grid-column: 1/4;
+        }
+        .grid > a:nth-child(0n+12){
+          grid-column: 1/4;
+        }
         .grid-full > .article-splash-title{ 
           color: whitesmoke;
           position: absolute;

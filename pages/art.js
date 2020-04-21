@@ -45,16 +45,16 @@ const StylePage = () => (
           title='VERT CLAIRE'
           text=' Vous pouvez me suivre > ' />
       </Aside>
-      <style jsx>{`
-        a:nth-child(0n+9) {
+      <style jsx global>{`
+      .grid > a:nth-child(0n+9){
           grid-column: 3/5;
           grid-row: 2/4;
-      }
-      a:nth-child(9) > img {
-          height: 100%;
-          width: 100%;
-      }
-  `}</style>
+        }
+        .grid > a:nth-child(0n+9) img {
+          height: 100% !important;
+          width: 100% !important;
+        }
+      `}</style>
     </Layout>
   )
   

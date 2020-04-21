@@ -37,9 +37,9 @@ const Layout = ({ children }) => (
         }
         a {
           text-decoration: none;
-          color: #3a3938
+          color: #313135;
         }
-        h3, h4 {
+        h3, h4, h5 {
           margin-top: 0.5rem;
           margin-bottom: 0.5rem;
         }
