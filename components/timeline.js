@@ -15,7 +15,7 @@ const Timeline = ({text, category, title, date, picture, className, id}) => (
             .timeline > h4, h5 {
                 margin: 0;
             }
-            .timeline >.title > h4 {
+            .timeline h4 {
                 margin: 0;
                 letter-spacing: -0.03rem;
                 font-family: freight-big-pro, serif;
@@ -24,11 +24,11 @@ const Timeline = ({text, category, title, date, picture, className, id}) => (
                 font-size: 1.1em;
                 margin-bottom: 0.5em;
             }
-            .timeline > .title > h5 {
+            .timeline h5 {
                 margin: 0.5em;
                 font-family: astoria-sans-condensed, sans-serif;
                 font-weight: 100;
-                font-size: 1.1rem;
+                font-size: 1.2rem;
                 margin-bottom: 0.5em;
             }
         `}</style>
