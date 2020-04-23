@@ -38,13 +38,11 @@ const AcceptationPage = () => (
         text=" Vous pouvez me suivre > "
       />
     </Aside>
-    <style jsx>{`
+    <style jsx global>{`
       .imgRow {
-        margin-left: 1em;
-        width: 45%;
+        width: 100%;
         height: 20rem;
-        object-fit: cover;
-        margin-right: 1em;
+        display: flex;
       }
     `}</style>
   </Layout>

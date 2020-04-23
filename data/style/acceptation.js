@@ -36,29 +36,33 @@ export default {
         Au début, je n'osais pas rencontrer quelqu'un et puis j'ai commençais à
         perdre un peu de poids donc pourquoi pas ? Oui pourquoi pas en effet,
         jusqu'à ce que... Le premier jeune homme dont je suis 'tombée amoureuse'
-        était un ami du copain de ma soeur et de son copain. Il habitait
-        Strasbourg, ma grande soeur aussi donc je m'étais dis 'dans le cas où ça
-        ne vas pas j'aurais toujours une solution'. Et bien j'avais vu juste. Je
-        devais dormir chez lui, ( étant un ami de ma soeur et de son copain je
-        pouvais avoir confiance). Il est venu me chercher à la gare, et m'a
-        vu... Il m'a regardé de haut en bas, m'a accompagné pendant quelque pas
-        et m'a dit que ça ne serait pas possible. Pas de problème, je demande à
-        ma soeur de venir me chercher. Après ça, ma soeur et son copain se sont
-        énervés. Ils ont essayé de la contacter tous les jours de la semaine
-        sans réponses. De ce que je me souviens, il a fait le mort pendant des
-        années ensuite. Pas de problème? Si! Evidemment! Cette première
-        experience a mis à l'épreuve l'estime de moi. C'est pourquoi à partir de
-        ce moment, j'ai commencé à danser. Le seul moment d'échappatoire, le
-        moment où je pouvais enfin être dans ma bulle était quand je dansais.
-        Ressentir la musique, le tempo, laisser son corps libre de tout
-        mouvements, ne pas voir passer les minutes, les heures qui passent,
-        juste ressentir! C'est pourquoi j'allais souvent en boîte avec des
-        ami(e)s juste pour pouvoir me sentir libre pendant quelques heures.
+        était un ami du copain de ma soeur. Il habitait Strasbourg, ma grande
+        soeur aussi donc je m'étais dis 'dans le cas où ça ne vas pas j'aurais
+        toujours une solution'. Et bien j'avais vu juste. Je devais dormir chez
+        lui, ( étant un ami de ma soeur et de son copain je pouvais avoir
+        confiance). Il est venu me chercher à la gare, et m'a vu... Il m'a
+        regardé de haut en bas, m'a accompagné pendant quelque pas et m'a dit
+        que ça ne serait pas possible. Pas de problème, je demande à ma soeur de
+        venir me chercher. Après ça, ma soeur et son copain se sont énervés. Ils
+        ont essayé de le contacter tous les jours de la semaine sans réponses,
+        ma soeur est allé devant chez lui, sonner, taper à la porte,
+        l'engueuler. De ce que je me souviens, il a fait le mort pendant des
+        années ensuite. Pas de problème? Si! Evidemment! C'est un grand manque
+        de respect! Cette première experience a mis à l'épreuve l'estime de moi.
+        C'est pourquoi à partir de ce moment, j'ai décidé de perdre encore plus
+        de poids. Je suis passé de 69 à 56 kilos en l'espace d'un mois et demi !
+        J'ai commencé à danser, à m'amuser en parallèle d'un régime. Le seul
+        moment d'échappatoire, le moment où je pouvais enfin être dans ma bulle
+        était quand je dansais. Ressentir la musique, le tempo, laisser son
+        corps libre de tout mouvements, ne pas voir passer les minutes, les
+        heures, juste ressentir! C'est pourquoi j'allais souvent en boîte avec
+        des ami(e)s juste pour pouvoir me sentir libre pendant quelques.
         Quelques heures une soirée par semaine, c'est pas grand chose nan? Et
         puis il y a 3ans et quelques mois, je me suis coupée de personnes qui
         étaient toxiques. Un groupe qui s'étaient trouvés parce que sans doute
         ils avaient en commun le fait de ne pas se sentir bien. Et j'en faisais
-        parti.
+        parti, je ne me suis jamais vraiment diriger vers des personnes
+        positives d'ailleurs.
       </p>
 
       <p>
@@ -69,16 +73,17 @@ export default {
         été grands! Je ne m'accepte pas encore totalement, qui y arrive? (Pour
         celles qui ont réussi, comment avez-vous fait?) Mais c'est un pas à la
         fois. Pour une développeuse junior, j'ai fais ce blog en PHP, en Symfony
-        et maintenant en RéactJs en 1an d'experience! Apparemment peu de
-        développeurs junior le font. Le problème persistant c'est que je ne
+        et maintenant en React en 1an d'experience! Apparemment peu de
+        développeurs junior le font; Le problème persistant c'est que je ne
         crois pas encore en mes capacités mais ça viendra. Tout ça pour dire
-        qu'il n'y a pas de magie; Aujourd'hui ça va faire un mois que j'ai
+        qu'il n'y a pas de magie. Aujourd'hui ça va faire un mois que j'ai
         arrêté de fumer; c'est pourquoi je fais cet article. Un mois où je
         réussi à refaire du sport, des exercices à la barre, du yoga. J'ai même
-        redansé! Chose qui ne m'étais pas arrivé depuis des mois. Ces dernières
-        années, je n'ai pas été douce avec mon corps, ni avec mon esprit
-        d'ailleurs. Je ne vous ai donné que peu d'exemples du pourquoi mais le
-        principal c'est que tout ça change nan?
+        redansé sans être perturbée par les regards, chose qui ne m'étais pas
+        arrivé depuis plusieurs mois. Ces dernières années, je n'ai pas été
+        douce avec mon corps, ni avec mon esprit d'ailleurs. Je ne vous ai donné
+        que peu d'exemples du pourquoi mais le principal c'est que tout ça
+        change nan?
       </p>
       <div className="imgRow">
         <img src="/images/style/kimono.jpg" />
@@ -105,7 +110,7 @@ export default {
         comme ça ou autrement est essentiel. Vous le savez sans-doute, et le
         faites en ce moment mais puisqu'on y a pris gôut pourquoi arrêter en si
         bon chemin après? C'est aussi ça "l'après", continuer à faire ce qui
-        nous rend heureuse. Ensuite ça deviendra une habitude c'est ça qui bien!
+        nous rend heureuse, ça en deviendra une habitude!
       </p>
     </>
   ),
