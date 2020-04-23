@@ -2,27 +2,24 @@ import React from "react";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import ArticleSplash from "../components/articleSplash";
-import Grid from "../components/grid";
 import Aside from "../components/aside";
 import Timeline from "../components/timeline";
 import LinkInstagram from "../components/linkInstagram";
-import articles from "../data/articleLife";
+import ArticleBase from "../components/articleBase";
+import article from "../data/style/acid";
 
-const StylePage = () => (
+const AcidPage = () => (
   <Layout>
     <SEO title="Home" />
-    <Grid>
-      {articles.map((article) => (
-        <ArticleSplash
-          className="article-group"
-          category={article.category}
-          title={article.title}
-          date={article.date}
-          picture={article.picture}
-        />
-      ))}
-    </Grid>
+    <ArticleBase
+      category={article.category}
+      title={article.title}
+      date={article.date}
+      picture="/images/style/acid.jpg"
+    >
+      {article.content}
+    </ArticleBase>
+
     <Aside>
       <Timeline text="TIMELINE" category="STYLE" title="ACID" date="12.12.12" />
       <Timeline
@@ -40,7 +37,16 @@ const StylePage = () => (
         text=" Vous pouvez me suivre > "
       />
     </Aside>
+    <style jsx>{`
+      .imgRow {
+        margin-left: 1em;
+        width: 45%;
+        height: 20rem;
+        object-fit: cover;
+        margin-right: 1em;
+      }
+    `}</style>
   </Layout>
 );
 
-export default StylePage;
+export default AcidPage;

@@ -24,7 +24,6 @@ const Layout = ({ children }) => (
       <main>{children}</main>
     </div>
     <style jsx global>
-      {" "}
       {`
         header:first-of-type {
           position: fixed;
@@ -55,16 +54,6 @@ const Layout = ({ children }) => (
       `}
     </style>
     <style jsx>{`
-      html {
-        font-family: sans-serif;
-        -ms-text-size-adjust: 100%;
-        -webkit-text-size-adjust: 100%;
-      }
-      body {
-        margin: 0;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-      }
       article,
       aside,
       details,
