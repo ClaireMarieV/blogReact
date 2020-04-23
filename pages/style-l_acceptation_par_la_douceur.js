@@ -39,6 +39,12 @@ const AcceptationPage = () => (
       />
     </Aside>
     <style jsx global>{`
+      .article-base img {
+        grid-column: 1/5;
+        width: 100%;
+        height: 20rem;
+        object-fit: cover;
+      }
       .imgRow {
         width: 100%;
         height: 20rem;

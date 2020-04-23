@@ -19,7 +19,6 @@ const AcidPage = () => (
     >
       {article.content}
     </ArticleBase>
-
     <Aside>
       <Timeline text="TIMELINE" category="STYLE" title="ACID" date="12.12.12" />
       <Timeline
@@ -37,13 +36,17 @@ const AcidPage = () => (
         text=" Vous pouvez me suivre > "
       />
     </Aside>
-    <style jsx>{`
+    <style jsx global>{`
+      .article-base img {
+        width: 100%;
+      }
       .imgRow {
-        margin-left: 1em;
-        width: 45%;
-        height: 20rem;
-        object-fit: cover;
-        margin-right: 1em;
+        width: 100%;
+        height: 30rem;
+        display: flex;
+      }
+      .imgRow p {
+        padding: 1em;
       }
     `}</style>
   </Layout>

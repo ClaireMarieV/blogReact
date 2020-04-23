@@ -23,14 +23,6 @@ const ArticleBase = ({
       .article-base .article-base-title {
         margin-top: 1rem;
       }
-      .article-base img {
-        grid-column: 1/5;
-        width: 100%;
-        height: 20rem;
-        object-fit: cover;
-      }
-      .paragraphe {
-      }
     `}</style>
   </div>
 );
