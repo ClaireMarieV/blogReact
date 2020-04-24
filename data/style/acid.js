@@ -32,7 +32,17 @@ export default {
           de là où j'habite n'ont pas participé à prendre soin de soi.
         </p>
       </div>
-      <p></p>
+      <p>
+        Je vous ai déja parlé de féminité dans l'article 'acceptation par la
+        douceur', mais pas de ma façon de voir la féminité. Autre que dans la
+        danse, la féminité émane aussi par la douceur et les détails qu'une
+        femme peut mettre en avant. Il y a, oui, le maquillage mais il y a aussi
+        toutes ces petites choses comme retrousser son pantalon pour mettre en
+        avant ses chevilles, ou bien enlacer une de ses chevilles d'une chaîne.
+        Parer sa nuque de colliers, la rehausser d'un tatouage. Mettre en valeur
+        ou plutôt se mettre en valeur avec de petites choses qui donneront
+        confiance.
+      </p>
     </>
   ),
 };
