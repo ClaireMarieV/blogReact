@@ -28,7 +28,7 @@ const Header = () => (
       </ul>
       <h2>
         <Link href="/">
-          <a>. IL ETAIT UNE FOIS .</a>
+          <a>. IL ÉTAIT UNE FOIS .</a>
         </Link>
       </h2>
       <ul>

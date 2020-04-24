@@ -46,7 +46,7 @@ export default {
         jusqu'à ce que... Le premier jeune homme dont je suis 'tombée amoureuse'
         avec une certaine naiveté était un ami du copain de ma soeur. Il
         habitait Strasbourg, ma grande soeur aussi donc je m'étais dis 'dans le
-        cas où ça ne vas pas j'aurais toujours une solution'. Et bien j'avais vu
+        cas où ça ne va pas j'aurais toujours une solution'. Et bien j'avais vu
         juste. Je devais dormir chez lui, ( étant un ami de ma soeur et de son
         copain je pouvais avoir confiance). Il est venu me chercher à la gare,
         et m'a vu... Il m'a regardé de haut en bas, m'a accompagné pendant
@@ -54,7 +54,7 @@ export default {
         je demande à ma soeur de venir me chercher. Mais après ça, ma soeur et
         son copain se sont énervés. Ils ont essayé de le contacter tous les
         jours de la semaine sans réponses, ma soeur est allé devant chez lui,
-        sonner, taper à la porte, crier contre lui, a essayer de l'appeler sans
+        sonner, taper à la porte, crier contre lui, a essayé de l'appeler sans
         réponse. De ce que je me souviens, il a fait le mort pendant des années
         ensuite.
       </p>
@@ -71,23 +71,22 @@ export default {
         souvent en boîte avec des ami(e)s juste pour pouvoir me sentir libre.
         C'est triste à dire mais c'est à ce moment que le regard des hommes à
         changer. Comme quoi ... Et puis petit à petit, rencontres après
-        rencontres, j'avais toujours ce système de mis en place. Cette vengeance
+        rencontres, j'avais toujours ce système de mit en place. Cette vengeance
         après chaque rupture qui ne blessait personne, de 56 à 50 de 50 jusqu'a
         me stabiliser une bonne fois à 48. Il y a 3ans et quelques mois, je me
         suis coupée de personnes qui étaient toxiques. Un groupe qui s'étaient
         trouvés parce que sans doute ils avaient en commun le fait de ne pas se
-        sentir bien. Et j'en faisais parti, je ne me suis jamais vraiment
-        diriger vers des personnes positives d'ailleurs.
+        sentir bien.
       </p>
 
       <p>
         Depuis cette rupture avec eux, tout a changé. J'ai pu me recentrer,
         chercher à aller mieux et c'est quelques mois plus tard que j'ai
-        rencontré quelqu'un. Ca fait 2ans et 4mois que l'on est ensemble (et oui
+        rencontré quelqu'un. Ça fait 2ans et 4mois que l'on est ensemble (et oui
         je compte encore les mois haha). Aujourd'hui ça va faire un mois que
         j'ai arrêté de fumer; c'est pourquoi je fais cet article d'ailleurs. Un
         mois où je réussi à refaire du sport, des exercices à la barre, du yoga.
-        Un mois où je retrouve une certaine fémnité. J'ai même redansé, chose
+        Un mois où je retrouve une certaine féminité. J'ai même redansé, chose
         qui ne m'étais pas arrivé depuis plusieurs mois. Ces dernières années,
         je n'ai pas été douce avec mon corps, ni avec mon esprit d'ailleurs.
         J'avais l'impression de devoir me prouver que dans ce monde une femme
@@ -101,14 +100,21 @@ export default {
       <p>
         L'acceptation de cette feminité s'est faite grâce à la danse. La
         légereté du corps, les mouvements, les ondulations marquées par le
-        rythme. Plus je dansais plus je me définissais par un style
+        rythme. Plus je dansais plus je me définissais aussi par un style
         vestimentaire. La douceur du tissus et l'élégance qui s'en dégage. La
         démarche que l'on a en talons ou encore la légereté et le confort que
         l'on peut ressentir en basket. Toutes ces petites choses que l'on ne
         prend plus forcément le temps d'apprécier ni même de se rendre compte.
       </p>
 
-      <p></p>
+      <p>
+        C'est pourquoi, maintenant, ce que je recherche c'est ça. Etre en
+        équilibre entre ce qui m'élève et les racines. C'est pourquoi la danse
+        et le sport me font autant de bien; ressentir l'ancrage au sol mais en
+        même temps comme une certaine élégance, une aisance dans les mouvements,
+        une certaine douceur qui maintenant se dégage lorsque je laisse mon
+        corps s'exprimer.
+      </p>
     </>
   ),
 };
