@@ -31,6 +31,24 @@ export default [
   },
   {
     category: "SHOES",
+    title: "UN BASIQUE",
+    date: "06.04.2019",
+    picture: "/images/style/photoInsta.jpg",
+  },
+  {
+    category: "SHOES",
+    title: "UN BASIQUE",
+    date: "06.04.2019",
+    picture: "/images/style/photoInsta.jpg",
+  },
+  {
+    category: "SHOES",
+    title: "UN BASIQUE",
+    date: "06.04.2019",
+    picture: "/images/style/photoInsta.jpg",
+  },
+  {
+    category: "SHOES",
     title: "DU ROUGE, DU ROUGE, DU ROUGE",
     date: "06.04.2019",
     picture: "/images/shoes/gianvito.png",

@@ -45,18 +45,20 @@ const StylePage = () => (
       .grid > a:nth-child(0n + 1) {
         grid-column: 1/3 !important;
       }
-      .grid > a:nth-child(0n + 6) {
+      .grid > a:nth-child(0n + 9) {
         grid-column: 2/5 !important;
       }
 
-      .grid > a:nth-child(0n + 1) .article-splash-title {
+      .grid > a:nth-child(0n + 1) .article-splash-title,
+      .grid > a:nth-child(0n + 9) .article-splash-title {
         margin: 0;
         background-color: black;
         color: whitesmoke;
         padding: 1em;
       }
+      .grid > a:nth-child(0n + 1) .article-splash-title .article-title h3:hover,
       .grid
-        > a:nth-child(0n + 1)
+        > a:nth-child(0n + 9)
         .article-splash-title
         .article-title
         h3:hover {
