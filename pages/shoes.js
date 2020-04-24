@@ -41,12 +41,26 @@ const StylePage = () => (
         text=" Vous pouvez me suivre > "
       />
     </Aside>
-    <style jsx>{`
+    <style jsx global>{`
       .grid > a:nth-child(0n + 1) {
         grid-column: 1/3 !important;
       }
       .grid > a:nth-child(0n + 6) {
         grid-column: 2/5 !important;
+      }
+
+      .grid > a:nth-child(0n + 1) .article-splash-title {
+        margin: 0;
+        background-color: black;
+        color: whitesmoke;
+        padding: 1em;
+      }
+      .grid
+        > a:nth-child(0n + 1)
+        .article-splash-title
+        .article-title
+        h3:hover {
+        color: whitesmoke;
       }
     `}</style>
   </Layout>
