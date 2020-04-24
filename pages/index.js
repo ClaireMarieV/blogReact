@@ -98,18 +98,14 @@ const IndexPage = () => (
       .grid > a:nth-child(0n + 12) {
         grid-column: 1/4;
       }
-      .grid-full > .article-splash-title {
+      a .grid-full .article-splash-title {
+        margin: 0;
+        background-color: black;
         color: whitesmoke;
-        position: absolute;
-      }
-
-      .grid-full > .article-splash-title:hover > .article-title > h3 {
-        color: whitesmoke;
-      }
-      .grid-full:nth-child(0n + 1) > .article-splash-title {
-        position: absolute;
-        left: 8em;
         padding: 1em;
+      }
+      a .grid-full .article-splash-title .article-title h3:hover {
+        color: whitesmoke;
       }
     `}</style>
   </Layout>

@@ -13,27 +13,25 @@ import articles from "../data/articleArt";
 const StylePage = () => (
   <Layout>
     <SEO title="Home" />
-    <Grid>
-      <div className="intro">
-        <p>
-          Dans cette catégorie, les photos ne redirigent pas vers un article. Je
-          ne peux pas mettre mon ressenti sur ces tableaux étant donné qu'ils ne
-          sont pas de moi mais de ma mère. Ce ne serait qu'une vision
-          spectatrice de chacun d'eux, par conséquent je ne prèfère pas mais
-          vous pouvez bien sûr partager la vôtre! Je voulais vous les faire
-          découvrir parce qu'elle a du talent mais a du mal a les partager.
-        </p>
-      </div>
-      {articles.map((article) => (
-        <ArticleSplash
-          className="article-art"
-          category={article.category}
-          title={article.title}
-          date={article.date}
-          picture={article.picture}
-        />
-      ))}
-    </Grid>
+    <div className="intro">
+      <p>
+        Dans cette catégorie, les photos ne redirigent pas vers un article. Je
+        ne peux pas mettre mon ressenti sur ces tableaux étant donné qu'ils ne
+        sont pas de moi mais de ma mère. Ce ne serait qu'une vision spectatrice
+        de chacun d'eux, par conséquent je ne prèfère pas mais vous pouvez bien
+        sûr partager la vôtre! Je voulais vous les faire découvrir parce qu'elle
+        a du talent mais a du mal a les partager.
+      </p>
+    </div>
+    {articles.map((article) => (
+      <ArticleSplash
+        className="article-art"
+        category={article.category}
+        title={article.title}
+        date={article.date}
+        picture={article.picture}
+      />
+    ))}
     <Aside>
       <Timeline text="TIMELINE" category="STYLE" title="ACID" date="12.12.12" />
       <Timeline
@@ -69,7 +67,7 @@ const StylePage = () => (
       /*spécifique*/
       .grid > a:nth-child(0n + 3) {
         grid-column: 1/3;
-        grid-row: 2/3;
+        grid-row: 2/2;
       }
       .grid > a:nth-child(0n + 3) .article-splash-title,
       .grid > a:nth-child(0n + 6) .article-splash-title,
@@ -85,11 +83,11 @@ const StylePage = () => (
       }
       .grid > a:nth-child(0n + 6) {
         grid-column: 1/3;
-        grid-row: 4/5;
+        grid-row: 4/4;
       }
       .grid > a:nth-child(0n + 8) {
         grid-column: 3/5;
-        grid-row: 3/4;
+        grid-row: 3/3;
       }
 
       /*image specifique*/

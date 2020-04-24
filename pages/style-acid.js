@@ -40,13 +40,11 @@ const AcidPage = () => (
       .article-base img {
         width: 100%;
       }
-      .imgRow {
-        width: 100%;
-        height: 30rem;
+      .imgText {
         display: flex;
       }
-      .imgRow p {
-        padding: 1em;
+      .imgRow img {
+        width: 100%;
       }
     `}</style>
   </Layout>

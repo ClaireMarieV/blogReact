@@ -49,8 +49,20 @@ const StylePage = () => (
       .grid > a:nth-child(0n + 11) {
         grid-column: 1/5;
       }
+     }
       .grid > a:nth-child(0n + 16) {
         grid-column: 1/4;
+      }
+      a:nth-child(0n + 1) .article-splash-title,
+      a:nth-child(0n + 11) .article-splash-title {
+        margin: 0;
+        background-color: black;
+        color: whitesmoke;
+        padding: 1em;
+      }
+      a:nth-child(0n + 1) .article-splash-title .article-title h3:hover,
+      a:nth-child(0n + 11) .article-splash-title .article-title h3:hover {
+        color: whitesmoke;
       }
     `}</style>
   </Layout>

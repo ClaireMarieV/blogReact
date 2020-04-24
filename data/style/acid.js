@@ -12,13 +12,27 @@ export default {
         maintenant et ça fait un bien fou! J'esperai que j'allais le mettre un
         jour malgré les années comme j'esperais trouver ma voie.
       </p>
+
       <div className="imgRow">
-        <img src="/images/style/rose.jpg" />
+        <img src="/images/style/roseEucalyptus.jpg" />
+      </div>
+      <div className="imgText">
+        <p>
+          A la base, le jean avait un ourlet au bas de la jambe et été trop long
+          pour moi donc étant petite je l'ai coupé pour qu'il arrive un peu au
+          dessus de la cheville. Le fait de l'avoir coupé fait qu'il se delite
+          ce qui donne un look un peu grunge que l'on peut aisément rendre
+          élégant avec des accessoires.
+        </p>
         <p>
           J'aime tellement cette tenue. Associée avec une accumulation de
-          collier vintage, c'est la tenue parfaite pour le printemps!
+          collier vintage, des sandales à talons noires avec bride autour de la
+          chevilles c'est la tenue parfaite pour le printemps! Un retour à la
+          féminité qui avec la formation et le premier job à deux heures aller
+          de là où j'habite n'ont pas participé à prendre soin de soi.
         </p>
       </div>
+      <p></p>
     </>
   ),
 };
