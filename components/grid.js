@@ -22,26 +22,34 @@ const Grid = ({children}) => (
                 }
             }
 
-            @media (max-width: 860px) {
+            @media (min-width: 601px) and (max-width: 860px) {
                 .grid {
-                    grid-template-columns: repeat(2, minmax(0, 1fr));
-                    
-                }
+                    grid-template-columns: repeat(3, minmax(0, 1fr));
 
-                .grid > .grid-full {
-                    grid-column: 1/3;
+                }
+                .grid > a:nth-child(0n+1) {
+                    grid-column: 1/4 ;
                 }
             }
 
+            @media (min-width:401px) and (max-width: 600px) {
+                .grid {
+                    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+                }
+                .grid > a:nth-child(0n+1) {
+                    grid-column: 1/3;
+                }
+            }
             @media (max-width: 400px) {
                 .grid {
                     grid-template-columns: repeat(1, minmax(0, 1fr));
                 }
-
-                .grid > .grid-full {
-                    grid-column: 1/2;
+                .grid > a:nth-child(0n+1) {
+                    grid-column: 1/1;
                 }
             }
+
         `}</style>
     </div>
 )

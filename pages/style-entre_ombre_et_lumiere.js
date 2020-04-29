@@ -2,23 +2,25 @@ import React from "react";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+import Grid from "../components/grid";
 import Aside from "../components/aside";
 import Timeline from "../components/timeline";
 import LinkInstagram from "../components/linkInstagram";
 import ArticleBase from "../components/articleBase";
-import article from "../data/style/acid";
+import article from "../data/style/ombre";
 
-const AcidPage = () => (
+const OmbrePage = () => (
   <Layout>
     <SEO title="Home" />
     <ArticleBase
       category={article.category}
       title={article.title}
       date={article.date}
-      picture="/images/style/acid.jpg"
+      picture="/images/style/tie.jpg"
     >
       {article.content}
     </ArticleBase>
+
     <Aside>
       <Timeline text="TIMELINE" category="STYLE" title="ACID" date="12.12.12" />
       <Timeline
@@ -38,19 +40,24 @@ const AcidPage = () => (
     </Aside>
     <style jsx global>{`
       .article-base img {
+        grid-column: 1/5;
         width: 100%;
+        height: 20rem;
+        object-fit: cover;
       }
-      .imgText {
+      .imgRow {
+        width: 100%;
+        height: 20rem;
         display: flex;
       }
-      .imgText p {
-        margin: 1em;
+      .text {
+        display: flex;
       }
-      .imgRow img {
-        width: 100%;
+      .text p {
+        margin: 1em;
       }
     `}</style>
   </Layout>
 );
 
-export default AcidPage;
+export default OmbrePage;

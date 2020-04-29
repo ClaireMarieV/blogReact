@@ -1,6 +1,6 @@
 import acceptation from "./style/acceptation";
 import acid from "./style/acid";
-
+import ombre from './style/ombre'
 export default [
   acceptation,
   acid,
@@ -52,12 +52,8 @@ export default [
     date: "09.04.2020",
     picture: "/images/style/aquarelle.jpg",
   },
-  {
-    category: "STYLE",
-    title: "ENTRE OMBRE ET LUMIÈRE",
-    date: "06.04.2019",
-    picture: "/images/style/tie.jpg",
-  },
+  ombre,
+
   {
     category: "STYLE",
     title: "UNE AQUARELLE DE FLEURS",

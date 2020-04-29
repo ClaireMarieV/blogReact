@@ -30,7 +30,7 @@ const IndexPage = () => (
         className="row-index"
         category="STYLE"
         title="ACID"
-        date="22.03.20120"
+        date="22.03.2020"
         picture="/images/style/acid.jpg"
       />
       <ArticleSplash
@@ -95,6 +95,12 @@ const IndexPage = () => (
       .grid > a:nth-child(0n + 6) {
         grid-column: 1/4;
       }
+      .grid > a:nth-child(0n+6) .grid-full .article-splash-title{
+        width: 30em;
+        position: relative;
+        top: -4em;
+        left: 1em;
+      }
       .grid > a:nth-child(0n + 12) {
         grid-column: 1/4;
       }
@@ -106,6 +112,12 @@ const IndexPage = () => (
       }
       a .grid-full .article-splash-title .article-title h3:hover {
         color: whitesmoke;
+      }
+      @media (max-width: 855px) {
+          .grid > a:nth-child(0n+6) .grid-full .article-splash-title {
+            
+          }
+
       }
     `}</style>
   </Layout>

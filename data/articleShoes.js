@@ -1,10 +1,7 @@
+import desir from './shoes/desir'
+
 export default [
-  {
-    category: "SHOES",
-    title: "CELLE TANT DESIREE",
-    date: "11.03.2020",
-    picture: "/images/shoes/doc.jpg",
-  },
+desir,
   {
     category: "SHOES",
     title: "UN BASIQUE",

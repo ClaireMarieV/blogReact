@@ -74,13 +74,13 @@ const Header = () => (
         color: black;
         text-align: center;
         /*font-family: arboria, sans-serif;
-            font-weight: 200;  
+            font-weight: 200;
             font-style: italic;*/
         font-family: astoria-sans-condensed, sans-serif;
-        font-weight: 700;
+        font-weight: 600;
         font-style: thin;
         margin-top: 0.5em;
-        letter-spacing: 0.5em;
+        letter-spacing: 0.4em;
       }
       nav > h2 > a {
         text-decoration: none;
