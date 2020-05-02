@@ -50,6 +50,7 @@ const Layout = ({ children }) => (
           font-family: astoria-sans-condensed, sans-serif;
           font-weight: 100;
           font-size: 1.2rem;
+          margin: 1em;
         }
       `}
     </style>

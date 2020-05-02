@@ -43,9 +43,6 @@ const AcidPage = () => (
       .imgText {
         display: flex;
       }
-      .imgText p {
-        margin: 1em;
-      }
       .imgRow img {
         width: 100%;
       }

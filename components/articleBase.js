@@ -23,6 +23,9 @@ const ArticleBase = ({
       .article-base .article-base-title {
         margin-top: 1rem;
       }
+      .article-base {
+        margin: 1em;
+      }
     `}</style>
   </div>
 );

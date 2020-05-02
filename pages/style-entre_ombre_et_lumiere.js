@@ -53,9 +53,6 @@ const OmbrePage = () => (
       .text {
         display: flex;
       }
-      .text p {
-        margin: 1em;
-      }
     `}</style>
   </Layout>
 );

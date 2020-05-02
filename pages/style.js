@@ -44,7 +44,7 @@ const StylePage = () => (
 
     <style jsx global>{`
       .grid > a:nth-child(1) {
-        grid-column: 1/3 !important;
+        grid-column: 1/4 !important;
       }
       .grid > a:nth-child(0n + 11) {
         grid-column: 1/5;
