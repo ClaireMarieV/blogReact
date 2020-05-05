@@ -12,7 +12,7 @@ export default {
           plateforme permettent à ces sandales de rester dans la simplicité tout
           en les relevant par ce relief. Le tour de la cheville accentué par la
           bride l'est d'autant plus grâce au bracelet de cheville qui reflète la
-          lumière. Encore une fois, tout ce joue sur ce que la luminosité amène
+          lumière. Encore une fois, tout se joue sur ce que la luminosité amène
           et créé sur nous.
         </p>
         <p></p>
