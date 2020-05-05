@@ -51,6 +51,7 @@ const Layout = ({ children }) => (
           font-weight: 100;
           font-size: 1.2rem;
           margin: 1em;
+          text-align: justify;
         }
       `}
     </style>

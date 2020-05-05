@@ -9,7 +9,7 @@ const Timeline = ({text, category, title, date, picture, className, id}) => (
             <h5>{date}</h5>
         </div>
         <style jsx>{`
-            .timeline {
+            .timeline{
                 text-align: center;
             }
             .timeline > h4, h5 {
@@ -34,6 +34,5 @@ const Timeline = ({text, category, title, date, picture, className, id}) => (
         `}</style>
     </div>
   )
-  
+
   export default Timeline
-  

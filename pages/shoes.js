@@ -25,15 +25,29 @@ const StylePage = () => (
       ))}
     </Grid>
     <Aside>
-      <Timeline text="TIMELINE" category="STYLE" title="ACID" date="12.12.12" />
+      <Timeline
+        text="TIMELINE"
+        category="STYLE"
+        title="ACID"
+        date="13.04.2020"
+      />
       <Timeline
         category="SHOES"
-        title="DU ROUGE, DU ROUGE, DU ROUGE"
-        date="12.12.12"
+        title="RETOUR AUX ANNEES 90'"
+        date="05.05.2020"
       />
-      <Timeline category="STYLE" title="ACID" date="12.12.12" />
-      <Timeline category="STYLE" title="ACID" date="12.12.12" />
-      <Timeline category="STYLE" title="ACID" date="12.12.12" />
+
+      <Timeline
+        category="STYLE"
+        title="L'ACCEPTATION PAR LA DOUCEUR"
+        date="13.04.2020"
+      />
+      <Timeline
+        category="STYLE"
+        title="UNE AQUARELLE DE FLEURS"
+        date="09.04.2020"
+      />
+      <Timeline category="SHOES" title="CELLE TANT DESIREE" date="12.03.2020" />
 
       <LinkInstagram
         picture="/images/shoes/doc.jpg"
@@ -42,8 +56,8 @@ const StylePage = () => (
       />
     </Aside>
     <style jsx global>{`
-      .grid > a:nth-child(0n + 1) {
-        grid-column: 1/3 !important;
+      .grid > a:nth-child(0n + 3) {
+        grid-column: 3/5 !important;
       }
       .grid > a:nth-child(0n + 9) {
         grid-column: 2/5 !important;

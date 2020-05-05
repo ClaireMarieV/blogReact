@@ -14,7 +14,7 @@ const ArticleBase = ({
   <div className={"article-base" + (className || "")} id={id}>
     <img src={picture} />
     <div className="article-base-title">
-      <ArticleTitle category={category} title={title} date={date} />
+      <ArticleTitle title={title} date={date} />
     </div>
     <div className="paragraphe">
       <p>{children}</p>

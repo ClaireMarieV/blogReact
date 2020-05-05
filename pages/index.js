@@ -21,17 +21,17 @@ const IndexPage = () => (
       />
       <ArticleSplash
         className="row-index"
-        category="SHOES"
-        title="UN BASIQUE"
-        date="06.04.2019"
-        picture="/images/shoes/Studio_2.jpg"
-      />
-      <ArticleSplash
-        className="row-index"
         category="STYLE"
         title="ACID"
         date="22.03.2020"
         picture="/images/style/acid.jpg"
+      />
+      <ArticleSplash
+        className="row-index"
+        category="SHOES"
+        title="RETOUR AUX ANNEES 90'"
+        date="05.05.2020"
+        picture="/images/shoes/plateforme.jpg"
       />
       <ArticleSplash
         className="row-index"
@@ -50,9 +50,9 @@ const IndexPage = () => (
       <ArticleSplash
         className="grid-full"
         category="SHOES"
-        title="LES CHAUSSURES DU MOIS : DU ROUGE, DU ROUGE, DU ROUGE"
-        date="06.04.2019"
-        picture="/images/shoes/gianvito.png"
+        title="CELLES TANT DESIREES"
+        date="12.03.2020"
+        picture="/images/shoes/doc.jpg"
       />
       <ArticleSplash
         className="row-index"
@@ -70,15 +70,29 @@ const IndexPage = () => (
       />
     </Grid>
     <Aside>
-      <Timeline text="TIMELINE" category="STYLE" title="ACID" date="12.12.12" />
+      <Timeline
+        text="TIMELINE"
+        category="STYLE"
+        title="ACID"
+        date="13.04.2020"
+      />
       <Timeline
         category="SHOES"
-        title="DU ROUGE, DU ROUGE, DU ROUGE"
-        date="12.12.12"
+        title="RETOUR AUX ANNEES 90'"
+        date="05.05.2020"
       />
-      <Timeline category="STYLE" title="ACID" date="12.12.12" />
-      <Timeline category="STYLE" title="ACID" date="12.12.12" />
-      <Timeline category="STYLE" title="ACID" date="12.12.12" />
+
+      <Timeline
+        category="STYLE"
+        title="L'ACCEPTATION PAR LA DOUCEUR"
+        date="13.04.2020"
+      />
+      <Timeline
+        category="STYLE"
+        title="UNE AQUARELLE DE FLEURS"
+        date="09.04.2020"
+      />
+      <Timeline category="SHOES" title="CELLE TANT DESIREE" date="12.03.2020" />
 
       <LinkInstagram
         picture="/images/shoes/doc.jpg"
