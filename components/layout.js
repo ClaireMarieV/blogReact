@@ -13,7 +13,7 @@ const Layout = ({ children }) => (
   <div className="layout">
     <link rel="stylesheet" href="https://use.typekit.net/auf8jri.css"></link>
     <Header />
-    <Header></Header>
+
     <div
       style={{
         margin: `0 auto`,
@@ -25,13 +25,13 @@ const Layout = ({ children }) => (
     </div>
     <style jsx global>
       {`
-        header:first-of-type {
+        header {
           position: fixed;
           width: 100%;
           top: 0;
           left: 0;
           margin-top: 0;
-          background-color: white;
+          background-color: rgb(255, 255, 255, 0.9);
         }
         img {
           overflow: hidden;

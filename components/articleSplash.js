@@ -26,6 +26,15 @@ const ArticleSplash = ({ category, title, date, picture, className, id }) => (
           height: 20rem;
           object-fit: cover;
         }
+        @media (min-width: 401px) and (max-width: 600px) {
+         .article-splash {
+            margin-bottom: 1em;
+          }
+        }
+        @media (max-width: 400px) {
+          .article-splash {
+            margin-bottom: 1em;
+          }
       `}</style>
     </a>
   </Link>

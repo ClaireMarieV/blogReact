@@ -64,7 +64,8 @@ const StylePage = () => (
       }
 
       .grid > a:nth-child(0n + 1) .article-splash-title,
-      .grid > a:nth-child(0n + 9) .article-splash-title {
+      .grid > a:nth-child(0n + 9) .article-splash-title,
+      .grid > a:nth-child(0n + 10) .article-splash-title {
         margin: 0;
         background-color: black;
         color: whitesmoke;

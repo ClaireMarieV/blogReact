@@ -32,11 +32,7 @@ const Header = () => (
         </Link>
       </h2>
       <ul>
-        <li>
-          <Link href="/a-propos">
-            <a>À PROPOS</a>
-          </Link>
-        </li>
+        <li></li>
       </ul>
     </nav>
     <style jsx>{`
@@ -44,7 +40,7 @@ const Header = () => (
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         text-decoration: none;
-        margin-top: 1rem;
+        padding-top: 1rem;
       }
       nav > ul {
         display: flex;
@@ -88,11 +84,12 @@ const Header = () => (
       }
       @media (max-width: 1076px) {
         nav {
-          grid-template-rows: 1fr 1fr 1fr;
+          grid-template-rows: 1fr 1fr;
           grid-template-columns: none;
         }
         nav > h2 {
           margin-left: 0.5em;
+          font-size: 1.4em;
         }
       }
     `}</style>

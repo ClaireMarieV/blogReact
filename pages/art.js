@@ -113,6 +113,20 @@ const StylePage = () => (
         height: 100% !important;
         width: 100% !important;
       }
+      @media (min-width: 401px) and (max-width: 600px) {
+
+        .grid > a .article-title {
+          padding: 0.5em;
+        }
+        .grid > a .article-splash-title {
+          height: 7em        }
+      }
+      @media (max-width: 400px) {
+        .grid > a .article-title {
+          padding: 0.5em;
+        }
+        .grid > a .article-splash-title {
+          height: 7em;        }
     `}</style>
   </Layout>
 );

@@ -66,8 +66,9 @@ const DesirPage = () => (
       }
       .article-base .text {
         display: flex;
+        max-width: 30rem;
+        margin: auto;
       }
-
     `}</style>
   </Layout>
 );
