@@ -32,7 +32,12 @@ const Header = () => (
         </Link>
       </h2>
       <ul>
-        <li></li>
+        <li>
+          <img src="/images/instagram-logo.png" />
+        </li>
+        <li>
+          <img src="/images/social-media.png" />
+        </li>
       </ul>
     </nav>
     <style jsx>{`
@@ -65,6 +70,10 @@ const Header = () => (
         font-style: normal;
         letter-spacing: 0.25em;
         font-size: 0.8em;
+      }
+
+      nav > ul > li > img {
+        width: 1rem;
       }
       nav > h2 {
         color: black;

@@ -71,6 +71,7 @@ const Layout = ({ children }) => (
       }
       main {
         display: flex;
+        margin-top: 5rem;
       }
 
       audio,

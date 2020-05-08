@@ -1,13 +1,13 @@
-import desir from './shoes/desir'
-import plateforme from './shoes/plateforme'
+import desir from "./shoes/desir";
+import plateforme from "./shoes/plateforme";
 
 export default [
-plateforme,
+  plateforme,
   {
     category: "SHOES",
     title: "SANDALES BOHEME",
     date: "06.04.2019",
-    picture: "/images/shoes/sandaleBoh.jpg",
+    picture: "/images/shoes/boheme.jpg",
   },
   desir,
   {

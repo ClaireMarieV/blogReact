@@ -25,10 +25,7 @@ const Grid = ({ children }) => (
 
       @media (min-width: 601px) and (max-width: 860px) {
         .grid {
-          grid-template-columns: repeat(3, minmax(0, 1fr));
-        }
-        .grid > a:nth-child(0n + 1) {
-          grid-column: 1/4;
+          grid-template-columns: 1fr 1fr;
         }
       }
 
