@@ -1,36 +1,9 @@
 import React from "react";
 import Link from "next/link";
 
-const Header = () => (
-  <header>
+const Footer = () => (
+  <footer>
     <nav>
-      <ul>
-        <li>
-          <Link href="/art">
-            <a>ART</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/shoes">
-            <a>SHOES</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/style">
-            <a>STYLE</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/life">
-            <a>LIFE</a>
-          </Link>
-        </li>
-      </ul>
-      <h2>
-        <Link href="/">
-          <a>IL ÉTAIT UNE FOIS</a>
-        </Link>
-      </h2>
       <ul>
         <li>
           <img src="/images/instagram-logo.png" />
@@ -39,11 +12,15 @@ const Header = () => (
           <img src="/images/social-media.png" />
         </li>
       </ul>
+      <h2>
+        <Link href="/">
+          <a>IL ÉTAIT UNE FOIS</a>
+        </Link>
+      </h2>
     </nav>
     <style jsx>{`
       nav {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        display: flex;
         text-decoration: none;
         padding-top: 1rem;
       }
@@ -78,11 +55,9 @@ const Header = () => (
       nav > h2 {
         color: black;
         text-align: center;
-        /*font-family: arboria, sans-serif;
-            font-weight: 200;
-            font-style: italic;*/
         font-family: astoria-sans-condensed, sans-serif;
         font-weight: 600;
+        font-size: 0.9em;
         font-style: thin;
         margin-top: 0.5em;
         letter-spacing: 0.4em;
@@ -102,7 +77,7 @@ const Header = () => (
         }
       }
     `}</style>
-  </header>
+  </footer>
 );
 
-export default Header;
+export default Footer;

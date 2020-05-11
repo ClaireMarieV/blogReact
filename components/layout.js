@@ -8,12 +8,12 @@
 import React from "react";
 
 import Header from "./header";
+import Footer from "./footer";
 
 const Layout = ({ children }) => (
   <div className="layout">
     <link rel="stylesheet" href="https://use.typekit.net/auf8jri.css"></link>
     <Header />
-
     <div
       style={{
         margin: `0 auto`,
@@ -23,6 +23,8 @@ const Layout = ({ children }) => (
     >
       <main>{children}</main>
     </div>
+    <Footer />
+
     <style jsx global>
       {`
         header {
@@ -71,7 +73,7 @@ const Layout = ({ children }) => (
       }
       main {
         display: flex;
-        margin-top: 5rem;
+        margin-top: 6rem;
       }
 
       audio,
