@@ -1,20 +1,14 @@
 import acceptation from "./style/acceptation";
 import acid from "./style/acid";
 import ombre from "./style/ombre";
-import vestAcid from "./style/vesteAcid";
+import vesteAcid from "./style/vesteAcid";
+import aquarelle from "./style/aquarelle";
 
 export default [
   acceptation,
   acid,
-  vestAcid,
-
-  {
-    category: "STYLE",
-    title: "UNE AQUARELLE DE FLEURS",
-    date: "09.04.2020",
-    picture: "/images/style/aquarelle.jpg",
-  },
-
+  vesteAcid,
+  aquarelle,
   {
     category: "STYLE",
     title: "IMPRIMÉ VOLANTÉ",
