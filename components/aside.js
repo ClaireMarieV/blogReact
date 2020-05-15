@@ -12,6 +12,7 @@ const Aside = ({ children, className, id }) => (
         border-top: double;
         padding-left: 1em;
         padding-top: 1em;
+        background-color: white;
       }
 
       @media (max-width: 990px) {

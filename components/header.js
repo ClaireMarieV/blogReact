@@ -36,16 +36,20 @@ const Header = () => (
           <img src="/images/instagram-logo.png" />
         </li>
         <li>
+          <i class="far fa-envelope"></i>
+        </li>
+        <li>
           <img src="/images/social-media.png" />
         </li>
       </ul>
     </nav>
     <style jsx>{`
       nav {
+        grid-template-rows: 1fr 1fr 1fr 1fr;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
         text-decoration: none;
-        padding-top: 1rem;
+        padding-top: 3rem;
+        grid-row: 3/4;
       }
       nav > ul {
         display: flex;
@@ -59,37 +63,31 @@ const Header = () => (
         margin: auto;
       }
       nav > ul > li > a {
-        color: black;
+        color: whitesmoke;
         text-decoration: none;
         text-transform: uppercase;
-        /*font-family: astoria-sans-condensed, sans-serif;
-            font-weight: 700;
-            font-style: thin;*/
         font-family: arboria, sans-serif;
         font-weight: 500;
         font-style: normal;
         letter-spacing: 0.25em;
-        font-size: 0.8em;
+        font-size: 1em;
       }
 
       nav > ul > li > img {
         width: 1rem;
       }
       nav > h2 {
-        color: black;
         text-align: center;
-        /*font-family: arboria, sans-serif;
-            font-weight: 200;
-            font-style: italic;*/
         font-family: astoria-sans-condensed, sans-serif;
         font-weight: 600;
         font-style: thin;
+        font-size: 2em;
         margin-top: 0.5em;
         letter-spacing: 0.4em;
       }
       nav > h2 > a {
         text-decoration: none;
-        color: black;
+        color: whitesmoke;
       }
       @media (max-width: 1076px) {
         nav {

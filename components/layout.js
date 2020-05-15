@@ -18,7 +18,7 @@ const Layout = ({ children }) => (
       style={{
         margin: `0 auto`,
         maxWidth: 1400,
-        padding: `0 1.0875rem 1.45rem`,
+        paddingLeft: "0.5rem",
       }}
     >
       <main>{children}</main>
@@ -27,13 +27,48 @@ const Layout = ({ children }) => (
 
     <style jsx global>
       {`
-        header {
-          position: fixed;
-          width: 100%;
-          top: 0;
-          left: 0;
-          margin-top: 0;
-          background-color: rgb(255, 255, 255, 0.9);
+        *,
+        *::before,
+        *::after,
+        :root {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+        html {
+          overflow: hidden;
+          height: 100%;
+        }
+
+        body {
+          overflow-x: hidden;
+          overflow-y: scroll;
+          height: 100%;
+          perspective: 1px;
+          transform-style: preserve-3d;
+        }
+          header {
+            position: relative;
+            min-height: 100vh;
+            width: 100%;
+            transform-style: inherit;
+          }
+
+
+          header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: block;
+            background: url(/images/style/roseEucalyptus.jpg) top center;
+            background-size: cover;
+            transform: translateZ(-1px) scale(2.1);
+            min-height: 100%;
+            z-index: -2;
+          }
         }
         img {
           overflow: hidden;
@@ -51,7 +86,7 @@ const Layout = ({ children }) => (
         p {
           font-family: astoria-sans-condensed, sans-serif;
           font-weight: 100;
-          font-size: 1.2rem;
+          font-size: 1.3rem;
           margin: 1em;
           text-align: justify;
         }
