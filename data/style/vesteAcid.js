@@ -2,7 +2,7 @@ export default {
   category: "STYLE",
   title: "UN BRIN RETRO",
   date: "05.05.2020",
-  picture: "/images/style/vesteAcid1.jpg",
+  picture: "/images/style/vesteAcid2.jpg",
   content: (
     <>
       <div>
@@ -10,7 +10,7 @@ export default {
         <p></p>
       </div>
       <div className="imgRow">
-        <img src="/images/style/vesteAcid2.jpg" />
+        <img src="/images/style/vesteAcid1.jpg" />
         <img src="/images/style/vesteAcidDos.jpg" />
       </div>
     </>
