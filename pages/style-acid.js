@@ -15,7 +15,7 @@ const AcidPage = () => (
       category={article.category}
       title={article.title}
       date={article.date}
-      picture="/images/style/acid.jpg"
+      picture={article.picture}
     >
       {article.content}
     </ArticleBase>

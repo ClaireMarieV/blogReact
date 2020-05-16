@@ -1,6 +1,7 @@
 import React from "react";
 
 import ArticleTitle from "./articleTitle";
+import Picture from "./picture";
 
 const ArticleBase = ({
   category,
@@ -12,7 +13,7 @@ const ArticleBase = ({
   id,
 }) => (
   <div className={"article-base" + (className || "")} id={id}>
-    <img src={picture} />
+    <Picture picture={picture} />
     <div className="article-base-title">
       <ArticleTitle title={title} date={date} />
     </div>

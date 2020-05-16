@@ -1,8 +1,13 @@
+import acidPreview from "../../public/images/style/acid.jpg?lqip";
+import acid from "../../public/images/style/acid.jpg";
+import roseEucalyptus from "../../public/images/style/roseEucalyptus.jpg";
+import Picture from "../../components/picture";
+
 export default {
   category: "STYLE",
   title: "ACID",
   date: "13.04.2020",
-  picture: "/images/style/acid.jpg",
+  picture: { preview: acidPreview, picture: acid },
   content: (
     <>
       <p>
@@ -14,7 +19,7 @@ export default {
       </p>
 
       <div className="imgRow">
-        <img src="/images/style/roseEucalyptus.jpg" />
+        <Picture picture={{ picture: roseEucalyptus }} />
       </div>
       <div className="imgText">
         <p>

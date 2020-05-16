@@ -36,7 +36,7 @@ const Header = () => (
           <img src="/images/instagram-logo.png" />
         </li>
         <li>
-          <i class="far fa-envelope"></i>
+          <i className="far fa-envelope"></i>
         </li>
         <li>
           <img src="/images/social-media.png" />
