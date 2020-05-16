@@ -7,9 +7,7 @@ const Aside = ({ children, className, id }) => (
       .aside {
         width: calc(30% - 1.875rem);
         max-width: 15rem;
-        margin-left: 1em;
-        border-left: double;
-        border-top: double;
+        opacity: 0.9;
         padding-left: 1em;
         padding-top: 1em;
         background-color: white;
