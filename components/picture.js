@@ -1,7 +1,22 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Picture = ({ picture }) => {
   const [pictureLoaded, setPictureLoaded] = useState(false);
+
+  let imageElement = null;
+
+  const imageRefUpdated = (image) => {
+    if (image) {
+      imageElement = image;
+      if (image.complete) {
+        setPictureLoaded(true);
+      }
+    }
+  };
+
+  useEffect(() => {
+    imageRefUpdated(imageElement);
+  });
 
   if (typeof picture === "object" && !picture.preview) {
     picture = picture.picture;
@@ -13,6 +28,7 @@ const Picture = ({ picture }) => {
       <>
         <img
           src={picture.picture}
+          ref={imageRefUpdated}
           onLoad={() => setPictureLoaded(true)}
           hidden={!pictureLoaded}
         />

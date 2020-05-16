@@ -1,7 +1,8 @@
+import Picture from "../../components/picture";
 import acidPreview from "../../public/images/style/acid.jpg?lqip";
 import acid from "../../public/images/style/acid.jpg";
 import roseEucalyptus from "../../public/images/style/roseEucalyptus.jpg";
-import Picture from "../../components/picture";
+import roseEucalyptusPreview from "../../public/images/style/roseEucalyptus.jpg?lqip";
 
 export default {
   category: "STYLE",
@@ -19,7 +20,9 @@ export default {
       </p>
 
       <div className="imgRow">
-        <Picture picture={{ picture: roseEucalyptus }} />
+        <Picture
+          picture={{ preview: roseEucalyptusPreview, picture: roseEucalyptus }}
+        />
       </div>
       <div className="imgText">
         <p>
