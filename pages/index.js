@@ -10,6 +10,8 @@ import Timeline from "../components/timeline";
 import LinkInstagram from "../components/linkInstagram";
 import acid from "../data/style/acid";
 import acceptation from "../data/style/acceptation";
+import desir from "../data/shoes/desir";
+import vesteAcid from "../data/style/vesteAcid";
 
 const IndexPage = () => (
   <Layout>
@@ -24,19 +26,39 @@ const IndexPage = () => (
           picture={acceptation.picture}
         />
       </div>
-      <div className="horizontal-article">
-        <ArticleSplash
-          className="grid-full"
-          category={acid.category}
-          title={acid.title}
-          date={acid.date}
-          picture={acid.picture}
-        />
-      </div>
+
+      <ArticleSplash
+        className="grid-full"
+        category={acid.category}
+        title={acid.title}
+        date={acid.date}
+        picture={acid.picture}
+      />
+
+      <ArticleSplash
+        className="grid-full"
+        category={acid.category}
+        title={acid.title}
+        date={acid.date}
+        picture={acid.picture}
+      />
+      <ArticleSplash
+        className="grid-full"
+        category={desir.category}
+        title={desir.title}
+        date={acid.date}
+        picture={desir.picture}
+      />
+      <ArticleSplash
+        className="grid-full"
+        category={vesteAcid.category}
+        title={vesteAcid.title}
+        date={vesteAcid.date}
+        picture={vesteAcid.picture}
+      />
     </Grid>
     <style jsx global>{`
       main {
-        height: 100vh;
         overflow-x: hidden;
         overflow-y: auto;
         perspective: 2px;
@@ -56,29 +78,30 @@ const IndexPage = () => (
       }
       .parallax-horizontal {
         grid-column: 1/6;
-        background-color: #fff7f4;
+        background-color: #fffbf9;
       }
       .parallax-horizontal .grid-full {
         display: flex;
         flex-direction: initial;
       }
+      .horizontal-article {
+        display: flex;
+        flex-direction: row;
+      }
       .article-splash img {
-        height: 27rem;
         width: 100%;
-        max-width: 27em;
+        max-width: 100%;
       }
 
       a .grid-full .article-splash-title {
         margin: 0;
         padding: 1em;
-        color: #a03d61;
-        padding-top: 6rem;
+        color: #40363e;
+        padding-top: 1rem;
       }
+
       a .grid-full .article-splash-title .article-title h3:hover {
         color: whitesmoke;
-      }
-      .horizontal-article > a .article-splash-title {
-        color: #40363e;
       }
     `}</style>
   </Layout>

@@ -1,8 +1,12 @@
+import Picture from "../../components/picture";
+import docPreview from "../../public/images/shoes/doc.jpg?lqip";
+import doc from "../../public/images/shoes/doc.jpg";
+
 export default {
   category: "SHOES",
   title: "CELLES TANT DESIREES",
   date: "12.03.2020",
-  picture: "/images/shoes/doc.jpg",
+  picture: { preview: docPreview, picture: doc },
   content: (
     <>
       <div className="text">

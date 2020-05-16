@@ -1,8 +1,13 @@
+import Picture from "../../components/picture";
+import kimonoPreview from "../../public/images/style/kimono1.jpg?lqip";
+import kimono from "../../public/images/style/kimono1.jpg";
+import kimono1 from "../../public/images/style/kimono.jpg";
+import kimono2 from "../../public/images/style/kimono2.jpg";
 export default {
   category: "STYLE",
   title: "L'ACCEPTATION PAR LA DOUCEUR",
   date: "13.04.2020",
-  picture: "/images/style/kimono1.jpg",
+  picture: { preview: kimonoPreview, picture: kimono },
   content: (
     <>
       <p>
@@ -11,8 +16,8 @@ export default {
         sentir féminine?
       </p>
       <p>
-        A vrai dire je ne sais pas ... Pour ce début d'acceptation à bientôt 32
-        ans, je suis passée par beaucoup de petites étapes. A 19ans je pesais
+        A vrai dire j'ai mis du temps ... Pour ce début d'acceptation à bientôt
+        32 ans, je suis passée par beaucoup de petites étapes. A 19ans je pesais
         75kilos, 'le déclic' s'est fait à la suite d'un cadeau d'anniversaire
         que ma belle-mère et mon père m'avaient fait. Vous voulez savoir ce que
         c'était? Attention, on va entrer dans un stéréotype : Une balance. Ils
@@ -93,8 +98,8 @@ export default {
         du pourquoi mais le principal n'est pas là.
       </p>
       <div className="imgRow">
-        <img src="/images/style/kimono.jpg" />
-        <img src="/images/style/kimono2.jpg" />
+        <Picture picture={{ picture: kimono1 }} />
+        <Picture picture={{ picture: kimono2 }} />
       </div>
       <p>
         L'acceptation de cette feminité s'est faite grâce à la danse. La
@@ -115,5 +120,5 @@ export default {
         s'exprimer.
       </p>
     </>
-  )
+  ),
 };

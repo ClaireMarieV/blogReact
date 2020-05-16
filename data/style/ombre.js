@@ -1,8 +1,12 @@
+import Picture from "../../components/picture";
+import tiePreview from "../../public/images/style/tie.jpg?lqip";
+import tie from "../../public/images/style/tie.jpg";
+
 export default {
   category: "STYLE",
   title: "ENTRE OMBRE ET LUMIERE",
   date: "06.04.2019",
-  picture: "/images/style/tie.jpg",
+  picture: { preview: tiePreview, picture: tie },
   content: (
     <>
       <div className="text">

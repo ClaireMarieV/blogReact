@@ -1,8 +1,14 @@
+import Picture from "../../components/picture";
+import vesteAcidPreview from "../../public/images/style/vesteAcid.jpg?lqip";
+import vesteAcid from "../../public/images/style/vesteAcid.jpg";
+import vesteAcid1 from "../../public/images/style/vesteAcid1.jpg";
+import vesteAcidDos from "../../public/images/style/vesteAcidDos.jpg";
+
 export default {
   category: "STYLE",
   title: "UN BRIN RETRO",
   date: "05.05.2020",
-  picture: "/images/style/vesteAcid2.jpg",
+  picture: { preview: vesteAcidPreview, picture: vesteAcid },
   content: (
     <>
       <div>
@@ -10,8 +16,8 @@ export default {
         <p></p>
       </div>
       <div className="imgRow">
-        <img src="/images/style/vesteAcid1.jpg" />
-        <img src="/images/style/vesteAcidDos.jpg" />
+        <Picture picture={{ picture: vesteAcid1 }} />
+        <Picture picture={{ picture: vesteAcidDos }} />
       </div>
     </>
   ),

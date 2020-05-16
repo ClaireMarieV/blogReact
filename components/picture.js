@@ -37,6 +37,9 @@ const Picture = ({ picture }) => {
           .preview {
             filter: blur(2px);
           }
+          img {
+            object-fit: cover;
+          }
         `}</style>
       </>
     );

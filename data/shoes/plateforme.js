@@ -1,8 +1,16 @@
+import Picture from "../../components/picture";
+import plateformePreview from "../../public/images/shoes/plateforme1.jpg?lqip";
+import plateforme from "../../public/images/shoes/plateforme1.jpg";
+import plateforme1Preview from "../../public/images/shoes/plateforme.jpg?lqip";
+import plateforme1 from "../../public/images/shoes/plateforme.jpg";
+import plateforme2Preview from "../../public/images/shoes/plateforme2.jpg?lqip";
+import plateforme2 from "../../public/images/shoes/plateforme2.jpg";
+
 export default {
   category: "SHOES",
   title: "RETOUR AUX ANNEES 90'",
   date: "05.05.2020",
-  picture: "/images/shoes/plateforme1.jpg",
+  picture: { preview: plateformePreview, picture: plateforme },
   content: (
     <>
       <div>
@@ -18,8 +26,12 @@ export default {
         <p></p>
       </div>
       <div className="imgRow">
-        <img src="/images/shoes/plateforme.jpg" />
-        <img src="/images/shoes/plateforme2.jpg" />
+        <Picture
+          picture={{ preview: plateforme1Preview, picture: plateforme1 }}
+        />
+        <Picture
+          picture={{ preview: plateforme2Preview, picture: plateforme2 }}
+        />
       </div>
     </>
   ),

@@ -21,9 +21,6 @@ const ArticleSplash = ({ category, title, date, picture, className, id }) => (
       `}</style>
       <style jsx>{`
 
-        .article-splash .article-splash-title {
-          padding-top: 1rem;
-        }
         @media (min-width: 401px) and (max-width: 600px) {
          .article-splash {
             margin-bottom: 1em;
