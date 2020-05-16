@@ -1,4 +1,5 @@
 import React from "react";
+import Picture from "../components/picture";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
@@ -7,6 +8,8 @@ import Grid from "../components/grid";
 import Aside from "../components/aside";
 import Timeline from "../components/timeline";
 import LinkInstagram from "../components/linkInstagram";
+import acid from "../data/style/acid";
+import acceptation from "../data/style/acceptation";
 
 const IndexPage = () => (
   <Layout>
@@ -15,19 +18,21 @@ const IndexPage = () => (
       <div className="parallax-horizontal">
         <ArticleSplash
           className="grid-full"
-          category="STYLE"
-          title="ACID"
-          date="13.04.2020"
-          picture="/images/style/acid.jpg"
+          category={acceptation.category}
+          title={acceptation.title}
+          date={acceptation.date}
+          picture={acceptation.picture}
         />
       </div>
-      <ArticleSplash
-        className="grid-full"
-        category="STYLE"
-        title="L'ACCEPTATION PAR LA DOUCEUR"
-        date="06.04.2019"
-        picture="/images/style/kimono1.jpg"
-      />
+      <div className="horizontal-article">
+        <ArticleSplash
+          className="grid-full"
+          category={acid.category}
+          title={acid.title}
+          date={acid.date}
+          picture={acid.picture}
+        />
+      </div>
     </Grid>
     <style jsx global>{`
       main {
@@ -41,7 +46,6 @@ const IndexPage = () => (
         margin: 0;
         padding: 0;
         border: 0;
-        box-sizing: border-box;
         font-family: monospace;
         overflow-x: hidden;
       }
@@ -50,18 +54,31 @@ const IndexPage = () => (
         align-content: center;
         place-content: center;
       }
-      .grid > a .grid-full {
+      .parallax-horizontal {
         grid-column: 1/6;
+        background-color: #fff7f4;
+      }
+      .parallax-horizontal .grid-full {
+        display: flex;
+        flex-direction: initial;
+      }
+      .article-splash img {
+        height: 27rem;
+        width: 100%;
+        max-width: 27em;
       }
 
       a .grid-full .article-splash-title {
         margin: 0;
-        /*background-color: black;
-        color: whitesmoke;*/
         padding: 1em;
+        color: #a03d61;
+        padding-top: 6rem;
       }
       a .grid-full .article-splash-title .article-title h3:hover {
         color: whitesmoke;
+      }
+      .horizontal-article > a .article-splash-title {
+        color: #40363e;
       }
     `}</style>
   </Layout>

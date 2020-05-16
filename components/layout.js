@@ -18,7 +18,6 @@ const Layout = ({ children }) => (
       style={{
         margin: `0 auto`,
         maxWidth: 1400,
-        paddingLeft: "0.5rem",
       }}
     >
       <main>{children}</main>
@@ -33,8 +32,8 @@ const Layout = ({ children }) => (
         :root {
           margin: 0;
           padding: 0;
-          box-sizing: border-box;
-        }
+          /*box-sizing: border-box;*/
+                }
         html {
           overflow: hidden;
           height: 100%;
@@ -75,7 +74,7 @@ const Layout = ({ children }) => (
         }
         a {
           text-decoration: none;
-          color: #313135;
+          color: #40363e;
         }
         h3,
         h4,

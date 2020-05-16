@@ -1,4 +1,6 @@
 import React from "react";
+import Picture from "./picture";
+
 import ArticleTitle from "./articleTitle";
 import Link from "next/link";
 import { fromArticle } from "../lib/link";
@@ -7,24 +9,20 @@ const ArticleSplash = ({ category, title, date, picture, className, id }) => (
   <Link href={fromArticle({ category, title })}>
     <a>
       <div className={"article-splash " + (className || "")} id={id}>
-        <img src={picture} />
+        <Picture picture={picture} />
         <div className="article-splash-title">
           <ArticleTitle category={category} title={title} date={date} />
         </div>
       </div>
-      <style jsx>{`
-        .article-splash {
-          display: flex;
-          flex-direction: column;
+      <style jsx global>{`
+        .article-splash img {
+          height: 25rem;
         }
+      `}</style>
+      <style jsx>{`
 
         .article-splash .article-splash-title {
           padding-top: 1rem;
-        }
-
-        .article-splash img {
-          height: 30rem;
-          object-fit: cover;
         }
         @media (min-width: 401px) and (max-width: 600px) {
          .article-splash {
