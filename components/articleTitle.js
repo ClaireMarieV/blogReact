@@ -10,13 +10,14 @@ const ArticleTitle = ({ category, title, date }) => (
       {`
         .article-title {
           text-align: center;
+          display: flex;
+          flex-direction: column;
         }
 
         .article-title h4 {
           font-family: astoria-sans-condensed, sans-serif;
           font-weight: 100;
-          font-size: 1.1rem;
-          margin-bottom: 0.5em;
+          font-size: 1.3rem;
           margin-top: 0.5rem;
         }
 
@@ -26,7 +27,7 @@ const ArticleTitle = ({ category, title, date }) => (
           font-family: arboria, sans-serif;
           font-weight: 500;
           font-style: normal;
-          font-size: 1.1em;
+          font-size: 1.2em;
           margin-bottom: 0.5em;
         }
 

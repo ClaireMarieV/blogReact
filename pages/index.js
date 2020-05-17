@@ -94,9 +94,10 @@ const IndexPage = () => (
         align-content: center;
         place-content: center;
       }
+
       .parallax-horizontal {
         grid-column: 1/6;
-        background-color: #f7d9cf;
+        background-color: #fff8f7;
       }
       .parallax-horizontal .grid-full {
         display: flex;
@@ -108,25 +109,43 @@ const IndexPage = () => (
         flex-direction: row-reverse !important;
         background-color: #edc0bd;
       }
+
+      .horizontal-article {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .article-splash img {
+        width: 100%;
+      }
       .parallax-horizontal:nth-child(2) .article-splash img {
         height: 42rem !important;
       }
       .parallax-horizontal:nth-child(4) .article-splash img {
         height: 33rem !important;
       }
-
-      .horizontal-article {
-        display: flex;
-        flex-direction: row;
-      }
-      .article-splash img {
-        width: 100%;
-      }
-      a .grid-full .article-splash-title {
+      a .article-splash-title {
         margin: 0;
         padding: 1em;
         color: #40363e;
         padding-top: 1rem;
+      }
+      .parallax-horizontal:nth-child(odd) .article-splash-title .article-title {
+        height: 17rem;
+        color: whitesmoke;
+        padding: 2rem;
+        position: relative;
+        top: -1rem;
+        right: 4rem;
+        background-color: #232021;
+      }
+      .parallax-horizontal:nth-child(even)
+        .article-splash-title
+        .article-title {
+        height: 17rem;
+        color: black;
+        padding: 2rem;
+        background-color: #fff8f7;
       }
     `}</style>
   </Layout>
