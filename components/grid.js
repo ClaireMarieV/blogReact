@@ -8,7 +8,6 @@ const Grid = ({ children }) => (
       .grid {
         display: grid;
         grid-template-columns: repeat(5, minmax(0, 1fr));
-        grid-gap: 1rem;
       }
 
       /* Classe .grid-full permettant à un élément de la grille de prendre toute la largeur */

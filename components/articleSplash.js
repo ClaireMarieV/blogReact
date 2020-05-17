@@ -16,7 +16,7 @@ const ArticleSplash = ({ category, title, date, picture, className, id }) => (
       </div>
       <style jsx global>{`
         .article-splash img {
-          height: 25rem;
+          height: 28rem;
         }
       `}</style>
       <style jsx>{`

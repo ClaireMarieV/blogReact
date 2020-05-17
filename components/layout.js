@@ -89,6 +89,7 @@ const Layout = ({ children }) => (
           margin: 1em;
           text-align: justify;
         }
+    
       `}
     </style>
     <style jsx>{`

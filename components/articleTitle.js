@@ -26,12 +26,12 @@ const ArticleTitle = ({ category, title, date }) => (
           font-family: arboria, sans-serif;
           font-weight: 500;
           font-style: normal;
-          font-size: 1.3em;
+          font-size: 1.1em;
           margin-bottom: 0.5em;
         }
 
         .article-title h3:hover {
-          color: #bc4770;
+          color: #b36353;
         }
 
         .article-title h5 {
