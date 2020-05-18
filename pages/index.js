@@ -45,12 +45,51 @@ const IndexPage = () => (
           date={acid.date}
           picture={desir.picture}
         />
+      </div>
+      <Card>
+        <ArticleCard
+          className="article-card"
+          category={vesteAcid.category}
+          title={vesteAcid.title}
+          date={vesteAcid.date}
+          picture={vesteAcid.picture}
+        />
+        <ArticleCard
+          className="article-card"
+          category={acid.category}
+          title={acid.title}
+          date={acid.date}
+          picture={acid.picture}
+        />
+        <ArticleCard
+          className="article-card"
+          category={mango.category}
+          title={mango.title}
+          date={mango.date}
+          picture={mango.picture}
+        />
+        <ArticleCard
+          className="article-card"
+          category={boheme.category}
+          title={boheme.title}
+          date={boheme.date}
+          picture={boheme.picture}
+        />
+      </Card>
+      <div className="twice">
         <ArticleSplash
           className="grid-full"
-          category={plateforme.category}
-          title={plateforme.title}
-          date={plateforme.date}
-          picture={plateforme.picture}
+          category={acceptation.category}
+          title={acceptation.title}
+          date={acceptation.date}
+          picture={acceptation.picture}
+        />
+        <ArticleSplash
+          className="grid-full"
+          category={acid.category}
+          title={acid.title}
+          date={acid.date}
+          picture={acid.picture}
         />
       </div>
       <Card>
@@ -84,7 +123,6 @@ const IndexPage = () => (
         />
       </Card>
     </div>
-
     <style jsx global>{`
       main {
         overflow-x: hidden;
@@ -132,12 +170,12 @@ const IndexPage = () => (
       /**************/
 
       /**************/
-      /*Article-splash img*/
+      /*Article-splas img*/
       /**************/
 
       .article-splash img {
         width: 100%;
-        max-width: 39rem;
+        max-width: 47rem;
       }
       .parallax a:nth-child(2) .article-splash img {
         height: 42rem !important;
@@ -174,6 +212,15 @@ const IndexPage = () => (
         padding: 4rem;
         background-color: #fff8f7 !important;
         /*  background-color: #dbb6b6 !important; */
+      }
+      /*********/
+      /**Twice**/
+      /*********/
+      .twice {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-gap: 1rem;
+        margin: 1rem;
       }
     `}</style>
   </Layout>
