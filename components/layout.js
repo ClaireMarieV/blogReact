@@ -32,7 +32,6 @@ const Layout = ({ children }) => (
         :root {
           margin: 0;
           padding: 0;
-          /*box-sizing: border-box;*/
                 }
         html {
           overflow: hidden;
@@ -89,7 +88,7 @@ const Layout = ({ children }) => (
           margin: 1em;
           text-align: justify;
         }
-    
+
       `}
     </style>
     <style jsx>{`
