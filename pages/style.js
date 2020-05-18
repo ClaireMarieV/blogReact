@@ -3,7 +3,8 @@ import React from "react";
 import articles from "../data/articleStyle";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import ArticleSplash from "../components/articleSplash";
+import Card from "../components/card";
+import ArticleCard from "../components/articleCard";
 import Aside from "../components/aside";
 import Timeline from "../components/timeline";
 import LinkInstagram from "../components/linkInstagram";
@@ -13,17 +14,17 @@ import Grid from "../components/grid";
 const StylePage = () => (
   <Layout>
     <SEO title="Home" />
-    <Grid>
+    <Card>
       {articles.map((article) => (
-        <ArticleSplash
-          className="article-group"
+        <ArticleCard
+          className=""
           category={article.category}
           title={article.title}
           date={article.date}
           picture={article.picture}
         />
       ))}
-    </Grid>
+    </Card>
 
     <style jsx global>{`
       .grid > a:nth-child(0n + 1) .article-splash-title .article-title h3:hover,
