@@ -39,7 +39,7 @@ const ArticleTitle = ({ category, title, date }) => (
           font-family: astoria-sans-condensed, sans-serif;
           margin-bottom: 0;
           font-weight: 100;
-          font-size: 0.8rem;
+          font-size: 0.85rem;
         }
         .article-title a {
           text-decoration: none;
