@@ -3,8 +3,11 @@ import Picture from "../components/picture";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+
 import ArticleSplash from "../components/articleSplash";
-import Grid from "../components/grid";
+import Card from "../components/card";
+import ArticleCard from "../components/articleCard";
+
 import Aside from "../components/aside";
 import Timeline from "../components/timeline";
 import LinkInstagram from "../components/linkInstagram";
@@ -14,12 +17,13 @@ import desir from "../data/shoes/desir";
 import vesteAcid from "../data/style/vesteAcid";
 import plateforme from "../data/shoes/plateforme";
 import boheme from "../data/shoes/boheme";
+import mango from "../data/shoes/mangoBottega";
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <Grid>
-      <div className="parallax-horizontal">
+    <div className="index">
+      <div className="parallax">
         <ArticleSplash
           className="grid-full"
           category={acceptation.category}
@@ -27,8 +31,6 @@ const IndexPage = () => (
           date={acceptation.date}
           picture={acceptation.picture}
         />
-      </div>
-      <div className="parallax-horizontal">
         <ArticleSplash
           className="grid-full"
           category={acid.category}
@@ -36,8 +38,6 @@ const IndexPage = () => (
           date={acid.date}
           picture={acid.picture}
         />
-      </div>
-      <div className="parallax-horizontal">
         <ArticleSplash
           className="grid-full"
           category={desir.category}
@@ -45,8 +45,6 @@ const IndexPage = () => (
           date={acid.date}
           picture={desir.picture}
         />
-      </div>
-      <div className="parallax-horizontal">
         <ArticleSplash
           className="grid-full"
           category={plateforme.category}
@@ -55,26 +53,38 @@ const IndexPage = () => (
           picture={plateforme.picture}
         />
       </div>
+      <Card>
+        <ArticleCard
+          className="article-card"
+          category={vesteAcid.category}
+          title={vesteAcid.title}
+          date={vesteAcid.date}
+          picture={vesteAcid.picture}
+        />
+        <ArticleCard
+          className="article-card"
+          category={acid.category}
+          title={acid.title}
+          date={acid.date}
+          picture={acid.picture}
+        />
+        <ArticleCard
+          className="article-card"
+          category={mango.category}
+          title={mango.title}
+          date={mango.date}
+          picture={mango.picture}
+        />
+        <ArticleCard
+          className="article-card"
+          category={boheme.category}
+          title={boheme.title}
+          date={boheme.date}
+          picture={boheme.picture}
+        />
+      </Card>
+    </div>
 
-      <ArticleSplash
-        category={vesteAcid.category}
-        title={vesteAcid.title}
-        date={vesteAcid.date}
-        picture={vesteAcid.picture}
-      />
-      <ArticleSplash
-        category={acid.category}
-        title={acid.title}
-        date={acid.date}
-        picture={acid.picture}
-      />
-      <ArticleSplash
-        category={boheme.category}
-        title={boheme.title}
-        date={boheme.date}
-        picture={boheme.picture}
-      />
-    </Grid>
     <style jsx global>{`
       main {
         overflow-x: hidden;
@@ -89,63 +99,81 @@ const IndexPage = () => (
         font-family: monospace;
         overflow-x: hidden;
       }
-      div {
-        width: 100%;
-        align-content: center;
-        place-content: center;
+      .index {
+        display: flex;
+        flex-direction: column;
       }
 
-      .parallax-horizontal {
-        grid-column: 1/6;
+      /*  div {
+
+      }*/
+      /**************/
+      /*Parallax*/
+      /**************/
+
+      .parallax {
         background-color: #fff8f7;
+        width: 100%;
       }
-      .parallax-horizontal .grid-full {
+      .parallax .grid-full {
         display: flex;
         flex-direction: initial;
       }
-      .parallax-horizontal:nth-child(2) .grid-full,
-      .parallax-horizontal:nth-child(4) .grid-full {
+
+      .parallax a:nth-child(2) .grid-full,
+      .parallax a:nth-child(4) .grid-full {
         display: flex;
         flex-direction: row-reverse !important;
-        background-color: #edc0bd;
+        background-color: #d6a095;
       }
 
-      .horizontal-article {
-        display: flex;
-        flex-direction: row;
-      }
+      /**************/
+      /*Card*/
+      /**************/
+
+      /**************/
+      /*Article-splash img*/
+      /**************/
 
       .article-splash img {
         width: 100%;
+        max-width: 39rem;
       }
-      .parallax-horizontal:nth-child(2) .article-splash img {
+      .parallax a:nth-child(2) .article-splash img {
         height: 42rem !important;
       }
-      .parallax-horizontal:nth-child(4) .article-splash img {
+      .parallax a:nth-child(4) .article-splash img {
         height: 33rem !important;
       }
+
+      /**************/
+      /*Article-splash title*/
+      /**************/
       a .article-splash-title {
         margin: 0;
         padding: 1em;
         color: #40363e;
         padding-top: 1rem;
       }
-      .parallax-horizontal:nth-child(odd) .article-splash-title .article-title {
-        height: 17rem;
+      .parallax a:nth-child(odd) .article-splash-title {
+        height: 12rem;
+        width: 24rem;
         color: whitesmoke;
-        padding: 2rem;
+        padding: 3rem;
         position: relative;
-        top: -1rem;
         right: 4rem;
         background-color: #232021;
       }
-      .parallax-horizontal:nth-child(even)
-        .article-splash-title
-        .article-title {
-        height: 17rem;
+      .parallax a:nth-child(even) .article-splash-title {
+        height: 12rem;
+        width: 24rem;
         color: black;
-        padding: 2rem;
-        background-color: #fff8f7;
+        position: relative !important;
+        top: 1rem;
+        left: 3rem !important;
+        padding: 4rem;
+        background-color: #fff8f7 !important;
+        /*  background-color: #dbb6b6 !important; */
       }
     `}</style>
   </Layout>
