@@ -12,7 +12,7 @@ import articles from "../data/articleShoes";
 const StylePage = () => (
   <Layout>
     <SEO title="Home" />
-    <Card>
+    <Grid>
       {articles.map((article) => (
         <ArticleCard
           className="article-group"
@@ -23,7 +23,7 @@ const StylePage = () => (
           picture={article.picture}
         />
       ))}
-    </Card>
+    </Grid>
 
     <style jsx global>{``}</style>
   </Layout>

@@ -26,8 +26,6 @@ const StylePage = () => (
           découvrir parce qu'elle a du talent mais a du mal a les partager.
         </p>
       </div>
-    </Grid>
-    <Card>
       {articles.map((article) => (
         <ArticleCard
           className="article-art"
@@ -37,7 +35,7 @@ const StylePage = () => (
           picture={article.picture}
         />
       ))}
-    </Card>
+    </Grid>
 
     <style jsx global>{`
       /*general*/

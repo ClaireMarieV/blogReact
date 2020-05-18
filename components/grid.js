@@ -7,7 +7,10 @@ const Grid = ({ children }) => (
       /* Grille basique à 4 colonnes */
       .grid {
         display: grid;
-        grid-template-columns: repeat(5, minmax(0, 1fr));
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        margin: 1em;
+        place-content: center;
+        grid-gap: 1rem;
       }
 
       /* Classe .grid-full permettant à un élément de la grille de prendre toute la largeur */

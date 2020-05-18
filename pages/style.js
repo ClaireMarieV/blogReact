@@ -3,7 +3,7 @@ import React from "react";
 import articles from "../data/articleStyle";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import Card from "../components/card";
+
 import ArticleCard from "../components/articleCard";
 import Aside from "../components/aside";
 import Timeline from "../components/timeline";
@@ -14,7 +14,7 @@ import Grid from "../components/grid";
 const StylePage = () => (
   <Layout>
     <SEO title="Home" />
-    <Card>
+    <Grid>
       {articles.map((article) => (
         <ArticleCard
           className=""
@@ -24,7 +24,7 @@ const StylePage = () => (
           picture={article.picture}
         />
       ))}
-    </Card>
+    </Grid>
 
     <style jsx global>{`
       .grid > a:nth-child(0n + 1) .article-splash-title .article-title h3:hover,
