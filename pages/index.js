@@ -232,6 +232,11 @@ const IndexPage = () => (
         color: white;
         background-color: black;
       }
+      @media (max-width: 600px) {
+        .twice {
+          grid-template-columns: repeat(1, minmax(0, 1fr));
+        }
+      }
     `}</style>
   </Layout>
 );

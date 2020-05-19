@@ -26,9 +26,9 @@ const Layout = ({ children }) => (
 
     <style jsx global>
       {`
-        *,
-        *::before,
-        *::after,
+        header,
+        header::before,
+        header::after,
         :root {
           margin: 0;
           padding: 0;

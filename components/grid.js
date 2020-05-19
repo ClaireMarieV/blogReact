@@ -8,7 +8,6 @@ const Grid = ({ children }) => (
       .grid {
         display: grid;
         grid-template-columns: repeat(4, minmax(0, 1fr));
-        margin: 1em;
         place-content: center;
         grid-gap: 1rem;
       }

@@ -15,13 +15,13 @@ const Card = ({ category, title, children, date, picture, className, id }) => (
         grid-gap: 1rem;
       }
 
-      @media (min-width: 800px) and (max-width: 1000px) {
+      @media (min-width: 731px) and (max-width: 950px) {
         .card {
           grid-template-columns: repeat(3, minmax(0, 1fr));
         }
       }
 
-      @media (min-width: 461px) and (max-width: 799px) {
+      @media (min-width: 461px) and (max-width: 730px) {
         .card {
           grid-template-columns: repeat(2, minmax(0, 1fr));
         }
