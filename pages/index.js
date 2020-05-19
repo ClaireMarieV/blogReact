@@ -168,7 +168,13 @@ const IndexPage = () => (
       /**************/
       /*Card*/
       /**************/
-
+      .card a .article-card .card-title {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+      }
+      .card a:nth-child(3) .article-card {
+        background-color: #f7d9be;
+      }
       /**************/
       /*Article-splas img*/
       /**************/
@@ -221,6 +227,10 @@ const IndexPage = () => (
         grid-template-columns: repeat(2, minmax(0, 1fr));
         grid-gap: 1rem;
         margin: 1rem;
+      }
+      .twice a:nth-child(1) .article-splash-title {
+        color: white;
+        background-color: black;
       }
     `}</style>
   </Layout>
