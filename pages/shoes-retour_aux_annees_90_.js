@@ -7,18 +7,21 @@ import Aside from "../components/aside";
 import Timeline from "../components/timeline";
 import LinkInstagram from "../components/linkInstagram";
 import ArticleTitle from "../components/articleTitle";
+import ArticleBase from "../components/articleBase";
+
 import article from "../data/shoes/plateforme";
 
 const PlateformePage = () => (
   <Layout>
     <SEO title="Home" />
-    <div className="gridPlateform">
-      <img src={article.picture} />
-      <div className="article-base-title">
-        <ArticleTitle title={article.title} date={article.date} />
-      </div>
+    <ArticleBase
+      category={article.category}
+      title={article.title}
+      date={article.date}
+      picture={article.picture}
+    >
       {article.content}
-    </div>
+    </ArticleBase>
     <Aside>
       <Timeline
         text="TIMELINE"
@@ -51,29 +54,22 @@ const PlateformePage = () => (
       />
     </Aside>
     <style jsx global>{`
-      .gridPlateform {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        grid-gap: 0.5rem;
-        width: calc(85% - 1.875rem);}
-      }
-      .gridPlateform > *:nth-child(1) {
-        grid-column: 1/2;
-        grid-row: 1/3;
+      .article-base img {
         width: 100%;
-        object-fit: cover;
       }
-      .gridPlateform > *:nth-child(4) {
-        grid-column: 1/3;
+      .imgText,
+      .imgRow {
         display: flex;
-        overflow: hidden;
       }
-      .gridPlateform > *:nth-child(4) > * {
-        object-fit: cover;
-        width: calc(50% - 0.25rem);
+      .imgRow img {
+        width: 100%;
+        margin: 1em;
       }
-      .gridPlateform > *:nth-child(4) > *:nth-child(2) {
-        margin-left: 0.5rem;
+      @media (max-width: 600px) {
+        .imgText,
+        imgRow {
+          display: block;
+        }
       }
       .article-base .text {
         display: flex;

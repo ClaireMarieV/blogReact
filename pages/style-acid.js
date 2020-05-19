@@ -60,6 +60,11 @@ const AcidPage = () => (
       .imgRow img {
         width: 100%;
       }
+      @media (max-width: 600px) {
+        .imgText {
+          display: block;
+        }
+      }
     `}</style>
   </Layout>
 );

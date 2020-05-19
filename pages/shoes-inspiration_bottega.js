@@ -16,7 +16,7 @@ const MangoPage = () => (
       category={article.category}
       title={article.title}
       date={article.date}
-      picture="/images/shoes/mangoBottega4.jpg"
+      picture="/images/shoes/mangoBottega5.jpg"
     >
       {article.content}
     </ArticleBase>
@@ -53,16 +53,18 @@ const MangoPage = () => (
       />
     </Aside>
     <style jsx global>{`
-      .imgRow {
-        width: 100%;
-        height: 30rem;
-        display: flex;
-        margin: 0.5em;
-      }
       .article-base .text {
         display: flex;
         max-width: 30rem;
         margin: auto;
+      }
+      @media (max-width: 600px) {
+        .imgText {
+          display: block;
+        }
+      }
+      .article-base .text {
+        display: flex;
       }
     `}</style>
   </Layout>
