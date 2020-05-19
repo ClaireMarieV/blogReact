@@ -33,8 +33,8 @@ const Card = ({ category, title, children, date, picture, className, id }) => (
         .card {
           grid-template-columns: repeat(1, minmax(0, 1fr));
         }
-        .card > .article-splash {
-          margin-bottom: 1em;
+        .card > .article-card {
+          margin: 1em;
         }
       }
     `}</style>

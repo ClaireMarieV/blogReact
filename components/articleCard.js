@@ -36,7 +36,7 @@ const ArticleCard = ({ category, title, date, picture, className, id }) => (
         }
         @media (max-width: 400px) {
           .article-card {
-            margin-bottom: 1em;
+            margin: 1em;
           }
       `}</style>
     </a>

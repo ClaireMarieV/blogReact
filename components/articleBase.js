@@ -17,12 +17,15 @@ const ArticleBase = ({
     <div className="article-base-title">
       <ArticleTitle title={title} date={date} />
     </div>
-    <div className="paragraphe">
-      <p>{children}</p>
-    </div>
+    <div>{children}</div>
     <style jsx global>{`
       .article-base .article-base-title {
         margin-top: 1rem;
+      }
+      .article-base img {
+        width: 100%;
+        height: 30rem;
+        object-fit: cover;
       }
     `}</style>
   </div>
