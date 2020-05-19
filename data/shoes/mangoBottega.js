@@ -11,28 +11,27 @@ import mango4Preview from "../../public/images/shoes/mangoBottega4.jpg?lqip";
 import mango4 from "../../public/images/shoes/mangoBottega4.jpg";
 import mango5Preview from "../../public/images/shoes/mangoBottega5.jpg?lqip";
 import mango5 from "../../public/images/shoes/mangoBottega5.jpg";
+import ImgRow from "../../components/imgRow";
 
 export default {
   category: "SHOES",
   title: "INSPIRATION BOTTEGA",
   date: "17.05.2020",
-  picture: { preview: mango4Preview, picture: mango4 },
+  picture: { preview: mango5Preview, picture: mango5 },
   content: (
     <>
-      <div className="text">
-        <p></p>
-      </div>
-      <div className="imgRow">
+      <div className="text"></div>
+      <ImgRow>
         <Picture picture={{ preview: mangoPreview, picture: mango }} />
-        <Picture picture={{ preview: mango5Preview, picture: mango5 }} />
-      </div>
-      <div className="imgRow">
+        <Picture picture={{ preview: mango4Preview, picture: mango4 }} />
+      </ImgRow>
+      <ImgRow>
         <Picture picture={{ preview: mango3Preview, picture: mango3 }} />
         <Picture picture={{ preview: mango1Preview, picture: mango1 }} />
-      </div>
-      <div className="imgRow">
+      </ImgRow>
+      <ImgRow>
         <Picture picture={{ preview: mango2Preview, picture: mango2 }} />
-      </div>
+      </ImgRow>
     </>
   ),
 };

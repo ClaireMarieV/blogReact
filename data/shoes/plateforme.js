@@ -1,4 +1,6 @@
 import Picture from "../../components/picture";
+import ImgRow from "../../components/imgRow";
+
 import plateformePreview from "../../public/images/shoes/plateforme1.jpg?lqip";
 import plateforme from "../../public/images/shoes/plateforme1.jpg";
 import plateforme1Preview from "../../public/images/shoes/plateforme.jpg?lqip";
@@ -25,14 +27,14 @@ export default {
         </p>
         <p></p>
       </div>
-      <div className="imgRow">
+      <ImgRow>
         <Picture
           picture={{ preview: plateforme1Preview, picture: plateforme1 }}
         />
         <Picture
           picture={{ preview: plateforme2Preview, picture: plateforme2 }}
         />
-      </div>
+      </ImgRow>
     </>
   ),
 };

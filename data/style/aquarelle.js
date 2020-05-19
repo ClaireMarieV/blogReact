@@ -1,4 +1,6 @@
 import Picture from "../../components/picture";
+import ImgRow from "../../components/imgRow";
+
 import aquarellePreview from "../../public/images/style/aquarelle1.jpg?lqip";
 import aquarelle from "../../public/images/style/aquarelle1.jpg";
 import aquarelle2 from "../../public/images/style/aquarelle4.jpg";
@@ -14,9 +16,9 @@ export default {
         <p></p>
         <p></p>
       </div>
-      <div className="imgRow">
+      <ImgRow>
         <Picture picture={{ picture: aquarelle2 }} />
-      </div>
+      </ImgRow>
     </>
   ),
 };

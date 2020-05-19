@@ -1,4 +1,5 @@
 import Picture from "../../components/picture";
+
 import docPreview from "../../public/images/shoes/doc.jpg?lqip";
 import doc from "../../public/images/shoes/doc.jpg";
 

@@ -1,4 +1,5 @@
 import Picture from "../../components/picture";
+import ImgRow from "../../components/imgRow";
 import bohemePreview from "../../public/images/shoes/boheme.jpg?lqip";
 import boheme from "../../public/images/shoes/boheme.jpg";
 
@@ -13,10 +14,10 @@ export default {
         <p></p>
         <p></p>
       </div>
-      <div className="imgRow">
+      <ImgRow>
         <img src="/images/shoes/.jpg" />
         <img src="/images/shoes/.jpg" />
-      </div>
+      </ImgRow>
     </>
   ),
 };

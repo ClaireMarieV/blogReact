@@ -1,4 +1,6 @@
 import Picture from "../../components/picture";
+import ImgRow from "../../components/imgRow";
+
 import acidPreview from "../../public/images/style/acid.jpg?lqip";
 import acid from "../../public/images/style/acid.jpg";
 import roseEucalyptus from "../../public/images/style/roseEucalyptus.jpg";
@@ -19,11 +21,11 @@ export default {
         jour malgré les années comme j'esperais trouver ma voie.
       </p>
 
-      <div className="imgRow">
+      <ImgRow>
         <Picture
           picture={{ preview: roseEucalyptusPreview, picture: roseEucalyptus }}
         />
-      </div>
+      </ImgRow>
       <div className="imgText">
         <p>
           A la base, le jean avait un ourlet au bas de la jambe et été trop long

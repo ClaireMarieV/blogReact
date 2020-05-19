@@ -1,4 +1,5 @@
 import Picture from "../../components/picture";
+import ImgRow from "../../components/imgRow";
 import kimonoPreview from "../../public/images/style/kimono1.jpg?lqip";
 import kimono from "../../public/images/style/kimono1.jpg";
 import kimono1 from "../../public/images/style/kimono.jpg";
@@ -97,10 +98,10 @@ export default {
         peut être plus forte qu'un homme. Je ne vous ai donné que peu d'exemples
         du pourquoi mais le principal n'est pas là.
       </p>
-      <div className="imgRow">
+      <ImgRow>
         <Picture picture={{ picture: kimono1 }} />
         <Picture picture={{ picture: kimono2 }} />
-      </div>
+      </ImgRow>
       <p>
         L'acceptation de cette feminité s'est faite grâce à la danse. La
         légereté du corps, les mouvements, les ondulations marquées par le

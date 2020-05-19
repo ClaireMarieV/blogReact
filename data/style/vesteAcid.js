@@ -1,4 +1,6 @@
 import Picture from "../../components/picture";
+import ImgRow from "../../components/imgRow";
+
 import vesteAcidPreview from "../../public/images/style/vesteAcid.jpg?lqip";
 import vesteAcid from "../../public/images/style/vesteAcid.jpg";
 import vesteAcid1 from "../../public/images/style/vesteAcid1.jpg";
@@ -15,10 +17,10 @@ export default {
         <p>Toujours dans les années 80'- 90', la manche ballon.</p>
         <p></p>
       </div>
-      <div className="imgRow">
+      <ImgRow>
         <Picture picture={{ picture: vesteAcid1 }} />
         <Picture picture={{ picture: vesteAcidDos }} />
-      </div>
+      </ImgRow>
     </>
   ),
 };
