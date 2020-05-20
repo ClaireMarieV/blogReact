@@ -77,14 +77,14 @@ const IndexPage = () => (
         />
       </Card>
       <div className="twice">
-        <ArticleSplash
+        <ArticleCard
           className="grid-full"
           category={acceptation.category}
           title={acceptation.title}
           date={acceptation.date}
           picture={acceptation.picture}
         />
-        <ArticleSplash
+        <ArticleCard
           className="grid-full"
           category={acid.category}
           title={acid.title}
