@@ -76,7 +76,10 @@ const Layout = ({ children }) => (
           text-decoration: none;
           color: #40363e;
         }
-        h3,
+        h3 {
+          margin-bottom: 0.5rem;
+          margin-top: 0;
+        }
         h4,
         h5 {
           margin-top: 0.5rem;
