@@ -2,7 +2,7 @@ import React from "react";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import ArticleSplash from "../components/articleSplash";
+import ArticleCard from "../components/articleCard";
 import Grid from "../components/grid";
 import Aside from "../components/aside";
 import Timeline from "../components/timeline";
@@ -14,7 +14,7 @@ const StylePage = () => (
     <SEO title="Home" />
     <Grid>
       {articles.map((article) => (
-        <ArticleSplash
+        <ArticleCard
           className="article-group"
           category={article.category}
           title={article.title}

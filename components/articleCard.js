@@ -18,6 +18,7 @@ const ArticleCard = ({ category, title, date, picture, className, id }) => (
         .article-card {
           display: flex;
           flex-direction: column;
+          background-color: #fff8f7;
         }
         .article-card img {
           height: 28rem;

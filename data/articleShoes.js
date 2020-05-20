@@ -3,8 +3,8 @@ import plateforme from "./shoes/plateforme";
 import mango from "./shoes/mangoBottega";
 
 export default [
-  plateforme,
   mango,
+  plateforme,
   {
     category: "SHOES",
     title: "SANDALES BOHEME",

@@ -26,8 +26,8 @@ const StylePage = () => (
     </Grid>
 
     <style jsx global>{`
-      a:nth-child(2) .article-card,
-      a:nth-child(5) .article-card,
+      a:nth-child(1) .article-card,
+      a:nth-child(6) .article-card,
       a:nth-child(9) .article-card {
         background-color: #f7d9be;
       }
