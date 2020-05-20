@@ -4,12 +4,7 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import ArticleSplash from "../components/articleSplash";
 import Grid from "../components/grid";
-import Card from "../components/card";
 import ArticleCard from "../components/articleCard";
-import Aside from "../components/aside";
-import Timeline from "../components/timeline";
-import LinkInstagram from "../components/linkInstagram";
-
 import articles from "../data/articleArt";
 
 const StylePage = () => (
@@ -37,68 +32,57 @@ const StylePage = () => (
       ))}
     </Grid>
 
-    <style jsx global>{`
+    <style jsx>{`
       /*general*/
-        .grid > .intro {
+      .grid > .intro {
         grid-column: 1/5;
       }
-      .card > a .article-card-title {
+      .grid > a card-title {
         color: white;
         background-color: #141414;
         height: 17rem;
         margin-top: 0 !important;
       }
-      .card > a .article-title {
+      .grid > a .article-title {
         padding-top: 3em;
       }
 
       /*spécifique*/
-      .card > a:nth-child(0n + 3) {
-        grid-column: 1/3;
-        grid-row: 2/2;
-      }
-      .card > a:nth-child(0n + 3) .article-splash-title,
-      .card > a:nth-child(0n + 6) .article-splash-title,
-      .card > a:nth-child(0n + 8) .article-splash-title {
-        color: black !important;
-        background-color: white !important;
+      a:nth-child(3) > .article-card .card-title,
+      a:nth-child(6) > .article-card .card-title,
+      a:nth-child(8) > .article-card .card-title {
+        color: black;
+        background-color: white;
         height: 7em;
       }
-      .card > a:nth-child(0n + 3) .article-title,
-      .card > a:nth-child(0n + 6) .article-title,
-      .card > a:nth-child(0n + 8) .article-title {
+      a:nth-child(3) .card-title,
+      a:nth-child(6) .card-title,
+      a:nth-child(8) .card-title {
         padding-top: 1em !important;
       }
-      .card > a:nth-child(0n + 6) {
-        card-column: 1/3;
-        card-row: 4/4;
-      }
-      .card > a:nth-child(0n + 8) {
-        card-column: 3/5;
-        card-row: 3/3;
-      }
 
-      /*image specifique*/
-      .card > a:nth-child(0n + 3) img,
-      .card > a:nth-child(0n + 6) img,
-      .card > a:nth-child(0n + 8) img {
-        height: 100% !important;
-        width: 100% !important;
+      .article-card img {
+        max-height: 19rem;
       }
       @media (min-width: 401px) and (max-width: 600px) {
-
-        .card > a .article-title {
+        .grid > a .article-title {
+        .grid > a .article-title {
           padding: 0.5em;
         }
-        .card > a .article-splash-title {
-          height: 7em        }
+        .grid > a .article-splash-title {
+        .grid > a .article-splash-title {
+          height: 7em;
+        }
       }
       @media (max-width: 400px) {
-        .card > a .article-title {
+        .grid > a .card-title {
+        .grid > a .card-title {
           padding: 0.5em;
         }
-        .card > a .article-splash-title {
-          height: 7em;        }
+        .grid > a .article-card {
+          height: 7em;
+        }
+      }
     `}</style>
   </Layout>
 );

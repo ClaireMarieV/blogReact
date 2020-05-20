@@ -4,9 +4,6 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import ArticleCard from "../components/articleCard";
 import Grid from "../components/grid";
-import Aside from "../components/aside";
-import Timeline from "../components/timeline";
-import LinkInstagram from "../components/linkInstagram";
 import articles from "../data/articleLife";
 
 const StylePage = () => (
