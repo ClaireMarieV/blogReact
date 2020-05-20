@@ -59,11 +59,6 @@ const DesirPage = () => (
         height: 20rem;
         object-fit: cover;
       }
-      .imgRow {
-        width: 100%;
-        height: 20rem;
-        display: flex;
-      }
       .article-base .text {
         display: flex;
         max-width: 30rem;

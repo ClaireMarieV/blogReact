@@ -55,7 +55,6 @@ const PlateformePage = () => (
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
         grid-gap: 0.5rem;
-        width: calc(85% - 1.875rem);}
       }
       .gridPlateform > *:nth-child(1) {
         grid-column: 1/2;

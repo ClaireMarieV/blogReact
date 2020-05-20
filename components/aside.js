@@ -5,7 +5,6 @@ const Aside = ({ children, className, id }) => (
     {children}
     <style jsx>{`
       .aside {
-        width: calc(30% - 1.875rem);
         max-width: 15rem;
         opacity: 0.9;
         padding-left: 1em;
@@ -13,7 +12,7 @@ const Aside = ({ children, className, id }) => (
         background-color: white;
       }
 
-      @media (max-width: 990px) {
+      @media (max-width: 610px) {
         .aside {
           display: none;
         }

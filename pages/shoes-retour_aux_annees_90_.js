@@ -57,17 +57,12 @@ const PlateformePage = () => (
       .article-base img {
         width: 100%;
       }
-      .imgText,
-      .imgRow {
+      .imgText {
         display: flex;
       }
-      .imgRow img {
-        width: 100%;
-        margin: 1em;
-      }
+
       @media (max-width: 600px) {
-        .imgText,
-        imgRow {
+        .imgText {
           display: block;
         }
       }

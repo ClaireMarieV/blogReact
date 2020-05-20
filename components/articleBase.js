@@ -24,7 +24,7 @@ const ArticleBase = ({
       }
       .article-base img {
         width: 100%;
-        height: 30rem;
+        max-height: 30rem;
         object-fit: cover;
       }
     `}</style>

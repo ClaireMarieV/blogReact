@@ -52,18 +52,7 @@ const AcceptationPage = () => (
         text=" Vous pouvez me suivre > "
       />
     </Aside>
-    <style jsx global>{`
-      .article-base img {
-        grid-column: 1/5;
-        width: 100%;
-        height: 33rem;
-        object-fit: cover;
-      }
-      .imgRow {
-        width: 100%;
-        display: flex;
-      }
-    `}</style>
+    <style jsx global>{``}</style>
   </Layout>
 );
 
