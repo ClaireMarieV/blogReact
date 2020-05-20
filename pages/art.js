@@ -23,7 +23,6 @@ const StylePage = () => (
       </div>
       {articles.map((article) => (
         <ArticleCard
-          className="article-art"
           category={article.category}
           title={article.title}
           date={article.date}
@@ -31,22 +30,12 @@ const StylePage = () => (
         />
       ))}
     </Grid>
-
     <style jsx>{`
       /*general*/
-      .grid > .intro {
+      .intro {
         grid-column: 1/5;
+        background-color: #fff8f7;
       }
-      .grid > a card-title {
-        color: white;
-        background-color: #141414;
-        height: 17rem;
-        margin-top: 0 !important;
-      }
-      .grid > a .article-title {
-        padding-top: 3em;
-      }
-
       /*spécifique*/
       a:nth-child(3) > .article-card .card-title,
       a:nth-child(6) > .article-card .card-title,
@@ -58,28 +47,25 @@ const StylePage = () => (
       a:nth-child(3) .card-title,
       a:nth-child(6) .card-title,
       a:nth-child(8) .card-title {
-        padding-top: 1em !important;
+        padding-top: 1em;
       }
 
       .article-card img {
         max-height: 19rem;
       }
       @media (min-width: 401px) and (max-width: 600px) {
-        .grid > a .article-title {
-        .grid > a .article-title {
-          padding: 0.5em;
-        }
-        .grid > a .article-splash-title {
-        .grid > a .article-splash-title {
-          height: 7em;
-        }
-      }
-      @media (max-width: 400px) {
-        .grid > a .card-title {
         .grid > a .card-title {
           padding: 0.5em;
         }
         .grid > a .article-card {
+          height: 7em;
+        }
+      }
+      @media (max-width: 400px) {
+        a .card-title {
+          padding: 0.5em;
+        }
+        a .article-card {
           height: 7em;
         }
       }

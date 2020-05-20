@@ -23,12 +23,8 @@ const StylePage = () => (
     </Grid>
 
     <style jsx global>{`
-      .grid > a:nth-child(0n + 1) .article-splash-title .article-title h3:hover,
-      .grid
-        > a:nth-child(0n + 11)
-        .article-splash-title
-        .article-title
-        h3:hover {
+      .grid > a:nth-child(0n + 1) .article-card .card-title h3:hover,
+      .grid > a:nth-child(0n + 11) .article-card .card-title h3:hover {
         color: whitesmoke;
       }
       a:nth-child(2) .article-card,
