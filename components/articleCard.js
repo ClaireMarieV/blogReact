@@ -26,9 +26,12 @@ const ArticleCard = ({ category, title, date, picture, className, id }) => (
         .article-card .card-title .article-title h3 {
           font-size: 1.1em;
         }
+        .article-card .card-title {
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+        }
       `}</style>
       <style jsx>{`
-
         @media (min-width: 401px) and (max-width: 600px) {
          .article-card {
             margin-bottom: 1em;
