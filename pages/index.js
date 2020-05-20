@@ -140,6 +140,7 @@ const IndexPage = () => (
       .index {
         display: flex;
         flex-direction: column;
+        width: 100%;
       }
 
       /*  div {

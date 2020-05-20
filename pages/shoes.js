@@ -15,8 +15,6 @@ const StylePage = () => (
     <Grid>
       {articles.map((article) => (
         <ArticleCard
-          className="article-group"
-          id="article-shoes"
           category={article.category}
           title={article.title}
           date={article.date}

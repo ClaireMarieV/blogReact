@@ -19,10 +19,9 @@ const ArticleCard = ({ category, title, date, picture, className, id }) => (
           display: flex;
           flex-direction: column;
           background-color: #fff8f7;
-          margin: 0.5rem;
         }
         .article-card img {
-          height: 28rem;
+          max-height: 28rem;
         }
 
         .article-card .card-title .article-title h3 {
@@ -37,11 +36,13 @@ const ArticleCard = ({ category, title, date, picture, className, id }) => (
         @media (min-width: 401px) and (max-width: 600px) {
          .article-card {
             margin-bottom: 1rem;
+            margin: 1rem;
           }
         }
         @media (max-width: 400px) {
           .article-card {
             margin: 1em;
+            margin: 1rem;
           }
       `}</style>
     </a>

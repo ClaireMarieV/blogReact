@@ -17,30 +17,22 @@ const Grid = ({ children }) => (
         overflow: hidden;
       }
 
-      @media (max-width: 990px) {
-        .grid {
-          width: 100%;
-        }
-      }
-
       @media (min-width: 601px) and (max-width: 860px) {
         .grid {
-          grid-template-columns: 1fr 1fr;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
         }
       }
 
-      @media (min-width: 401px) and (max-width: 600px) {
+      @media (max-width: 600px) {
         .grid {
-          display: inline;
+          grid-template-columns: minmax(0, 1fr);
         }
+
         .grid > .article-splash {
           margin-bottom: 1em;
         }
       }
-      @media (max-width: 400px) {
-        .grid {
-          display: inline;
-        }
+
         .grid > .article-splash {
           margin-bottom: 1em;
         }
