@@ -30,9 +30,15 @@ const ArtPage = () => (
       ))}
     </Grid>
     <style jsx>{`
+      .intro {
+        background-color: white;
+        padding: 1rem;
+      }
       .intro p {
         grid-column: 1/5;
       }
+
+      /****/
       @media (min-width: 481px) and (max-width: 640px) {
         .grid {
           grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
