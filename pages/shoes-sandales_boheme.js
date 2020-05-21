@@ -9,7 +9,7 @@ import LinkInstagram from "../components/linkInstagram";
 import ArticleTitle from "../components/articleTitle";
 import article from "../data/shoes/boheme";
 
-const PlateformePage = () => (
+const BohemePage = () => (
   <Layout>
     <SEO title="Home" />
     <div className="gridPlateform">
@@ -81,4 +81,4 @@ const PlateformePage = () => (
   </Layout>
 );
 
-export default PlateformePage;
+export default BohemePage;

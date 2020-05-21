@@ -2,12 +2,11 @@ import React from "react";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import ArticleSplash from "../components/articleSplash";
 import Grid from "../components/grid";
 import ArticleCard from "../components/articleCard";
 import articles from "../data/articleArt";
 
-const StylePage = () => (
+const ArtPage = () => (
   <Layout>
     <SEO title="Home" />
     <Grid>
@@ -31,46 +30,21 @@ const StylePage = () => (
       ))}
     </Grid>
     <style jsx>{`
-      /*general*/
-      .intro {
+      .intro p {
         grid-column: 1/5;
-        background-color: #fff8f7;
       }
-      /*spécifique*/
-      a:nth-child(3) > .article-card .card-title,
-      a:nth-child(6) > .article-card .card-title,
-      a:nth-child(8) > .article-card .card-title {
-        color: black;
-        background-color: white;
-        height: 7em;
-      }
-      a:nth-child(3) .card-title,
-      a:nth-child(6) .card-title,
-      a:nth-child(8) .card-title {
-        padding-top: 1em;
-      }
-
-      .article-card img {
-        max-height: 19rem;
-      }
-      @media (min-width: 401px) and (max-width: 600px) {
-        .grid > a .card-title {
-          padding: 0.5em;
-        }
-        .grid > a .article-card {
-          height: 7em;
+      @media (min-width: 481px) and (max-width: 640px) {
+        .grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
         }
       }
-      @media (max-width: 400px) {
-        a .card-title {
-          padding: 0.5em;
-        }
-        a .article-card {
-          height: 7em;
+      @media (max-width: 480px) {
+        .grid {
+          grid-template-columns: minmax(0, 1fr) !important;
         }
       }
     `}</style>
   </Layout>
 );
 
-export default StylePage;
+export default ArtPage;

@@ -21,7 +21,8 @@ const ArticleCard = ({ category, title, date, picture, className, id }) => (
           background-color: #fff8f7;
         }
         .article-card img {
-          max-height: 28rem;
+          height: 28rem;
+          width: 100%;
         }
 
         .article-card .card-title .article-title h3 {

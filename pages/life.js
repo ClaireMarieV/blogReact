@@ -6,7 +6,7 @@ import ArticleCard from "../components/articleCard";
 import Grid from "../components/grid";
 import articles from "../data/articleLife";
 
-const StylePage = () => (
+const LifePage = () => (
   <Layout>
     <SEO title="Home" />
     <Grid>
@@ -35,4 +35,4 @@ const StylePage = () => (
   </Layout>
 );
 
-export default StylePage;
+export default LifePage;
