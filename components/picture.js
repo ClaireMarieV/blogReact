@@ -18,9 +18,6 @@ const Picture = ({ picture }) => {
     imageRefUpdated(imageElement);
   });
 
-  if (typeof picture === "object" && !picture.preview) {
-    picture = picture.picture;
-  }
   if (typeof picture === "string") {
     return <img src={picture} />;
   } else {
