@@ -33,34 +33,38 @@ const Header = () => (
       </h2>
       <ul>
         <li>
-          <img src="/images/instagram-logo.png" />
+          <a href="https://www.instagram.com/clairevaney/">
+            <img src="/instagram.svg" />
+          </a>
         </li>
         <li>
-          <i className="far fa-envelope"></i>
+          <a href="mailto:vert.claire.blog@gmail.com">
+            <img src="/mail.svg" />
+          </a>
         </li>
         <li>
-          <img src="/images/social-media.png" />
+          <a href="https://www.pinterest.fr/clairevaney/">
+            <img src="/pinterest.svg" />
+          </a>
         </li>
       </ul>
     </nav>
     <style jsx>{`
       nav {
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: repeat(3, minmax(0, 1fr));
         display: grid;
         text-decoration: none;
-        padding-top: 3rem;
-        grid-row: 3/4;
       }
       nav > ul {
         display: flex;
         flex-grow: 0.6;
-        justify-content: space-between;
-        margin: 0;
+        justify-content: space-evenly;
+        margin: 1rem;
         padding: 0;
         list-style: none;
       }
       nav > ul > li {
-        margin: auto;
+        padding: 1em;
       }
       nav > ul > li > a {
         color: whitesmoke;
@@ -73,8 +77,8 @@ const Header = () => (
         font-size: 1em;
       }
 
-      nav > ul > li > img {
-        width: 1rem;
+      nav > ul > li > a > img {
+        width: 1.2rem;
       }
       nav > h2 {
         text-align: center;
@@ -91,12 +95,11 @@ const Header = () => (
       }
       @media (max-width: 1076px) {
         nav {
-          grid-template-rows: 1fr 1fr;
-          grid-template-columns: none;
+          grid-template-rows: repeat(2, minmax(0, 1fr));
         }
         nav > h2 {
           margin-left: 0.5em;
-          font-size: 1.4em;
+          font-size: 1.5em;
         }
       }
     `}</style>

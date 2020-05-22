@@ -6,17 +6,28 @@ const Footer = () => (
     <nav>
       <ul>
         <li>
-          <img src="/images/instagram-logo.png" />
+          <h2>
+            <Link href="/">
+              <a>IL ÉTAIT UNE FOIS</a>
+            </Link>
+          </h2>
         </li>
         <li>
-          <img src="/images/social-media.png" />
+          <a href="https://www.instagram.com/clairevaney/">
+            <img src="../instagramF.svg" />
+          </a>
+        </li>
+        <li>
+          <a href="mailto:vert.claire.blog@gmail.com">
+            <img src="../mailF.svg" />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.pinterest.fr/clairevaney/">
+            <img src="../pinterestF.svg" />
+          </a>
         </li>
       </ul>
-      <h2>
-        <Link href="/">
-          <a>IL ÉTAIT UNE FOIS</a>
-        </Link>
-      </h2>
     </nav>
     <style jsx>{`
       nav {
@@ -49,15 +60,16 @@ const Footer = () => (
         font-size: 0.8em;
       }
 
-      nav > ul > li > img {
-        width: 1rem;
+      nav > ul > li > a > img {
+        width: 0.9rem;
+        color: black;
       }
-      nav > h2 {
+      nav > ul > li > h2 {
         color: black;
         text-align: center;
         font-family: astoria-sans-condensed, sans-serif;
         font-weight: 600;
-        font-size: 0.9em;
+        font-size: 1.2rem;
         font-style: thin;
         margin-top: 0.5em;
         letter-spacing: 0.4em;
