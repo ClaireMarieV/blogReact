@@ -2,8 +2,8 @@ import Picture from "../../components/picture";
 import ImgRow from "../../components/imgRow";
 
 import acidPreview from "../../public/images/style/acid.jpg?lqip";
-import acid from "../../public/images/style/acid.jpg";
-import roseEucalyptus from "../../public/images/style/roseEucalyptus.jpg";
+import acid from "../../public/images/style/acid.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000";
+import roseEucalyptus from "../../public/images/style/roseEucalyptus.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000";
 import roseEucalyptusPreview from "../../public/images/style/roseEucalyptus.jpg?lqip";
 
 export default {

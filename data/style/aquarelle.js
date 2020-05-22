@@ -2,8 +2,8 @@ import Picture from "../../components/picture";
 import ImgRow from "../../components/imgRow";
 
 import aquarellePreview from "../../public/images/style/aquarelle1.jpg?lqip";
-import aquarelle from "../../public/images/style/aquarelle1.jpg";
-import aquarelle2 from "../../public/images/style/aquarelle4.jpg";
+import aquarelle from "../../public/images/style/aquarelle1.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000";
+import aquarelle2 from "../../public/images/style/aquarelle4.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000";
 
 export default {
   category: "STYLE",

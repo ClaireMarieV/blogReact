@@ -1,6 +1,6 @@
 import Picture from "../../components/picture";
 import tiePreview from "../../public/images/style/tie.jpg?lqip";
-import tie from "../../public/images/style/tie.jpg";
+import tie from "../../public/images/style/tie.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000";
 
 export default {
   category: "STYLE",
