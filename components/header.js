@@ -78,7 +78,7 @@ const Header = () => (
       }
 
       nav > ul > li > a > img {
-        width: 1.2rem;
+        width: 1.25rem;
       }
       nav > h2 {
         text-align: center;
