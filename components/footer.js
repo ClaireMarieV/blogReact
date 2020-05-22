@@ -61,7 +61,7 @@ const Footer = () => (
       }
 
       nav > ul > li > a > img {
-        width: 0.9rem;
+        width: 1.1rem;
         color: black;
       }
       nav > ul > li > h2 {
