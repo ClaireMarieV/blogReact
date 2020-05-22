@@ -2,11 +2,11 @@ import Picture from "../../components/picture";
 import ImgRow from "../../components/imgRow";
 
 import plateformePreview from "../../public/images/shoes/plateforme1.jpg?lqip";
-import plateforme from "../../public/images/shoes/plateforme1.jpg";
+import plateforme from "../../public/images/shoes/plateforme1.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000";
 import plateforme1Preview from "../../public/images/shoes/plateforme.jpg?lqip";
-import plateforme1 from "../../public/images/shoes/plateforme.jpg";
+import plateforme1 from "../../public/images/shoes/plateforme.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000";
 import plateforme2Preview from "../../public/images/shoes/plateforme2.jpg?lqip";
-import plateforme2 from "../../public/images/shoes/plateforme2.jpg";
+import plateforme2 from "../../public/images/shoes/plateforme2.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000";
 
 export default {
   category: "SHOES",

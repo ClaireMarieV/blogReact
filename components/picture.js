@@ -27,7 +27,8 @@ const Picture = ({ picture }) => {
     return (
       <>
         <img
-          src={picture.picture}
+          src={picture.picture.src || picture.picture}
+          srcSet={picture.picture.srcSet}
           ref={imageRefUpdated}
           onLoad={() => setPictureLoaded(true)}
           hidden={!pictureLoaded}

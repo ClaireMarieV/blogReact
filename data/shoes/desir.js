@@ -1,7 +1,7 @@
 import Picture from "../../components/picture";
 
 import docPreview from "../../public/images/shoes/doc.jpg?lqip";
-import doc from "../../public/images/shoes/doc.jpg";
+import doc from "../../public/images/shoes/doc.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000";
 
 export default {
   category: "SHOES",
