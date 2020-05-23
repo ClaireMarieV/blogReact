@@ -13,6 +13,7 @@ import Timeline from "../components/timeline";
 import LinkInstagram from "../components/linkInstagram";
 import acid from "../data/style/acid";
 import acceptation from "../data/style/acceptation";
+import romantisme from "../data/style/romantisme";
 import desir from "../data/shoes/desir";
 import vesteAcid from "../data/style/vesteAcid";
 import plateforme from "../data/shoes/plateforme";
@@ -24,6 +25,13 @@ const IndexPage = () => (
     <SEO title="Home" />
     <div className="index">
       <div className="parallax">
+        <ArticleSplash
+          className="grid-full"
+          category={romantisme.category}
+          title={romantisme.title}
+          date={romantisme.date}
+          picture={romantisme.picture}
+        />
         <ArticleSplash
           className="grid-full"
           category={acceptation.category}
@@ -124,28 +132,11 @@ const IndexPage = () => (
       </Card>
     </div>
     <style jsx global>{`
-      main {
-        overflow-x: hidden;
-        overflow-y: auto;
-        perspective: 2px;
-      }
-      html,
-      body {
-        margin: 0;
-        padding: 0;
-        border: 0;
-        font-family: monospace;
-        overflow-x: hidden;
-      }
       .index {
         display: flex;
         flex-direction: column;
         width: 100%;
       }
-
-      /*  div {
-
-      }*/
       /**************/
       /*Parallax*/
       /**************/

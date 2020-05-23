@@ -38,6 +38,19 @@ const Layout = ({ children }) => (
           height: 100%;
         }
 
+        main {
+          overflow-x: hidden;
+          overflow-y: auto;
+          perspective: 2px;
+        }
+        html,
+        body {
+          margin: 0;
+          padding: 0;
+          border: 0;
+          font-family: monospace;
+          overflow-x: hidden;
+        }
         body {
           margin: 0;
           overflow-x: hidden;
