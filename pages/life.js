@@ -1,6 +1,7 @@
 import React from "react";
 
 import Layout from "../components/layout";
+import Index from "../components/index";
 import SEO from "../components/seo";
 import ArticleCard from "../components/articleCard";
 import Grid from "../components/grid";
@@ -9,17 +10,19 @@ import articles from "../data/articleLife";
 const LifePage = () => (
   <Layout>
     <SEO title="Home" />
-    <Grid>
-      {articles.map((article) => (
-        <ArticleCard
-          className="article-group"
-          category={article.category}
-          title={article.title}
-          date={article.date}
-          picture={article.picture}
-        />
-      ))}
-    </Grid>
+    <Index>
+      <Grid>
+        {articles.map((article) => (
+          <ArticleCard
+            className="article-group"
+            category={article.category}
+            title={article.title}
+            date={article.date}
+            picture={article.picture}
+          />
+        ))}
+      </Grid>
+    </Index>
     <style jsx>{`
       a:nth-child(2) .article-card,
       a:nth-child(5) .article-card,

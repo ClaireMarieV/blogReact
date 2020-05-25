@@ -33,7 +33,6 @@ const Picture = ({ picture }) => {
         <img className="preview" src={picture.preview} hidden={pictureLoaded} />
         <style jsx>{`
           img {
-            object-fit: cover;
             width: 100%;
             opacity: 1;
             object-fit: cover;

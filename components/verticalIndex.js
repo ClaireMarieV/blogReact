@@ -63,16 +63,14 @@ const VerticalIndex = ({ category, title, date, picture, className, id }) => (
             transform: scaleX(1);
             cursor: pointer;
             transition: transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-            cursor: pointer;
             height: 100%;
           }
 
-        @media(max-width: 720px){
-          .vertical-index{
-            max-width: 100%;
-            max-height: 100%;
+        @media (max-width:720px){
+          .vertical-index {
+            min-width: 100% !important;
+          }
         }
-      }
       `}</style>
   </div>
 );

@@ -100,13 +100,6 @@ const IndexPage = () => (
       </Card>
     </div>
     <style jsx global>{`
-      .index {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        transition: opacity 0.5s ease 0.3s;
-        margin: 9rem;
-      }
       /**************/
       /*Parallax*/
       /**************/
@@ -200,12 +193,10 @@ const IndexPage = () => (
       }
 
       @media (max-width: 720px) {
-        .index {
-          margin: 0;
-        }
         .vertical-index {
           transform: translate3d(0, 0, 0);
         }
+        .parallax
       }
     `}</style>
   </Layout>

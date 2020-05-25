@@ -7,9 +7,9 @@ const Aside = ({ children, className, id }) => (
       .aside {
         max-width: 15rem;
         opacity: 0.9;
-        padding-left: 1em;
-        padding-top: 1em;
-        background-color: white;
+        padding: 2.5em;
+
+        background-color: #fcf9f5;
       }
 
       @media (max-width: 610px) {

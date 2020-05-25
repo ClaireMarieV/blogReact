@@ -23,7 +23,7 @@ const Card = ({ category, title, children, date, picture, className, id }) => (
 
       @media (min-width: 501px) and (max-width: 860px) {
         .card {
-          grid-template-columns: repeat(2, minmax(0, 1fr));
+            display: grid;;
         }
       }
 

@@ -1,6 +1,7 @@
 import React from "react";
 
 import Layout from "../components/layout";
+import Index from "../components/index";
 import SEO from "../components/seo";
 import Card from "../components/card";
 import VerticalIndex from "../components/verticalIndex";
@@ -9,16 +10,18 @@ import articles from "../data/articleShoes";
 const ShoesPage = () => (
   <Layout>
     <SEO title="Home" />
-    <Card>
-      {articles.map((article) => (
-        <VerticalIndex
-          category={article.category}
-          title={article.title}
-          date={article.date}
-          picture={article.picture}
-        />
-      ))}
-    </Card>
+    <Index>
+      <Card>
+        {articles.map((article) => (
+          <VerticalIndex
+            category={article.category}
+            title={article.title}
+            date={article.date}
+            picture={article.picture}
+          />
+        ))}
+      </Card>
+    </Index>
 
     <style jsx global>{`
       a:nth-child(3) .article-card,

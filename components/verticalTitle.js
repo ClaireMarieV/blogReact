@@ -45,6 +45,21 @@ const VerticalTitle = ({ title }) => (
         .vertical-title a {
           text-decoration: none;
         }
+        @media (min-width: 400px) and (max-width: 730px) {
+          .vertical-title h3 {
+            font-size: 1rem;
+          }
+        }
+        @media (min-width: 307px) and (max-width: 399px) {
+          .vertical-title h3 {
+            font-size: 0.8rem;
+          }
+        }
+        @media (max-width: 306px) {
+          .vertical-title h3 {
+            font-size: 0.7rem;
+          }
+        }
       `}
     </style>
   </div>
