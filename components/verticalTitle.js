@@ -12,12 +12,14 @@ const VerticalTitle = ({ title }) => (
           writing-mode: vertical-rl;
           transform: rotate(180deg);
           display: flex;
-          height: 100%;
           line-height: 1.875vw;
         }
 
         .vertical-title .content {
-          padding-top: 1rem;
+          display: flex;
+          justify-content: end;
+          align-items: end;
+          margin-top: 0.5rem;
         }
         .vertical-title h4 {
           font-family: astoria-sans-condensed, sans-serif;

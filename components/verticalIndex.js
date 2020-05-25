@@ -23,7 +23,7 @@ const VerticalIndex = ({ category, title, date, picture, className, id }) => (
           transform: scaleX(1);
           cursor: pointer;
           max-width: 43vw;
-          max-height: 48.75vw;
+          max-height: 51.75vw;
           transform: translate3d(0px, 0px, 0px);
           height: 100%;
           margin: 3rem;
@@ -33,7 +33,7 @@ const VerticalIndex = ({ category, title, date, picture, className, id }) => (
           transform: translate3d(-15.5vw, 0, 0);
           animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
         }
-        .vertical-index:nth-child(3) {
+        .vertical-index:nth-child(2) {
           background-color: #f7d9be;
         }
 

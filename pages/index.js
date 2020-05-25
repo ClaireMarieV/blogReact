@@ -57,12 +57,6 @@ const IndexPage = () => (
       </div>
       <Card className="card-index">
         <VerticalIndex
-          category={vesteAcid.category}
-          title={vesteAcid.title}
-          date={vesteAcid.date}
-          picture={vesteAcid.picture}
-        />
-        <VerticalIndex
           category={acid.category}
           title={acid.title}
           date={acid.date}
@@ -74,14 +68,8 @@ const IndexPage = () => (
           date={mango.date}
           picture={mango.picture}
         />
-        <VerticalIndex
-          category={boheme.category}
-          title={boheme.title}
-          date={boheme.date}
-          picture={boheme.picture}
-        />
       </Card>
-      <div className="twice">
+      <div className="once">
         <ArticleCard
           className="grid-full"
           category={acceptation.category}
@@ -89,21 +77,8 @@ const IndexPage = () => (
           date={acceptation.date}
           picture={acceptation.picture}
         />
-        <ArticleCard
-          className="grid-full"
-          category={acid.category}
-          title={acid.title}
-          date={acid.date}
-          picture={acid.picture}
-        />
       </div>
       <Card>
-        <VerticalIndex
-          category={vesteAcid.category}
-          title={vesteAcid.title}
-          date={vesteAcid.date}
-          picture={vesteAcid.picture}
-        />
         <VerticalIndex
           category={acid.category}
           title={acid.title}
@@ -130,6 +105,7 @@ const IndexPage = () => (
         flex-direction: column;
         width: 100%;
         transition: opacity 0.5s ease 0.3s;
+        margin: 9rem;
       }
       /**************/
       /*Parallax*/
@@ -212,20 +188,18 @@ const IndexPage = () => (
         /*  background-color: #dbb6b6 !important; */
       }
       /*********/
-      /**Twice**/
+      /**Once**/
       /*********/
-      .twice {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        grid-gap: 1rem;
+      .once {
+        display: flex;
         margin: 1rem;
       }
-      .twice a:nth-child(1) .article-splash-title {
+      .once a:nth-child(1) .article-splash-title {
         color: white;
         background-color: black;
       }
       @media (max-width: 600px) {
-        .twice {
+        .once {
           grid-template-columns: repeat(1, minmax(0, 1fr));
         }
       }

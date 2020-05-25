@@ -12,7 +12,7 @@ const Card = ({ category, title, children, date, picture, className, id }) => (
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 5.5vw auto auto;
+        margin: 1.5vw auto auto;
         padding-top: 0;
       }
 
