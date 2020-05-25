@@ -18,7 +18,7 @@ const RomantismePage = () => (
       category={article.category}
       title={article.title}
       date={article.date}
-      picture="/images/style/romantisme.jpg"
+      picture="/images/style/romantisme3.jpg"
     >
       {article.content}
     </ArticleBase>
@@ -55,7 +55,7 @@ const RomantismePage = () => (
     </Aside>
     <style jsx global>{`
       article-base img {
-        max-height: 100%;
+        max-width: 100%;
       }
     `}</style>
   </Layout>

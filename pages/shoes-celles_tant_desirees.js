@@ -56,7 +56,7 @@ const DesirPage = () => (
       .article-base img {
         grid-column: 1/5;
         width: 100%;
-        height: 20rem;
+        height: 40rem;
         object-fit: cover;
       }
       .article-base .text {
