@@ -2,14 +2,14 @@ import React from "react";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import Grid from "../components/grid";
-import ArticleCard from "../components/articleCard";
+import Card from "../components/card";
+import VerticalIndex from "../components/verticalIndex";
 import articles from "../data/articleArt";
 
 const ArtPage = () => (
   <Layout>
     <SEO title="Home" />
-    <Grid>
+    <Card>
       <div className="intro">
         <p>
           Dans cette catégorie, les photos ne redirigent pas vers un article. Je
@@ -21,14 +21,14 @@ const ArtPage = () => (
         </p>
       </div>
       {articles.map((article) => (
-        <ArticleCard
+        <VerticalIndex
           category={article.category}
           title={article.title}
           date={article.date}
           picture={article.picture}
         />
       ))}
-    </Grid>
+    </Card>
     <style jsx>{`
       .intro {
         background-color: white;
@@ -36,18 +36,6 @@ const ArtPage = () => (
       }
       .intro p {
         grid-column: 1/5;
-      }
-
-      /****/
-      @media (min-width: 481px) and (max-width: 640px) {
-        .grid {
-          grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-        }
-      }
-      @media (max-width: 480px) {
-        .grid {
-          grid-template-columns: minmax(0, 1fr) !important;
-        }
       }
     `}</style>
   </Layout>
