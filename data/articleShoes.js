@@ -12,13 +12,6 @@ export default [
     picture: "/images/shoes/boheme.jpg",
   },
   desir,
-
-  {
-    category: "SHOES",
-    title: "DU ROUGE, DU ROUGE, DU ROUGE",
-    date: "06.04.2019",
-    picture: "/images/shoes/gianvito.png",
-  },
   {
     category: "SHOES",
     title: "UN BASIQUE",
