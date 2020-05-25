@@ -11,6 +11,7 @@ export default {
   picture: { preview: kimonoPreview, picture: kimono },
   content: (
     <>
+      <Picture picture={{ picture: kimono1 }} />
       <p>
         Par ce titre, je vais faire au mieux pour vous expliquer les essais, les
         tentatives d'un retour à la douceur. Alors qu'est-ce-que sait que de se
@@ -99,7 +100,6 @@ export default {
         du pourquoi mais le principal n'est pas là.
       </p>
       <ImgRow>
-        <Picture picture={{ picture: kimono1 }} />
         <Picture picture={{ picture: kimono2 }} />
       </ImgRow>
       <p>

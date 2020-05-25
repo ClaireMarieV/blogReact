@@ -54,7 +54,7 @@ const AcceptationPage = () => (
     </Aside>
     <style jsx global>{`
       .article-base img {
-        max-height: 30rem;
+        max-height: 43rem;
       }
     `}</style>
   </Layout>

@@ -35,7 +35,6 @@ const Picture = ({ picture }) => {
           img {
             object-fit: cover;
             width: 100%;
-            height: 100%;
             opacity: 1;
             object-fit: cover;
           }

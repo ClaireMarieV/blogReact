@@ -21,11 +21,6 @@ const ShoesPage = () => (
     </Card>
 
     <style jsx global>{`
-      a:nth-child(1) .article-card,
-      a:nth-child(6) .article-card,
-      a:nth-child(9) .article-card {
-        background-color: #f7d9be;
-      }
       a:nth-child(3) .article-card,
       a:nth-child(7) .article-card {
         background-color: black;

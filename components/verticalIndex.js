@@ -67,7 +67,12 @@ const VerticalIndex = ({ category, title, date, picture, className, id }) => (
             height: 100%;
           }
 
+        @media(max-width: 720px){
+          .vertical-index{
+            max-width: 100%;
+            max-height: 100%;
         }
+      }
       `}</style>
   </div>
 );

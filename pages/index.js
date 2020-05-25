@@ -198,9 +198,13 @@ const IndexPage = () => (
         color: white;
         background-color: black;
       }
-      @media (max-width: 600px) {
-        .once {
-          grid-template-columns: repeat(1, minmax(0, 1fr));
+
+      @media (max-width: 720px) {
+        .index {
+          margin: 0;
+        }
+        .vertical-index {
+          transform: translate3d(0, 0, 0);
         }
       }
     `}</style>

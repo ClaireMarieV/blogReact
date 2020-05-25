@@ -92,6 +92,7 @@ const Layout = ({ children }) => (
           color: #40363e;
         }
         h3 {
+          Acta-Display-Light;
           margin-bottom: 0.5rem;
           margin-top: 0;
         }
