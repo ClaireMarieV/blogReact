@@ -5,6 +5,7 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 
 import ArticleSplash from "../components/articleSplash";
+import VerticalIndex from "../components/verticalIndex";
 import Card from "../components/card";
 import ArticleCard from "../components/articleCard";
 
@@ -54,30 +55,26 @@ const IndexPage = () => (
           picture={desir.picture}
         />
       </div>
-      <Card>
-        <ArticleCard
-          className="article-card"
+      <Card className="card-index">
+        <VerticalIndex
           category={vesteAcid.category}
           title={vesteAcid.title}
           date={vesteAcid.date}
           picture={vesteAcid.picture}
         />
-        <ArticleCard
-          className="article-card"
+        <VerticalIndex
           category={acid.category}
           title={acid.title}
           date={acid.date}
           picture={acid.picture}
         />
-        <ArticleCard
-          className="article-card"
+        <VerticalIndex
           category={mango.category}
           title={mango.title}
           date={mango.date}
           picture={mango.picture}
         />
-        <ArticleCard
-          className="article-card"
+        <VerticalIndex
           category={boheme.category}
           title={boheme.title}
           date={boheme.date}
@@ -101,29 +98,25 @@ const IndexPage = () => (
         />
       </div>
       <Card>
-        <ArticleCard
-          className="article-card"
+        <VerticalIndex
           category={vesteAcid.category}
           title={vesteAcid.title}
           date={vesteAcid.date}
           picture={vesteAcid.picture}
         />
-        <ArticleCard
-          className="article-card"
+        <VerticalIndex
           category={acid.category}
           title={acid.title}
           date={acid.date}
           picture={acid.picture}
         />
-        <ArticleCard
-          className="article-card"
+        <VerticalIndex
           category={mango.category}
           title={mango.title}
           date={mango.date}
           picture={mango.picture}
         />
-        <ArticleCard
-          className="article-card"
+        <VerticalIndex
           category={boheme.category}
           title={boheme.title}
           date={boheme.date}
@@ -136,37 +129,44 @@ const IndexPage = () => (
         display: flex;
         flex-direction: column;
         width: 100%;
+        transition: opacity 0.5s ease 0.3s;
       }
       /**************/
       /*Parallax*/
       /**************/
 
       .parallax {
-        background-color: #fff8f7;
         width: 100%;
       }
       .parallax .grid-full {
         display: flex;
         flex-direction: initial;
+        margin-top: 1rem;
       }
 
       .parallax a:nth-child(2) .grid-full,
       .parallax a:nth-child(4) .grid-full {
         display: flex;
         flex-direction: row-reverse !important;
-        background-color: #d6a095;
       }
 
       /**************/
       /*Card*/
       /**************/
-      .card a .article-card .card-title {
-        margin-top: 1rem;
-        margin-bottom: 1rem;
+      .card-index {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center;
+        margin: 12.5vw auto auto;
+        margin-top: 0.5rem;
       }
-      .card a:nth-child(3) .article-card {
-        background-color: #f7d9be;
+
+      .card-index:nth-child(odd) {
+        transform: translate3d(-12.5px, 0px, 0px);
+        transition: transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955),
+          height 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
       }
+
       /**************/
       /*Article-splas img*/
       /**************/

@@ -4,16 +4,16 @@ import ArticleTitle from "./articleTitle";
 import Picture from "./picture";
 
 const Card = ({ category, title, children, date, picture, className, id }) => (
-  <div className={"card" + (className || "")} id={id}>
+  <div className={"card " + (className || "")} id={id}>
     {children}
     <style jsx>{`
       /* Grille basique à 4 colonnes */
       .card {
-        display: grid;
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-        place-content: center;
-        grid-gap: 1rem;
-        margin: 0.5em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 5.5vw auto auto;
+        padding-top: 0;
       }
 
       /* Classe .grid-full permettant à un élément de la grille de prendre toute la largeur */

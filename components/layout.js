@@ -58,6 +58,8 @@ const Layout = ({ children }) => (
           height: 100%;
           perspective: 1px;
           transform-style: preserve-3d;
+          background-color: #FCF9F5;
+
         }
           header {
             position: relative;

@@ -16,7 +16,7 @@ const ArticleCard = ({ category, title, date, picture, className, id }) => (
       </div>
       <style jsx global>{`
         .article-card {
-          display: flex;
+          /*display: flex;*/
           flex-direction: column;
           background-color: #fff8f7;
         }
