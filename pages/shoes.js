@@ -2,23 +2,23 @@ import React from "react";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import Grid from "../components/grid";
-import ArticleCard from "../components/articleCard";
+import Card from "../components/card";
+import VerticalIndex from "../components/verticalIndex";
 import articles from "../data/articleShoes";
 
 const ShoesPage = () => (
   <Layout>
     <SEO title="Home" />
-    <Grid>
+    <Card>
       {articles.map((article) => (
-        <ArticleCard
+        <VerticalIndex
           category={article.category}
           title={article.title}
           date={article.date}
           picture={article.picture}
         />
       ))}
-    </Grid>
+    </Card>
 
     <style jsx global>{`
       a:nth-child(1) .article-card,
