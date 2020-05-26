@@ -1,7 +1,7 @@
 import React from "react";
 import Picture from "./picture";
 
-import CardTitle from "./CardTitle";
+import CardTitle from "./cardTitle";
 import Link from "next/link";
 import { fromArticle } from "../lib/link";
 
