@@ -55,7 +55,7 @@ const IndexPage = () => (
           picture={desir.picture}
         />
       </div>
-      <Card className="card-index">
+      <Card>
         <VerticalIndex
           category={acid.category}
           title={acid.title}
@@ -110,34 +110,28 @@ const IndexPage = () => (
       .parallax .grid-full {
         display: flex;
         flex-direction: initial;
-        margin-top: 1rem;
+        padding-top: 1rem;
+        background-color: #fcf9f5;
       }
 
-      .parallax a:nth-child(2) .grid-full,
-      .parallax a:nth-child(4) .grid-full {
+      .parallax a:nth-child(even) .grid-full {
         display: flex;
         flex-direction: row-reverse !important;
       }
-
-      /**************/
-      /*Card*/
-      /**************/
-      .card-index {
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: center;
-        margin: 12.5vw auto auto;
-        margin-top: 0.5rem;
+      @media (min-width: 300px) and (max-width: 623px) {
+        .parallax .grid-full {
+          margin-bottom: 1em;
+          display: inherit;
+          flex-direction: inherit;
+        }
+        .parallax a:nth-child(even) .grid-full {
+          margin-bottom: 1em;
+          display: inherit;
+          flex-direction: inherit;
+        }
       }
-
-      .card-index:nth-child(odd) {
-        transform: translate3d(-12.5px, 0px, 0px);
-        transition: transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955),
-          height 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-      }
-
       /**************/
-      /*Article-splas img*/
+      /*Article-splash img*/
       /**************/
 
       .article-splash img {
@@ -154,38 +148,33 @@ const IndexPage = () => (
       /**************/
       /*Article-splash title*/
       /**************/
-      a .article-splash-title {
-        margin: 0;
+      .card-title .article-title {
         padding: 1em;
-        color: #40363e;
-        padding-top: 1rem;
+        line-height: normal;
+        writing-mode: inherit;
+        writing-mode: tb-rl;
+        transform: rotate(0deg);
+        transform: rotate(0deg);
+        display: -webkit-inline-box;
+        text-align: inherit;
+        text-align: center !important;
+        display: flex !important;
       }
-      .parallax a:nth-child(odd) .article-splash-title {
-        height: 12rem;
-        width: 24rem;
-        color: whitesmoke;
-        padding: 3rem;
-        position: relative;
-        right: 4rem;
-        background-color: #232021;
-      }
-      .parallax a:nth-child(even) .article-splash-title {
-        height: 12rem;
-        width: 24rem;
-        color: black;
-        position: relative !important;
-        top: 1rem;
-        left: 3rem !important;
-        padding: 4rem;
-        background-color: #fff8f7 !important;
-        /*  background-color: #dbb6b6 !important; */
+
+      @media {
+        .parallax a:nth-child(even) .article-splash-title,
+        .parallax a:nth-child(odd) .article-splash-title {
+          height: auto;
+          width: auto;
+          margin: auto;
+        }
       }
       /*********/
       /**Once**/
       /*********/
       .once {
         display: flex;
-        margin: 1rem;
+        padding: 1rem;
       }
       .once a:nth-child(1) .article-splash-title {
         color: white;
@@ -196,7 +185,6 @@ const IndexPage = () => (
         .vertical-index {
           transform: translate3d(0, 0, 0);
         }
-        .parallax
       }
     `}</style>
   </Layout>

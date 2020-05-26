@@ -34,7 +34,7 @@ const Picture = ({ picture }) => {
         <style jsx>{`
           img {
             width: 100%;
-            opacity: 1;
+            height: 100%;
             object-fit: cover;
           }
         `}</style>

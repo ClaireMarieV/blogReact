@@ -1,7 +1,7 @@
 import React from "react";
 import Picture from "./picture";
 
-import ArticleTitle from "./articleTitle";
+import CardTitle from "./CardTitle";
 import Link from "next/link";
 import { fromArticle } from "../lib/link";
 
@@ -10,9 +10,7 @@ const ArticleCard = ({ category, title, date, picture, className, id }) => (
     <a>
       <div className={"article-card " + (className || "")} id={id}>
         <Picture picture={picture} />
-        <div className="card-title">
-          <ArticleTitle category={category} title={title} date={date} />
-        </div>
+        <CardTitle title={title} />
       </div>
       <style jsx global>{`
         .article-card {

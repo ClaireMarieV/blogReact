@@ -21,16 +21,6 @@ const Card = ({ category, title, children, date, picture, className, id }) => (
         overflow: hidden;
       }
 
-      @media (min-width: 501px) and (max-width: 860px) {
-        .card {
-            display: grid;;
-        }
-      }
-
-      @media (max-width: 500px) {
-        .card {
-          grid-template-columns: minmax(0, 1fr);
-        }
         .card > .article-card {
           margin-bottom: 1em;
         }

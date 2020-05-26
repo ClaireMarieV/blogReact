@@ -45,6 +45,17 @@ const VerticalTitle = ({ title }) => (
         .vertical-title a {
           text-decoration: none;
         }
+        @media (max-width: 450px) {
+          .vertical-title {
+            line-height: normal;
+            /*writing-mode: inherit;
+            writing-mode: tb-rl;
+            transform: rotate(0deg);
+            transform: rotate(0deg);
+            display: -webkit-inline-box;
+            text-align: inherit;*/
+          }
+        }
         @media (min-width: 400px) and (max-width: 730px) {
           .vertical-title h3 {
             font-size: 1rem;

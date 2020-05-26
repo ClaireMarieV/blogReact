@@ -92,14 +92,9 @@ const Layout = ({ children }) => (
           color: #40363e;
         }
         h3 {
-          Acta-Display-Light;
+          font-family: Acta-Display-Light;
           margin-bottom: 0.5rem;
           margin-top: 0;
-        }
-        h4,
-        h5 {
-          margin-top: 0.5rem;
-          margin-bottom: 0.5rem;
         }
         p {
           font-family: astoria-sans-condensed, sans-serif;

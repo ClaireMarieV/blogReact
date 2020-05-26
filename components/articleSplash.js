@@ -10,20 +10,19 @@ const ArticleSplash = ({ category, title, date, picture, className, id }) => (
     <a>
       <div className={"article-splash " + (className || "")} id={id}>
         <Picture picture={picture} />
-        <div className="article-splash-title">
-          <ArticleTitle category={category} title={title} date={date} />
-        </div>
+        <ArticleTitle title={title} />
       </div>
       <style jsx global>{`
         .article-splash img {
           max-height: 28rem;
+          background-color: #fcf9f5;
         }
       `}</style>
       <style jsx>{`
-
-        @media (min-width: 401px) and (max-width: 600px) {
+        @media (min-width: 300px) and (max-width: 600px) {
          .article-splash {
             margin-bottom: 1em;
+
           }
         }
         @media (max-width: 400px) {

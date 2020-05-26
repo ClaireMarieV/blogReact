@@ -20,8 +20,6 @@ const VerticalIndex = ({ category, title, date, picture, className, id }) => (
           display: flex;
           overflow: hidden;
           text-decoration: none;
-          transform: scaleX(1);
-          cursor: pointer;
           max-width: 43vw;
           max-height: 51.75vw;
           transform: translate3d(0px, 0px, 0px);
@@ -31,44 +29,29 @@ const VerticalIndex = ({ category, title, date, picture, className, id }) => (
 
         .vertical-index:nth-child(odd) {
           transform: translate3d(-15.5vw, 0, 0);
-          animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
-        }
-        .vertical-index:nth-child(2) {
-          background-color: #f7d9be;
         }
 
         .vertical-index .content{
           height: 100%
-          transition: transform .5s cubic-bezier(.455,.03,.515,.955);
-          transition: transform .5s cubic-bezier(.455,.03,.515,.955);
-          position: relative;
           width: 100%;
         }
-          /*.vertical-index a::before{
-            content: "";
-            z-index: -1;
-            background: #121212;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            visibility: hidden;
-            transition: opacity .1s ease;
-        }*/
-          .vertical-index a  {
-            display: flex;
-            overflow: hidden;
-            text-decoration: none;
-            transform: scaleX(1);
-            cursor: pointer;
-            transition: transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-            height: 100%;
+        .vertical-index a  {
+          display: flex;
+          overflow: hidden;
+          text-decoration: none;
+          height: 100%;
           }
 
         @media (max-width:720px){
           .vertical-index {
             min-width: 100% !important;
+            display: flex;
+            margin: 2.5rem;
+          }
+        }
+        @media (max-width:750px){
+          .vertical-index:nth-child(odd) {
+            transform: translate3d(0, 0, 0);
           }
         }
       `}</style>

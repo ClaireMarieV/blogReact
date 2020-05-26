@@ -2,16 +2,23 @@ import React from "react";
 
 const ArticleTitle = ({ category, title, date }) => (
   <div className="article-title">
-    <h4>{category}</h4>
-    <h3>{title}</h3>
-    <h5>{date}</h5>
+    <div className="content">
+      <h4>{category}</h4>
+      <h3>{title}</h3>
+      <h5>{date}</h5>
+    </div>
 
     <style jsx>
       {`
         .article-title {
-          text-align: center;
+          text-align: right;
+          writing-mode: vertical-rl;
+          transform: rotate(180deg);
           display: flex;
-          flex-direction: column;
+          line-height: 1.875vw;
+        }
+        .article-title .content {
+          margin: auto;
         }
 
         .article-title h4 {
@@ -43,6 +50,18 @@ const ArticleTitle = ({ category, title, date }) => (
         }
         .article-title a {
           text-decoration: none;
+        }
+
+        @media (max-width: 623px) {
+          .article-title {
+            line-height: normal;
+            writing-mode: inherit;
+            writing-mode: tb-rl;
+            transform: rotate(0deg);
+            transform: rotate(0deg);
+            display: -webkit-inline-box;
+            text-align: inherit;
+          }
         }
       `}
     </style>
