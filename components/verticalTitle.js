@@ -38,15 +38,10 @@ const VerticalTitle = ({ title }) => (
         .vertical-title a {
           text-decoration: none;
         }
-        @media (max-width: 450px) {
+        @media (max-width: 500px) {
           .vertical-title {
             line-height: normal;
-            /*writing-mode: inherit;
-            writing-mode: tb-rl;
-            transform: rotate(0deg);
-            transform: rotate(0deg);
-            display: -webkit-inline-box;
-            text-align: inherit;*/
+            right: -6.5vw;
           }
         }
         @media (min-width: 400px) and (max-width: 730px) {
