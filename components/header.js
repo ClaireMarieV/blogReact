@@ -55,7 +55,7 @@ const Header = () => (
       }
       nav > ul {
         display: flex;
-        flex-grow: 0.6;
+        justify-content: flex-end;
         margin: 1rem;
         padding: 0;
         list-style: none;

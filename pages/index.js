@@ -172,7 +172,7 @@ const IndexPage = () => (
       /*********/
       /**Once**/
       /*********/
-      .once > a > .grid-full {
+      .once {
         padding: 1rem;
       }
       .once > a > .article-card {
