@@ -63,9 +63,9 @@ const Layout = ({ children }) => (
         }
           header {
             position: relative;
-            min-height: 100vh;
             width: 100%;
             transform-style: inherit;
+            margin-top: 1rem;
           }
 
 
@@ -77,8 +77,6 @@ const Layout = ({ children }) => (
             right: 0;
             bottom: 0;
             display: block;
-            background: url(/images/style/roseEucalyptus.jpg) top center;
-            background-size: cover;
             transform: translateZ(-1px) scale(2.1);
             min-height: 100%;
             z-index: -2;

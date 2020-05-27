@@ -4,6 +4,13 @@ import Link from "next/link";
 const Header = () => (
   <header>
     <nav>
+      <div className="title">
+        <Link href="/">
+          <a>
+            <h2>IL ÉTAIT UNE FOIS</h2>
+          </a>
+        </Link>
+      </div>
       <ul>
         <li>
           <Link href="/art">
@@ -20,18 +27,6 @@ const Header = () => (
             <a>STYLE</a>
           </Link>
         </li>
-        <li>
-          <Link href="/life">
-            <a>LIFE</a>
-          </Link>
-        </li>
-      </ul>
-      <h2>
-        <Link href="/">
-          <a>IL ÉTAIT UNE FOIS</a>
-        </Link>
-      </h2>
-      <ul>
         <li>
           <a href="https://www.instagram.com/clairevaney/">
             <img src="/instagram.svg" />
@@ -51,34 +46,35 @@ const Header = () => (
     </nav>
     <style jsx>{`
       nav {
-        grid-template-rows: repeat(3, minmax(0, 1fr));
         display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         text-decoration: none;
+      }
+      nav > .title {
+        padding-left: 2rem;
       }
       nav > ul {
         display: flex;
         flex-grow: 0.6;
-        justify-content: space-evenly;
         margin: 1rem;
         padding: 0;
         list-style: none;
       }
       nav > ul > li {
-        padding: 1em;
+        padding: 0 1rem 1rem 1rem;
       }
       nav > ul > li > a {
-        color: whitesmoke;
         text-decoration: none;
         text-transform: uppercase;
         font-family: arboria, sans-serif;
         font-weight: 500;
         font-style: normal;
         letter-spacing: 0.25em;
-        font-size: 1em;
+        font-size: 0.9rem;
       }
 
       nav > ul > li > a > img {
-        width: 1.25rem;
+        width: 0.9rem;
       }
       nav > h2 {
         text-align: center;
@@ -89,7 +85,7 @@ const Header = () => (
         margin-top: 0.5em;
         letter-spacing: 0.4em;
       }
-      nav > h2 > a {
+      nav > a > h2 {
         text-decoration: none;
         color: whitesmoke;
       }
