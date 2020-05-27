@@ -13,18 +13,17 @@ const VerticalTitle = ({ title }) => (
           transform: rotate(180deg);
           display: flex;
           line-height: 1.875vw;
+          position: absolute;
+          right: -4.5vw;
+          bottom: 0.5rem;
         }
 
         .vertical-title .content {
           display: flex;
+          vertical-align: baseline;
           justify-content: end;
           align-items: end;
           margin-top: 0.5rem;
-        }
-        .vertical-title h4 {
-          font-family: astoria-sans-condensed, sans-serif;
-          font-weight: 100;
-          font-size: 1.1rem;
         }
 
         .vertical-title h3 {
@@ -36,12 +35,6 @@ const VerticalTitle = ({ title }) => (
           font-size: 1.2em;
         }
 
-        .vertical-title h5 {
-          font-family: astoria-sans-condensed, sans-serif;
-          margin-bottom: 0;
-          font-weight: 100;
-          font-size: 1rem;
-        }
         .vertical-title a {
           text-decoration: none;
         }

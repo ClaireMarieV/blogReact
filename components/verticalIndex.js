@@ -11,50 +11,72 @@ const VerticalIndex = ({ category, title, date, picture, className, id }) => (
       <Link href={fromArticle({ category, title })}>
         <a>
           <Picture picture={picture} />
-          <VerticalTitle category={category} title={title} date={date} />
         </a>
       </Link>
+      <VerticalTitle title={title} />
     </div>
     <style jsx>{`
+      .vertical-index {
+        display: flex;
+        text-decoration: none;
+        max-width: 43vw;
+        max-height: 51.75vw;
+        transform: translate3d(0px, 0px, 0px);
+        height: 100%;
+        margin: 3rem;
+      }
+      .vertical-index:nth-child(odd) {
+        transform: translate3d(-15.5vw, 0, 0);
+      }
+
+      /****Content*****/
+
+      .vertical-index .content {
+        overflow: hidden;
+      }
+      .vertical-index .content a {
+        transition: all 0.2s ease-in;
+      }
+      .vertical-index .content a:hover {
+        padding: 0.5em;
+      }
+
+      .content .vertical-title {
+        display: flex;
+      }
+      .vertical-index a {
+        display: flex;
+        overflow: hidden;
+        text-decoration: none;
+        height: 100%;
+        transform: scaleX(1);
+        cursor: pointer;
+      }
+      .vertical-index a::before {
+        content: "";
+        z-index: -1;
+        background: #121212;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        visibility: hidden;
+      }
+
+      @media (max-width: 720px) {
         .vertical-index {
+          min-width: 100% !important;
           display: flex;
-          overflow: hidden;
-          text-decoration: none;
-          max-width: 43vw;
-          max-height: 51.75vw;
-          transform: translate3d(0px, 0px, 0px);
-          height: 100%;
-          margin: 3rem;
+          margin: 2.5rem;
         }
-
+      }
+      @media (max-width: 750px) {
         .vertical-index:nth-child(odd) {
-          transform: translate3d(-15.5vw, 0, 0);
+          transform: translate3d(0, 0, 0);
         }
-
-        .vertical-index .content{
-          height: 100%
-          width: 100%;
-        }
-        .vertical-index a  {
-          display: flex;
-          overflow: hidden;
-          text-decoration: none;
-          height: 100%;
-          }
-
-        @media (max-width:720px){
-          .vertical-index {
-            min-width: 100% !important;
-            display: flex;
-            margin: 2.5rem;
-          }
-        }
-        @media (max-width:750px){
-          .vertical-index:nth-child(odd) {
-            transform: translate3d(0, 0, 0);
-          }
-        }
-      `}</style>
+      }
+    `}</style>
   </div>
 );
 
