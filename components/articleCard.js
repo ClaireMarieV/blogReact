@@ -14,13 +14,12 @@ const ArticleCard = ({ category, title, date, picture, className, id }) => (
       </div>
       <style jsx global>{`
         .article-card {
-          /*display: flex;*/
-          flex-direction: column;
-          background-color: #fff8f7;
+          display: flex;
         }
         .article-card img {
-          height: 28rem;
+          height: 100%;
           width: 100%;
+          max-height: 28rem;
         }
 
         .article-card .card-title .article-title h3 {

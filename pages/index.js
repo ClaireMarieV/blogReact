@@ -172,9 +172,14 @@ const IndexPage = () => (
       /*********/
       /**Once**/
       /*********/
-      .once {
-        display: flex;
+      .once > a > .grid-full {
         padding: 1rem;
+      }
+      .once > a > .article-card {
+        display: inherit;
+      }
+      .once > img {
+        max-width: 60vw;
       }
       .once a:nth-child(1) .article-splash-title {
         color: white;
