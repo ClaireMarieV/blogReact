@@ -2,11 +2,9 @@ import React from "react";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import Grid from "../components/grid";
 import Aside from "../components/aside";
 import Timeline from "../components/timeline";
 import LinkInstagram from "../components/linkInstagram";
-import ArticleTitle from "../components/articleTitle";
 import ArticleBase from "../components/articleBase";
 
 import article from "../data/shoes/plateforme";

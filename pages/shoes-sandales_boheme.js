@@ -5,7 +5,7 @@ import SEO from "../components/seo";
 import Aside from "../components/aside";
 import Timeline from "../components/timeline";
 import LinkInstagram from "../components/linkInstagram";
-import ArticleTitle from "../components/articleTitle";
+import ArticleBase from "../components/articleBase";
 import article from "../data/shoes/boheme";
 
 const BohemePage = () => (
