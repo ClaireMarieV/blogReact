@@ -6,26 +6,21 @@ const Footer = () => (
     <nav>
       <ul>
         <li>
+          <a href="https://www.instagram.com/clairevaney/">
+            <img src="../instagram.svg" />
+          </a>
+        </li>
+        <li>
+          <a href="mailto:vert.claire.blog@gmail.com">
+            <img src="../mail.svg" />
+          </a>
+        </li>
+        <li>
           <h2>
             <Link href="/">
               <a>IL ÉTAIT UNE FOIS</a>
             </Link>
           </h2>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/clairevaney/">
-            <img src="../instagramF.svg" />
-          </a>
-        </li>
-        <li>
-          <a href="mailto:vert.claire.blog@gmail.com">
-            <img src="../mailF.svg" />
-          </a>
-        </li>
-        <li>
-          <a href="https://www.pinterest.fr/clairevaney/">
-            <img src="../pinterestF.svg" />
-          </a>
         </li>
       </ul>
     </nav>

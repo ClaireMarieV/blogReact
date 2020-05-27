@@ -12,7 +12,7 @@ const Index = ({ children }) => (
       }
       @media (max-width: 720px) {
         .index {
-          margin: 0;
+          margin-top: 5vw;
         }
       }
     `}</style>

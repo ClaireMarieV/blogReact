@@ -37,11 +37,6 @@ const Header = () => (
             <img src="/mail.svg" />
           </a>
         </li>
-        <li>
-          <a href="https://www.pinterest.fr/clairevaney/">
-            <img src="/pinterest.svg" />
-          </a>
-        </li>
       </ul>
     </nav>
     <style jsx>{`
@@ -74,7 +69,7 @@ const Header = () => (
       }
 
       nav > ul > li > a > img {
-        width: 0.9rem;
+        width: 1.2rem;
       }
       nav > h2 {
         text-align: center;
