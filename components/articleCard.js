@@ -21,7 +21,6 @@ const ArticleCard = ({ category, title, date, picture, className, id }) => (
           width: 100%;
           max-height: 28rem;
         }
-
         .article-card .card-title .article-title h3 {
           font-size: 1.1em;
         }

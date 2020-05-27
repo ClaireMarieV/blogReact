@@ -15,6 +15,10 @@ const ArticleTitle = ({ category, title, date }) => (
           transform: rotate(180deg);
           display: flex;
           line-height: 1.875vw;
+          transition: all 0.2s ease-in;
+        }
+        .article-title:hover {
+          padding: 0.5em;
         }
         .article-title .content {
           margin: auto;
