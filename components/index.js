@@ -15,6 +15,11 @@ const Index = ({ children }) => (
           margin-top: 5vw;
         }
       }
+      @media (max-width: 600px) {
+        .index {
+          margin: 0;
+        }
+      }
     `}</style>
   </div>
 );

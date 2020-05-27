@@ -27,16 +27,6 @@ const Header = () => (
             <a>STYLE</a>
           </Link>
         </li>
-        <li>
-          <a href="https://www.instagram.com/clairevaney/">
-            <img src="/instagram.svg" />
-          </a>
-        </li>
-        <li>
-          <a href="mailto:vert.claire.blog@gmail.com">
-            <img src="/mail.svg" />
-          </a>
-        </li>
       </ul>
     </nav>
     <style jsx>{`
@@ -91,6 +81,11 @@ const Header = () => (
         nav > h2 {
           margin-left: 0.5em;
           font-size: 1.5em;
+        }
+      }
+      @media (max-width: 500px) {
+        nav > ul {
+          margin: 3.5rem 0 0;
         }
       }
     `}</style>
