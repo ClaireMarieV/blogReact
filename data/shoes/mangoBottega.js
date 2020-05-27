@@ -20,16 +20,13 @@ export default {
   picture: { preview: mango5Preview, picture: mango5 },
   content: (
     <>
+      <Picture picture={{ preview: mango5Preview, picture: mango5 }} />
       <div className="text"></div>
       <ImgRow>
         <Picture picture={{ preview: mangoPreview, picture: mango }} />
         <Picture picture={{ preview: mango4Preview, picture: mango4 }} />
-      </ImgRow>
-      <ImgRow>
         <Picture picture={{ preview: mango3Preview, picture: mango3 }} />
         <Picture picture={{ preview: mango1Preview, picture: mango1 }} />
-      </ImgRow>
-      <ImgRow>
         <Picture picture={{ preview: mango2Preview, picture: mango2 }} />
       </ImgRow>
     </>

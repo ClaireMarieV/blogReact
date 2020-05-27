@@ -95,10 +95,19 @@ const Layout = ({ children }) => (
           text-decoration: none;
           color: #40363e;
         }
-        h3 {
-          font-family: Acta-Display-Light;
+        h2 {
+          font-family: arboria,sans-serif;
+          font-weight: 500;
+          font-style: normal;
           margin-bottom: 0.5rem;
           margin-top: 0;
+        }
+        h4 {
+            margin: 0.5em;
+            font-family: astoria-sans-condensed, sans-serif;
+            font-weight: 100;
+            font-size: 1.2rem;
+            margin-bottom: 0.5em;
         }
         p {
           font-family: astoria-sans-condensed, sans-serif;

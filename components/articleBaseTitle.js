@@ -1,12 +1,9 @@
 import React from "react";
 
-const ArticleTitle = ({ category, title, date }) => (
-  <div className="article-title">
-    <div className="content">
-      <h3>{title}</h3>
-      <h4>{date}</h4>
-    </div>
-
+const ArticleBaseTitle = ({ title, date }) => (
+  <div className="article-base-title">
+    <h2>{title}</h2>
+    <h4>{date}</h4>
     <style jsx>
       {`
         .article-title {
@@ -67,4 +64,4 @@ const ArticleTitle = ({ category, title, date }) => (
   </div>
 );
 
-export default ArticleTitle;
+export default ArticleBaseTitle;

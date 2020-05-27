@@ -1,22 +1,30 @@
 import React from "react";
 
-import ArticleTitle from "./articleTitle";
+import ArticleBaseTitle from "./articleBaseTitle";
 import Picture from "./picture";
 
-const ArticleBase = ({ category, title, children, date, className, id }) => (
+const ArticleBase = ({ title, children, date, className, id }) => (
   <div className={"article-base" + (className || "")} id={id}>
-    <div className="article-base-title">
-      <ArticleTitle title={title} date={date} />
-    </div>
+    <ArticleBaseTitle title={title} date={date} />
     <div>{children}</div>
     <style jsx global>{`
+      .article-base {
+        margin: auto;
+      }
       .article-base .article-base-title {
         margin-top: 1rem;
       }
+      .article-base .article-base-title .article-title h1 {
+        font-family: freight-big-pro, serif;
+        font-weight: 500;
+        font-style: italic;
+        letter-spacing: -0.03rem;
+      }
       .article-base img {
-        max-height: 43rem;
+        max-width: 50rem;
         width: 100%;
         object-fit: cover;
+        margin: 5rem 0 0;
       }
     `}</style>
   </div>
