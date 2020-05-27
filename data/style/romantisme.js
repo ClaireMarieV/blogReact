@@ -36,8 +36,9 @@ export default {
           dans un esprit premier degré, je l'ai assorti avec les Dr.Martens
           brodées. Ce décalage est d'autant plus marqué quand en plus des Dr.,
           une veste en jean gris acid large est portée par dessus la robe. Le
-          volant ressort, ce qui équilibre le volume de la tenue. Ce côté
-          princesse de la robe mixé avec des accessoires. (Robe{" "}
+          volant ressort, ce qui équilibre le volume de la tenue. Casser le côté
+          princesse cette robe en jouant avec les accessoires ou rester dans
+          l'élégance, à vous de choisir. (Robe 
           <a href="https://www.stories.com/en_eur/clothing/dresses/mini-dresses/product.balloon-sleeve-lace-mini-dress-white.0859832001.html">
             OtherStories
           </a>
