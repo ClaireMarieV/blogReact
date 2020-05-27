@@ -12,8 +12,9 @@ const ShoesPage = () => (
     <SEO title="Home" />
     <Index>
       <Card>
-        {articles.map((article) => (
+        {articles.map((article, index) => (
           <VerticalIndex
+            key={index}
             category={article.category}
             title={article.title}
             date={article.date}

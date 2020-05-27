@@ -23,8 +23,9 @@ const ArtPage = () => (
             partager.
           </p>
         </div>
-        {articles.map((article) => (
+        {articles.map((article, index) => (
           <VerticalIndex
+            key={index}
             category={article.category}
             title={article.title}
             date={article.date}
