@@ -21,9 +21,10 @@ const Timeline = ({ text, category, title, date, picture, className, id }) => (
       }
       .timeline h4 {
         color: black;
+        margin: 0.9rem 0 0 0;
       }
       .timeline h5 {
-        margin: 0.5em;
+        margin-top: 0.2rem;
         font-family: astoria-sans-condensed, sans-serif;
         font-weight: 100;
         font-size: 1.2rem;
