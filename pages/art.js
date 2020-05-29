@@ -36,11 +36,17 @@ const ArtPage = () => (
     </Index>
     <style jsx>{`
       .intro {
-        background-color: white;
         padding: 1rem;
       }
       .intro p {
         grid-column: 1/5;
+      }
+    `}</style>
+    <style jsx global>{`
+      @media (max-width: 700px) {
+        .vertical-index {
+          max-height: 100vw !important;
+        }
       }
     `}</style>
   </Layout>
