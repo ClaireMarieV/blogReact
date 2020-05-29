@@ -11,8 +11,8 @@ const ArticleBase = ({ title, children, date, className, id }) => (
       .article-base {
         margin: auto;
       }
-      .article-base .article-base-title {
-        margin-top: 1rem;
+      .article-base-title {
+        margin: 2rem;
       }
       .article-base .article-base-title .article-title h1 {
         font-family: freight-big-pro, serif;
