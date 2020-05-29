@@ -33,6 +33,7 @@ const VerticalIndex = ({ category, title, date, picture, className, id }) => (
 
       .vertical-index .content {
         overflow: hidden;
+        margin: 0.5rem;
       }
       .vertical-index .content a {
         transition: all 0.2s ease-in;
@@ -74,6 +75,10 @@ const VerticalIndex = ({ category, title, date, picture, className, id }) => (
       @media (max-width: 750px) {
         .vertical-index:nth-child(odd) {
           transform: translate3d(0, 0, 0);
+        }
+        .vertical-index .content {
+          padding: 1.3rem;
+          margin: -0.5rem;
         }
       }
     `}</style>
