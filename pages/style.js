@@ -23,22 +23,7 @@ const StylePage = () => (
         ))}
       </Card>
     </Index>
-    <style jsx global>{`
-      .card > a:nth-child(0n + 1) .article-card .card-title h3:hover,
-      .card > a:nth-child(0n + 11) .article-card .card-title h3:hover {
-        color: whitesmoke;
-      }
-      a:nth-child(2) .article-card,
-      a:nth-child(5) .article-card,
-      a:nth-child(9) .article-card {
-        background-color: #d6a095;
-      }
-      a:nth-child(3) .article-card,
-      a:nth-child(7) .article-card {
-        background-color: black;
-        color: white;
-      }
-    `}</style>
+    <style jsx>{``}</style>
   </Layout>
 );
 
