@@ -14,9 +14,11 @@
     "next": "9.3.5",
     "next-compose-plugins": "^2.2.0",
     "next-optimized-images": "^2.5.8",
+    "paper": "^0.12.7",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "responsive-loader": "^1.2.0",
-    "sharp": "^0.25.3"
+    "sharp": "^0.25.3",
+    "simplex-noise": "^2.4.0"
   }
 }

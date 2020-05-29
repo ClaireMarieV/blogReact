@@ -9,10 +9,12 @@ import React from "react";
 
 import Header from "./header";
 import Footer from "./footer";
+import Canvas from "./canvas";
 
 const Layout = ({ children }) => (
   <div className="layout">
     <link rel="stylesheet" href="https://use.typekit.net/auf8jri.css"></link>
+    <Canvas />
     <Header />
     <div
       style={{
@@ -28,6 +30,8 @@ const Layout = ({ children }) => (
         src="https://cdn.usefathom.com/script.js"
         site={process.env.FATHOM}
         defer
+        src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.0/paper-core.min.js"
+        src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"
       ></script>
     )}
     <style jsx global>
@@ -67,6 +71,22 @@ const Layout = ({ children }) => (
           background-color: #FCF9F5;
 
         }
+        /****SVG****/
+       /*.cursor{
+          opacity: 1;
+          position: fixed;
+          top: 0;
+          left: 0;
+          display: block;
+         transform: translateX(338px) translateY(87px)
+             pointer-events: none;
+        }
+        svg circle {
+            filter:none;
+            stroke: #c3654e;
+            stroke-width: 2px;
+            fill: transparent;
+        }*/
           header {
             position: relative;
             width: 100%;
