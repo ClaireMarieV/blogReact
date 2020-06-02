@@ -93,6 +93,7 @@ const Layout = ({ children }) => (
           font-style: normal;
           margin-bottom: 0.5rem;
           margin-top: 0;
+          color: #25261e;
         }
         h4 {
           margin: 0.5em;
