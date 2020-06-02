@@ -14,7 +14,6 @@ import Canvas from "./canvas";
 const Layout = ({ children }) => (
   <div className="layout">
     <link rel="stylesheet" href="https://use.typekit.net/auf8jri.css"></link>
-    <Canvas />
     <Header />
     <div
       style={{
@@ -42,7 +41,7 @@ const Layout = ({ children }) => (
         :root {
           margin: 0;
           padding: 0;
-                }
+        }
         html {
           overflow: hidden;
           height: 100%;
@@ -59,7 +58,6 @@ const Layout = ({ children }) => (
           padding: 0;
           border: 0;
           font-family: monospace;
-          overflow-x: hidden;
         }
         body {
           margin: 0;
@@ -67,46 +65,20 @@ const Layout = ({ children }) => (
           overflow-y: scroll;
           height: 100%;
           perspective: 1px;
-          transform-style: preserve-3d;
-          background-color: #FCF9F5;
-
+          background-color: #fcf9f5;
         }
         /****SVG****/
-       /*.cursor{
+        .cursor {
           opacity: 1;
           position: fixed;
           top: 0;
           left: 0;
           display: block;
-         transform: translateX(338px) translateY(87px)
-             pointer-events: none;
+          pointer-events: none;
         }
-        svg circle {
-            filter:none;
-            stroke: #c3654e;
-            stroke-width: 2px;
-            fill: transparent;
-        }*/
-          header {
-            position: relative;
-            width: 100%;
-            transform-style: inherit;
-            margin-top: 1rem;
-          }
 
-
-          header::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            display: block;
-            transform: translateZ(-1px) scale(2.1);
-            min-height: 100%;
-            z-index: -2;
-          }
+        header {
+          margin-top: 1rem;
         }
         img {
           overflow: hidden;
@@ -116,18 +88,18 @@ const Layout = ({ children }) => (
           color: #40363e;
         }
         h2 {
-          font-family: arboria,sans-serif;
+          font-family: arboria, sans-serif;
           font-weight: 500;
           font-style: normal;
           margin-bottom: 0.5rem;
           margin-top: 0;
         }
         h4 {
-            margin: 0.5em;
-            font-family: astoria-sans-condensed, sans-serif;
-            font-weight: 100;
-            font-size: 1.2rem;
-            margin-bottom: 0.5em;
+          margin: 0.5em;
+          font-family: astoria-sans-condensed, sans-serif;
+          font-weight: 100;
+          font-size: 1.2rem;
+          margin-bottom: 0.5em;
         }
         p {
           font-family: astoria-sans-condensed, sans-serif;
@@ -136,7 +108,6 @@ const Layout = ({ children }) => (
           margin: 1em;
           text-align: justify;
         }
-
       `}
     </style>
     <style jsx>{`

@@ -21,12 +21,12 @@ const Canvas = () => {
     let group, stuckX, stuckY, fillOuterCursor;
 
     const shapeBounds = {
-      width: 75,
-      height: 75,
+      width: 220,
+      height: 220,
     };
     paper.setup(canvas);
     const strokeColor = "rgba(255, 0, 0, 0.5)";
-    const strokeWidth = 1;
+    const strokeWidth = 2;
     const segments = 8;
     const radius = 15;
 
@@ -155,12 +155,15 @@ const Canvas = () => {
   return (
     <canvas ref={setRef}>
       <style jsx>{`
-        position: fixed;
-        left: 0;
-        top: 0;
-        width: 100vw;
-        height: 100vh;
-        z-index: -1;
+        canvas {
+          position: fixed;
+          left: 0;
+          top: 0;
+          width: 100vw;
+          height: 100vh;
+          display: block;
+          pointer-events: none;
+        }
       `}</style>
     </canvas>
   );
