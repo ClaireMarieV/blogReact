@@ -20,15 +20,15 @@ export default {
       <div className="imgText">
         <p>
           Cette dentelle large associée aux manches bouffantes et au volant, on
-          pourrait croire en le lisant que c'est trop. Et pourtant ...Entre le
-          côté Chanel pour le ton neutre, la dentelle pailletée et le volume et
-          R13 pour le côté grunge en adoucit, l'équilibre est trouvé en
-          accessoirisant discrètement la tenue. Les épaules dénudées permettent
-          d'habiller son cou de quelques colliers fins; Collier qui pourra être
-          porté avec un pendentif en nacre et même une chaine torsadée entourée
-          en ras du cou. Les ongles habillés de framboise mettront délicatement
-          la tenue en avant. Quant aux jambes, elles sont d'autant plus misent
-          en valeur grâce au volume amené par le volant.{" "}
+          pourrait croire en le lisant que c'est trop. Et pourtant ...Ce côté
+          AlexanderMcQueen pour le ton neutre, la dentelle et le volume mélangé
+          au grunge adoucit, l'équilibre est trouvé en accessoirisant
+          discrètement la tenue. Les épaules dénudées permettent d'habiller son
+          cou de quelques colliers fins; Collier qui pourra être porté avec un
+          pendentif en nacre et même une chaine torsadée entourée en ras du cou.
+          Les ongles habillés de framboise mettront délicatement la tenue en
+          avant. Quant aux jambes, elles sont d'autant plus misent en valeur
+          grâce au volume amené par le volant.
         </p>
         <p>
           La robe étant courte, elle peut aussi bien être marié avec des

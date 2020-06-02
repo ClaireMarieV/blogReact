@@ -42,10 +42,7 @@ export default {
         dans les contes de fées. Ce n'est pas pour rien que mon blog s'appelle
         "il était une fois"; Conter des histoires, en essayant de trouver une
         justesse dans ces propos.. On dit que la vie ne fait pas de cadeaux mais
-        au contraire, ceux qu'elle peut offrir sont très beaux. Pendant ces
-        13ans, j'ai eu pas mal d'experiences qui m'ont fait trébucher, des
-        problèmes de santé, des jobs alimentaires qui ne me faisait avancer, des
-        périodes de chômage pour essayer de me reconvertir... donc je ruminais.
+        au contraire, ceux qu'elle peut offrir sont très beaux.
       </p>
       <p>
         Au début, je n'osais pas rencontrer quelqu'un et puis j'ai commencé à
@@ -53,16 +50,15 @@ export default {
         jusqu'à ce que... Le premier jeune homme dont je suis 'tombée amoureuse'
         avec une certaine naiveté était un ami de ma soeur. Il habitait
         Strasbourg, ma grande soeur aussi donc je m'étais dis 'dans le cas où ça
-        ne va pas j'aurais toujours une solution'. Et bien j'avais vu juste. Je
-        devais dormir chez lui, ( étant un ami de ma soeur je pouvais avoir
-        confiance). Il est venu me chercher à la gare, et m'a vu... Il m'a
-        regardé de haut en bas, m'a accompagné pendant quelque pas et m'a dit
-        que ça ne serait pas possible. Pas de problème, je demande à ma soeur de
-        venir me chercher. Mais après ça, ma soeur et son copain se sont
-        énervés. Ils ont essayé de le contacter tous les jours de la semaine
-        sans réponses, ma soeur est allé devant chez lui, sonner, taper à la
-        porte, crier contre lui, a essayé de l'appeler sans réponse. De ce que
-        je me souviens, il a fait le mort pendant des années ensuite.
+        ne va pas j'aurais toujours une solution'. Il est venu me chercher à la
+        gare, et m'a vu... Il m'a regardé de haut en bas, m'a accompagné pendant
+        quelque pas et m'a dit que ça ne serait pas possible. Pas de problème,
+        je demande à ma soeur de venir me chercher. Mais après ça, ma soeur et
+        son copain se sont énervés. Ils ont essayé de le contacter tous les
+        jours de la semaine sans réponses, ma soeur est allé devant chez lui,
+        sonner, taper à la porte, crier contre lui, a essayé de l'appeler sans
+        réponse. De ce que je me souviens, il a fait le mort pendant des années
+        ensuite.
       </p>
       <p>
         Pas de problème? Si! Evidemment! C'est un grand manque de respect! Cette
