@@ -57,7 +57,11 @@ const Header = () => (
         letter-spacing: 0.25em;
         font-size: 0.9rem;
       }
-
+      nav ul li a:hover {
+        font-style: italic;
+        transform: translate3d(2rem, 0, 0);
+        color: #c0092b;
+      }
       nav > ul > li > a > img {
         width: 1.2rem;
       }
