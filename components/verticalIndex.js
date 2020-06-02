@@ -39,7 +39,7 @@ const VerticalIndex = ({ category, title, date, picture, className, id }) => (
         transition: all 0.2s ease-in;
       }
       .vertical-index .content a:hover {
-        padding: 1em;
+        padding: 1.5em;
       }
 
       .content .vertical-title {
