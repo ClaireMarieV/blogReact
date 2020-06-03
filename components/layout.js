@@ -43,13 +43,11 @@ const Layout = ({ children }) => (
           padding: 0;
         }
         html {
-          overflow: hidden;
+          overflow: auto;
           height: 100%;
         }
 
         main {
-          overflow-x: hidden;
-          overflow-y: auto;
           perspective: 2px;
         }
         html,
@@ -67,14 +65,23 @@ const Layout = ({ children }) => (
           perspective: 1px;
           background-color: #fcf9f5;
         }
-        /****SVG****/
-        .cursor {
-          opacity: 1;
-          position: fixed;
-          top: 0;
-          left: 0;
-          display: block;
-          pointer-events: none;
+        /* Let's get this party started */
+        ::-webkit-scrollbar {
+          width: 8px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+          -webkit-box-shadow: inset 0 0 0px rgba(1, 1, 1, 1);
+          -webkit-border-radius: 10px;
+          border-radius: 10px;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+          -webkit-border-radius: 10px;
+          border-radius: 10px;
+          background: rgb(67, 56, 66);
         }
 
         header {
@@ -316,6 +323,27 @@ const Layout = ({ children }) => (
         -ms-font-feature-settings: "kern", "liga", "clig", "calt";
         -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
         font-feature-settings: "kern", "liga", "clig", "calt";
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        bottom: 20px;
+        right: 20px;
+        padding: 30px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+      }
+      ::-webkit-scrollbar {
+        width: 12px;
+      }
+
+      ::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
       }
       img {
         max-width: 100%;
