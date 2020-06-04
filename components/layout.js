@@ -10,6 +10,7 @@ import React from "react";
 import Header from "./header";
 import Footer from "./footer";
 import Canvas from "./canvas";
+import { Frame } from "framer";
 
 const Layout = ({ children }) => (
   <div className="layout">
@@ -67,21 +68,17 @@ const Layout = ({ children }) => (
         }
         /* Let's get this party started */
         ::-webkit-scrollbar {
-          width: 8px;
+          width: 9px;
+          opacity: 0.5;
         }
 
         /* Track */
         ::-webkit-scrollbar-track {
-          -webkit-box-shadow: inset 0 0 0px rgba(1, 1, 1, 1);
-          -webkit-border-radius: 10px;
-          border-radius: 10px;
         }
 
         /* Handle */
         ::-webkit-scrollbar-thumb {
-          -webkit-border-radius: 10px;
-          border-radius: 10px;
-          background: rgb(67, 56, 66);
+          background: rgba(79, 71, 78, 0.8);
         }
 
         header {
