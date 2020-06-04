@@ -42,7 +42,7 @@ const Header = () => (
         display: flex;
         justify-content: flex-end;
         margin: 1rem;
-        padding: 0;
+        padding-right: 6rem;
         list-style: none;
       }
       nav > ul > li {
@@ -60,7 +60,7 @@ const Header = () => (
       nav ul li a:hover {
         font-style: italic;
         transform: translate3d(2rem, 0, 0);
-        color: #c0092b;
+        color: #b36353;
       }
       nav > ul > li > a > img {
         width: 1.2rem;
