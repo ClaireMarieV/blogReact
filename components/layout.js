@@ -1,10 +1,3 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from "react";
 
 import Header from "./header";
@@ -13,8 +6,8 @@ import Canvas from "./canvas";
 
 const Layout = ({ children }) => (
   <div className="layout">
-    <link rel="stylesheet" href="https://use.typekit.net/auf8jri.css"></link>
     <Header />
+    <link rel="stylesheet" href="https://use.typekit.net/auf8jri.css"></link>
     <div
       style={{
         margin: `0 auto`,
@@ -35,13 +28,6 @@ const Layout = ({ children }) => (
     )}
     <style jsx global>
       {`
-        header,
-        header::before,
-        header::after,
-        :root {
-          margin: 0;
-          padding: 0;
-        }
         html {
           overflow: auto;
           height: 100%;

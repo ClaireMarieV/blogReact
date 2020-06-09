@@ -11,23 +11,25 @@ const Header = () => (
           </a>
         </Link>
       </div>
-      <ul>
-        <li>
-          <Link href="/art">
-            <a>ART</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/shoes">
-            <a>SHOES</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/style">
-            <a>STYLE</a>
-          </Link>
-        </li>
-      </ul>
+      <div className="ul">
+        <ul>
+          <li>
+            <Link href="/art">
+              <a>ART</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/shoes">
+              <a>SHOES</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/style">
+              <a>STYLE</a>
+            </Link>
+          </li>
+        </ul>
+      </div>
     </nav>
     <style jsx>{`
       nav {
@@ -38,32 +40,29 @@ const Header = () => (
       nav > .title {
         padding-left: 2rem;
       }
-      nav > ul {
+      nav > .ul {
+        padding-right: 6rem;
+      }
+      nav > .ul > ul {
+        list-style: none;
         display: flex;
         justify-content: flex-end;
-        margin: 1rem;
-        padding-right: 6rem;
-        list-style: none;
       }
-      nav > ul > li {
+
+      nav > .ul > ul > li {
         padding: 0 1rem 1rem 1rem;
       }
-      nav > ul > li > a {
-        text-decoration: none;
-        text-transform: uppercase;
+      nav > .ul > ul > li > a {
         font-family: arboria, sans-serif;
         font-weight: 500;
         font-style: normal;
         letter-spacing: 0.25em;
         font-size: 0.9rem;
       }
-      nav ul li a:hover {
+      nav .ul > ul li a:hover {
         font-style: italic;
         transform: translate3d(2rem, 0, 0);
         color: #b36353;
-      }
-      nav > ul > li > a > img {
-        width: 1.2rem;
       }
       nav > h2 {
         text-align: center;
@@ -87,9 +86,16 @@ const Header = () => (
           font-size: 1.5em;
         }
       }
-      @media (max-width: 500px) {
-        nav > ul {
-          margin: 3.5rem 0 0;
+      @media (max-width: 600px) {
+        nav {
+          display: block;
+        }
+        nav > .title {
+          padding-left: 1.5rem;
+        }
+        nav > .ul > ul {
+          margin: 2rem 0 0;
+          display: flex;
         }
       }
     `}</style>
