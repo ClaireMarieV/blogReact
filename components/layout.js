@@ -44,15 +44,13 @@ const Layout = ({ children }) => (
         body {
           margin: 0;
           overflow-x: hidden;
-          overflow-y: hidden;
+          overflow-y: auto;
           height: 100%;
           perspective: 1px;
           background-color: #fcf9f5;
         }
-        /* Let's get this party started */
         ::-webkit-scrollbar {
-          width: 9px;
-          opacity: 0.5;
+          scrollbar-width: 5px;
         }
 
         /* Track */
@@ -312,19 +310,7 @@ const Layout = ({ children }) => (
         overflow-y: scroll;
         overflow-x: hidden;
       }
-      ::-webkit-scrollbar {
-        width: 12px;
-      }
 
-      ::-webkit-scrollbar-track {
-        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-        border-radius: 10px;
-      }
-
-      ::-webkit-scrollbar-thumb {
-        border-radius: 10px;
-        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
-      }
       img {
         max-width: 100%;
         margin-left: 0;
