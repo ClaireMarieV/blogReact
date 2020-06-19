@@ -17,7 +17,7 @@ export default {
   picture: { preview: romantismePreview, picture: romantisme },
   content: (
     <>
-      <div className="imgText">
+      <div>
         <p>
           Cette dentelle large associée aux manches bouffantes et au volant, on
           pourrait croire en le lisant que c'est trop. Et pourtant ...Ce côté
@@ -44,11 +44,11 @@ export default {
           </a>
           )
         </p>
-
-        <ImgRow>
-          <Picture picture={{ picture: necklace }} />
-        </ImgRow>
       </div>
+
+      <ImgRow>
+        <Picture picture={{ picture: necklace }} />
+      </ImgRow>
     </>
   ),
 };
