@@ -4,8 +4,7 @@ const imgRow = ({ children }) => (
   <div className="imgRow">
     {children}
     <style jsx global>{`
-      .imgRow {
-        margin: 0 10vw 10vw;
+      .imgRow img {
       }
     `}</style>
   </div>

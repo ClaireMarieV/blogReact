@@ -1,7 +1,6 @@
 import React from "react";
 
 import Header from "./header";
-import Footer from "./footer";
 import Canvas from "./canvas";
 
 const Layout = ({ children }) => (
@@ -16,7 +15,6 @@ const Layout = ({ children }) => (
     >
       <main>{children}</main>
     </div>
-    <Footer />
     {process.env.FATHOM && (
       <script
         src="https://cdn.usefathom.com/script.js"
@@ -46,7 +44,7 @@ const Layout = ({ children }) => (
         body {
           margin: 0;
           overflow-x: hidden;
-          overflow-y: scroll;
+          overflow-y: hidden;
           height: 100%;
           perspective: 1px;
           background-color: #fcf9f5;
