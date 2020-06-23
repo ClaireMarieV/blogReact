@@ -1,6 +1,5 @@
 import React from "react";
 import Picture from "../components/picture";
-
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 
@@ -9,9 +8,6 @@ import VerticalIndex from "../components/verticalIndex";
 import Card from "../components/card";
 import ArticleCard from "../components/articleCard";
 
-import Aside from "../components/aside";
-import Timeline from "../components/timeline";
-import LinkInstagram from "../components/linkInstagram";
 import acid from "../data/style/acid";
 import acceptation from "../data/style/acceptation";
 import romantisme from "../data/style/romantisme";
