@@ -4,19 +4,21 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import HorizontalScrolling from "../components/horizontalScrolling";
 import ArticleBase from "../components/articleBase";
+import ArticleBaseTitle from "../components/articleBaseTitle";
+
 import article from "../data/style/acceptation";
 
 const AcceptationPage = () => (
   <Layout>
     <SEO title="Home" />
-    <HorizontalScrolling>
-      <ArticleBase
+    <ArticleBase>
+      <ArticleBaseTitle
         category={article.category}
         title={article.title}
         date={article.date}
       />
       {article.content}
-    </HorizontalScrolling>
+    </ArticleBase>
 
     <style jsx global>{``}</style>
   </Layout>
