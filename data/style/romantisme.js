@@ -45,7 +45,6 @@ export default {
           )
         </p>
       </div>
-
       <ImgRow>
         <Picture picture={{ picture: necklace }} />
       </ImgRow>
