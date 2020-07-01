@@ -19,7 +19,7 @@ const ArtPage = () => (
             qu'ils ne sont pas de moi mais de ma mère. Ce ne serait qu'une
             vision spectatrice de chacun d'eux, par conséquent je ne prèfère pas
             mais vous pouvez bien sûr partager la vôtre! Je voulais vous les
-            faire découvrir parce qu'elle a du talent mais a du mal a les
+            faire découvrir parce qu'elle a du talent mais a du mal à les
             partager.
           </p>
         </div>
