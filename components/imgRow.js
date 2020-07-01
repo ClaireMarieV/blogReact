@@ -3,9 +3,8 @@ import React from "react";
 const imgRow = ({ children }) => (
   <div className="imgRow">
     {children}
-    <style jsx global>{`
-      .imgRow img {
-      }
+    <style jsx>{`
+      margin: auto;
     `}</style>
   </div>
 );
