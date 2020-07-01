@@ -1,6 +1,18 @@
 export default [
   {
     category: "art",
+    title: "ÉVEILLÉ",
+    date: "06.04.2019",
+    picture: "/images/art/eveil.jpg",
+  },
+  {
+    category: "art",
+    title: "RÉAPPROPRIATION",
+    date: "06.04.2019",
+    picture: "/images/art/nature.jpg",
+  },
+  {
+    category: "art",
     title: "RENAISSANCE DU PHOENIX",
     date: "06.04.2019",
     picture: "/images/art/envoleGrue.jpg",
