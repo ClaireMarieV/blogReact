@@ -8,7 +8,7 @@ const Index = ({ children }) => (
         display: flex;
         flex-direction: column;
         width: 100%;
-        margin: 9rem;
+        margin: 4rem;
       }
       .index,
       .index a {
