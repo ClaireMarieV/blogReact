@@ -1,13 +1,7 @@
 export default [
   {
     category: "art",
-    title: "ÉVEILLÉ",
-    date: "06.04.2019",
-    picture: "/images/art/eveil.jpg",
-  },
-  {
-    category: "art",
-    title: "RÉAPPROPRIATION",
+    title: "NATURE DE L'ÉMERVEILLEMENT",
     date: "06.04.2019",
     picture: "/images/art/nature.jpg",
   },
