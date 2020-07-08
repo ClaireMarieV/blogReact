@@ -21,8 +21,11 @@ export default {
   content: (
     <>
       <Picture picture={{ preview: mango5Preview, picture: mango5 }} />
-      <div className="text"></div>
       <ImgRow>
+        <p>
+          Mules à talon d'inspiration Bottega Venetta - ancienne collection
+          Mango
+        </p>
         <Picture picture={{ preview: mangoPreview, picture: mango }} />
         <Picture picture={{ preview: mango4Preview, picture: mango4 }} />
         <Picture picture={{ preview: mango3Preview, picture: mango3 }} />
