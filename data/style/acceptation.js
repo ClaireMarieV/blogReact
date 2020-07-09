@@ -126,7 +126,7 @@ export default {
           sport me font autant de bien; ressentir l'ancrage au sol mais en même
           temps comme une certaine élégance, une aisance dans les mouvements,
           une certaine douceur qui maintenant se dégage lorsque je laisse mon
-          corps s'elxprimer.
+          corps s'exprimer.
         </p>
       </div>
     </>

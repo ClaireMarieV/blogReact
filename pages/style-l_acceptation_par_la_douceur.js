@@ -12,11 +12,7 @@ const AcceptationPage = () => (
   <Layout>
     <SEO title="Home" />
     <ArticleBase>
-      <ArticleBaseTitle
-        category={article.category}
-        title={article.title}
-        date={article.date}
-      />
+      <ArticleBaseTitle title={article.title} date={article.date} />
       {article.content}
     </ArticleBase>
 
