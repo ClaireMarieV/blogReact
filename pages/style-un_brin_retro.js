@@ -8,12 +8,8 @@ import article from "../data/style/vesteAcid";
 
 const RetroPage = () => (
   <Layout>
-    <ArticleBase
-      category={article.category}
-      title={article.title}
-      date={article.date}
-      picture="/images/style/.jpg"
-    >
+    <ArticleBase>
+      <ArticleBaseTitle title={article.title} date={article.date} />
       {article.content}
     </ArticleBase>
 
