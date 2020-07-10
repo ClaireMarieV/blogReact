@@ -6,4 +6,4 @@ import aquarelle from "./style/aquarelle";
 import romantisme from "./style/romantisme";
 import rustique from "./style/rustique";
 
-export default [rustique, romantisme, acceptation, acid, aquarelle, rustique];
+export default [rustique, romantisme, acceptation, acid, aquarelle];
