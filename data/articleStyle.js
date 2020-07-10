@@ -4,5 +4,6 @@ import ombre from "./style/ombre";
 import vesteAcid from "./style/vesteAcid";
 import aquarelle from "./style/aquarelle";
 import romantisme from "./style/romantisme";
+import rustique from "./style/rustique";
 
-export default [romantisme, acceptation, acid, vesteAcid, aquarelle];
+export default [rustique, romantisme, acceptation, acid, aquarelle, rustique];
