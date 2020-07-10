@@ -10,17 +10,8 @@ const ArticleBase = ({ title, children, date, className, id }) => (
       <div>{children}</div>
       <style jsx global>{`
         .article-base {
-          margin: auto;
+          margin: 7rem auto;
           max-width: 70rem;
-        }
-        .article-base-title {
-          margin: 2rem;
-        }
-        .article-base .article-base-title .article-title h1 {
-          font-family: freight-big-pro, serif;
-          font-weight: 500;
-          font-style: italic;
-          letter-spacing: -0.03rem;
         }
         .article-base img {
           width: 100%;
