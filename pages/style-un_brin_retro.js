@@ -4,6 +4,7 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 
 import ArticleBase from "../components/articleBase";
+import ArticleBaseTitle from "../components/articleBaseTitle";
 import article from "../data/style/vesteAcid";
 
 const RetroPage = () => (
