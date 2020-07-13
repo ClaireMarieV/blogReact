@@ -14,7 +14,7 @@ const RomantismePage = () => (
       category={article.category}
       title={article.title}
       date={article.date}
-      picture="/images/style/romantisme3.jpg"
+      picture=""
     >
       {article.content}
     </ArticleBase>
