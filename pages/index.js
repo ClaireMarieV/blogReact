@@ -10,7 +10,7 @@ import ArticleCard from "../components/articleCard";
 
 import acid from "../data/style/acid";
 import acceptation from "../data/style/acceptation";
-import romantisme from "../data/style/romantisme";
+import rustique from "../data/style/rustique";
 import desir from "../data/shoes/desir";
 import vesteAcid from "../data/style/vesteAcid";
 import plateforme from "../data/shoes/plateforme";
@@ -24,23 +24,14 @@ const IndexPage = () => (
       <div className="parallax">
         <ArticleSplash
           className="grid-full"
-          category={romantisme.category}
-          title={romantisme.title}
-          date={romantisme.date}
-          picture={romantisme.picture}
-        />
-        <ArticleSplash
-          className="grid-full"
           category={acceptation.category}
           title={acceptation.title}
-          date={acceptation.date}
           picture={acceptation.picture}
         />
         <ArticleSplash
           className="grid-full"
           category={acid.category}
           title={acid.title}
-          date={acid.date}
           picture={acid.picture}
         />
         <ArticleSplash
@@ -53,16 +44,14 @@ const IndexPage = () => (
       </div>
       <Card>
         <VerticalIndex
-          category={acid.category}
-          title={acid.title}
-          date={acid.date}
-          picture={acid.picture}
+          category={rustique.category}
+          title={rustique.title}
+          picture={rustique.picture}
         />
         <VerticalIndex
-          category={mango.category}
-          title={mango.title}
-          date={mango.date}
-          picture={mango.picture}
+          category={acid.category}
+          title={acid.title}
+          picture={acid.picture}
         />
       </Card>
       <div className="once">
@@ -70,7 +59,6 @@ const IndexPage = () => (
           className="grid-full"
           category={acceptation.category}
           title={acceptation.title}
-          date={acceptation.date}
           picture={acceptation.picture}
         />
       </div>
@@ -78,19 +66,16 @@ const IndexPage = () => (
         <VerticalIndex
           category={acid.category}
           title={acid.title}
-          date={acid.date}
           picture={acid.picture}
         />
         <VerticalIndex
           category={mango.category}
           title={mango.title}
-          date={mango.date}
           picture={mango.picture}
         />
         <VerticalIndex
           category={boheme.category}
           title={boheme.title}
-          date={boheme.date}
           picture={boheme.picture}
         />
       </Card>
