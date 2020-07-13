@@ -1,12 +1,17 @@
 import Picture from "../../components/picture";
 import ImgRow from "../../components/imgRow";
 
+import romantisme from "../../public/images/style/romantisme.jpg";
 import romantismePreview from "../../public/images/style/romantisme.jpg?lqip";
-import romantisme from "../../public/images/style/romantisme1.jpg";
+
 import romantisme2 from "../../public/images/style/romantisme2.jpg";
+import romantisme2Preview from "../../public/images/style/romantisme2.jpg?lqip";
+
 import romantisme3 from "../../public/images/style/romantisme3.jpg";
+import romantisme3Preview from "../../public/images/style/romantisme3.jpg?lqip";
+
 import romantisme4 from "../../public/images/style/romantisme4.jpg";
-import romantisme5 from "../../public/images/style/romantisme5.jpg";
+import romantisme4Preview from "../../public/images/style/romantisme4.jpg?lqip";
 
 import necklace from "../../public/images/style/necklace.jpg";
 
@@ -46,7 +51,9 @@ export default {
         </p>
       </div>
       <ImgRow>
-        <Picture picture={{ picture: necklace }} />
+        <Picture
+          picture={{ preview: romantisme3Preview, picture: romantisme3 }}
+        />
       </ImgRow>
     </>
   ),
