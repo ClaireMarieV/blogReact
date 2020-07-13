@@ -12,7 +12,7 @@ import acid from "../data/style/acid";
 import acceptation from "../data/style/acceptation";
 import rustique from "../data/style/rustique";
 import desir from "../data/shoes/desir";
-import vesteAcid from "../data/style/vesteAcid";
+import romantisme from "../data/style/romantisme";
 import plateforme from "../data/shoes/plateforme";
 import boheme from "../data/shoes/boheme";
 import mango from "../data/shoes/mangoBottega";
@@ -49,9 +49,9 @@ const IndexPage = () => (
           picture={rustique.picture}
         />
         <VerticalIndex
-          category={acid.category}
-          title={acid.title}
-          picture={acid.picture}
+          category={romantisme.category}
+          title={romantisme.title}
+          picture={romantisme.picture}
         />
       </Card>
       <div className="once">
