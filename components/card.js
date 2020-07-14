@@ -24,10 +24,6 @@ const Card = ({ category, title, children, date, picture, className, id }) => (
       .card > .article-card {
         margin-bottom: 1em;
       }
-
-      .card > .article-card {
-        margin-bottom: 1em;
-      }
       @media (max-width: 500px) {
         .card {
           margin: 1.5vw 7vw;
