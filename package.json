@@ -10,6 +10,7 @@
   "dependencies": {
     "framer": "^1.2.2",
     "framer-motion": "^1.11.0",
+    "gsap": "^3.4.0",
     "imagemin-mozjpeg": "^8.0.0",
     "imagemin-optipng": "^7.1.0",
     "lqip-loader": "^2.2.0",
@@ -19,8 +20,10 @@
     "paper": "^0.12.7",
     "react": "16.13.1",
     "react-dom": "16.13.1",
+    "react-gsap": "^2.2.1",
     "responsive-loader": "^1.2.0",
     "sharp": "^0.25.3",
-    "simplex-noise": "^2.4.0"
+    "simplex-noise": "^2.4.0",
+    "splitting": "^1.0.6"
   }
 }
