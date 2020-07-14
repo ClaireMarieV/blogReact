@@ -28,6 +28,17 @@ const Header = () => (
               <a>STYLE</a>
             </Link>
           </li>
+
+          <li>
+            <a href="https://www.instagram.com/clairevaney/">
+              <img src="/instagram.svg" />
+            </a>
+          </li>
+          <li>
+            <a href="mailto:vert.claire.blog@gmail.com">
+              <img src="/mail.svg" />
+            </a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -36,9 +47,10 @@ const Header = () => (
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
         text-decoration: none;
+        margin-top: 2rem;
       }
       nav > .title {
-        padding-left: 2rem;
+        padding-left: 3rem;
       }
       nav > .ul {
         padding-right: 6rem;
@@ -63,6 +75,9 @@ const Header = () => (
         font-style: italic;
         transform: translate3d(2rem, 0, 0);
         color: #b36353;
+      }
+      nav ul li a > img {
+        width: 1.2rem;
       }
       nav > h2 {
         text-align: center;
