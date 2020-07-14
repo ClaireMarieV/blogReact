@@ -1,67 +1,143 @@
-import React from "react";
+import React, { useEffect, useRef, createRef } from "react";
+import gsap from "gsap";
 
-const ArticleBaseTitle = ({ title, date }) => (
-  <div className="article-base-title">
-    <h2>{title}</h2>
-    <h4>{date}</h4>
-    <style jsx>
-      {`
-        .article-title {
-          text-align: right;
-          writing-mode: vertical-rl;
-          transform: rotate(180deg);
-          display: flex;
-          line-height: 1.875vw;
-        }
-        .article-title .content {
-          margin: auto;
-        }
+const effectDuration = 0.5;
+const staggerValue = 0.014;
+const startDelay = 1;
+const animation = (elements) =>
+  gsap.timeline().addLabel("start").delay(startDelay).staggerTo(
+    elements,
+    effectDuration,
+    {
+      ease: "Power3.easeOut",
+      y: "0%",
+    },
+    staggerValue,
+    "start"
+  );
 
-        .article-title h4 {
-          font-family: astoria-sans-condensed, sans-serif;
-          font-weight: 100;
-          font-size: 1.3rem;
-          margin-top: 0.5rem;
-        }
+const ArticleBaseTitle = ({ title, date }) => {
+  const titleLetters = (title || "").split("");
+  const titleRef = useRef(titleLetters.map(() => createRef()));
+  const dateLetters = (date || "").split("");
+  const dateRef = useRef(dateLetters.map(() => createRef()));
 
-        .article-title h3 {
-          text-align: center;
-          letter-spacing: -0.03rem;
-          font-family: arboria, sans-serif;
-          font-weight: 500;
-          font-style: normal;
-          font-size: 1.2em;
-          margin-bottom: 0.5em;
-        }
+  useEffect(() => {
+    if (titleLetters != "" && titleRef.current) {
+      const titleAnimation = animation(
+        titleRef.current.map((ref) => ref.current)
+      );
+      const dateAnimation = animation(
+        dateRef.current.map((ref) => ref.current)
+      );
 
-        .article-title h3:hover {
-          color: #b36353;
-        }
+      document.fonts.ready.then(() => {
+        titleAnimation.play();
+        dateAnimation.play();
+      });
+    }
+  }, [titleRef, titleLetters]);
 
-        .article-title h5 {
-          font-family: astoria-sans-condensed, sans-serif;
-          margin-bottom: 0;
-          font-weight: 100;
-          font-size: 0.85rem;
-        }
-        .article-title a {
-          text-decoration: none;
-        }
-
-        @media (max-width: 623px) {
+  return (
+    <div className="article-base-title">
+      <h2>
+        {titleLetters.map((letter, index) => (
+          <span
+            key={index}
+            ref={titleRef.current[index]}
+            className={letter == " " ? "whitespace" : ""}
+          >
+            {letter}
+          </span>
+        ))}
+      </h2>
+      <h4>
+        {dateLetters.map((letter, index) => (
+          <span
+            key={index}
+            ref={dateRef.current[index]}
+            className={letter == " " ? "whitespace" : ""}
+          >
+            {letter}
+          </span>
+        ))}
+      </h4>
+      <style jsx>
+        {`
           .article-title {
-            line-height: normal;
-            writing-mode: inherit;
-            writing-mode: tb-rl;
-            transform: rotate(0deg);
-            transform: rotate(0deg);
-            display: -webkit-inline-box;
-            text-align: inherit;
+            text-align: right;
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+            display: flex;
+            line-height: 1.875vw;
           }
-        }
-      `}
-    </style>
-  </div>
-);
+          .article-title .content {
+            margin: auto;
+          }
+
+          .article-title h4 {
+            font-family: astoria-sans-condensed, sans-serif;
+            font-weight: 100;
+            font-size: 1.3rem;
+            margin-top: 0.5rem;
+          }
+
+          .article-title h3 {
+            text-align: center;
+            letter-spacing: -0.03rem;
+            font-family: arboria, sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            font-size: 1.2em;
+            margin-bottom: 0.5em;
+          }
+
+          .article-title h3:hover {
+            color: #b36353;
+          }
+
+          .article-title h5 {
+            font-family: astoria-sans-condensed, sans-serif;
+            margin-bottom: 0;
+            font-weight: 100;
+            font-size: 0.85rem;
+          }
+          .article-title a {
+            text-decoration: none;
+          }
+
+          h2,
+          h4 {
+            display: flex;
+            overflow: hidden;
+          }
+
+          h2 > span,
+          h4 > span {
+            display: inline-block;
+            transform: translate(0px, 100%);
+          }
+
+          h2 > span.whitespace,
+          h4 > span.whitespace {
+            width: 1rem;
+          }
+
+          @media (max-width: 623px) {
+            .article-title {
+              line-height: normal;
+              writing-mode: inherit;
+              writing-mode: tb-rl;
+              transform: rotate(0deg);
+              transform: rotate(0deg);
+              display: -webkit-inline-box;
+              text-align: inherit;
+            }
+          }
+        `}
+      </style>
+    </div>
+  );
+};
 
 export default ArticleBaseTitle;
