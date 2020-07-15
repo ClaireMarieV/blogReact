@@ -158,6 +158,7 @@ const IndexPage = () => (
       }
       .once > a > .article-card {
         display: inherit;
+        margin: 0;
       }
       .once > img {
         max-width: 60vw;
