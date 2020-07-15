@@ -2,7 +2,7 @@ import React, { useEffect, useRef, createRef } from "react";
 import gsap from "gsap";
 
 const effectDuration = 0.5;
-const staggerValue = 0.014;
+const staggerValue = 0.05;
 const startDelay = 1;
 const animation = (elements) =>
   gsap.timeline().addLabel("start").delay(startDelay).staggerTo(
@@ -82,26 +82,6 @@ const ArticleBaseTitle = ({ title, date }) => {
             margin-top: 0.5rem;
           }
 
-          .article-title h3 {
-            text-align: center;
-            letter-spacing: -0.03rem;
-            font-family: arboria, sans-serif;
-            font-weight: 500;
-            font-style: normal;
-            font-size: 1.2em;
-            margin-bottom: 0.5em;
-          }
-
-          .article-title h3:hover {
-            color: #b36353;
-          }
-
-          .article-title h5 {
-            font-family: astoria-sans-condensed, sans-serif;
-            margin-bottom: 0;
-            font-weight: 100;
-            font-size: 0.85rem;
-          }
           .article-title a {
             text-decoration: none;
           }
