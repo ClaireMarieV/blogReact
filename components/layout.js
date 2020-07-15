@@ -75,7 +75,7 @@ const Layout = ({ children }) => (
         h2 {
           font-family: arboria, sans-serif;
           font-weight: 500;
-          font-style: normal;
+          font-style: italic;
           margin-bottom: 0.5rem;
           margin-top: 0;
           color: #25261e;
@@ -91,7 +91,7 @@ const Layout = ({ children }) => (
           font-family: astoria-sans-condensed, sans-serif;
           font-weight: 100;
           font-size: 1.3rem;
-          margin: 1em;
+          padding: 2em;
           text-align: justify;
         }
       `}
