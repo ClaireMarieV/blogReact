@@ -47,7 +47,7 @@ const Header = () => (
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
         text-decoration: none;
-        margin-top: 2rem;
+        margin-top: 2rem 0 0 0;
       }
       nav > .title {
         padding-left: 3rem;
@@ -62,7 +62,7 @@ const Header = () => (
       }
 
       nav > .ul > ul > li {
-        padding: 0 1rem 1rem 1rem;
+        padding: 0 0.5rem 0.5rem 1rem;
       }
       nav > .ul > ul > li > a {
         font-family: arboria, sans-serif;
@@ -109,8 +109,13 @@ const Header = () => (
           padding-left: 1.5rem;
         }
         nav > .ul > ul {
-          margin: 2rem 0 0;
-          display: flex;
+          margin: 2rem 0 2rem;
+          display: inline-flex;
+        }
+      }
+      @media (max-width: 400px) {
+        nav > ul {
+          padding: 0;
         }
       }
     `}</style>
