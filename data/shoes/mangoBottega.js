@@ -23,8 +23,8 @@ export default {
       <Picture picture={{ preview: mango5Preview, picture: mango5 }} />
       <ImgRow>
         <p>
-          Mules à talon d'inspiration Bottega Venetta - ancienne collection -
-          <a href="https://shop.mango.com/fr/search?kw=mules&brand=she&origin=caja-busqueda">
+          Mules à talon d'inspiration Bottega Venetta -
+          <a href="https://shop.mango.com/fr/femme/chaussure-sandales-a-talon/mules-atalon-cuir_67034423.html?c=77">
             Mango
           </a>
         </p>
