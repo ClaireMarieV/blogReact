@@ -120,11 +120,11 @@ const ArticleBaseTitle = ({ title, date }) => {
 
           h2 > span.whitespace,
           h4 > span.whitespace {
-            width: 1rem;
+            width: 0.5rem;
           }
 
-          @media (max-width: 623px) {
-            .article-title {
+          @media (max-width: 700px) {
+            .article-base-title {
               line-height: normal;
               writing-mode: inherit;
               writing-mode: tb-rl;
@@ -132,6 +132,7 @@ const ArticleBaseTitle = ({ title, date }) => {
               transform: rotate(0deg);
               display: -webkit-inline-box;
               text-align: inherit;
+              padding-left: 3rem;
             }
           }
         `}
