@@ -1,6 +1,15 @@
 import React, { useEffect, useRef, createRef } from "react";
 import gsap from "gsap";
 
+const indexOfLetter = (words, wordIndex, letterIndex) => {
+  let index = 0;
+
+  for (let i = 0; i < wordIndex; i++) {
+    index += words[i].length + 1;
+  }
+  return index + letterIndex;
+};
+
 const effectDuration = 0.5;
 const staggerValue = 0.05;
 const startDelay = 1;
@@ -19,6 +28,7 @@ const animation = (elements) =>
 const ArticleBaseTitle = ({ title, date }) => {
   const titleLetters = (title || "").split("");
   const titleRef = useRef(titleLetters.map(() => createRef()));
+  const words = (title || "").split(" ");
   const dateLetters = (date || "").split("");
   const dateRef = useRef(dateLetters.map(() => createRef()));
 
@@ -41,15 +51,32 @@ const ArticleBaseTitle = ({ title, date }) => {
   return (
     <div className="article-base-title">
       <h2>
-        {titleLetters.map((letter, index) => (
-          <span
-            key={index}
-            ref={titleRef.current[index]}
-            className={letter == " " ? "whitespace" : ""}
-          >
-            {letter}
-          </span>
-        ))}
+        {words
+          .map((word, wordIndex) => (
+            <span key={wordIndex} className="word">
+              {word.split("").map((letter, letterIndex) => (
+                <span
+                  key={letterIndex}
+                  ref={
+                    titleRef.current[
+                      indexOfLetter(words, wordIndex, letterIndex)
+                    ]
+                  }
+                >
+                  {letter}
+                </span>
+              ))}
+            </span>
+          ))
+          .reduce(
+            (acc, word, index) =>
+              acc.concat(
+                index > 0
+                  ? [<span className="whitespace"></span>, word]
+                  : [word]
+              ),
+            []
+          )}
       </h2>
       <h4>
         {dateLetters.map((letter, index) => (
@@ -86,13 +113,17 @@ const ArticleBaseTitle = ({ title, date }) => {
             text-decoration: none;
           }
 
-          h2,
+          .word,
           h4 {
-            display: flex;
             overflow: hidden;
           }
 
-          h2 > span,
+          h2 {
+            display: flex;
+            flex-wrap: wrap;
+          }
+
+          h2 > span > span,
           h4 > span {
             display: inline-block;
             transform: translate(0px, 100%);
@@ -106,12 +137,7 @@ const ArticleBaseTitle = ({ title, date }) => {
           @media (max-width: 700px) {
             .article-base-title {
               line-height: normal;
-              writing-mode: inherit;
-              writing-mode: tb-rl;
-              transform: rotate(0deg);
-              transform: rotate(0deg);
-              display: -webkit-inline-box;
-              text-align: inherit;
+              display: block;
               padding-left: 3rem;
             }
           }
