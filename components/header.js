@@ -79,14 +79,8 @@ const Header = () => (
       nav ul li a > img {
         width: 1.2rem;
       }
-      nav > h2 {
-        text-align: center;
-        font-family: astoria-sans-condensed, sans-serif;
-        font-weight: 600;
-        font-style: thin;
-        font-size: 2em;
-        margin-top: 0.5em;
-        letter-spacing: 0.4em;
+      nav h2 {
+        font-style: normal;
       }
       nav > a > h2 {
         text-decoration: none;
