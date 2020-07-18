@@ -19,7 +19,7 @@ const VerticalIndex = ({ category, title, date, picture, className, id }) => (
       .vertical-index {
         display: flex;
         text-decoration: none;
-        max-width: 40vw;
+        max-width: 33.3vw;
         max-height: 88.75vh;
         transform: translate3d(0px, 0px, 0px);
         height: 100%;
