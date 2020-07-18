@@ -55,18 +55,6 @@ export default [
   },
   {
     category: "art",
-    title: "L'ENVOLE DU PHOENIX",
-    date: "06.04.2019",
-    picture: "/images/art/liberte.jpg",
-  },
-  {
-    category: "art",
-    title: "RENAISSANCE DU PHOENIX 2",
-    date: "06.04.2019",
-    picture: "/images/art/envoleGris.jpg",
-  },
-  {
-    category: "art",
     title: "GRUE",
     date: "29.03.2020",
     picture: "/images/art/grue.jpg",
