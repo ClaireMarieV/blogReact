@@ -29,12 +29,11 @@ export default {
         </p>
         <p>
           Cette robe... est une de mes préférées. Elle a ce coté bohème-chic que
-          je recherche, cette élégance qui lorsque je l'ai vu m'a attirée. À la
-          lumière, lorsqu'elle est portée, on peut voir par une certaine
-          transparence, la démarche adoptée, les courbes du corps. Vaporeuse,
-          quand je marche, elle ondule selon le vent en laissant entrevoir les
-          chevilles par son asymétrie. Je me sens confiante quand je la porte,
-          rien ne vaut cette sensation !
+          je recherche, cette élégance. À la lumière, lorsqu'elle est portée, on
+          peut voir par une certaine transparence, la démarche adoptée, les
+          courbes du corps. Vaporeuse, quand je marche, elle ondule selon le
+          vent en laissant entrevoir les chevilles par son asymétrie. Je me sens
+          confiante quand je la porte, rien ne vaut cette sensation !
         </p>
       </div>
     </>

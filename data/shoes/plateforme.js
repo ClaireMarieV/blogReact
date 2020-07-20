@@ -5,8 +5,6 @@ import plateformePreview from "../../public/images/shoes/plateforme1.jpg?lqip";
 import plateforme from "../../public/images/shoes/plateforme1.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000";
 import plateforme1Preview from "../../public/images/shoes/plateforme.jpg?lqip";
 import plateforme1 from "../../public/images/shoes/plateforme.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000";
-import plateforme2Preview from "../../public/images/shoes/plateforme2.jpg?lqip";
-import plateforme2 from "../../public/images/shoes/plateforme2.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000";
 
 export default {
   category: "SHOES",
@@ -30,9 +28,6 @@ export default {
       <ImgRow>
         <Picture
           picture={{ preview: plateforme1Preview, picture: plateforme1 }}
-        />
-        <Picture
-          picture={{ preview: plateforme2Preview, picture: plateforme2 }}
         />
       </ImgRow>
     </>

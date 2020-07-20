@@ -16,6 +16,7 @@ import romantisme from "../data/style/romantisme";
 import plateforme from "../data/shoes/plateforme";
 import boheme from "../data/shoes/boheme";
 import mango from "../data/shoes/mangoBottega";
+import neutrals from "../data/shoes/neutrals";
 
 const IndexPage = () => (
   <Layout>
@@ -74,9 +75,9 @@ const IndexPage = () => (
           picture={mango.picture}
         />
         <VerticalIndex
-          category={boheme.category}
-          title={boheme.title}
-          picture={boheme.picture}
+          category={neutrals.category}
+          title={neutrals.title}
+          picture={neutrals.picture}
         />
       </Card>
     </div>
