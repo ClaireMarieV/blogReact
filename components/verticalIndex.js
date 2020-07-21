@@ -19,10 +19,11 @@ const VerticalIndex = ({ category, title, date, picture, className, id }) => (
       .vertical-index {
         display: flex;
         text-decoration: none;
-        max-width: 33vw;
-        max-height: 75vh;
+        width: 27vw;
+        height: 75vh;
         transform: translate3d(0px, 0px, 0px);
-        height: 100%;
+        max-height: 100%;
+        max-width: 100%;
         margin: 3rem;
       }
       .vertical-index:nth-child(odd) {
@@ -70,19 +71,12 @@ const VerticalIndex = ({ category, title, date, picture, className, id }) => (
           display: flex;
           margin: 2.5rem;
         }
-      }
-      @media (max-width: 800px) {
         .vertical-index:nth-child(odd) {
           transform: translate3d(0, 0, 0);
         }
         .vertical-index .content {
           padding: 1.3rem;
           margin: -0.5rem;
-        }
-      }
-      @media (max-width: 600px) {
-        .vertical-index {
-          max-width: 100%;
         }
       }
     `}</style>
