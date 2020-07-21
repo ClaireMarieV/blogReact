@@ -19,12 +19,6 @@ export default [
   },
   {
     category: "art",
-    title: "CRI DE LA TERRE",
-    date: "06.04.2019",
-    picture: "/images/art/cri.jpg",
-  },
-  {
-    category: "art",
     title: "ESSENCE",
     date: "06.04.2019",
     picture: "/images/art/energie.jpg",
