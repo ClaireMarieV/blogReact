@@ -49,10 +49,11 @@ const IndexPage = () => (
           title={rustique.title}
           picture={rustique.picture}
         />
+
         <VerticalIndex
-          category={romantisme.category}
-          title={romantisme.title}
-          picture={romantisme.picture}
+          category={neutrals.category}
+          title={neutrals.title}
+          picture={neutrals.picture}
         />
       </Card>
       <div className="once">
@@ -65,19 +66,14 @@ const IndexPage = () => (
       </div>
       <Card>
         <VerticalIndex
-          category={acid.category}
-          title={acid.title}
-          picture={acid.picture}
-        />
-        <VerticalIndex
           category={mango.category}
           title={mango.title}
           picture={mango.picture}
         />
         <VerticalIndex
-          category={neutrals.category}
-          title={neutrals.title}
-          picture={neutrals.picture}
+          category={romantisme.category}
+          title={romantisme.title}
+          picture={romantisme.picture}
         />
       </Card>
     </div>

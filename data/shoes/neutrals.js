@@ -23,10 +23,11 @@ export default {
         <p>
           Cette simplicité dans le détail qui fait de cette paire (ou de ce
           style de paire) un basique à avoir. Cette couleur poudrée qui permet
-          de les porter avec une pièce forte. Elégante par leur simplicité, ces
-          brides passant à l'arrière de la cheville se distingue par leur
-          discrétion, d'autant plus cet été où une grand tendance lassage autour
-          des chevilles s'est fait voir. Giuseppe Zanotti - ancienne collection
+          de les porter avec une pièce forte ou bien dans un monochrome.
+          Elégante par leur simplicité, ces brides passant à l'arrière de la
+          cheville se distingue par leur discrétion, d'autant plus cet été où
+          une grand tendance lassage autour des chevilles s'est fait voir.
+          Giuseppe Zanotti - ancienne collection
         </p>
         <img src="/images/shoes/giuseppe7.jpg" />
         <img src="/images/shoes/giuseppe1.jpg" />
