@@ -4,7 +4,13 @@ const imgRow = ({ children }) => (
   <div className="imgRow">
     {children}
     <style jsx>{`
-      margin: auto;
+      .imgRow{
+        display: flex
+        flex-direction: column;
+        max-width: 50rem;
+        margin: auto;
+      }
+
     `}</style>
   </div>
 );
