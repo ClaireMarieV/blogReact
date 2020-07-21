@@ -1,10 +1,8 @@
 import React from "react";
 import Picture from "./picture";
-
 import VerticalTitle from "./verticalTitle";
 import Link from "next/link";
 import { fromArticle } from "../lib/link";
-
 const VerticalIndex = ({ category, title, date, picture, className, id }) => (
   <div className={"vertical-index " + (className || "")} id={id}>
     <div className="content">
@@ -28,9 +26,7 @@ const VerticalIndex = ({ category, title, date, picture, className, id }) => (
       .vertical-index:nth-child(odd) {
         transform: translate3d(-15.5vw, 0, 0);
       }
-
       /****Content*****/
-
       .vertical-index .content {
         overflow: hidden;
         margin: 0.5rem;
@@ -41,7 +37,6 @@ const VerticalIndex = ({ category, title, date, picture, className, id }) => (
       .vertical-index .content a:hover {
         padding: 1.5em;
       }
-
       .content .vertical-title {
         display: flex;
       }
@@ -64,7 +59,6 @@ const VerticalIndex = ({ category, title, date, picture, className, id }) => (
         height: 100%;
         visibility: hidden;
       }
-
       @media (max-width: 720px) {
         .vertical-index {
           min-width: 100% !important;
@@ -84,5 +78,4 @@ const VerticalIndex = ({ category, title, date, picture, className, id }) => (
     `}</style>
   </div>
 );
-
 export default VerticalIndex;
