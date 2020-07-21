@@ -34,19 +34,12 @@ const ArtPage = () => (
         ))}
       </Card>
     </Index>
-    <style jsx>{`
+    <style jsx global>{`
       .intro {
         padding: 1rem;
       }
       .intro p {
         grid-column: 1/5;
-      }
-    `}</style>
-    <style jsx global>{`
-      @media (max-width: 700px) {
-        .vertical-index {
-          max-height: 100vw !important;
-        }
       }
     `}</style>
   </Layout>
