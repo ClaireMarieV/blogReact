@@ -4,12 +4,16 @@ import Link from "next/link";
 const Header = () => (
   <header>
     <nav>
-      <div className="title">
-        <Link href="/">
-          <a>
-            <h2>IL ÉTAIT UNE FOIS</h2>
-          </a>
-        </Link>
+      <div className="ul">
+        <ul>
+          <li>
+            <Link href="">
+              <a>
+                <h2>About</h2>
+              </a>
+            </Link>
+          </li>
+        </ul>
       </div>
       <div className="ul">
         <ul>
@@ -28,7 +32,6 @@ const Header = () => (
               <a>STYLE</a>
             </Link>
           </li>
-
           <li>
             <a href="https://www.instagram.com/clairevaney/">
               <img src="/instagram.svg" />
@@ -42,15 +45,13 @@ const Header = () => (
         </ul>
       </div>
     </nav>
+
     <style jsx>{`
       nav {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
         text-decoration: none;
         margin-top: 2rem 0 0 0;
-      }
-      nav > .title {
-        padding-left: 3rem;
       }
       nav > .ul {
         padding-right: 6rem;
@@ -59,6 +60,11 @@ const Header = () => (
         list-style: none;
         display: flex;
         justify-content: flex-end;
+      }
+      nav > .ul:nth-child(1) {
+        list-style: none;
+        display: flex;
+        justify-content: flex-start;
       }
 
       nav > .ul > ul > li {
@@ -69,7 +75,7 @@ const Header = () => (
         font-weight: 500;
         font-style: normal;
         letter-spacing: 0.25em;
-        font-size: 0.9rem;
+        font-size: 1.1rem;
       }
       nav .ul > ul li a:hover {
         font-style: italic;
