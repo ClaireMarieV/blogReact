@@ -3,6 +3,7 @@ import Picture from "./picture";
 
 import ArticleBaseTitle from "./articleBaseTitle";
 import Link from "next/link";
+import Move from "./move";
 import { fromArticle } from "../lib/link";
 
 const ArticleSplash = ({ category, title, date, picture, className, id }) => (
@@ -12,9 +13,13 @@ const ArticleSplash = ({ category, title, date, picture, className, id }) => (
         <div className="title">
           <ArticleBaseTitle title={title} />
         </div>
-        <div className="container">
-          <Picture picture={picture} />
-        </div>
+        <Move>
+          <div className="container">
+            <Picture picture={picture} />
+          </div>
+        </Move>
+
+        <div className="slideOne"></div>
       </div>
       <style jsx>{`
         .article-splash {
@@ -35,11 +40,11 @@ const ArticleSplash = ({ category, title, date, picture, className, id }) => (
           justify-content: center;
           align-items: center;
           margin: 4rem;
-          transform: scale(0.9);
+          transform: scale(0.95);
           transition: all 2s;
         }
         a:hover {
-          transform: scale(1.1);
+          transform: scale(1.05);
           transition: all 2s;
           color: white;
         }

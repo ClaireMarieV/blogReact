@@ -14,7 +14,6 @@ import plateforme from "../data/shoes/plateforme";
 import boheme from "../data/shoes/boheme";
 import mango from "../data/shoes/mangoBottega";
 import neutrals from "../data/shoes/neutrals";
-
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />

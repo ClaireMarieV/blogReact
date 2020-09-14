@@ -91,15 +91,6 @@ const ArticleBaseTitle = ({ title, date }) => {
       </h2>
       <style jsx>
         {`
-          .article-title h4 {
-            font-family: astoria-sans-condensed, sans-serif;
-            font-weight: 100;
-            font-size: 1.3rem;
-            margin-top: 0.5rem;
-          }
-          .article-title a {
-            text-decoration: none;
-          }
           .word,
           h2 {
             overflow: hidden;
