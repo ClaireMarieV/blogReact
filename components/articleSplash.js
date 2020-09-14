@@ -68,8 +68,9 @@ const ArticleSplash = ({ category, title, date, picture, className, id }) => (
           transition: 1s;
         }
         .article-splash:hover .title {
-          transform: translate(-180px, 0);
+          transform: translate(-280px, 0);
           transition: 1s;
+          opacity: 0;
         }
       `}</style>
       <style jsx>{`

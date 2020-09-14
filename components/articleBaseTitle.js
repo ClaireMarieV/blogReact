@@ -117,6 +117,7 @@ const ArticleBaseTitle = ({ title, date }) => {
           h2 > span.whitespace {
             width: 0.5rem;
           }
+
           @media (max-width: 700px) {
             .article-base-title {
               line-height: normal;
