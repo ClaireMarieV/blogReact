@@ -10,6 +10,7 @@ import ArticleCard from "../components/articleCard";
 
 import acid from "../data/style/acid";
 import acceptation from "../data/style/acceptation";
+import rustique from "../data/style/rustique";
 import desir from "../data/shoes/desir";
 import romantisme from "../data/style/romantisme";
 import plateforme from "../data/shoes/plateforme";

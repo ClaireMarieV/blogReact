@@ -77,6 +77,7 @@ const Layout = ({ children }) => (
           font-weight: 500;
           font-style: normal;
           color: #563440;
+          margin: 0;
         }
         h2 {
           font-family: arboria, sans-serif;
