@@ -6,7 +6,7 @@ import kimono1 from "../../public/images/style/kimono.jpg?resize&sizes[]=300&siz
 import kimono2 from "../../public/images/style/kimono2bis.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000";
 export default {
   category: "STYLE",
-  title: "L'ACCEPTATION PAR LA DOUCEUR",
+  title: "ACCEPTATION",
   date: "13.04.2020",
   picture: { preview: kimonoPreview, picture: kimono },
   content: (

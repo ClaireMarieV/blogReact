@@ -5,7 +5,7 @@ import doc from "../../public/images/shoes/doc.jpg?resize&sizes[]=300&sizes[]=60
 
 export default {
   category: "SHOES",
-  title: "CELLES TANT DESIREES",
+  title: "DESIREES",
   date: "12.03.2020",
   picture: { preview: docPreview, picture: doc },
   content: (

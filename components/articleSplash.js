@@ -1,7 +1,7 @@
 import React from "react";
 import Picture from "./picture";
 
-import ArticleTitle from "./articleTitle";
+import ArticleBaseTitle from "./articleBaseTitle";
 import Link from "next/link";
 import { fromArticle } from "../lib/link";
 
@@ -9,13 +9,67 @@ const ArticleSplash = ({ category, title, date, picture, className, id }) => (
   <Link href={fromArticle({ category, title })}>
     <a>
       <div className={"article-splash " + (className || "")} id={id}>
-        <Picture picture={picture} />
-        <ArticleTitle title={title} />
+        <div className="title">
+          <ArticleBaseTitle title={title} />
+        </div>
+        <div className="container">
+          <Picture picture={picture} />
+        </div>
       </div>
-      <style jsx global>{`
-        .article-splash img {
-          max-height: 28rem;
-          background-color: #fcf9f5;
+      <style jsx>{`
+        .article-splash {
+          display: flex;
+          height: auto;
+          justify-content: center;
+          align-items: center;
+          align-self: auto;
+        }
+
+        a {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          flex-wrap: nowrap;
+          align-items: center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 4rem;
+          transform: scale(0.9);
+          transition: all 2s;
+        }
+        a:hover {
+          transform: scale(1.1);
+          transition: all 2s;
+          color: white;
+        }
+        a:hover .title {
+          color: white;
+        }
+        .container {
+          margin: 1rem;
+          flex-direction: column;
+          width: 41vw;
+        }
+
+        .title {
+          position: absolute;
+          z-index: 3;
+          font-size: 2rem;
+          color: #ffd500;
+        }
+        .article-splash {
+          opacity: 0.85;
+        }
+        .article-splash:hover {
+          opacity: 1;
+        }
+        .article-splash .title {
+          transition: 1s;
+        }
+        .article-splash:hover .title {
+          transform: translate(-180px, 0);
+          transition: 1s;
         }
       `}</style>
       <style jsx>{`

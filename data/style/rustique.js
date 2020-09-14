@@ -17,7 +17,7 @@ import ImgRow from "../../components/imgRow";
 
 export default {
   category: "STYLE",
-  title: "INSPIRATION JACQUEMUS",
+  title: "INSPIRATION",
   date: "10.07.2020",
   picture: { preview: rustique4Preview, picture: rustique4 },
   content: (

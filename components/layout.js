@@ -73,8 +73,8 @@ const Layout = ({ children }) => (
           color: #40363e;
         }
         h1 {
-          font-family: arboria, sans-serif;
-          font-weight: 500;
+          font-family: gravesend-sans, sans-serif;
+          font-weight: 300;
           font-style: normal;
           color: #563440;
           margin: 0;
@@ -116,9 +116,6 @@ const Layout = ({ children }) => (
       section,
       summary {
         display: block;
-      }
-      main {
-        display: flex;
       }
 
       audio,

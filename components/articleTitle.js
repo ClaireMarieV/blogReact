@@ -10,12 +10,8 @@ const ArticleTitle = ({ category, title, date }) => (
     <style jsx>
       {`
         .article-title {
-          text-align: right;
-          writing-mode: vertical-rl;
-          transform: rotate(180deg);
-          display: flex;
-          line-height: 1.875vw;
-          transition: all 0.2s ease-in;
+          position: absolute;
+          z-index: 2;
         }
         .article-title:hover {
           padding: 0.5em;

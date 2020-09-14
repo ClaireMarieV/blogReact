@@ -17,7 +17,7 @@ import necklace from "../../public/images/style/necklace.jpg";
 
 export default {
   category: "STYLE",
-  title: "NEO ROMANTISME GRUNGE",
+  title: "NEOROMANTISME",
   date: "22.05.2020",
   picture: { preview: romantismePreview, picture: romantisme },
   content: (

@@ -4,7 +4,7 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 
 import ArticleSplash from "../components/articleSplash";
-import VerticalIndex from "../components/verticalIndex";
+import verticalIndex from "../components/verticalIndex";
 import Card from "../components/card";
 import ArticleCard from "../components/articleCard";
 
@@ -22,55 +22,43 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <div className="index">
-      <div className="parallax">
-        <ArticleSplash
-          className="grid-full"
-          category={acceptation.category}
-          title={acceptation.title}
-          picture={acceptation.picture}
-        />
-        <ArticleSplash
-          className="grid-full"
-          category={acid.category}
-          title={acid.title}
-          picture={acid.picture}
-        />
-        <ArticleSplash
-          className="grid-full"
-          category={desir.category}
-          title={desir.title}
-          date={acid.date}
-          picture={desir.picture}
-        />
-      </div>
+      <ArticleSplash
+        category={acceptation.category}
+        title={acceptation.title}
+        picture={acceptation.picture}
+      />
+      <ArticleSplash
+        category={acid.category}
+        title={acid.title}
+        picture={acid.picture}
+      />
+      <ArticleSplash
+        category={desir.category}
+        title={desir.title}
+        date={acid.date}
+        picture={desir.picture}
+      />
       <Card>
-        <VerticalIndex
+        <ArticleSplash
           category={rustique.category}
           title={rustique.title}
           picture={rustique.picture}
         />
 
-        <VerticalIndex
+        <ArticleSplash
           category={neutrals.category}
           title={neutrals.title}
           picture={neutrals.picture}
         />
       </Card>
-      <div className="once">
-        <ArticleCard
-          className="grid-full"
-          category={acceptation.category}
-          title={acceptation.title}
-          picture={acceptation.picture}
-        />
-      </div>
+
       <Card>
-        <VerticalIndex
+        <ArticleSplash
           category={mango.category}
           title={mango.title}
           picture={mango.picture}
         />
-        <VerticalIndex
+        <ArticleSplash
           category={romantisme.category}
           title={romantisme.title}
           picture={romantisme.picture}
@@ -82,20 +70,6 @@ const IndexPage = () => (
       /*Parallax*/
       /**************/
 
-      .parallax {
-        width: 100%;
-      }
-      .parallax .grid-full {
-        display: flex;
-        flex-direction: initial;
-        padding-top: 1rem;
-        background-color: #ffffff;
-      }
-
-      .parallax a:nth-child(even) .grid-full {
-        display: flex;
-        flex-direction: row-reverse !important;
-      }
       @media (min-width: 300px) and (max-width: 623px) {
         .parallax .grid-full {
           margin-bottom: 1em;
@@ -112,10 +86,6 @@ const IndexPage = () => (
       /*Article-splash img*/
       /**************/
 
-      .article-splash img {
-        width: 100%;
-        max-width: 47rem;
-      }
       .parallax a:nth-child(2) .article-splash img {
         height: 42rem !important;
       }

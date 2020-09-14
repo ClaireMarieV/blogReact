@@ -15,7 +15,7 @@ import ImgRow from "../../components/imgRow";
 
 export default {
   category: "SHOES",
-  title: "INSPIRATION BOTTEGA",
+  title: "INSPIRATION",
   date: "17.05.2020",
   picture: { preview: mango5Preview, picture: mango5 },
   content: (

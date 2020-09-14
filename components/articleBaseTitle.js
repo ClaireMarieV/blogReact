@@ -50,7 +50,7 @@ const ArticleBaseTitle = ({ title, date }) => {
 
   return (
     <div className="article-base-title">
-      <h2>
+      <h1>
         {words
           .map((word, wordIndex) => (
             <span key={wordIndex} className="word">
@@ -77,8 +77,8 @@ const ArticleBaseTitle = ({ title, date }) => {
               ),
             []
           )}
-      </h2>
-      <h4>
+      </h1>
+      <h2>
         {dateLetters.map((letter, index) => (
           <span
             key={index}
@@ -88,52 +88,35 @@ const ArticleBaseTitle = ({ title, date }) => {
             {letter}
           </span>
         ))}
-      </h4>
+      </h2>
       <style jsx>
         {`
-          .article-title {
-            text-align: right;
-            writing-mode: vertical-rl;
-            transform: rotate(180deg);
-            display: flex;
-            line-height: 1.875vw;
-          }
-          .article-title .content {
-            margin: auto;
-          }
-
           .article-title h4 {
             font-family: astoria-sans-condensed, sans-serif;
             font-weight: 100;
             font-size: 1.3rem;
             margin-top: 0.5rem;
           }
-
           .article-title a {
             text-decoration: none;
           }
-
           .word,
-          h4 {
+          h2 {
             overflow: hidden;
           }
-
-          h2 {
+          h1 {
             display: flex;
             flex-wrap: wrap;
           }
-
-          h2 > span > span,
-          h4 > span {
+          h1 > span > span,
+          h2 > span {
             display: inline-block;
             transform: translate(0px, 100%);
           }
-
-          h2 > span.whitespace,
-          h4 > span.whitespace {
+          h1 > span.whitespace,
+          h2 > span.whitespace {
             width: 0.5rem;
           }
-
           @media (max-width: 700px) {
             .article-base-title {
               line-height: normal;
