@@ -7,7 +7,9 @@ const Header = () => (
       <div className="ul">
         <ul>
           <li>
-            <h1>IL ETAIT UNE FOIS</h1>
+            <Link href="/">
+              <h1>IL ETAIT UNE FOIS</h1>
+            </Link>
           </li>
           <li>
             <Link href="">
