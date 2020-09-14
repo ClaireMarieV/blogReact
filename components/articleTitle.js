@@ -23,14 +23,12 @@ const ArticleTitle = ({ category, title, date }) => (
         .article-title .content {
           margin: auto;
         }
-
         .article-title h4 {
           font-family: astoria-sans-condensed, sans-serif;
           font-weight: 100;
           font-size: 1.3rem;
           margin-top: 0.5rem;
         }
-
         .article-title h3 {
           text-align: center;
           letter-spacing: -0.03rem;
@@ -40,11 +38,9 @@ const ArticleTitle = ({ category, title, date }) => (
           font-size: 1.2em;
           margin-bottom: 0.5em;
         }
-
         .article-title h3:hover {
           color: #b36353;
         }
-
         .article-title h5 {
           font-family: astoria-sans-condensed, sans-serif;
           margin-bottom: 0;
@@ -54,7 +50,6 @@ const ArticleTitle = ({ category, title, date }) => (
         .article-title a {
           text-decoration: none;
         }
-
         @media (max-width: 623px) {
           .article-title {
             line-height: normal;

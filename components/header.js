@@ -7,6 +7,9 @@ const Header = () => (
       <div className="ul">
         <ul>
           <li>
+            <h1>IL ETAIT UNE FOIS</h1>
+          </li>
+          <li>
             <Link href="">
               <a>
                 <h2>About</h2>
@@ -75,11 +78,9 @@ const Header = () => (
         font-weight: 500;
         font-style: normal;
         letter-spacing: 0.25em;
-        font-size: 1.1rem;
       }
       nav .ul > ul li a:hover {
         font-style: italic;
-        transform: translate3d(2rem, 0, 0);
         color: #b36353;
       }
       nav ul li a > img {

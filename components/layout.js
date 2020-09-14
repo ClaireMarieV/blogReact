@@ -47,7 +47,7 @@ const Layout = ({ children }) => (
           overflow-y: auto;
           height: 100%;
           perspective: 1px;
-          background-color: #fcf9f5;
+          background-color: #ffffff;
         }
         ::-webkit-scrollbar {
           scrollbar-width: 5px;
@@ -72,13 +72,19 @@ const Layout = ({ children }) => (
           text-decoration: none;
           color: #40363e;
         }
+        h1 {
+          font-family: arboria, sans-serif;
+          font-weight: 500;
+          font-style: normal;
+          color: #563440;
+        }
         h2 {
           font-family: arboria, sans-serif;
           font-weight: 500;
           font-style: italic;
           margin-bottom: 0.5rem;
           margin-top: 0;
-          color: #25261e;
+          color: #563440;
         }
         h4 {
           margin: 0.5em;

@@ -1,9 +1,9 @@
 import Picture from "../../components/picture";
 import ImgRow from "../../components/imgRow";
-import kimonoPreview from "../../public/images/style/kimono1.jpg?lqip";
-import kimono from "../../public/images/style/kimono1.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000";
+import kimonoPreview from "../../public/images/style/kimono1bis.jpg?lqip";
+import kimono from "../../public/images/style/kimono1bis.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000";
 import kimono1 from "../../public/images/style/kimono.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000";
-import kimono2 from "../../public/images/style/kimono2.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000";
+import kimono2 from "../../public/images/style/kimono2bis.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000";
 export default {
   category: "STYLE",
   title: "L'ACCEPTATION PAR LA DOUCEUR",

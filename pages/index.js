@@ -2,7 +2,6 @@ import React from "react";
 import Picture from "../components/picture";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import Link from "next/link";
 
 import ArticleSplash from "../components/articleSplash";
 import VerticalIndex from "../components/verticalIndex";
@@ -23,30 +22,28 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <div className="index">
-      <div className="title">
-        <Link href="/">
-          <a>
-            <h2>IL ÉTAIT UNE FOIS</h2>
-          </a>
-        </Link>
-      </div>
-      <Card>
-        <VerticalIndex
+      <div className="parallax">
+        <ArticleSplash
+          className="grid-full"
           category={acceptation.category}
           title={acceptation.title}
           picture={acceptation.picture}
         />
-        <VerticalIndex
+        <ArticleSplash
+          className="grid-full"
           category={acid.category}
           title={acid.title}
           picture={acid.picture}
         />
-        <VerticalIndex
+        <ArticleSplash
+          className="grid-full"
           category={desir.category}
           title={desir.title}
           date={acid.date}
           picture={desir.picture}
         />
+      </div>
+      <Card>
         <VerticalIndex
           category={rustique.category}
           title={rustique.title}
@@ -81,14 +78,6 @@ const IndexPage = () => (
       </Card>
     </div>
     <style jsx global>{`
-      .title {
-        padding-left: 3rem;
-        -webkit-text-stroke: 1px;
-        -webkit-text-fill-color: transparent;
-        font-size: 7rem;
-        z-index: 2;
-        text-align: center;
-      }
       /**************/
       /*Parallax*/
       /**************/
@@ -100,7 +89,7 @@ const IndexPage = () => (
         display: flex;
         flex-direction: initial;
         padding-top: 1rem;
-        background-color: #f9f3f0;
+        background-color: #ffffff;
       }
 
       .parallax a:nth-child(even) .grid-full {

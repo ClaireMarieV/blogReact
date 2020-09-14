@@ -15,12 +15,10 @@ const Card = ({ category, title, children, date, picture, className, id }) => (
         margin: 1.5vw 3vw;
         padding-top: 0;
       }
-
       /* Classe .grid-full permettant à un élément de la grille de prendre toute la largeur */
       .card > * {
         overflow: hidden;
       }
-
       .card > .article-card {
         margin-bottom: 1em;
       }
