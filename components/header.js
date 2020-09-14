@@ -8,7 +8,9 @@ const Header = () => (
         <ul>
           <li>
             <Link href="/">
-              <h1>IL ETAIT UNE FOIS</h1>
+              <a>
+                <h1>IL ETAIT UNE FOIS</h1>
+              </a>
             </Link>
           </li>
           <li>
