@@ -4,9 +4,6 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 
 import ArticleSplash from "../components/articleSplash";
-import verticalIndex from "../components/verticalIndex";
-import Card from "../components/card";
-import ArticleCard from "../components/articleCard";
 
 import acid from "../data/style/acid";
 import acceptation from "../data/style/acceptation";
@@ -38,32 +35,26 @@ const IndexPage = () => (
         date={acid.date}
         picture={desir.picture}
       />
-      <Card>
-        <ArticleSplash
-          category={rustique.category}
-          title={rustique.title}
-          picture={rustique.picture}
-        />
-
-        <ArticleSplash
-          category={neutrals.category}
-          title={neutrals.title}
-          picture={neutrals.picture}
-        />
-      </Card>
-
-      <Card>
-        <ArticleSplash
-          category={mango.category}
-          title={mango.title}
-          picture={mango.picture}
-        />
-        <ArticleSplash
-          category={romantisme.category}
-          title={romantisme.title}
-          picture={romantisme.picture}
-        />
-      </Card>
+      <ArticleSplash
+        category={rustique.category}
+        title={rustique.title}
+        picture={rustique.picture}
+      />
+      <ArticleSplash
+        category={neutrals.category}
+        title={neutrals.title}
+        picture={neutrals.picture}
+      />
+      <ArticleSplash
+        category={mango.category}
+        title={mango.title}
+        picture={mango.picture}
+      />
+      <ArticleSplash
+        category={romantisme.category}
+        title={romantisme.title}
+        picture={romantisme.picture}
+      />
     </div>
     <style jsx global>{`
       /**************/
