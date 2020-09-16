@@ -13,11 +13,9 @@ const ArticleSplash = ({ category, title, date, picture, className, id }) => (
         <div className="title">
           <ArticleBaseTitle title={title} />
         </div>
-        <Move>
-          <div className="container">
-            <Picture picture={picture} />
-          </div>
-        </Move>
+        <div className="container">
+          <Picture picture={picture} />
+        </div>
 
         <div className="slideOne"></div>
       </div>
@@ -46,7 +44,6 @@ const ArticleSplash = ({ category, title, date, picture, className, id }) => (
         a:hover {
           transform: scale(1.05);
           transition: all 2s;
-          color: white;
         }
         a:hover .title {
           color: white;
@@ -63,11 +60,8 @@ const ArticleSplash = ({ category, title, date, picture, className, id }) => (
           font-size: 2rem;
           color: #ffd500;
         }
-        .article-splash {
-          opacity: 0.85;
-        }
         .article-splash:hover {
-          opacity: 1;
+          opacity: 0.9;
         }
         .article-splash .title {
           transition: 1s;
