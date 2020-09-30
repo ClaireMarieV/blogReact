@@ -16,8 +16,6 @@ const ArticleSplash = ({ category, title, date, picture, className, id }) => (
         <div className="container">
           <Picture picture={picture} />
         </div>
-
-        <div className="slideOne"></div>
       </div>
       <style jsx>{`
         .article-splash {
@@ -39,11 +37,11 @@ const ArticleSplash = ({ category, title, date, picture, className, id }) => (
           align-items: center;
           margin: 4rem;
           transform: scale(0.95);
-          transition: all 2s;
+          transition: all 1.5s;
         }
         a:hover {
           transform: scale(1.05);
-          transition: all 2s;
+          transition: all 1s;
         }
         a:hover .title {
           color: white;
@@ -72,17 +70,24 @@ const ArticleSplash = ({ category, title, date, picture, className, id }) => (
           opacity: 0;
         }
       `}</style>
-      <style jsx>{`
-        @media (min-width: 300px) and (max-width: 600px) {
-         .article-splash {
-            margin-bottom: 1em;
 
+      <style jsx>{`
+        //SMARTPHONE & TABLETTE
+
+        @media (max-width: 800px) {
+          .article-splash {
+            margin: auto;
+          }
+          .title {
+            font-size: 1rem;
           }
         }
         @media (max-width: 400px) {
-          .article-splash {
-            margin-bottom: 1em;
+          .container {
+            width: 85vw;
+            margin: 0;
           }
+        }
       `}</style>
     </a>
   </Link>

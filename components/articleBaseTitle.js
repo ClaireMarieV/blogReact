@@ -113,7 +113,6 @@ const ArticleBaseTitle = ({ title, date }) => {
             .article-base-title {
               line-height: normal;
               display: block;
-              padding-left: 3rem;
             }
           }
         `}

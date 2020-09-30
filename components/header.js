@@ -116,10 +116,6 @@ const Header = () => (
         nav > .ul > ul {
           margin: 2rem 0 2rem;
           display: inline-flex;
-        }
-      }
-      @media (max-width: 400px) {
-        nav > ul {
           padding: 0;
         }
       }
