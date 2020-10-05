@@ -6,7 +6,6 @@ import SEO from "../components/seo";
 import ArticleSplash from "../components/articleSplash";
 
 import acid from "../data/style/acid";
-import acceptation from "../data/style/acceptation";
 import rustique from "../data/style/rustique";
 import desir from "../data/shoes/desir";
 import romantisme from "../data/style/romantisme";
@@ -14,19 +13,15 @@ import plateforme from "../data/shoes/plateforme";
 import boheme from "../data/shoes/boheme";
 import mango from "../data/shoes/mangoBottega";
 import neutrals from "../data/shoes/neutrals";
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <div className="index">
       <ArticleSplash
-        category={acceptation.category}
-        title={acceptation.title}
-        picture={acceptation.picture}
-      />
-      <ArticleSplash
-        category={acid.category}
-        title={acid.title}
-        picture={acid.picture}
+        category={rustique.category}
+        title={rustique.title}
+        picture={rustique.picture}
       />
       <ArticleSplash
         category={desir.category}
@@ -35,9 +30,9 @@ const IndexPage = () => (
         picture={desir.picture}
       />
       <ArticleSplash
-        category={rustique.category}
-        title={rustique.title}
-        picture={rustique.picture}
+        category={acid.category}
+        title={acid.title}
+        picture={acid.picture}
       />
       <ArticleSplash
         category={neutrals.category}
