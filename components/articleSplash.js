@@ -56,7 +56,6 @@ const ArticleSplash = ({ category, title, date, picture, className, id }) => (
           position: absolute;
           z-index: 3;
           font-size: 2rem;
-          color: #ffd500;
         }
         .article-splash:hover {
           opacity: 0.9;
