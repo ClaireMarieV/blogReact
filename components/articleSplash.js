@@ -43,9 +43,7 @@ const ArticleSplash = ({ category, title, date, picture, className, id }) => (
           transform: scale(1.05);
           transition: all 1s;
         }
-        a:hover .title {
-          color: white;
-        }
+
         .container {
           margin: 1rem;
           flex-direction: column;
@@ -55,7 +53,9 @@ const ArticleSplash = ({ category, title, date, picture, className, id }) => (
         .title {
           position: absolute;
           z-index: 3;
-          font-size: 2rem;
+          font-size: 2.5rem;
+          -webkit-text-stroke: 2.5px orange;
+          -webkit-text-fill-color: transparent;
         }
         .article-splash:hover {
           opacity: 0.9;
