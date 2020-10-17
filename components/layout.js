@@ -77,21 +77,18 @@ const Layout = ({ children }) => (
           color: #563440;
           margin: 0;
         }
-        h2,
-        h3 {
+        h4 {
           font-family: arboria, sans-serif;
           font-weight: 500;
-          font-style: italic;
           margin-bottom: 0.5rem;
           margin-top: 0;
           color: #563440;
         }
-        h4 {
-          margin: 0.5em;
+        h2,
+        h3 {
+          padding: 0.5em;
           font-family: astoria-sans-condensed, sans-serif;
-          font-weight: 100;
-          font-size: 1.2rem;
-          margin-bottom: 0.5em;
+          font-weight: 500;
         }
         p {
           font-family: astoria-sans-condensed, sans-serif;

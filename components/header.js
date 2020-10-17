@@ -14,11 +14,13 @@ const Header = () => (
             </Link>
           </li>
           <li>
-            <Link href="/about">
-              <a>
-                <h2>About</h2>
-              </a>
-            </Link>
+            <span className="span">
+              <Link className="link" href="/about">
+                <a>
+                  <h2>ABOUT</h2>
+                </a>
+              </Link>
+            </span>
           </li>
         </ul>
       </div>
@@ -68,18 +70,21 @@ const Header = () => (
       }
       nav > .ul {
         padding-right: 6rem;
+        align-self: center;
       }
-      nav > .ul > ul {
+      .ul > ul {
         list-style: none;
         display: flex;
         justify-content: flex-end;
+        align-items: center;
       }
       nav > .ul:nth-child(1) {
-        list-style: none;
         display: flex;
         justify-content: flex-start;
       }
-
+      nav:first-child > ul:nth-child(2) li {
+        font-weight: bold;
+      }
       nav > .ul > ul > li {
         padding: 0 0.5rem 0.5rem 1rem;
       }
