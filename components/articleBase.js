@@ -11,6 +11,7 @@ const ArticleBase = ({ children, className, id }) => (
         .article-base {
           display: grid;
           grid-template-columns: repeat(1, minmax(0, 1fr));
+          grid-template-columns: auto;
           margin: auto;
           width: 60vw;
         }
