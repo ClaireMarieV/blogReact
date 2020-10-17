@@ -1,48 +1,52 @@
 import React from "react";
 
-const ArticleTitle = ({ category, title, date }) => (
+const ArticleTitle = ({ title }) => (
   <div className="article-title">
     <div className="content">
-      <h3>{title}</h3>
-      <h4>{date}</h4>
+      <h1>{title}</h1>
     </div>
 
     <style jsx>
       {`
-        .article-title {
+        .article-title .content h1 {
+          padding: 0 0 0.35em;
+          line-height: 1.4;
+          transition: all 0.5s;
+          transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+        }
+
+        .article-title .content h1::before {
+          content: "";
           position: absolute;
-          z-index: 2;
+          z-index: -1;
+          width: 16rem;
+          height: 5rem;
+          opacity: 0.8;
+          transform: scale3d(0, 1, 1);
+          transform-origin: 0% 50%;
+          transition: transform 0.5s;
+          transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
         }
-        .article-title:hover {
-          padding: 0.5em;
+        .article-title h1:hover,
+        .article-title h1:focus {
+          color: #ffff;
         }
-        .article-title .content {
-          margin: auto;
+        .article-title .content h1::before {
+          background: #563440;
         }
-        .article-title h4 {
-          font-family: astoria-sans-condensed, sans-serif;
-          font-weight: 100;
-          font-size: 1.3rem;
-          margin-top: 0.5rem;
+        .article-title:hover .content h1::before,
+        .article-title:focus .content h1::before {
+          transform: scale3d(1, 1, 1);
         }
-        .article-title h3 {
+
+        .article-title h1 {
           text-align: center;
-          letter-spacing: -0.03rem;
-          font-family: arboria, sans-serif;
-          font-weight: 500;
-          font-style: normal;
-          font-size: 1.2em;
-          margin-bottom: 0.5em;
-        }
-        .article-title h3:hover {
-          color: #b36353;
-        }
-        .article-title h5 {
+          letter-spacing: 0.05rem;
           font-family: astoria-sans-condensed, sans-serif;
           margin-bottom: 0;
-          font-weight: 100;
-          font-size: 0.85rem;
+          font-weight: 300;
         }
+
         .article-title a {
           text-decoration: none;
         }
