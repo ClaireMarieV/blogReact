@@ -14,7 +14,6 @@ const RustiquePage = () => (
       <ArticleBaseTitle title={article.title} date={article.date} />
       {article.content}
     </ArticleBase>
-
     <style jsx global>{``}</style>
   </Layout>
 );
