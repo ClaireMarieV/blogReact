@@ -44,7 +44,7 @@ const Layout = ({ children }) => (
         body {
           margin: 0;
           overflow-x: hidden;
-          overflow-y: auto;
+          overflow-y: hidden;
           background-color: #fffff;
         }
         ::-webkit-scrollbar {
@@ -86,7 +86,6 @@ const Layout = ({ children }) => (
         }
         h2,
         h3 {
-          padding: 0.5em;
           font-family: astoria-sans-condensed, sans-serif;
           font-weight: 500;
         }
