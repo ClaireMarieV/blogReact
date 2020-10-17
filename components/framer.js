@@ -21,7 +21,7 @@ const Framer = ({ children }) => {
       transition={{ duration: 1 }}
       variants={{
         visible: { opacity: 1, x: 0 },
-        hidden: { x: -1000 },
+        hidden: { opacity: 0, x: -100 },
       }}
     >
       {children}
