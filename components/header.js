@@ -15,8 +15,8 @@ const Header = () => (
           </li>
           <li>
             <span className="span">
-              <Link className="link" href="/about">
-                <a>
+              <Link href="/about">
+                <a className="link">
                   <h2>ABOUT</h2>
                 </a>
               </Link>
@@ -28,8 +28,8 @@ const Header = () => (
         <ul>
           <li>
             <span className="span">
-              <Link className="link" href="/art">
-                <a>
+              <Link href="/art">
+                <a className="link">
                   <h2>ART</h2>
                 </a>
               </Link>
@@ -37,8 +37,8 @@ const Header = () => (
           </li>
           <li>
             <span className="span">
-              <Link className="link" href="/shoes">
-                <a>
+              <Link href="/shoes">
+                <a className="link">
                   <h2>SHOES</h2>
                 </a>
               </Link>
@@ -46,8 +46,8 @@ const Header = () => (
           </li>
           <li>
             <span className="span">
-              <Link className="link" href="/style">
-                <a>
+              <Link href="/style">
+                <a className="link">
                   <h2>STYLE</h2>
                 </a>
               </Link>
