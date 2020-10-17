@@ -39,10 +39,11 @@ const Layout = ({ children }) => (
           margin: 0;
           padding: 0;
           border: 0;
-          font-family: monospace;
         }
         body {
           margin: 0;
+          overflow-x: auto;
+          overflow-y: hidden;
         }
         ::-webkit-scrollbar {
           scrollbar-width: 5px;
