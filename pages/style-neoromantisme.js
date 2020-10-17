@@ -10,12 +10,8 @@ import article from "../data/style/romantisme";
 const RomantismePage = () => (
   <Layout>
     <SEO title="Home" />
-    <ArticleBase
-      category={article.category}
-      title={article.title}
-      date={article.date}
-      picture=""
-    >
+    <ArticleBase>
+      <ArticleBaseTitle title={article.title} date={article.date} />
       {article.content}
     </ArticleBase>
 
