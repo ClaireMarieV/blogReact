@@ -25,19 +25,25 @@ const Header = () => (
       <div className="ul">
         <ul>
           <li>
-            <Link href="/art">
-              <a>ART</a>
-            </Link>
+            <span className="span">
+              <Link className="link" href="/art">
+                <a>ART</a>
+              </Link>
+            </span>
           </li>
           <li>
-            <Link href="/shoes">
-              <a>SHOES</a>
-            </Link>
+            <span className="span">
+              <Link className="link" href="/shoes">
+                <a>SHOES</a>
+              </Link>
+            </span>
           </li>
           <li>
-            <Link href="/style">
-              <a>STYLE</a>
-            </Link>
+            <span className="span">
+              <Link className="link" href="/style">
+                <a>STYLE</a>
+              </Link>
+            </span>
           </li>
           <li>
             <a href="https://www.instagram.com/clairevaney/">
@@ -77,15 +83,11 @@ const Header = () => (
       nav > .ul > ul > li {
         padding: 0 0.5rem 0.5rem 1rem;
       }
-      nav > .ul > ul > li > a {
+      .span a {
         font-family: arboria, sans-serif;
         font-weight: 500;
         font-style: normal;
         letter-spacing: 0.25em;
-      }
-      nav .ul > ul li a:hover {
-        font-style: italic;
-        color: #b36353;
       }
       nav ul li a > img {
         width: 1.2rem;
@@ -97,6 +99,40 @@ const Header = () => (
         text-decoration: none;
         color: whitesmoke;
       }
+      .ul {
+        margin: 0 0 1em;
+      }
+      .ul .span a {
+        padding: 0 0 0.35em;
+        line-height: 1.4;
+        transition: all 0.5s;
+        transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+      }
+
+      .ul .span a::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width: 4rem;
+        height: 1rem;
+        opacity: 0.3;
+        transform: scale3d(0, 1, 1);
+        transform-origin: 0% 50%;
+        transition: transform 0.5s;
+        transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+      }
+      .ul .span a:hover,
+      .ul .span a:focus {
+        color: #563440;
+      }
+      .ul .span a::before {
+        background: #563440;
+      }
+      .ul:hover .span a::before,
+      .ul:focus .span a::before {
+        transform: scale3d(1, 1, 1);
+      }
+
       @media (max-width: 1076px) {
         nav {
           grid-template-rows: repeat(2, minmax(0, 1fr));
@@ -106,6 +142,7 @@ const Header = () => (
           font-size: 1.5em;
         }
       }
+
       @media (max-width: 600px) {
         nav {
           display: block;
