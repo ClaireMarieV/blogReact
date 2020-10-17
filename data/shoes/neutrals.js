@@ -1,5 +1,5 @@
 import Picture from "../../components/picture";
-import ImgRow from "../../components/imgRow";
+import Framer from "../../components/framer";
 import giuseppePreview from "../../public/images/shoes/giuseppe.jpg?lqip";
 import giuseppe from "../../public/images/shoes/giuseppe.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000";
 import giuseppe2Preview from "../../public/images/shoes/giuseppe2.jpg?lqip";
@@ -18,8 +18,10 @@ export default {
   picture: { preview: giuseppe8Preview, picture: giuseppe8 },
   content: (
     <>
-      <ImgRow>
-        <img src="/images/shoes/giuseppe8.jpg" />
+      <Framer>
+        <Picture picture={{ picture: giuseppe8 }} />
+      </Framer>
+      <Framer>
         <p>
           Cette simplicité dans le détail qui fait de cette paire (ou de ce
           style de paire) un basique à avoir. Cette couleur poudrée qui permet
@@ -29,11 +31,19 @@ export default {
           une grand tendance lassage autour des chevilles s'est fait voir.
           Giuseppe Zanotti - ancienne collection
         </p>
-        <img src="/images/shoes/giuseppe7.jpg" />
-        <img src="/images/shoes/giuseppe1.jpg" />
-        <img src="/images/shoes/giuseppe9.jpg" />
-        <img src="/images/shoes/giuseppe2.jpg" />
-      </ImgRow>
+      </Framer>
+      <Framer>
+        <Picture picture={{ preview: giuseppePreview, picture: giuseppe }} />
+      </Framer>
+      <Framer>
+        <Picture picture={{ preview: giuseppe2Preview, picture: giuseppe2 }} />
+      </Framer>
+      <Framer>
+        <Picture picture={{ preview: giuseppe7Preview, picture: giuseppe7 }} />
+      </Framer>
+      <Framer>
+        <Picture picture={{ preview: giuseppe6Preview, picture: giuseppe6 }} />
+      </Framer>
     </>
   ),
 };

@@ -1,4 +1,5 @@
 import Picture from "../../components/picture";
+import Framer from "../../components/framer";
 
 import docPreview from "../../public/images/shoes/doc.jpg?lqip";
 import doc from "../../public/images/shoes/doc.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000";
@@ -10,7 +11,7 @@ export default {
   picture: { preview: docPreview, picture: doc },
   content: (
     <>
-      <div className="text">
+      <Framer className="text">
         <p>
           Le romantisme grunge de ces Dr.Martens suscité par les broderies. Ces
           roses noires adoucissant ces boots tout en les mettant en valeur. Un
@@ -22,8 +23,8 @@ export default {
           boots me le rappelent; une nostalgie qui est nostalgie pour les style
           vestimentaires et musicaux de l'époque.
         </p>
-      </div>
-      <div className="text">
+      </Framer>
+      <Framer className="text">
         <p>
           Cependant j'aime cette modernisation des tendances aujourd'hui, dans
           la mode en tout cas! Où le mélange de celles-ci est nécessaires afin
@@ -31,7 +32,7 @@ export default {
           des années 80'- 90' avec plus d'assurance, plus de choix, plus de
           nuances. Il n'y a pas de limite sauf peut-être celles que l'on se met.
         </p>
-      </div>
+      </Framer>
     </>
   ),
 };

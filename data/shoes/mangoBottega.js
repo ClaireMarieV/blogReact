@@ -1,4 +1,6 @@
 import Picture from "../../components/picture";
+import Framer from "../../components/framer";
+
 import mangoPreview from "../../public/images/shoes/mangoBottega.jpg?lqip";
 import mango from "../../public/images/shoes/mangoBottega.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000";
 import mango1Preview from "../../public/images/shoes/mangoBottega1.jpg?lqip";
@@ -11,7 +13,6 @@ import mango4Preview from "../../public/images/shoes/mangoBottega4.jpg?lqip";
 import mango4 from "../../public/images/shoes/mangoBottega4.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000";
 import mango5Preview from "../../public/images/shoes/mangoBottega5.jpg?lqip";
 import mango5 from "../../public/images/shoes/mangoBottega5.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000";
-import ImgRow from "../../components/imgRow";
 
 export default {
   category: "SHOES",
@@ -20,20 +21,30 @@ export default {
   picture: { preview: mango5Preview, picture: mango5 },
   content: (
     <>
-      <Picture picture={{ preview: mango5Preview, picture: mango5 }} />
-      <ImgRow>
-        <p>
-          Mules à talon d'inspiration Bottega Venetta -
-          <a href="https://shop.mango.com/fr/femme/chaussure-sandales-a-talon/mules-atalon-cuir_67034423.html?c=77">
-            Mango
-          </a>
-        </p>
+      <Framer>
+        <Picture picture={{ preview: mango5Preview, picture: mango5 }} />
+      </Framer>
+      <p>
+        Mules à talon d'inspiration Bottega Venetta -
+        <a href="https://shop.mango.com/fr/femme/chaussure-sandales-a-talon/mules-atalon-cuir_67034423.html?c=77">
+          Mango
+        </a>
+      </p>
+      <Framer>
         <Picture picture={{ preview: mangoPreview, picture: mango }} />
+      </Framer>
+      <Framer>
         <Picture picture={{ preview: mango4Preview, picture: mango4 }} />
+      </Framer>
+      <Framer>
         <Picture picture={{ preview: mango3Preview, picture: mango3 }} />
+      </Framer>
+      <Framer>
         <Picture picture={{ preview: mango1Preview, picture: mango1 }} />
+      </Framer>
+      <Framer>
         <Picture picture={{ preview: mango2Preview, picture: mango2 }} />
-      </ImgRow>
+      </Framer>
     </>
   ),
 };

@@ -1,5 +1,5 @@
 import Picture from "../../components/picture";
-import ImgRow from "../../components/imgRow";
+import Framer from "../../components/framer";
 
 import romantisme from "../../public/images/style/romantisme.jpg";
 import romantismePreview from "../../public/images/style/romantisme.jpg?lqip";
@@ -22,7 +22,7 @@ export default {
   picture: { preview: romantismePreview, picture: romantisme },
   content: (
     <>
-      <div>
+      <Framer>
         <p>
           Cette dentelle large associée aux manches bouffantes et au volant, on
           pourrait croire en le lisant que c'est trop. Et pourtant ...Ce côté
@@ -35,6 +35,8 @@ export default {
           avant. Quant aux jambes, elles sont d'autant plus misent en valeur
           grâce au volume amené par le volant.
         </p>
+      </Framer>
+      <Framer>
         <p>
           La robe étant courte, elle peut aussi bien être marié avec des
           chaussures plates qu'avec des talons. Dans le cas de cet article, et
@@ -49,12 +51,12 @@ export default {
           </a>
           )
         </p>
-      </div>
-      <ImgRow>
+      </Framer>
+      <Framer>
         <Picture
           picture={{ preview: romantisme3Preview, picture: romantisme3 }}
         />
-      </ImgRow>
+      </Framer>
     </>
   ),
 };

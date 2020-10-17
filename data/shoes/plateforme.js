@@ -1,5 +1,5 @@
 import Picture from "../../components/picture";
-import ImgRow from "../../components/imgRow";
+import Framer from "../../components/framer";
 
 import plateformePreview from "../../public/images/shoes/plateforme1.jpg?lqip";
 import plateforme from "../../public/images/shoes/plateforme1.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000";
@@ -13,7 +13,7 @@ export default {
   picture: { preview: plateformePreview, picture: plateforme },
   content: (
     <>
-      <div>
+      <Framer>
         <p>
           La plateform shoes, vogue des années 90', refait son apparition 20 et
           quelques années plus tard. Ces détails python sur le talon et la
@@ -24,12 +24,12 @@ export default {
           et créé sur nous.
         </p>
         <p></p>
-      </div>
-      <ImgRow>
+      </Framer>
+      <Framer>
         <Picture
           picture={{ preview: plateforme1Preview, picture: plateforme1 }}
         />
-      </ImgRow>
+      </Framer>
     </>
   ),
 };

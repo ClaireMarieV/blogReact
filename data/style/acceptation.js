@@ -1,5 +1,5 @@
 import Picture from "../../components/picture";
-import ImgRow from "../../components/imgRow";
+import Framer from "../../components/framer";
 import kimonoPreview from "../../public/images/style/kimono1bis.jpg?lqip";
 import kimono from "../../public/images/style/kimono1bis.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000";
 import kimono1 from "../../public/images/style/kimono.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000";
@@ -11,11 +11,11 @@ export default {
   picture: { preview: kimonoPreview, picture: kimono },
   content: (
     <>
-      <ImgRow>
+      <Framer>
         <Picture picture={{ picture: kimono1 }} />
-      </ImgRow>
+      </Framer>
 
-      <div>
+      <Framer>
         <p>
           Par ce titre, je vais faire au mieux pour vous expliquer les essais,
           les tentatives d'un retour à la douceur. Alors qu'est-ce-que sait que
@@ -40,8 +40,8 @@ export default {
           une prise de conscience, je voyais bien le regard qu'avaient les
           hommes sur moi quand j'étais en surpoids. Aucun.
         </p>
-      </div>
-      <div>
+      </Framer>
+      <Framer>
         <p>
           Je vous dis ça parce que j'ai toujours esperé rencontrer quelqu'un
           comme dans les contes de fées. Ce n'est pas pour rien que mon blog
@@ -64,11 +64,11 @@ export default {
           a essayé de l'appeler sans réponse. De ce que je me souviens, il a
           fait le mort pendant des années ensuite.
         </p>
-      </div>
-      <ImgRow>
+      </Framer>
+      <Framer>
         <Picture picture={{ picture: kimono }} />
-      </ImgRow>
-      <div>
+      </Framer>
+      <Framer>
         <p>
           Pas de problème? Si! Evidemment! C'est un grand manque de respect!
           Cette première experience a mis à l'épreuve l'estime de moi et celle
@@ -90,8 +90,8 @@ export default {
           groupe qui s'étaient trouvés parce que sans doute ils avaient en
           commun le fait de ne pas se sentir bien.
         </p>
-      </div>
-      <div>
+      </Framer>
+      <Framer>
         <p>
           Depuis cette rupture avec eux, tout a changé. J'ai pu me recentrer,
           chercher à aller mieux et c'est quelques mois plus tard que j'ai
@@ -107,11 +107,11 @@ export default {
           ai donné que peu d'exemples du pourquoi mais le principal n'est pas
           là.
         </p>
-      </div>
-      <ImgRow>
+      </Framer>
+      <Framer>
         <Picture picture={{ picture: kimono2 }} />
-      </ImgRow>
-      <div>
+      </Framer>
+      <Framer>
         <p>
           L'acceptation de cette feminité s'est faite grâce à la danse. La
           légereté du corps, les mouvements, les ondulations marquées par le
@@ -128,7 +128,7 @@ export default {
           une certaine douceur qui maintenant se dégage lorsque je laisse mon
           corps s'exprimer.
         </p>
-      </div>
+      </Framer>
     </>
   ),
 };
