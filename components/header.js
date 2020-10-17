@@ -29,21 +29,27 @@ const Header = () => (
           <li>
             <span className="span">
               <Link className="link" href="/art">
-                <a>ART</a>
+                <a>
+                  <h2>ART</h2>
+                </a>
               </Link>
             </span>
           </li>
           <li>
             <span className="span">
               <Link className="link" href="/shoes">
-                <a>SHOES</a>
+                <a>
+                  <h2>SHOES</h2>
+                </a>
               </Link>
             </span>
           </li>
           <li>
             <span className="span">
               <Link className="link" href="/style">
-                <a>STYLE</a>
+                <a>
+                  <h2>STYLE</h2>
+                </a>
               </Link>
             </span>
           </li>
@@ -107,14 +113,13 @@ const Header = () => (
       .ul {
         margin: 0 0 1em;
       }
-      .ul .span a {
-        padding: 0 0 0.35em;
+      .ul .span a h2 {
         line-height: 1.4;
         transition: all 0.5s;
         transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
       }
 
-      .ul .span a::before {
+      .ul .span a h2::before {
         content: "";
         position: absolute;
         z-index: -1;
@@ -126,15 +131,15 @@ const Header = () => (
         transition: transform 0.5s;
         transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
       }
-      .ul .span a:hover,
-      .ul .span a:focus {
+      .ul .span a h2:hover,
+      .ul .span a h2:focus {
         color: #563440;
       }
-      .ul .span a::before {
+      .ul .span a h2::before {
         background: #563440;
       }
-      .ul:hover .span a::before,
-      .ul:focus .span a::before {
+      .ul:hover .span a h2::before,
+      .ul:focus .span a h2::before {
         transform: scale3d(1, 1, 1);
       }
 
