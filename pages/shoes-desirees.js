@@ -25,11 +25,6 @@ const DesirPage = () => (
         height: 40rem;
         object-fit: cover;
       }
-      .article-base .text {
-        display: flex;
-        max-width: 30rem;
-        margin: auto;
-      }
     `}</style>
   </Layout>
 );

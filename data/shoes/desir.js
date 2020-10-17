@@ -11,7 +11,7 @@ export default {
   picture: { preview: docPreview, picture: doc },
   content: (
     <>
-      <Framer className="text">
+      <Framer>
         <p>
           Le romantisme grunge de ces Dr.Martens suscité par les broderies. Ces
           roses noires adoucissant ces boots tout en les mettant en valeur. Un
@@ -24,7 +24,10 @@ export default {
           vestimentaires et musicaux de l'époque.
         </p>
       </Framer>
-      <Framer className="text">
+      <Framer>
+        <Picture picture={{ preview: docPreview, picture: doc }} />
+      </Framer>
+      <Framer>
         <p>
           Cependant j'aime cette modernisation des tendances aujourd'hui, dans
           la mode en tout cas! Où le mélange de celles-ci est nécessaires afin
