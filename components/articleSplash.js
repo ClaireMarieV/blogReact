@@ -1,7 +1,7 @@
 import React from "react";
 import Picture from "./picture";
 
-import ArticleTitle from "./articleBaseTitle";
+import ArticleTitle from "./articleTitle";
 import Link from "next/link";
 import Move from "./move";
 import { fromArticle } from "../lib/link";
@@ -45,7 +45,7 @@ const ArticleSplash = ({ category, title, date, picture, className, id }) => (
         }
 
         .container {
-          margin: 1rem;
+          margin: 4rem;
           flex-direction: column;
           width: 41vw;
         }
@@ -54,8 +54,6 @@ const ArticleSplash = ({ category, title, date, picture, className, id }) => (
           position: absolute;
           z-index: 3;
           font-size: 2.5rem;
-          -webkit-text-stroke: 2px orange;
-          -webkit-text-fill-color: transparent;
         }
       `}</style>
 
