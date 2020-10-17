@@ -113,13 +113,13 @@ const Header = () => (
       .ul {
         margin: 0 0 1em;
       }
-      .ul .span a h2 {
+      .span a h2 {
         line-height: 1.4;
         transition: all 0.5s;
         transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
       }
 
-      .ul .span a h2::before {
+      .span a h2::before {
         content: "";
         position: absolute;
         z-index: -1;
@@ -131,15 +131,15 @@ const Header = () => (
         transition: transform 0.5s;
         transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
       }
-      .ul .span a h2:hover,
-      .ul .span a h2:focus {
+      .span a h2:hover,
+      .span a h2:focus {
         color: #563440;
       }
-      .ul .span a h2::before {
+      .span a h2::before {
         background: #563440;
       }
-      .ul:hover .span a h2::before,
-      .ul:focus .span a h2::before {
+      .span:hover a h2::before,
+      .span:focus a h2::before {
         transform: scale3d(1, 1, 1);
       }
 
