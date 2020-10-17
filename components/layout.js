@@ -43,9 +43,6 @@ const Layout = ({ children }) => (
         }
         body {
           margin: 0;
-          overflow-x: hidden;
-          overflow-y: hidden;
-          background-color: #fffff;
         }
         ::-webkit-scrollbar {
           scrollbar-width: 5px;
