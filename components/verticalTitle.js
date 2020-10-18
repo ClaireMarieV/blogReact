@@ -12,14 +12,16 @@ const VerticalTitle = ({ title }) => (
           writing-mode: vertical-rl;
           transform: rotate(180deg);
           display: flex;
-          height: 100%;
           line-height: 1.875vw;
           margin: 0 0 1em;
         }
         .vertical-title .content {
           padding-top: 1rem;
+          transition: all 0.5s;
         }
-
+        .vertical-title:hover .content {
+          transform: translatex(-20px);
+        }
         .vertical-title h3 {
           text-align: center;
           letter-spacing: 0.5rem;
