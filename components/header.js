@@ -75,7 +75,6 @@ const Header = () => (
         margin-top: 2rem 0 0 0;
       }
       nav > .ul {
-        padding-right: 6rem;
         align-self: center;
       }
       .ul > ul {
@@ -144,25 +143,21 @@ const Header = () => (
       }
 
       @media (max-width: 1076px) {
-        nav {
-          grid-template-rows: repeat(2, minmax(0, 1fr));
-        }
         nav > h2 {
           margin-left: 0.5em;
-          font-size: 1.5em;
+          font-size: 1em;
         }
       }
 
-      @media (max-width: 600px) {
+      @media (max-width: 700px) {
         nav {
-          display: block;
-        }
-        nav > .title {
-          padding-left: 1.5rem;
+          display: grid;
+          grid-template-columns: auto;
         }
         nav > .ul > ul {
           margin: 2rem 0 2rem;
-          display: inline-flex;
+          display: flex;
+          justify-content: space-evenly;
           padding: 0;
         }
       }
