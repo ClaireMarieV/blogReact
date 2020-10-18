@@ -100,7 +100,7 @@ const ArticleBaseTitle = ({ title, date }) => {
             flex-wrap: wrap;
             // color: #ff9505 !important;
             font-weight: bold;
-            font-size: 10rem;
+            font-size: 7rem;
           }
           h1 > span > span,
           h2 > span {
