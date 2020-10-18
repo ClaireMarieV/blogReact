@@ -87,6 +87,9 @@ const Header = () => (
         display: flex;
         justify-content: flex-start;
       }
+      nav > .ul:nth-child(2) {
+        padding-right: 3rem;
+      }
       nav:first-child > ul:nth-child(2) li {
         font-weight: bold;
       }
@@ -149,7 +152,7 @@ const Header = () => (
         }
       }
 
-      @media (max-width: 700px) {
+      @media (max-width: 750px) {
         nav {
           display: grid;
           grid-template-columns: auto;
