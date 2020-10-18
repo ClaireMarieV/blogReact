@@ -8,7 +8,6 @@ const Index = ({ children }) => (
         display: flex;
         flex-direction: column;
         width: 100%;
-        margin: 4rem;
       }
       @media (max-width: 720px) {
         .index {
