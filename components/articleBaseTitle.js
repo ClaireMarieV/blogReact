@@ -116,6 +116,7 @@ const ArticleBaseTitle = ({ title, date }) => {
             .article-base-title {
               line-height: normal;
               display: block;
+              margin-left: 3rem;
             }
             h1 {
               font-size: 4rem;
