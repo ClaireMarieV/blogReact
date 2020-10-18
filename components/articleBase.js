@@ -1,8 +1,7 @@
 import React from "react";
 
 import Picture from "./picture";
-
-const ArticleBase = ({ children, className, id }) => (
+const ArticleBase = ({ children, title, className, id }) => (
   <>
     <div className={"article-base" + (className || "")} id={id}>
       <div>{children}</div>
@@ -19,6 +18,12 @@ const ArticleBase = ({ children, className, id }) => (
           width: 100%;
           object-fit: cover;
           margin: 5rem 0 0;
+        }
+        @media (max-width: 700px) {
+          .article-base {
+            width: auto;
+          }
+          width: auto;
         }
       `}</style>
     </div>
