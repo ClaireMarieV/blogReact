@@ -22,11 +22,10 @@ const VerticalIndex = ({ category, title, date, picture, className, id }) => (
           text-decoration: none;
           transform: scaleX(1);
           cursor: pointer;
-          max-width: 43vw;
-          max-height: 48.75vw;
+          max-width: 53vw;
+          max-height: 63.75vw;
           transform: translate3d(0px, 0px, 0px);
           height: 100%;
-          margin: 3rem;
         }
         .vertical-index:nth-child(odd) {
           transform: translate3d(-15.5vw, 0, 0);
@@ -38,6 +37,8 @@ const VerticalIndex = ({ category, title, date, picture, className, id }) => (
           transition: transform .5s cubic-bezier(.455,.03,.515,.955);
           position: relative;
           width: 100%;
+          margin: 3rem;
+
         }
         .vertical-index a  {
           display: flex;
@@ -49,7 +50,12 @@ const VerticalIndex = ({ category, title, date, picture, className, id }) => (
           cursor: pointer;
           height: 100%;
         }
-    
+        @media (max-width: 700px) {
+          .vertical-index {
+          display: contents;
+          }
+        }
+
       `}</style>
   </div>
 );
