@@ -1,8 +1,8 @@
 import Picture from "../../components/picture";
 import Framer from "../../components/framer";
 
-import mangoPreview from "../../public/images/shoes/mangoBottega.jpg?lqip";
-import mango from "../../public/images/shoes/mangoBottega.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000";
+import mangoPreview from "../../public/images/shoes/mangoBottega3.png?lqip";
+import mango from "../../public/images/shoes/mangoBottega3.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000";
 import mango1Preview from "../../public/images/shoes/mangoBottega1.jpg?lqip";
 import mango1 from "../../public/images/shoes/mangoBottega1.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000";
 import mango2Preview from "../../public/images/shoes/mangoBottega.jpg?lqip";
@@ -18,7 +18,7 @@ export default {
   category: "SHOES",
   title: "INSPIRATION",
   date: "17.05.2020",
-  picture: { preview: mango5Preview, picture: mango5 },
+  picture: { preview: mangoPreview, picture: mango },
   content: (
     <>
       <Framer>

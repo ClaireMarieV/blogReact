@@ -1,5 +1,6 @@
 import React from "react";
 
+import { AnimateSharedLayout, AnimatePresence } from "framer-motion";
 import Picture from "./picture";
 const ArticleBase = ({ children, title, className, id }) => (
   <>

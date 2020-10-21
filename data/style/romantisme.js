@@ -4,14 +4,8 @@ import Framer from "../../components/framer";
 import romantisme from "../../public/images/style/romantisme.jpg";
 import romantismePreview from "../../public/images/style/romantisme.jpg?lqip";
 
-import romantisme2 from "../../public/images/style/romantisme2.jpg";
-import romantisme2Preview from "../../public/images/style/romantisme2.jpg?lqip";
-
 import romantisme3 from "../../public/images/style/romantisme3.jpg";
 import romantisme3Preview from "../../public/images/style/romantisme3.jpg?lqip";
-
-import romantisme4 from "../../public/images/style/romantisme4.jpg";
-import romantisme4Preview from "../../public/images/style/romantisme4.jpg?lqip";
 
 import necklace from "../../public/images/style/necklace.jpg";
 

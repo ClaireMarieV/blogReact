@@ -119,7 +119,7 @@ const ArticleBaseTitle = ({ title, date }) => {
               margin-left: 3rem;
             }
             h1 {
-              font-size: 4rem;
+              font-size: 3rem;
             }
           }
         `}

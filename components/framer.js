@@ -20,8 +20,8 @@ const Framer = ({ children }) => {
       initial="hidden"
       transition={{ duration: 0.5 }}
       variants={{
-        visible: { opacity: 1, x: 0 },
-        hidden: { opacity: 0, x: -100 },
+        visible: { opacity: 1, y: 0 },
+        hidden: { opacity: 0.8, y: -200 },
       }}
     >
       {children}

@@ -3,8 +3,8 @@ import Framer from "../../components/framer";
 
 import plateformePreview from "../../public/images/shoes/plateforme1.jpg?lqip";
 import plateforme from "../../public/images/shoes/plateforme1.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000";
-import plateforme1Preview from "../../public/images/shoes/plateforme.jpg?lqip";
-import plateforme1 from "../../public/images/shoes/plateforme.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000";
+import plateforme1Preview from "../../public/images/shoes/plateforme.png?lqip";
+import plateforme1 from "../../public/images/shoes/plateforme.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000";
 
 export default {
   category: "SHOES",
@@ -13,6 +13,11 @@ export default {
   picture: { preview: plateformePreview, picture: plateforme },
   content: (
     <>
+      <Framer>
+        <Picture
+          picture={{ preview: plateformePreview, picture: plateforme }}
+        />
+      </Framer>
       <Framer>
         <p>
           La plateform shoes, vogue des années 90', refait son apparition 20 et
@@ -23,7 +28,6 @@ export default {
           lumière. Encore une fois, tout se joue sur ce que la luminosité amène
           et créé sur nous.
         </p>
-        <p></p>
       </Framer>
       <Framer>
         <Picture
