@@ -7,7 +7,7 @@ import mango1Preview from "../../public/images/shoes/mangoBottega1.png?lqip";
 import mango1 from "../../public/images/shoes/mangoBottega1.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000";
 import mango2Preview from "../../public/images/shoes/mangoBottega.png?lqip";
 import mango2 from "../../public/images/shoes/mangoBottega.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000";
-import mango3Preview from "../../public/images/shoes/mangoBottega3Bis.png?lqip";
+// import mango3Preview from "../../public/images/shoes/mangoBottega3Bis.png?lqip";
 import mango3 from "../../public/images/shoes/mangoBottega3Bis.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000";
 import mango4Preview from "../../public/images/shoes/mangoBottega4.png?lqip";
 import mango4 from "../../public/images/shoes/mangoBottega4.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000";
