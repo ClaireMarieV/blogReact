@@ -1,20 +1,14 @@
 import Picture from "../../components/picture";
 import Framer from "../../components/framer";
 
-import rustiquePreview from "../../public/images/style/rustique.jpg?lqip";
-import rustique from "../../public/images/style/rustique.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000";
-import rustique1Preview from "../../public/images/style/rustique1.jpg?lqip";
-import rustique1 from "../../public/images/style/rustique1.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000";
-import rustique2Preview from "../../public/images/style/rustique.jpg?lqip";
-import rustique2 from "../../public/images/style/rustique2.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000";
-import rustique3Preview from "../../public/images/style/rustique3.jpg?lqip";
-import rustique3 from "../../public/images/style/rustique3.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000";
-import rustique4Preview from "../../public/images/style/rustique4.jpg?lqip";
-import rustique4 from "../../public/images/style/rustique4.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000";
-import rustique5Preview from "../../public/images/style/rustique5.jpg?lqip";
-import rustique5 from "../../public/images/style/rustique5.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000";
-import rustique6Preview from "../../public/images/style/rustique5.jpg?lqip";
-import rustique6 from "../../public/images/style/rustique6.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000";
+import rustique3Preview from "../../public/images/style/rustique3.png?lqip";
+import rustique3 from "../../public/images/style/rustique3.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000";
+import rustique4Preview from "../../public/images/style/rustique4.png?lqip";
+import rustique4 from "../../public/images/style/rustique4.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000";
+import rustique5Preview from "../../public/images/style/rustique5.png?lqip";
+import rustique5 from "../../public/images/style/rustique5.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000";
+import rustique6Preview from "../../public/images/style/rustique6.png?lqip";
+import rustique6 from "../../public/images/style/rustique6.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000";
 
 export default {
   category: "STYLE",
@@ -41,7 +35,7 @@ export default {
         <Picture picture={{ preview: rustique3Preview, picture: rustique3 }} />
       </Framer>
       <Framer>
-        <Picture picture={{ preview: rustique1Preview, picture: rustique1 }} />
+        <Picture picture={{ preview: rustique5Preview, picture: rustique5 }} />
       </Framer>
       <Framer>
         <Picture picture={{ preview: rustique6Preview, picture: rustique6 }} />
