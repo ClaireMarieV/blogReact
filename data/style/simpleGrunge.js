@@ -10,7 +10,7 @@ export default {
   category: "STYLE",
   title: "SIMPLE GRUNGE",
   date: "22.10.2020",
-  picture: { preview: grunge3Preview, picture: grunge3 },
+  picture: { preview: grungePreview, picture: grunge },
   content: (
     <>
       <Framer>
