@@ -1,8 +1,8 @@
 import Picture from "../../components/picture";
 import Framer from "../../components/framer";
 
-import acidPreview from "../../public/images/style/acid.jpg?lqip";
-import acid from "../../public/images/style/acid.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000";
+import acidPreview from "../../public/images/style/acid.png?lqip";
+import acid from "../../public/images/style/acid.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000";
 import roseEucalyptus from "../../public/images/style/roseEucalyptus.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000";
 import roseEucalyptusPreview from "../../public/images/style/roseEucalyptus.jpg?lqip";
 
@@ -41,6 +41,9 @@ export default {
           féminité qui avec la formation et le premier job à deux heures aller
           de là où j'habite n'ont pas participé à prendre soin de soi.
         </p>
+      </Framer>
+      <Framer>
+        <Picture picture={{ preview: acidPreview, picture: acid }} />
       </Framer>
       <Framer>
         <p>
