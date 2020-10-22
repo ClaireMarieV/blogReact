@@ -11,7 +11,7 @@ const ArticleTitle = ({ title }) => (
         .article-title .content h1 {
           padding: 0 0 0.35em;
           line-height: 1.4;
-          transition: all 0.5s;
+          transition: all 1s;
           transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
         }
 
@@ -24,7 +24,7 @@ const ArticleTitle = ({ title }) => (
           opacity: 0.9;
           transform: scale3d(0, 1, 1);
           transform-origin: 0% 50%;
-          transition: transform 0.2s;
+          transition: transform 1s;
           transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
         }
         .article-title h1:hover,

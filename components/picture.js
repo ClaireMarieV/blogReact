@@ -23,15 +23,25 @@ const Picture = ({ picture }) => {
   } else {
     return (
       <>
-        <img
-          src={picture.picture.src || picture.picture}
-          srcSet={picture.picture.srcSet}
-          ref={imageRefUpdated}
-          onLoad={() => setPictureLoaded(true)}
-          hidden={!pictureLoaded}
-        />
-        <img className="preview" src={picture.preview} hidden={pictureLoaded} />
+        <div className="picture">
+          <img
+            src={picture.picture.src || picture.picture}
+            srcSet={picture.picture.srcSet}
+            ref={imageRefUpdated}
+            onLoad={() => setPictureLoaded(true)}
+            hidden={!pictureLoaded}
+          />
+          <img
+            className="preview"
+            src={picture.preview}
+            hidden={pictureLoaded}
+          />
+        </div>
         <style jsx>{`
+          .picture {
+            max-width: 33rem;
+            margin: auto;
+          }
           img {
             width: 100%;
             height: 100%;

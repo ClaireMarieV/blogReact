@@ -33,10 +33,8 @@ export default {
       <Framer>
         <Picture picture={{ preview: mangoPreview, picture: mango }} />
       </Framer>
-      //{" "}
       <Framer>
-        // <Picture picture={{ preview: mango4Preview, picture: mango4 }} />
-        //{" "}
+        <Picture picture={{ preview: mango4Preview, picture: mango4 }} />
       </Framer>
       <Framer>
         <Picture picture={{ preview: mango3Preview, picture: mango3 }} />
