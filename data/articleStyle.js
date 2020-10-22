@@ -3,5 +3,6 @@ import acid from "./style/acid";
 import vesteAcid from "./style/vesteAcid";
 import romantisme from "./style/romantisme";
 import rustique from "./style/rustique";
+import grunge from "./style/simpleGrunge";
 
-export default [rustique, acceptation, romantisme, acid];
+export default [grunge, rustique, acceptation, romantisme, acid];

@@ -7,17 +7,19 @@ import ArticleSplash from "../components/articleSplash";
 
 import acid from "../data/style/acid";
 import rustique from "../data/style/rustique";
+import grunge from "../data/style/simpleGrunge";
 import desir from "../data/shoes/desir";
-import romantisme from "../data/style/romantisme";
-import plateforme from "../data/shoes/plateforme";
-import boheme from "../data/shoes/boheme";
 import mango from "../data/shoes/mangoBottega";
-import neutrals from "../data/shoes/neutrals";
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <div className="index">
+      <ArticleSplash
+        category={grunge.category}
+        title={grunge.title}
+        picture={grunge.picture}
+      />
       <ArticleSplash
         category={rustique.category}
         title={rustique.title}
@@ -35,19 +37,9 @@ const IndexPage = () => (
         picture={acid.picture}
       />
       <ArticleSplash
-        category={neutrals.category}
-        title={neutrals.title}
-        picture={neutrals.picture}
-      />
-      <ArticleSplash
         category={mango.category}
         title={mango.title}
         picture={mango.picture}
-      />
-      <ArticleSplash
-        category={romantisme.category}
-        title={romantisme.title}
-        picture={romantisme.picture}
       />
     </div>
     <style jsx global>{`
