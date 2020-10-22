@@ -30,6 +30,7 @@ const ArtPage = () => (
             title={article.title}
             date={article.date}
             picture={article.picture}
+            autoLink={false}
           />
         ))}
       </Card>
