@@ -15,7 +15,7 @@ const VerticalIndex = ({
   autoLink = true,
 }) => {
   const a = (
-    <a>
+    <a style={{ display: "flex" }}>
       <Picture picture={picture} />
       <VerticalTitle category={category} title={title} date={date} />
     </a>
@@ -36,8 +36,7 @@ const VerticalIndex = ({
             text-decoration: none;
             transform: scaleX(1);
             cursor: pointer;
-            max-width: 53vw;
-            max-height: 63.75vw;
+            width: 53vw;
             transform: translate3d(0px, 0px, 0px);
             height: 100%;
           }
@@ -45,17 +44,19 @@ const VerticalIndex = ({
             transform: translate3d(-15.5vw, 0, 0);
             animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
           }
-          .vertical-index .content{
+           .vertical-index .content{
             height: 100%
             transition: transform .5s cubic-bezier(.455,.03,.515,.955);
             transition: transform .5s cubic-bezier(.455,.03,.515,.955);
             position: relative;
             width: 100%;
             margin: 3rem;
+            display:flex;
+          }
+          a {
 
           }
-          .vertical-index a  {
-            display: flex;
+          .vertical-index  a  {
             overflow: hidden;
             text-decoration: none;
             transform: scaleX(1);
