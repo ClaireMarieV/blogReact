@@ -2,13 +2,13 @@ import Picture from "../../components/picture";
 import Framer from "../../components/framer";
 
 import rustique3Preview from "../../public/images/style/rustique3.png?lqip";
-import rustique3 from "../../public/images/style/rustique3.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000";
+import rustique3 from "../../public/images/style/rustique3.png?resize&sizes[]=300&sizes[]=650";
 import rustique4Preview from "../../public/images/style/rustique4.png?lqip";
-import rustique4 from "../../public/images/style/rustique4.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000";
+import rustique4 from "../../public/images/style/rustique4.png?resize&sizes[]=300&sizes[]=650";
 import rustique5Preview from "../../public/images/style/rustique5.png?lqip";
-import rustique5 from "../../public/images/style/rustique5.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000";
+import rustique5 from "../../public/images/style/rustique5.png?resize&sizes[]=300&sizes[]=650";
 import rustique6Preview from "../../public/images/style/rustique6.png?lqip";
-import rustique6 from "../../public/images/style/rustique6.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000";
+import rustique6 from "../../public/images/style/rustique6.png?resize&sizes[]=300&sizes[]=650";
 
 export default {
   category: "STYLE",
@@ -18,7 +18,10 @@ export default {
   content: (
     <>
       <Framer>
-        <Picture picture={{ preview: rustique4Preview, picture: rustique4 }} />
+        <Picture
+          picture={{ preview: rustique4Preview, picture: rustique4 }}
+          alt="robe inspiration jacquemus"
+        />
       </Framer>
       <Framer>
         <p>
@@ -32,13 +35,22 @@ export default {
         </p>
       </Framer>
       <Framer>
-        <Picture picture={{ preview: rustique3Preview, picture: rustique3 }} />
+        <Picture
+          picture={{ preview: rustique3Preview, picture: rustique3 }}
+          alt="robe inspiration jacquemus"
+        />
       </Framer>
       <Framer>
-        <Picture picture={{ preview: rustique5Preview, picture: rustique5 }} />
+        <Picture
+          picture={{ preview: rustique5Preview, picture: rustique5 }}
+          alt="robe inspiration jacquemus"
+        />
       </Framer>
       <Framer>
-        <Picture picture={{ preview: rustique6Preview, picture: rustique6 }} />
+        <Picture
+          picture={{ preview: rustique6Preview, picture: rustique6 }}
+          alt="robe inspiration jacquemus"
+        />
       </Framer>
     </>
   ),

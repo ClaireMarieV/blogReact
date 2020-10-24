@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 
 const Picture = ({ picture }) => {
   const [pictureLoaded, setPictureLoaded] = useState(false);
-
   let imageElement = null;
 
   const imageRefUpdated = (image) => {

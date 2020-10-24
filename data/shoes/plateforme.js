@@ -2,9 +2,9 @@ import Picture from "../../components/picture";
 import Framer from "../../components/framer";
 
 import plateformePreview from "../../public/images/shoes/plateforme1.jpg?lqip";
-import plateforme from "../../public/images/shoes/plateforme1.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000";
+import plateforme from "../../public/images/shoes/plateforme1.jpg?resize&sizes[]=300&sizes[]=650";
 import plateforme1Preview from "../../public/images/shoes/plateforme.png?lqip";
-import plateforme1 from "../../public/images/shoes/plateforme.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000";
+import plateforme1 from "../../public/images/shoes/plateforme.png?resize&sizes[]=300&sizes[]=650";
 
 export default {
   category: "SHOES",
@@ -16,6 +16,7 @@ export default {
       <Framer>
         <Picture
           picture={{ preview: plateformePreview, picture: plateforme }}
+          alt="sandales 90's python"
         />
       </Framer>
       <Framer>
@@ -32,6 +33,7 @@ export default {
       <Framer>
         <Picture
           picture={{ preview: plateforme1Preview, picture: plateforme1 }}
+          alt="sandales 90's python"
         />
       </Framer>
     </>

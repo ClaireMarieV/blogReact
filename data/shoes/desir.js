@@ -2,7 +2,7 @@ import Picture from "../../components/picture";
 import Framer from "../../components/framer";
 
 import docPreview from "../../public/images/shoes/doc.jpg?lqip";
-import doc from "../../public/images/shoes/doc.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000";
+import doc from "../../public/images/shoes/doc.jpg?resize&sizes[]=300&sizes[]=650";
 
 export default {
   category: "SHOES",
@@ -25,7 +25,10 @@ export default {
         </p>
       </Framer>
       <Framer>
-        <Picture picture={{ preview: docPreview, picture: doc }} />
+        <Picture
+          picture={{ preview: docPreview, picture: doc }}
+          alt="dr martens brodées"
+        />
       </Framer>
       <Framer>
         <p>

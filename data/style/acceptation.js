@@ -1,9 +1,9 @@
 import Picture from "../../components/picture";
 import Framer from "../../components/framer";
 import kimonoPreview from "../../public/images/style/kimono1bis.png?lqip";
-import kimono from "../../public/images/style/kimono1bis.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000";
-import kimono1 from "../../public/images/style/kimono.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000";
-import kimono2 from "../../public/images/style/kimono2.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000";
+import kimono from "../../public/images/style/kimono1bis.png?resize&sizes[]=300&sizes[]=650";
+import kimono1 from "../../public/images/style/kimono.png?resize&sizes[]=300&sizes[]=650";
+import kimono2 from "../../public/images/style/kimono2.png?resize&sizes[]=300&sizes[]=650";
 export default {
   category: "STYLE",
   title: "ACCEPTATION",
@@ -12,7 +12,7 @@ export default {
   content: (
     <>
       <Framer>
-        <Picture picture={{ picture: kimono1 }} />
+        <Picture picture={{ picture: kimono1 }} alt="kimono + illustration" />
       </Framer>
 
       <Framer>
@@ -64,7 +64,7 @@ export default {
         </p>
       </Framer>
       <Framer>
-        <Picture picture={{ picture: kimono }} />
+        <Picture picture={{ picture: kimono }} alt="kimono + illustration" />
       </Framer>
       <Framer>
         <p>
@@ -104,7 +104,7 @@ export default {
         </p>
       </Framer>
       <Framer>
-        <Picture picture={{ picture: kimono2 }} />
+        <Picture picture={{ picture: kimono2 }} alt="kimono + illustration" />
       </Framer>
       <Framer>
         <p>

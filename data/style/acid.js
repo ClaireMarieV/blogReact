@@ -2,8 +2,8 @@ import Picture from "../../components/picture";
 import Framer from "../../components/framer";
 
 import acidPreview from "../../public/images/style/acid.png?lqip";
-import acid from "../../public/images/style/acid.png?resize&sizes[]=300&sizes[]=600&sizes[]=1000";
-import roseEucalyptus from "../../public/images/style/roseEucalyptus.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000";
+import acid from "../../public/images/style/acid.png?resize&sizes[]=300&sizes[]=650";
+import roseEucalyptus from "../../public/images/style/roseEucalyptus.jpg?resize&sizes[]=300&sizes[]=650";
 import roseEucalyptusPreview from "../../public/images/style/roseEucalyptus.jpg?lqip";
 
 export default {
@@ -24,6 +24,7 @@ export default {
       <Framer>
         <Picture
           picture={{ preview: roseEucalyptusPreview, picture: roseEucalyptus }}
+          alt="rose rose pâle"
         />
       </Framer>
       <Framer>
@@ -43,7 +44,10 @@ export default {
         </p>
       </Framer>
       <Framer>
-        <Picture picture={{ preview: acidPreview, picture: acid }} />
+        <Picture
+          picture={{ preview: acidPreview, picture: acid }}
+          alt="tenue avec top croisé"
+        />
       </Framer>
       <Framer>
         <p>
