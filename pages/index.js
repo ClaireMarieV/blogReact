@@ -59,16 +59,6 @@ const IndexPage = () => (
           flex-direction: inherit;
         }
       }
-      /**************/
-      /*Article-splash img*/
-      /**************/
-
-      .parallax a:nth-child(2) .article-splash img {
-        height: 42rem !important;
-      }
-      .parallax a:nth-child(4) .article-splash img {
-        height: 33rem !important;
-      }
 
       /**************/
       /*Article-splash title*/
