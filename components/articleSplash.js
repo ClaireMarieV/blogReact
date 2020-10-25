@@ -74,7 +74,7 @@ const ArticleSplash = ({ category, title, date, picture, className, id }) => (
         }
         @media (max-width: 400px) {
           .container {
-            width: 85vw;
+            max-width: 85vw;
             margin: 0;
           }
         }
