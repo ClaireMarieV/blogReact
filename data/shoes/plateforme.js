@@ -2,9 +2,9 @@ import Picture from "../../components/picture";
 import Framer from "../../components/framer";
 
 import plateformePreview from "../../public/images/shoes/plateforme1.jpg?lqip";
-import plateforme from "../../public/images/shoes/plateforme1.jpg?resize&sizes[]=250&sizes[]=300&sizes[]=400";
+import plateforme from "../../public/images/shoes/plateforme1.jpg?resize&sizes[]=250&sizes[]=400";
 import plateforme1Preview from "../../public/images/shoes/plateforme.png?lqip";
-import plateforme1 from "../../public/images/shoes/plateforme.png?resize&sizes[]=250&sizes[]=300&sizes[]=400";
+import plateforme1 from "../../public/images/shoes/plateforme.png?resize&sizes[]=250&sizes[]=400";
 
 export default {
   category: "SHOES",
