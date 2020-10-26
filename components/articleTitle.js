@@ -13,24 +13,20 @@ const ArticleTitle = ({ category, title }) => (
     <style jsx>
       {`
         .article-title .content {
-          padding: 0 0 0.35em;
-          // transition: all 0.5s;
-          // transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-          z-index: 2;
           font-size: 2.5rem;
-        }
-
-       .article-title .content  {
+          padding: 0 0 0.35em;
+          transition: all 0.5s;
+          transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+          z-index: 2;
           content: "";
           position: absolute;
-          // width: 18rem;
           height: 5rem;
           opacity: 0.8;
           background-color: #ffff;
-          // transform: scale3d(1, 1, 1);
-          // transform-origin: 0% 50%;
-          // transition: transform 0.5s;
-          // transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+          transform: scale3d(1, 1, 1);
+          transform-origin: 0% 50%;
+          transition: transform 0.5s;
+          transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
         }
 
         // .article-title:hover .content h1::before,
@@ -48,8 +44,15 @@ const ArticleTitle = ({ category, title }) => (
           line-height: 1.4;
           color: #160F11;
         }
-        @media (max-width: 623px) {
-          .article-title {
+        @media (max-width: 700px) {
+          .article-title .content {
+            font-size: 1.5rem;
+            height: 2rem;
+          }
+        }
+        @media (max-width: 400px) {
+          .article-title .content {
+            font-size: 1rem;
 
           }
         }
