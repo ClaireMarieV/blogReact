@@ -6,13 +6,13 @@ import Link from "next/link";
 import Move from "./move";
 import { fromArticle } from "../lib/link";
 
-const ArticleSplash = ({ category, title, date, picture, className, id }) => (
+const ArticleSplash = ({ category, title, picture, className, id }) => (
   <Link href={fromArticle({ category, title })}>
     <a>
+      <div className="title">
+        <ArticleTitle title={title} category={category} />
+      </div>
       <div className={"article-splash " + (className || "")} id={id}>
-        <div className="title">
-          <ArticleTitle title={title} />
-        </div>
         <div className="container">
           <Picture picture={picture} />
         </div>
@@ -36,25 +36,18 @@ const ArticleSplash = ({ category, title, date, picture, className, id }) => (
           justify-content: center;
           align-items: center;
           margin: 4rem;
-          transform: scale(1.15);
-          transition: 2s;
+          transform: scale(1);
+          transition: 1s;
         }
         a:hover {
-          transform: scale(1.05);
+          transform: scale(0.85);
           transition: 1s;
         }
 
         .container {
-          margin-top: 4rem;
           flex-direction: column;
           max-width: 39vw;
           width: 100%;
-        }
-
-        .title {
-          position: absolute;
-          z-index: 3;
-          font-size: 2.5rem;
         }
       `}</style>
 
