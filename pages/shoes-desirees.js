@@ -14,14 +14,7 @@ const DesirPage = () => (
       {article.content}
     </ArticleBase>
 
-    <style jsx global>{`
-      .article-base img {
-        grid-column: 1/5;
-        width: 100%;
-        height: 40rem;
-        object-fit: cover;
-      }
-    `}</style>
+    <style jsx global>{``}</style>
   </Layout>
 );
 
