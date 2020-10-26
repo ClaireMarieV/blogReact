@@ -52,6 +52,9 @@ const Picture = ({ picture, alt }) => {
             height: 100%;
             object-fit: cover;
           }
+          figure {
+            margin: 0;
+          }
         `}</style>
       </>
     );
