@@ -30,10 +30,9 @@ const ArticleTitle = ({ category, title }) => (
           webkit-stoke:
           line-height: 1.4;
           color: #160F11;
-          position: relative;
-          display: block;
         }
 
+    //EFFECT STRIKETHROUGH
         .content:before, .content:after {
           content: '';
           position: absolute;
@@ -53,13 +52,12 @@ const ArticleTitle = ({ category, title }) => (
         }
 
       .content:hover:after {
-
           width: 100%;
           transition: 0s;
           transition: width 1s cubic-bezier(0.22, 0.61, 0.36, 1);
-
         }
 
+      //RESPONSIVE
         @media (max-width: 700px) {
           .article-title .content {
             font-size: 1.5rem;
