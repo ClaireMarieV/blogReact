@@ -45,7 +45,7 @@ const ArticleSplash = ({ category, title, date, picture, className, id }) => (
         }
 
         .container {
-          margin: 4rem;
+          margin-top: 4rem;
           flex-direction: column;
           max-width: 39vw;
           width: 100%;
@@ -65,17 +65,19 @@ const ArticleSplash = ({ category, title, date, picture, className, id }) => (
           .article-splash {
             margin: auto;
           }
-          .title {
-            font-size: 1rem;
-          }
+
           .container {
             max-width: 67vw;
+            width: 100%;
+            margin: auto;
+          }
+          .title {
+            font-size: 1.5rem;
           }
         }
         @media (max-width: 400px) {
-          .container {
-            max-width: 85vw;
-            margin: 0;
+          .title {
+            font-size: 1rem;
           }
         }
       `}</style>
