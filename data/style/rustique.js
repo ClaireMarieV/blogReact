@@ -2,13 +2,13 @@ import Picture from "../../components/picture";
 import Framer from "../../components/framer";
 
 import rustique3Preview from "../../public/images/style/rustique3.png?lqip";
-import rustique3 from "../../public/images/style/rustique3.png?resize&sizes[]=250&sizes[]=300&sizes[]=550";
+import rustique3 from "../../public/images/style/rustique3.png?resize&sizes[]=250&sizes[]=300&sizes[]=450";
 import rustique4Preview from "../../public/images/style/rustique4.png?lqip";
-import rustique4 from "../../public/images/style/rustique4.png?resize&sizes[]=250&sizes[]=300&sizes[]=550";
+import rustique4 from "../../public/images/style/rustique4.png?resize&sizes[]=250&sizes[]=300&sizes[]=450";
 import rustique5Preview from "../../public/images/style/rustique5.png?lqip";
-import rustique5 from "../../public/images/style/rustique5.png?resize&sizes[]=250&sizes[]=300&sizes[]=550";
+import rustique5 from "../../public/images/style/rustique5.png?resize&sizes[]=250&sizes[]=300&sizes[]=450";
 import rustique6Preview from "../../public/images/style/rustique6.png?lqip";
-import rustique6 from "../../public/images/style/rustique6.png?resize&sizes[]=250&sizes[]=300&sizes[]=550";
+import rustique6 from "../../public/images/style/rustique6.png?resize&sizes[]=250&sizes[]=300&sizes[]=450";
 
 export default {
   category: "STYLE",

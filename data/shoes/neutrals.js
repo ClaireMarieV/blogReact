@@ -1,15 +1,15 @@
 import Picture from "../../components/picture";
 import Framer from "../../components/framer";
 import giuseppePreview from "../../public/images/shoes/giuseppe.jpg?lqip";
-import giuseppe from "../../public/images/shoes/giuseppe.jpg?resize&sizes[]=250&sizes[]=300&sizes[]=550";
+import giuseppe from "../../public/images/shoes/giuseppe.jpg?resize&sizes[]=250&sizes[]=300&sizes[]=450";
 import giuseppe2Preview from "../../public/images/shoes/giuseppe2.jpg?lqip";
-import giuseppe2 from "../../public/images/shoes/giuseppe2.jpg?resize&sizes[]=250&sizes[]=300&sizes[]=550";
+import giuseppe2 from "../../public/images/shoes/giuseppe2.jpg?resize&sizes[]=250&sizes[]=300&sizes[]=450";
 import giuseppe6Preview from "../../public/images/shoes/giuseppe6.jpg?lqip";
-import giuseppe6 from "../../public/images/shoes/giuseppe6.jpg?resize&sizes[]=250&sizes[]=300&sizes[]=550";
+import giuseppe6 from "../../public/images/shoes/giuseppe6.jpg?resize&sizes[]=250&sizes[]=300&sizes[]=450";
 import giuseppe7Preview from "../../public/images/shoes/giuseppe7.jpg?lqip";
-import giuseppe7 from "../../public/images/shoes/giuseppe7.jpg?resize&sizes[]=250&sizes[]=300&sizes[]=550";
+import giuseppe7 from "../../public/images/shoes/giuseppe7.jpg?resize&sizes[]=250&sizes[]=300&sizes[]=450";
 import giuseppe8Preview from "../../public/images/shoes/giuseppe8.jpg?lqip";
-import giuseppe8 from "../../public/images/shoes/giuseppe8.jpg?resize&sizes[]=250&sizes[]=300&sizes[]=550";
+import giuseppe8 from "../../public/images/shoes/giuseppe8.jpg?resize&sizes[]=250&sizes[]=300&sizes[]=450";
 
 export default {
   category: "SHOES",

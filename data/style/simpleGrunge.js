@@ -1,11 +1,11 @@
 import Picture from "../../components/picture";
 import Framer from "../../components/framer";
 import grungePreview from "../../public/images/style/simpleGrunge1.png?lqip";
-import grunge from "../../public/images/style/simpleGrunge1.png?resize&sizes[]=250&sizes[]=300&sizes[]=550";
+import grunge from "../../public/images/style/simpleGrunge1.png?resize&sizes[]=250&sizes[]=300&sizes[]=450";
 import grunge2Preview from "../../public/images/style/simpleGrunge2.png?lqip";
-import grunge2 from "../../public/images/style/simpleGrunge2.png?resize&sizes[]=250&sizes[]=300&sizes[]=550";
+import grunge2 from "../../public/images/style/simpleGrunge2.png?resize&sizes[]=250&sizes[]=300&sizes[]=450";
 import grunge3Preview from "../../public/images/style/simpleGrunge3.png?lqip";
-import grunge3 from "../../public/images/style/simpleGrunge3.png?resize&sizes[]=250&sizes[]=300&sizes[]=550";
+import grunge3 from "../../public/images/style/simpleGrunge3.png?resize&sizes[]=250&sizes[]=300&sizes[]=450";
 export default {
   category: "STYLE",
   title: "SIMPLE GRUNGE",

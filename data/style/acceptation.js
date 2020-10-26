@@ -1,9 +1,9 @@
 import Picture from "../../components/picture";
 import Framer from "../../components/framer";
 import kimonoPreview from "../../public/images/style/kimono1bis.png?lqip";
-import kimono from "../../public/images/style/kimono1bis.png?resize&sizes[]=250&sizes[]=300&sizes[]=550";
-import kimono1 from "../../public/images/style/kimono.png?resize&sizes[]=250&sizes[]=300&sizes[]=550";
-import kimono2 from "../../public/images/style/kimono2.png?resize&sizes[]=250&sizes[]=300&sizes[]=550";
+import kimono from "../../public/images/style/kimono1bis.png?resize&sizes[]=250&sizes[]=300&sizes[]=450";
+import kimono1 from "../../public/images/style/kimono.png?resize&sizes[]=250&sizes[]=300&sizes[]=450";
+import kimono2 from "../../public/images/style/kimono2.png?resize&sizes[]=250&sizes[]=300&sizes[]=450";
 export default {
   category: "STYLE",
   title: "ACCEPTATION",
