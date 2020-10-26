@@ -55,12 +55,12 @@ const Header = () => (
           </li>
           <li>
             <a href="https://www.instagram.com/clairevaney/">
-              <img src="/instagram.svg" />
+              <img src="/instagram.svg" alt="logo instagram" />
             </a>
           </li>
           <li>
             <a href="mailto:vert.claire.blog@gmail.com">
-              <img src="/mail.svg" />
+              <img src="/mail.svg" alt="logo mail" />
             </a>
           </li>
         </ul>
