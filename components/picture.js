@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const Picture = ({ picture }) => {
+const Picture = ({ picture, alt }) => {
   const [pictureLoaded, setPictureLoaded] = useState(false);
   let imageElement = null;
 
@@ -24,6 +24,7 @@ const Picture = ({ picture }) => {
       <>
         <div className="picture">
           <img
+            alt={alt}
             src={picture.picture.src || picture.picture}
             srcSet={picture.picture.srcSet}
             ref={imageRefUpdated}
@@ -31,6 +32,7 @@ const Picture = ({ picture }) => {
             hidden={!pictureLoaded}
           />
           <img
+            alt={alt}
             className="preview"
             src={picture.preview}
             hidden={pictureLoaded}
