@@ -23,20 +23,24 @@ const Picture = ({ picture, alt }) => {
     return (
       <>
         <div className="picture">
-          <img
-            alt={alt}
-            src={picture.picture.src || picture.picture}
-            srcSet={picture.picture.srcSet}
-            ref={imageRefUpdated}
-            onLoad={() => setPictureLoaded(true)}
-            hidden={!pictureLoaded}
-          />
-          <img
-            alt={alt}
-            className="preview"
-            src={picture.preview}
-            hidden={pictureLoaded}
-          />
+          <figure>
+            <img
+              alt={alt}
+              src={picture.picture.src || picture.picture}
+              srcSet={picture.picture.srcSet}
+              ref={imageRefUpdated}
+              onLoad={() => setPictureLoaded(true)}
+              hidden={!pictureLoaded}
+            />
+          </figure>
+          <figure>
+            <img
+              alt={alt}
+              className="preview"
+              src={picture.preview}
+              hidden={pictureLoaded}
+            />
+          </figure>
         </div>
         <style jsx>{`
           .picture {
