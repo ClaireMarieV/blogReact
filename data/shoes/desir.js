@@ -2,7 +2,7 @@ import Picture from "../../components/picture";
 import Framer from "../../components/framer";
 
 import docPreview from "../../public/images/shoes/doc.jpg?lqip";
-import doc from "../../public/images/shoes/doc.jpg?resize&sizes[]=250&sizes[]=300&sizes[]=450";
+import doc from "../../public/images/shoes/doc.jpg?resize&sizes[]=250&sizes[]=300&sizes[]=400";
 export default {
   category: "SHOES",
   title: "DESIREES",

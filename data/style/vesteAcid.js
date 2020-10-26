@@ -2,9 +2,9 @@ import Picture from "../../components/picture";
 import ImgRow from "../../components/imgRow";
 
 import vesteAcidPreview from "../../public/images/style/vesteAcid.jpg?lqip";
-import vesteAcid from "../../public/images/style/vesteAcid.jpg?resize&sizes[]=250&sizes[]=300&sizes[]=450";
-import vesteAcid1 from "../../public/images/style/vesteAcid1.jpg?resize&sizes[]=250&sizes[]=300&sizes[]=450";
-import vesteAcidDos from "../../public/images/style/vesteAcidDos.jpg?resize&sizes[]=250&sizes[]=300&sizes[]=450";
+import vesteAcid from "../../public/images/style/vesteAcid.jpg?resize&sizes[]=250&sizes[]=300&sizes[]=400";
+import vesteAcid1 from "../../public/images/style/vesteAcid1.jpg?resize&sizes[]=250&sizes[]=300&sizes[]=400";
+import vesteAcidDos from "../../public/images/style/vesteAcidDos.jpg?resize&sizes[]=250&sizes[]=300&sizes[]=400";
 
 export default {
   category: "STYLE",
