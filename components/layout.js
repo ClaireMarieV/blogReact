@@ -15,6 +15,8 @@ const Layout = ({ children }) => (
     >
       <main>{children}</main>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.0/paper-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
     {process.env.FATHOM && (
       <script
         src="https://cdn.usefathom.com/script.js"
