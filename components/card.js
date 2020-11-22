@@ -3,7 +3,7 @@ import React from "react";
 import ArticleTitle from "./articleTitle";
 import Picture from "./picture";
 
-const Card = ({ category, title, children, date, picture, className, id }) => (
+const Card = ({ category, title, children, picture, className, id }) => (
   <div className={"card " + (className || "")} id={id}>
     {children}
     <style jsx>{`
@@ -15,7 +15,6 @@ const Card = ({ category, title, children, date, picture, className, id }) => (
         margin: 1.5vw 3vw;
         padding-top: 0;
       }
-      /* Classe .grid-full permettant à un élément de la grille de prendre toute la largeur */
       .card > * {
         overflow: hidden;
       }
