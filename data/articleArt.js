@@ -16,60 +16,65 @@ import cercleViePreview from "../public/images/art/cercleVie.jpg?lqip";
 import cercleVie from "../public/images/art/cercleVie.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000";
 import gruePreview from "../public/images/art/grue.jpg?lqip";
 import grue from "../public/images/art/grue.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000";
+import buissonPreview from "../public/images/art/buisson.jpg?lqip";
+import buisson from "../public/images/art/buisson.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000";
+import covid2Preview from "../public/images/art/covid2.jpg?lqip";
+import covid2 from "../public/images/art/covid2.jpg?resize&sizes[]=300&sizes[]=600&sizes[]=1000";
 
 export default [
   {
     category: "art",
+    title: "COVID 2",
+    picture: { preview: covid2Preview, picture: covid2 },
+  },
+  {
+    category: "art",
+    title: "BUISSON ARDENT",
+    picture: { preview: buissonPreview, picture: buisson },
+  },
+  {
+    category: "art",
     title: "NATURE DE L'ÉMERVEILLEMENT",
-    date: "06.04.2019",
     picture: { preview: naturePreview, picture: nature },
   },
   {
     category: "art",
-    title: "RENAISSANCE DU PHOENIX",
-    date: "06.04.2019",
+    title: "RENAISSANCE",
     picture: { preview: envolePreview, picture: envoleGrue },
   },
   {
     category: "art",
     title: "EQUILIBRE",
-    date: "23;04.2020",
     picture: { preview: equilibrePreview, picture: equilibre },
   },
   {
     category: "art",
     title: "ESSENCE",
-    date: "06.04.2019",
     picture: { preview: energiePreview, picture: energie },
   },
   {
     category: "art",
-    title: "CO VIDE 1",
-    date: "29.03.2020",
+    title: "CO VIDE 1 -  (vendu)",
     picture: { preview: reveriePreview, picture: reverie },
   },
   {
     category: "art",
     title: "ARCHANGE FLORAL",
-    date: "01.03.2020",
     picture: { preview: venusPreview, picture: venus },
   },
   {
     category: "art",
     title: "RACINE",
-    date: "06.04.2019",
     picture: { preview: racinePreview, picture: racine },
   },
   {
     category: "art",
     title: "NATURES HUMANISÉES",
-    date: "06.04.2019",
     picture: { preview: cercleViePreview, picture: cercleVie },
   },
   {
     category: "art",
     title: "GRUE",
-    date: "29.03.2020",
     picture: { preview: gruePreview, picture: grue },
   },
 ];
