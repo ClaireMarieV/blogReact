@@ -7,51 +7,44 @@ const Header = () => (
       <div className="ul">
         <ul>
           <li>
-            <Link href="/">
-              <a>
-                <h1>IL ETAIT UNE FOIS</h1>
+            <Link href="/about">
+              <a className="link">
+                <span className="span">
+                  <h3>ABOUT</h3>
+                </span>
               </a>
             </Link>
           </li>
           <li>
-            <span className="span">
-              <Link href="/about">
-                <a className="link">
-                  <h2>ABOUT</h2>
-                </a>
-              </Link>
-            </span>
+            <Link href="/art">
+              <a className="link">
+                <span className="span">
+                  <h3>ART</h3>
+                </span>
+              </a>
+            </Link>
           </li>
         </ul>
       </div>
       <div className="ul">
         <ul>
           <li>
-            <span className="span">
-              <Link href="/art">
-                <a className="link">
-                  <h2>ART</h2>
-                </a>
-              </Link>
-            </span>
+            <Link href="/shoes">
+              <a className="link">
+                <span className="span">
+                  <h3>SHOES</h3>
+                </span>
+              </a>
+            </Link>
           </li>
           <li>
-            <span className="span">
-              <Link href="/shoes">
-                <a className="link">
-                  <h2>SHOES</h2>
-                </a>
-              </Link>
-            </span>
-          </li>
-          <li>
-            <span className="span">
-              <Link href="/style">
-                <a className="link">
-                  <h2>STYLE</h2>
-                </a>
-              </Link>
-            </span>
+            <Link href="/style">
+              <a className="link">
+                <span className="span">
+                  <h3>STYLE</h3>
+                </span>
+              </a>
+            </Link>
           </li>
           <li>
             <a href="https://www.instagram.com/clairevaney/">
@@ -71,24 +64,26 @@ const Header = () => (
       nav {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
-        text-decoration: none;
         margin-top: 2rem 0 0 0;
+        background-color: transparent;
+        position: fixed;
+        z-index: 5;
+        width: 100%;
       }
       nav > .ul {
         align-self: center;
       }
       .ul > ul {
-        list-style: none;
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-between;
         align-items: center;
       }
       nav > .ul:nth-child(1) {
-        display: flex;
-        justify-content: flex-start;
+        justify-self: start;
       }
       nav > .ul:nth-child(2) {
         padding-right: 3rem;
+        justify-self: end;
       }
       nav:first-child > ul:nth-child(2) li {
         font-weight: bold;
@@ -96,7 +91,7 @@ const Header = () => (
       nav > .ul > ul > li {
         padding: 0 0.5rem 0.5rem 1rem;
       }
-      .span a {
+      a .span {
         font-family: arboria, sans-serif;
         font-weight: 500;
         font-style: normal;
@@ -105,23 +100,23 @@ const Header = () => (
       nav ul li a > img {
         width: 1.2rem;
       }
-      nav h2 {
+      nav h3 {
         font-style: normal;
       }
-      nav > a > h2 {
+      nav > a > h3 {
         text-decoration: none;
         color: whitesmoke;
       }
       .ul {
         margin: 0 0 1em;
       }
-      .span a h2 {
+      a .span h3 {
         line-height: 1.4;
         transition: all 0.5s;
         transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
       }
 
-      .span a h2::before {
+      a .span h3::before {
         content: "";
         position: absolute;
         z-index: -1;
@@ -133,20 +128,20 @@ const Header = () => (
         transition: transform 0.5s;
         transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
       }
-      .span a h2:hover,
-      .span a h2:focus {
-        color: #563440;
+      a .span h3:hover,
+      a .span h3:focus {
+        color: #ffff;
       }
-      .span a h2::before {
-        background: #563440;
+      a .span h3::before {
+        background: #b4ad93;
       }
-      .span:hover a h2::before,
-      .span:focus a h2::before {
+      a .span:hover h3::before,
+      a .span:focus h3::before {
         transform: scale3d(1, 1, 1);
       }
 
       @media (max-width: 1076px) {
-        nav > h2 {
+        nav > h3 {
           margin-left: 0.5em;
           font-size: 1em;
         }
