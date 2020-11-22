@@ -15,6 +15,9 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <div className="index">
+      <div id="title">
+        <h1>IL ETAIT UNE FOIS</h1>
+      </div>
       <ArticleSplash
         category={grunge.category}
         title={grunge.title}
@@ -43,10 +46,18 @@ const IndexPage = () => (
       />
     </div>
     <style jsx global>{`
-      /**************/
-      /*Parallax*/
-      /**************/
-
+      .index #title {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 6;
+        padding: 0 6rem 0 6rem;
+      }
+      #title h1 {
+        font-size: 12vw;
+        line-height: 16vw;
+      }
       @media (min-width: 300px) and (max-width: 623px) {
         .parallax .grid-full {
           margin-bottom: 1em;
@@ -58,22 +69,6 @@ const IndexPage = () => (
           display: inherit;
           flex-direction: inherit;
         }
-      }
-
-      /**************/
-      /*Article-splash title*/
-      /**************/
-      .card-title .article-title {
-        padding: 1em;
-        line-height: normal;
-        writing-mode: inherit;
-        writing-mode: tb-rl;
-        transform: rotate(0deg);
-        transform: rotate(0deg);
-        display: -webkit-inline-box;
-        text-align: inherit;
-        text-align: center !important;
-        display: flex !important;
       }
 
       @media {
