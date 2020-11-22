@@ -44,7 +44,7 @@ const Layout = ({ children }) => (
           margin: 0;
           overflow-x: auto;
           overflow-y: hidden;
-          background-color: #343434;
+          background-color: #262525;
         }
         ::-webkit-scrollbar {
           scrollbar-width: 5px;
