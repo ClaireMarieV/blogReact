@@ -44,6 +44,7 @@ const Layout = ({ children }) => (
           margin: 0;
           overflow-x: auto;
           overflow-y: hidden;
+          background-color: #343434;
         }
         ::-webkit-scrollbar {
           scrollbar-width: 5px;
@@ -66,13 +67,13 @@ const Layout = ({ children }) => (
         }
         a {
           text-decoration: none;
-          color: #40363e;
+          color: #ffff;
         }
         h1 {
           font-family: gravesend-sans, sans-serif;
           font-weight: 300;
           font-style: normal;
-          color: #563440;
+          color: #ece0d5;
           margin: 0;
         }
         h4 {
@@ -80,12 +81,13 @@ const Layout = ({ children }) => (
           font-weight: 500;
           margin-bottom: 0.5rem;
           margin-top: 0;
-          color: #563440;
+          color: #ece0d5;
         }
         h2,
         h3 {
-          font-family: astoria-sans-condensed, sans-serif;
+          font-family: gravesend, sans-serif;
           font-weight: 500;
+          color: #ece0d5;
         }
         p {
           font-family: astoria-sans-condensed, sans-serif;
@@ -93,6 +95,10 @@ const Layout = ({ children }) => (
           font-size: 1.3rem;
           padding: 2em;
           text-align: justify;
+          color: #ece0d5;
+        }
+        ul {
+          list-style: none;
         }
       `}
     </style>
