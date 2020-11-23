@@ -50,47 +50,55 @@ const ArticleBaseTitle = ({ title, date }) => {
 
   return (
     <div className="article-base-title">
-      <h1>
-        {words
-          .map((word, wordIndex) => (
-            <span key={wordIndex} className="word">
-              {word.split("").map((letter, letterIndex) => (
-                <span
-                  key={letterIndex}
-                  ref={
-                    titleRef.current[
-                      indexOfLetter(words, wordIndex, letterIndex)
-                    ]
-                  }
-                >
-                  {letter}
-                </span>
-              ))}
+      <div>
+        <h1>
+          {words
+            .map((word, wordIndex) => (
+              <span key={wordIndex} className="word">
+                {word.split("").map((letter, letterIndex) => (
+                  <span
+                    key={letterIndex}
+                    ref={
+                      titleRef.current[
+                        indexOfLetter(words, wordIndex, letterIndex)
+                      ]
+                    }
+                  >
+                    {letter}
+                  </span>
+                ))}
+              </span>
+            ))
+            .reduce(
+              (acc, word, index) =>
+                acc.concat(
+                  index > 0
+                    ? [<span className="whitespace"></span>, word]
+                    : [word]
+                ),
+              []
+            )}
+        </h1>
+        <h2>
+          {dateLetters.map((letter, index) => (
+            <span
+              key={index}
+              ref={dateRef.current[index]}
+              className={letter == " " ? "whitespace" : ""}
+            >
+              {letter}
             </span>
-          ))
-          .reduce(
-            (acc, word, index) =>
-              acc.concat(
-                index > 0
-                  ? [<span className="whitespace"></span>, word]
-                  : [word]
-              ),
-            []
-          )}
-      </h1>
-      <h2>
-        {dateLetters.map((letter, index) => (
-          <span
-            key={index}
-            ref={dateRef.current[index]}
-            className={letter == " " ? "whitespace" : ""}
-          >
-            {letter}
-          </span>
-        ))}
-      </h2>
+          ))}
+        </h2>
+      </div>
       <style jsx>
         {`
+          .article-base-title {
+            diplay: flex;
+          }
+          .article-base-title > div {
+            margin: 5rem;
+          }
           .word,
           h2 {
             overflow: hidden;
