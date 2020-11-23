@@ -57,12 +57,13 @@ const IndexPage = () => (
         padding: 0 6rem 0 6rem;
       }
       #title h1 {
-        font-size: 12vw;
+        font-size: 9vw;
         line-height: 16vw;
       }
       @media (min-width: 300px) and (max-width: 623px) {
         .index #title {
           padding: 0 2rem 0 2rem;
+          height: 30vh;
         }
       }
     `}</style>
