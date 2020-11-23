@@ -120,14 +120,13 @@ const ArticleBaseTitle = ({ title, date }) => {
             width: 0.5rem;
           }
 
-          @media (max-width: 800px) {
+          @media (max-width: 600px) {
             .article-base-title {
               line-height: normal;
               display: block;
-              margin-left: 3rem;
             }
             h1 {
-              font-size: 3rem;
+              font-size: 2.5rem;
             }
           }
         `}
