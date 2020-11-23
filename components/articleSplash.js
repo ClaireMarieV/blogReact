@@ -27,24 +27,11 @@ const ArticleSplash = ({ category, title, picture, className, id }) => (
         align-self: auto;
         margin-bottom: 4rem;
       }
-      // a {
-      //   display: flex;
-      //   flex-direction: row;
-      // justify-content: center;
-      // flex-wrap: nowrap;
-      // align-items: center;
-      // display: flex;
-      //   align-items: center;
-      //
-      // }
-      // a:hover {
-      //
-      // }
 
       .container {
         display: flex;
         justify-content: center;
-        max-width: 62vw;
+        max-width: 67vw;
         width: 100%;
         transition: all 1s;
         opacity: 0.8;
@@ -78,22 +65,18 @@ const ArticleSplash = ({ category, title, picture, className, id }) => (
       //SMARTPHONE & TABLETTE
 
       @media (max-width: 800px) {
-        .article-splash {
-          margin: auto;
-        }
-
         .container {
           max-width: 67vw;
           width: 100%;
           margin: auto;
         }
-        .title {
-          font-size: 1.5rem;
+        .title h2 {
+          font-size: 3.5rem;
         }
       }
       @media (max-width: 400px) {
-        .title {
-          font-size: 1rem;
+        .title h2 {
+          font-size: 2.5rem;
         }
       }
     `}</style>

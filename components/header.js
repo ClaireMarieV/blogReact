@@ -9,18 +9,14 @@ const Header = () => (
           <li>
             <Link href="/about">
               <a className="link">
-                <span className="span">
-                  <h3>ABOUT</h3>
-                </span>
+                <span className="span">ABOUT</span>
               </a>
             </Link>
           </li>
           <li>
             <Link href="/art">
               <a className="link">
-                <span className="span">
-                  <h3>ART</h3>
-                </span>
+                <span className="span">ART</span>
               </a>
             </Link>
           </li>
@@ -31,21 +27,19 @@ const Header = () => (
           <li>
             <Link href="/shoes">
               <a className="link">
-                <span className="span">
-                  <h3>SHOES</h3>
-                </span>
+                <span className="span">SHOES</span>
               </a>
             </Link>
           </li>
           <li>
             <Link href="/style">
               <a className="link">
-                <span className="span">
-                  <h3>STYLE</h3>
-                </span>
+                <span className="span">STYLE</span>
               </a>
             </Link>
           </li>
+        </ul>
+        <ul>
           <li>
             <a href="https://www.instagram.com/clairevaney/">
               <img src="/instagram.svg" alt="logo instagram" />
@@ -75,16 +69,17 @@ const Header = () => (
       }
       .ul > ul {
         display: flex;
-        justify-content: space-between;
         align-items: center;
       }
       nav > .ul:nth-child(1) {
         justify-self: start;
       }
       nav > .ul:nth-child(2) {
-        padding-right: 3rem;
+        display:flex;
         justify-self: end;
+        padding-right: 3rem;
       }
+
       nav:first-child > ul:nth-child(2) li {
         font-weight: bold;
       }
@@ -100,23 +95,23 @@ const Header = () => (
       nav ul li a > img {
         width: 1.2rem;
       }
-      nav h3 {
+      nav {
         font-style: normal;
       }
-      nav > a > h3 {
+      nav > a > {
         text-decoration: none;
         color: whitesmoke;
       }
       .ul {
         margin: 0 0 1em;
       }
-      a .span h3 {
+      a .span {
         line-height: 1.4;
         transition: all 0.5s;
         transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
       }
 
-      a .span h3::before {
+      a .span::before {
         content: "";
         position: absolute;
         z-index: -1;
@@ -128,35 +123,39 @@ const Header = () => (
         transition: transform 0.5s;
         transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
       }
-      a .span h3:hover,
-      a .span h3:focus {
+      a .span:hover,
+      a .span:focus {
         color: #ffff;
       }
-      a .span h3::before {
+      a .span::before {
         background: #b4ad93;
       }
-      a .span:hover h3::before,
-      a .span:focus h3::before {
+      a .span:hover::before,
+      a .span:focus::before {
         transform: scale3d(1, 1, 1);
       }
 
       @media (max-width: 1076px) {
-        nav > h3 {
+        nav > {
           margin-left: 0.5em;
           font-size: 1em;
         }
       }
 
-      @media (max-width: 750px) {
+      @media (max-width: 575px) {
         nav {
           display: grid;
-          grid-template-columns: auto;
+          grid-template-columns: 1fr;
+          position: unset;
         }
-        nav > .ul > ul {
-          margin: 2rem 0 2rem;
-          display: flex;
-          justify-content: space-evenly;
+        nav > .ul{
+          justify-self: center:
+        }
+        nav .ul:nth-child(2){
+          flex-direction: column;
+          justify-self: start;
           padding: 0;
+
         }
       }
     `}</style>
