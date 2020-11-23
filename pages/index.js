@@ -16,7 +16,9 @@ const IndexPage = () => (
     <SEO title="Home" />
     <div className="index">
       <div id="title">
-        <h1>IL ETAIT UNE FOIS</h1>
+        <div>
+          <h1>IL ÉTAIT UNE FOIS</h1>
+        </div>
       </div>
       <ArticleSplash
         category={grunge.category}
@@ -59,47 +61,8 @@ const IndexPage = () => (
         line-height: 16vw;
       }
       @media (min-width: 300px) and (max-width: 623px) {
-        .parallax .grid-full {
-          margin-bottom: 1em;
-          display: inherit;
-          flex-direction: inherit;
-        }
-        .parallax a:nth-child(even) .grid-full {
-          margin-bottom: 1em;
-          display: inherit;
-          flex-direction: inherit;
-        }
-      }
-
-      @media {
-        .parallax a:nth-child(even) .article-splash-title,
-        .parallax a:nth-child(odd) .article-splash-title {
-          height: auto;
-          width: auto;
-          margin: auto;
-        }
-      }
-      /*********/
-      /**Once**/
-      /*********/
-      .once {
-        padding: 1rem;
-      }
-      .once > a > .article-card {
-        display: inherit;
-        margin: 0;
-      }
-      .once > img {
-        max-width: 60vw;
-      }
-      .once a:nth-child(1) .article-splash-title {
-        color: white;
-        background-color: black;
-      }
-
-      @media (max-width: 720px) {
-        .vertical-index {
-          transform: translate3d(0, 0, 0);
+        .index #title {
+          padding: 0 2rem 0 2rem;
         }
       }
     `}</style>
