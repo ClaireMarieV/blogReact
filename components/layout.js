@@ -69,13 +69,16 @@ const Layout = ({ children }) => (
           text-decoration: none;
           color: #ffff;
         }
-        h1 {
+        h1,
+        h3 {
           font-family: gravesend-sans, sans-serif;
-          font-weight: 700;
+          font-weight: 500;
           font-style: normal;
           color: #ece0d5;
           margin: 0;
         }
+
+        h2,
         h4 {
           font-family: arboria, sans-serif;
           font-weight: 500;
@@ -83,20 +86,15 @@ const Layout = ({ children }) => (
           margin-top: 0;
           color: #ece0d5;
         }
-        h2,
-        h3 {
-          font-family: gravesend, sans-serif;
-          font-weight: 500;
-          color: #ece0d5;
-        }
         p {
-          font-family: astoria-sans-condensed, sans-serif;
-          font-weight: 100;
-          font-size: 1.3rem;
+          font-family: raleway, sans-serif;
+          font-weight: 300;
+          font-style: normal
           padding: 2em;
           text-align: justify;
           color: #ece0d5;
         }
+
         ul {
           list-style: none;
         }
