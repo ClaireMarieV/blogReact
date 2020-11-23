@@ -25,40 +25,37 @@ const VerticalTitle = ({ title }) => (
         .vertical-title h3 {
           text-align: center;
           letter-spacing: 0.5rem;
-          font-family: astoria-sans-condensed, sans-serif;
-          font-weight: 500;
-          font-style: normal;
-          font-size: 1.2em;
+          font-size: 2rem;
         }
-        .vertical-title .content a {
+        .vertical-title .content h3 {
           text-decoration: none;
           padding: 0 0 0.35em;
           line-height: 1.4;
           transition: all 0.5s;
-          transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+          transition-timing-function: cubic-bezier(0.5, 1, 0.6, 1);
         }
 
-        .vertical-title .content a::before {
+        .vertical-title .content h3::before {
           content: "";
           position: absolute;
           z-index: -1;
-          width: 4rem;
-          height: 1rem;
-          opacity: 0.3;
+          width: 2rem;
+          height: 20rem;
+          opacity: 0.8;
           transform: scale3d(0, 1, 1);
           transform-origin: 0% 50%;
           transition: transform 0.5s;
           transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
         }
-        .vertical-title .content a:hover,
-        .vertical-title .content a:focus {
-          color: #563440;
+        .vertical-title .content h3:hover,
+        .vertical-title .content h3:focus {
+          color: #ffff;
         }
-        .vertical-title .content a::before {
-          background: #563440;
+        .vertical-title .content h3::before {
+          background: #f7c289;
         }
-        .vertical-title:hover .content a::before,
-        .vertical-title:focus .content a::before {
+        .vertical-title:hover .content h3::before,
+        .vertical-title:focus .content h3::before {
           transform: scale3d(1, 1, 1);
         }
       `}

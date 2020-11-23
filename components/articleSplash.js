@@ -51,6 +51,9 @@ const ArticleSplash = ({ category, title, picture, className, id }) => (
       .title h2 {
         font-size: 5.5rem;
       }
+      .title h2:hover {
+        color: #f7c289;
+      }
       span {
         font-family: astoria-sans-condensed, sans-serif;
         font-weight: 100;

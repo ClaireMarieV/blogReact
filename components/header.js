@@ -117,7 +117,7 @@ const Header = () => (
         z-index: -1;
         width: 4rem;
         height: 1rem;
-        opacity: 0.3;
+        opacity: 0.8;
         transform: scale3d(0, 1, 1);
         transform-origin: 0% 50%;
         transition: transform 0.5s;
@@ -128,7 +128,7 @@ const Header = () => (
         color: #ffff;
       }
       a .span::before {
-        background: #b4ad93;
+        background: #F7C289;
       }
       a .span:hover::before,
       a .span:focus::before {
