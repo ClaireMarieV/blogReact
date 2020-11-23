@@ -9,7 +9,9 @@ const ArticleSplash = ({ category, title, picture, className, id }) => (
     <Link href={fromArticle({ category, title })}>
       <a>
         <div className="title">
-          <h2>{title}</h2>
+          <Move>
+            <h2>{title}</h2>
+          </Move>
         </div>
         <div className="container">
           <Move>
@@ -45,6 +47,7 @@ const ArticleSplash = ({ category, title, picture, className, id }) => (
       .title {
         position: absolute;
         margin-top: 65px;
+        margin-left: 50px;
         left: 25px;
         z-index: 1;
       }
