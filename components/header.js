@@ -7,6 +7,13 @@ const Header = () => (
       <div className="ul">
         <ul>
           <li>
+            <Link href="/">
+              <a className="link">
+                <img src="/pivoine.svg" alt="logo pivoine" />
+              </a>
+            </Link>
+          </li>
+          <li>
             <Link href="/about">
               <a className="link">
                 <span className="span">ABOUT</span>
@@ -74,6 +81,11 @@ const Header = () => (
       nav > .ul:nth-child(1) {
         justify-self: start;
       }
+      nav > .ul:nth-child(1) li > a img {
+          width: 5rem;
+        }
+
+
       nav > .ul:nth-child(2) {
         display:flex;
         justify-self: end;
