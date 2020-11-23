@@ -71,7 +71,7 @@ const Layout = ({ children }) => (
         }
         h1 {
           font-family: gravesend-sans, sans-serif;
-          font-weight: 300;
+          font-weight: 700;
           font-style: normal;
           color: #ece0d5;
           margin: 0;
