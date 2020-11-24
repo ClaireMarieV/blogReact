@@ -94,7 +94,7 @@ const Layout = ({ children }) => (
           color: #ece0d5;
         }
         p > a {
-          color: #b8b5fc;
+          color: #edc0b2;
           font-weight: 600;
           letter-spacing: 0.05em;
         }

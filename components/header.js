@@ -154,7 +154,7 @@ const Header = () => (
         }
       }
 
-      @media (max-width: 575px) {
+      @media (max-width: 660px) {
         nav {
           display: grid;
           grid-template-columns: 1fr;

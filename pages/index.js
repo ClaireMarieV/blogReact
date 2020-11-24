@@ -57,7 +57,7 @@ const IndexPage = () => (
         padding: 0 6rem 0 6rem;
       }
       #title h1 {
-        font-size: 9vw;
+        font-size: 8vw;
         line-height: 16vw;
         color: #e5d4dd;
       }
