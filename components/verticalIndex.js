@@ -3,6 +3,7 @@ import Picture from "./picture";
 
 import VerticalTitle from "./verticalTitle";
 import Link from "next/link";
+import FramerArticles from "./framerArticles";
 import { fromArticle } from "../lib/link";
 
 const VerticalIndex = ({
@@ -16,7 +17,9 @@ const VerticalIndex = ({
 }) => {
   const a = (
     <a style={{ display: "flex" }}>
-      <Picture picture={picture} />
+      <FramerArticles>
+        <Picture picture={picture} />
+      </FramerArticles>
       <VerticalTitle category={category} title={title} date={date} />
     </a>
   );
