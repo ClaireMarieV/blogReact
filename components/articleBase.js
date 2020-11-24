@@ -24,7 +24,6 @@ const ArticleBase = ({ children, title, className, id }) => (
           .article-base {
             width: auto;
           }
-          width: auto;
         }
       `}</style>
     </div>
