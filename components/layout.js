@@ -89,10 +89,14 @@ const Layout = ({ children }) => (
         p {
           font-family: raleway, sans-serif;
           font-weight: 300;
-          font-style: normal
           padding: 2em;
           text-align: justify;
           color: #ece0d5;
+        }
+        p > a {
+          color: #b8b5fc;
+          font-weight: 600;
+          letter-spacing: 0.05em;
         }
 
         ul {
