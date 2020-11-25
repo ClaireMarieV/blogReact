@@ -18,8 +18,8 @@ const FramerArticles = ({ children }) => {
       ref={ref}
       animate={controls}
       initial="hidden"
-      whileHover={{ scale: 0.9, opacity: 1 }}
-      transition={{ duration: 0.5 }}
+      whileHover={{ scale: 0.95, opacity: 1 }}
+      transition={{ duration: 0.8 }}
       variants={{
         visible: { scale: 1, opacity: 0.8 },
         hidden: { scale: 0.9, opacity: 0 },

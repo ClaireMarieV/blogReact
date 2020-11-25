@@ -18,7 +18,7 @@ const Framer = ({ children }) => {
       ref={ref}
       animate={controls}
       initial="hidden"
-      transition={{ duration: 0.5, repeat: Infinity }}
+      transition={{ duration: 0.8, repeat: Infinity }}
       variants={{
         visible: { rotate: 0, opacity: 1 },
         hidden: { rotate: -2, opacity: 0.4 },

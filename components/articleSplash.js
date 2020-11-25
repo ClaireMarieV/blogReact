@@ -40,7 +40,7 @@ const ArticleSplash = ({ category, title, picture, className, id }) => (
       }
       .container :hover {
         transform: scale(0.85);
-        transition: 0.8s;
+        transition: 1s;
         opacity: 1;
       }
 

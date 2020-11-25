@@ -17,7 +17,7 @@ const VerticalTitle = ({ title }) => (
         }
         .vertical-title .content {
           padding-top: 1rem;
-          transition: all 0.5s;
+          transition: all 1s;
         }
         .vertical-title:hover .content {
           transform: translatex(-20px);
@@ -31,7 +31,7 @@ const VerticalTitle = ({ title }) => (
           text-decoration: none;
           padding: 0 0 0.35em;
           line-height: 1.4;
-          transition: all 0.5s;
+          transition: all 1s;
           transition-timing-function: cubic-bezier(0.5, 1, 0.6, 1);
         }
 

@@ -48,6 +48,7 @@ const Layout = ({ children }) => (
         }
         ::-webkit-scrollbar {
           scrollbar-width: 5px;
+          scroll-behavior: smooth;
         }
 
         /* Track */
