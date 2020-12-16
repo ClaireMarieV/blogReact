@@ -19,9 +19,7 @@ const VerticalTitle = ({ title }) => (
           padding-top: 1rem;
           transition: all 1s;
         }
-        .vertical-title:hover .content {
-          transform: translatex(-20px);
-        }
+
         .vertical-title h3 {
           text-align: center;
           letter-spacing: 0.5rem;
