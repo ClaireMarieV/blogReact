@@ -2,6 +2,7 @@ import React from "react";
 import Picture from "../components/picture";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+import Index from "../components/index";
 
 import ArticleSplash from "../components/articleSplash";
 
@@ -14,39 +15,41 @@ import mango from "../data/shoes/mangoBottega";
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <div className="index">
-      <div id="title">
-        <div>
-          <h1>IL ÉTAIT UNE FOIS</h1>
+    <Index>
+      <div className="index">
+        <div id="title">
+          <div>
+            <h1>IL ÉTAIT UNE FOIS</h1>
+          </div>
         </div>
+        <ArticleSplash
+          category={grunge.category}
+          title={grunge.title}
+          picture={grunge.picture}
+        />
+        <ArticleSplash
+          category={rustique.category}
+          title={rustique.title}
+          picture={rustique.picture}
+        />
+        <ArticleSplash
+          category={desir.category}
+          title={desir.title}
+          date={acid.date}
+          picture={desir.picture}
+        />
+        <ArticleSplash
+          category={acid.category}
+          title={acid.title}
+          picture={acid.picture}
+        />
+        <ArticleSplash
+          category={mango.category}
+          title={mango.title}
+          picture={mango.picture}
+        />
       </div>
-      <ArticleSplash
-        category={grunge.category}
-        title={grunge.title}
-        picture={grunge.picture}
-      />
-      <ArticleSplash
-        category={rustique.category}
-        title={rustique.title}
-        picture={rustique.picture}
-      />
-      <ArticleSplash
-        category={desir.category}
-        title={desir.title}
-        date={acid.date}
-        picture={desir.picture}
-      />
-      <ArticleSplash
-        category={acid.category}
-        title={acid.title}
-        picture={acid.picture}
-      />
-      <ArticleSplash
-        category={mango.category}
-        title={mango.title}
-        picture={mango.picture}
-      />
-    </div>
+    </Index>
     <style jsx global>{`
       .index #title {
         height: 100vh;
@@ -57,7 +60,8 @@ const IndexPage = () => (
         padding: 0 6rem 0 6rem;
       }
       #title h1 {
-        font-size: 8vw;
+        font-size: 9vw;
+        font-weight: 700;
         line-height: 16vw;
         color: #e5d4dd;
       }
