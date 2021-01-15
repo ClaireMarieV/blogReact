@@ -60,10 +60,9 @@ const IndexPage = () => (
         padding: 0 6rem 0 6rem;
       }
       #title h1 {
-        font-size: 9vw;
+        font-size: 8vw;
         font-weight: 700;
         line-height: 16vw;
-        color: #e5d4dd;
       }
       @media (min-width: 300px) and (max-width: 623px) {
         .index #title {
