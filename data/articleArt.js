@@ -34,7 +34,7 @@ export default [
   },
   {
     category: "art",
-    title: "NATURE DE L'ÉMERVEILLEMENT",
+    title: "NATURE",
     picture: { preview: naturePreview, picture: nature },
   },
   {
