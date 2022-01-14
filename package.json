@@ -30,6 +30,7 @@
     "simplex-noise": "^2.4.0",
     "splitting": "^1.0.6",
     "ssri": "^6.0.2",
+    "trim-newlines": "^3.0.1",
     "y18n": "^4.0.1"
   }
 }
