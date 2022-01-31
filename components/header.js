@@ -14,13 +14,6 @@ const Header = () => (
             </Link>
           </li>
           <li>
-            <Link href="/about">
-              <a className="link">
-                <span className="span">ABOUT</span>
-              </a>
-            </Link>
-          </li>
-          <li>
             <Link href="/art">
               <a className="link">
                 <span className="span">ART</span>
@@ -110,7 +103,7 @@ const Header = () => (
       nav {
         font-style: normal;
       }
-      nav > a > {
+      nav > a {
         text-decoration: none;
         color: whitesmoke;
       }
