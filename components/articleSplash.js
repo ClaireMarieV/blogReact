@@ -47,7 +47,6 @@ const ArticleSplash = ({ category, title, picture, className, id }) => (
       .title {
         position: absolute;
         margin-top: 65px;
-        margin-left: 50px;
         left: 25px;
         z-index: 1;
       }
@@ -62,9 +61,7 @@ const ArticleSplash = ({ category, title, picture, className, id }) => (
         text-align: justify;
         color: #ffff;
       }
-    `}</style>
 
-    <style jsx>{`
       //SMARTPHONE & TABLETTE
 
       @media (max-width: 800px) {
