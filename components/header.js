@@ -14,13 +14,6 @@ const Header = () => (
             </Link>
           </li>
           <li>
-            <Link href="/about">
-              <a className="link">
-                <span className="span">ABOUT</span>
-              </a>
-            </Link>
-          </li>
-          <li>
             <Link href="/art">
               <a className="link">
                 <span className="span">ART</span>
@@ -82,7 +75,7 @@ const Header = () => (
         justify-self: start;
       }
       nav > .ul:nth-child(1) li > a img {
-          width: 5rem;
+          width: 10rem;
         }
 
 
