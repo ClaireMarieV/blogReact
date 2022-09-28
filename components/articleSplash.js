@@ -36,9 +36,9 @@ const ArticleSplash = ({ category, title, picture, className, id }) => (
         max-width: 67vw;
         width: 100%;
         transition: all 1s;
-        opacity: 0.8;
+        opacity: 0.7;
       }
-      .container :hover {
+      .container:hover {
         transform: scale(0.85);
         transition: 1s;
         opacity: 1;
@@ -54,14 +54,11 @@ const ArticleSplash = ({ category, title, picture, className, id }) => (
       .title h2 {
         font-size: 5.5rem;
       }
-      .title h2:hover {
-        color: #f7c289;
-      }
+
       span {
         font-family: astoria-sans-condensed, sans-serif;
         font-weight: 100;
-        font-size: 2rem;
-        padding: 2em;
+        font-size: 1.5rem;
         text-align: justify;
         color: #ffff;
       }

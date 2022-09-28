@@ -59,7 +59,7 @@ export default [
   },
   {
     category: "art",
-    title: "ARCHANGE FLORAL",
+    title: "ARCHANGE",
     picture: { preview: venusPreview, picture: venus },
   },
   {
@@ -74,7 +74,7 @@ export default [
   },
   {
     category: "art",
-    title: "GRUE",
+    title: "ENVOLE",
     picture: { preview: gruePreview, picture: grue },
   },
 ];

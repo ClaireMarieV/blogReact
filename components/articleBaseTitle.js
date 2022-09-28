@@ -97,7 +97,7 @@ const ArticleBaseTitle = ({ title, date }) => {
             diplay: flex;
           }
           .article-base-title > div {
-            margin: 5rem;
+            margin: 5rem 0;
           }
           .word,
           h2 {
@@ -106,7 +106,7 @@ const ArticleBaseTitle = ({ title, date }) => {
           h1 {
             display: flex;
             flex-wrap: wrap;
-            color: #ddc8b5 !important;
+            color: #c1bdfc !important;
             font-weight: bold;
             font-size: 6rem;
           }

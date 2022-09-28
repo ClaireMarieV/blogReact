@@ -23,7 +23,7 @@ const VerticalTitle = ({ title }) => (
         .vertical-title h3 {
           text-align: center;
           letter-spacing: 0.5rem;
-          font-size: 2rem;
+          font-size: 1.5rem;
         }
         .vertical-title .content h3 {
           text-decoration: none;
@@ -37,12 +37,13 @@ const VerticalTitle = ({ title }) => (
           content: "";
           position: absolute;
           z-index: -1;
-          width: 2rem;
-          height: 20rem;
+          width: 1rem;
+          height: 13rem;
           opacity: 0.8;
+          left: 0;
           transform: scale3d(0, 1, 1);
           transform-origin: 0% 50%;
-          transition: transform 0.5s;
+          transition: transform 0.3s;
           transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
         }
         .vertical-title .content h3:hover,
@@ -50,7 +51,7 @@ const VerticalTitle = ({ title }) => (
           color: #ffff;
         }
         .vertical-title .content h3::before {
-          background: #f7c289;
+          background: #c1bdfc;
         }
         .vertical-title:hover .content h3::before,
         .vertical-title:focus .content h3::before {

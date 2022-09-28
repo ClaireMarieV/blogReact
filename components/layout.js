@@ -45,6 +45,8 @@ const Layout = ({ children }) => (
           overflow-x: auto;
           overflow-y: hidden;
           background-color: #262525;
+          color: #ffffff;
+          font-size: 1.1rem;
         }
         ::-webkit-scrollbar {
           scrollbar-width: 5px;
@@ -72,10 +74,9 @@ const Layout = ({ children }) => (
         }
         h1,
         h3 {
-          font-family: gravesend-sans, sans-serif;
           font-weight: 500;
           font-style: normal;
-          color: #ece0d5;
+          color: #c1bdfc;
           margin: 0;
         }
 
@@ -85,14 +86,13 @@ const Layout = ({ children }) => (
           font-weight: 500;
           margin-bottom: 0.5rem;
           margin-top: 0;
-          color: #ece0d5;
+          color: #c1bdfc;
         }
         p {
-          font-family: raleway, sans-serif;
-          font-weight: 300;
-          padding: 2em;
+          font-family: arboria, sans-serif;
           text-align: justify;
-          color: #ece0d5;
+          line-height: 1.5rem;
+          letter-spacing: 0.1rem;
         }
         p > a {
           color: #edc0b2;

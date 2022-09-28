@@ -28,9 +28,7 @@ const ArticleTitle = ({ category, title }) => (
           margin-bottom: 0;
           font-weight: 400;
           webkit-stoke:
-          line-height: 1.4;
-          color: #160F11;
-        }
+          line-height: 1.4;        }
 
     //EFFECT STRIKETHROUGH
         .content:before, .content:after {

@@ -14,6 +14,7 @@ const ArticleBase = ({ children, title, className, id }) => (
           grid-template-columns: auto;
           margin: auto;
           width: 60vw;
+          padding-top: 10rem;
         }
         .article-base img {
           width: 100%;

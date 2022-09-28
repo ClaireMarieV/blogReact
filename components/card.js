@@ -12,8 +12,9 @@ const Card = ({ category, title, children, picture, className, id }) => (
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 9rem 3rem;
-        padding-top: 0;
+        width: 60vw;
+        padding-top: 10rem;
+        margin: auto;
       }
       .card > * {
         overflow: hidden;

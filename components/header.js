@@ -69,19 +69,9 @@ const Header = () => (
         display: flex;
         align-items: center;
       }
-      <<<<<<< HEAD nav > .ul:nth-child(1) {
-        justify-self: start;
-      }
+
       nav > .ul:nth-child(1) li > a img {
         width: 10rem;
-      }
-      =======>>>>>>>d1d8f94dc799ed378242a4b52e17c7da97502414
-        nav
-        > .ul:nth-child(1)
-        li
-        > a
-        img {
-        width: 5rem;
       }
 
       nav > .ul:nth-child(2) {
@@ -120,7 +110,7 @@ const Header = () => (
         position: absolute;
         z-index: -1;
         width: 4rem;
-        height: 1rem;
+        height: 0.8rem;
         opacity: 0.8;
         transform: scale3d(0, 1, 1);
         transform-origin: 0% 50%;
@@ -132,7 +122,7 @@ const Header = () => (
         color: #ffff;
       }
       a .span::before {
-        background: #f7c289;
+        background: #c1bdfc;
       }
       a .span:hover::before,
       a .span:focus::before {

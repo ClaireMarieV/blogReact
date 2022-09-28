@@ -20,13 +20,6 @@ export default {
         maintenant et ça fait un bien fou! J'esperai que j'allais le mettre un
         jour malgré les années comme j'esperais trouver ma voie.
       </p>
-
-      <Framer>
-        <Picture
-          picture={{ preview: roseEucalyptusPreview, picture: roseEucalyptus }}
-          alt="rose rose pâle"
-        />
-      </Framer>
       <Framer>
         <p>
           A la base, le jean avait un ourlet au bas de la jambe et été trop long

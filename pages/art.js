@@ -16,11 +16,8 @@ const ArtPage = () => (
           <p>
             Dans cette catégorie, les photos ne redirigent pas vers un article.
             Je ne peux pas mettre mon ressenti sur ces tableaux étant donné
-            qu'ils ne sont pas de moi mais de ma mère. Ce ne serait qu'une
-            vision spectatrice de chacun d'eux, par conséquent je ne prèfère pas
-            mais vous pouvez bien sûr partager la vôtre! Je voulais vous les
-            faire découvrir parce qu'elle a du talent mais a du mal à les
-            partager.
+            qu'ils ne sont pas de moi, par conséquent je ne prèfère pas mais
+            vous pouvez bien sûr partager la vôtre.
           </p>
         </div>
         {articles.map((article, index) => (
