@@ -9,11 +9,7 @@ const Index = ({ children }) => (
         flex-direction: column;
         width: 100%;
       }
-      @media (max-width: 720px) {
-        .index {
-          margin-top: 5vw;
-        }
-      }
+
       @media (max-width: 600px) {
         .index {
           margin: 0;

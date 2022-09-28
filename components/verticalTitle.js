@@ -56,6 +56,11 @@ const VerticalTitle = ({ title }) => (
         .vertical-title:focus .content h3::before {
           transform: scale3d(1, 1, 1);
         }
+        @media (max-width: 500px) {
+          .vertical-title h3 {
+            font-size: 1rem;
+          }
+        }
       `}
     </style>
   </div>

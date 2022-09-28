@@ -13,6 +13,10 @@ const Header = () => (
               </a>
             </Link>
           </li>
+        </ul>
+      </div>
+      <div className="ul">
+        <ul>
           <li>
             <Link href="/art">
               <a className="link">
@@ -20,10 +24,6 @@ const Header = () => (
               </a>
             </Link>
           </li>
-        </ul>
-      </div>
-      <div className="ul">
-        <ul>
           <li>
             <Link href="/shoes">
               <a className="link">
@@ -41,7 +41,7 @@ const Header = () => (
         </ul>
         <ul>
           <li>
-            <a href="https://www.instagram.com/clairevaney/">
+            <a href="https://www.instagram.com/clairemarievaney/">
               <img src="/instagram.svg" alt="logo instagram" />
             </a>
           </li>
@@ -56,32 +56,36 @@ const Header = () => (
 
     <style jsx>{`
       nav {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        display: flex;
+        justify-content: space-between;
         margin-top: 2rem 0 0 0;
         background-color: transparent;
         position: fixed;
         z-index: 5;
         width: 100%;
       }
-      nav > .ul {
-        align-self: center;
-      }
+
       .ul > ul {
         display: flex;
         align-items: center;
       }
-      nav > .ul:nth-child(1) {
+      <<<<<<< HEAD nav > .ul:nth-child(1) {
         justify-self: start;
       }
       nav > .ul:nth-child(1) li > a img {
-          width: 10rem;
-        }
-
+        width: 10rem;
+      }
+      =======>>>>>>>d1d8f94dc799ed378242a4b52e17c7da97502414
+        nav
+        > .ul:nth-child(1)
+        li
+        > a
+        img {
+        width: 5rem;
+      }
 
       nav > .ul:nth-child(2) {
-        display:flex;
-        justify-self: end;
+        display: flex;
         padding-right: 3rem;
       }
 
@@ -94,22 +98,17 @@ const Header = () => (
       a .span {
         font-family: arboria, sans-serif;
         font-weight: 500;
-        font-style: normal;
         letter-spacing: 0.25em;
       }
       nav ul li a > img {
         width: 1.2rem;
       }
-      nav {
-        font-style: normal;
-      }
-      nav > a > {
+
+      nav > a {
         text-decoration: none;
         color: whitesmoke;
       }
-      .ul {
-        margin: 0 0 1em;
-      }
+
       a .span {
         line-height: 1.4;
         transition: all 1s;
@@ -133,34 +132,21 @@ const Header = () => (
         color: #ffff;
       }
       a .span::before {
-        background: #F7C289;
+        background: #f7c289;
       }
       a .span:hover::before,
       a .span:focus::before {
         transform: scale3d(1, 1, 1);
       }
 
-      @media (max-width: 1076px) {
-        nav > {
-          margin-left: 0.5em;
-          font-size: 1em;
-        }
-      }
-
       @media (max-width: 660px) {
         nav {
-          display: grid;
-          grid-template-columns: 1fr;
-          position: unset;
-        }
-        nav > .ul{
-          justify-self: center:
-        }
-        nav .ul:nth-child(2){
           flex-direction: column;
-          justify-self: start;
-          padding: 0;
-
+          position: inherit;
+          z-index: inherit;
+        }
+        nav > .ul:nth-child(2) {
+          flex-direction: column;
         }
       }
     `}</style>
